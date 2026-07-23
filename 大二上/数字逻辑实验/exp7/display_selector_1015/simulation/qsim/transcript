@@ -1,0 +1,24 @@
+# do display_selector_1015.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module display_selector_1015
+# 
+# Top level modules:
+# 	display_selector_1015
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module display_selector_1015_vlg_sample_tst
+# -- Compiling module display_selector_1015_vlg_check_tst
+# -- Compiling module display_selector_1015_vlg_vec_tst
+# 
+# Top level modules:
+# 	display_selector_1015_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.display_selector_1015_vlg_vec_tst 
+# Loading work.display_selector_1015_vlg_vec_tst
+# Loading work.display_selector_1015
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.display_selector_1015_vlg_sample_tst
+# Loading work.display_selector_1015_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : display_selector_1015.vt(219)
+#    Time: 1 us  Iteration: 0  Instance: /display_selector_1015_vlg_vec_tst/tb_out

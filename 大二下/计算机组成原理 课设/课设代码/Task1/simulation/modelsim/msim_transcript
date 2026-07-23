@@ -1,0 +1,391 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do top_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gpr
+# 
+# Top level modules:
+# 	gpr
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/ext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm
+# 
+# Top level modules:
+# 	dm
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/im.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im
+# 
+# Top level modules:
+# 	im
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/npc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module npc
+# 
+# Top level modules:
+# 	npc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm
+# 
+# Top level modules:
+# 	dm
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/ext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gpr
+# 
+# Top level modules:
+# 	gpr
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/im.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im
+# 
+# Top level modules:
+# 	im
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/npc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module npc
+# 
+# Top level modules:
+# 	npc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 {C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_mips_tb
+# 
+# Top level modules:
+# 	test_mips_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  test_mips_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_mips_tb 
+# Loading work.test_mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.npc
+# Loading work.im
+# Loading work.gpr
+# Loading work.ext
+# Loading work.alu
+# Loading work.dm
+# Loading work.controller
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# [GPR MONITOR] Time=5000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=15000 ns | Write to $16 with Data=0x00000001
+# Reset released. Processor running...
+# [GPR MONITOR] Time=25000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=35000 ns | Write to $17 with Data=0x00000003
+# [GPR MONITOR] Time=45000 ns | Write to $ 8 with Data=0x00000001
+# [GPR MONITOR] Time=55000 ns | Write to $12 with Data=0x0000abab
+# [GPR MONITOR] Time=65000 ns | Write to $13 with Data=0x000a0000
+# [GPR MONITOR] Time=75000 ns | Write to $ 4 with Data=0x00000001
+# [GPR MONITOR] Time=85000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=95000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=105000 ns | Write to $ 2 with Data=0x00000002
+# [GPR MONITOR] Time=135000 ns | Write to $16 with Data=0x00000002
+# [GPR MONITOR] Time=145000 ns | Write to $17 with Data=0x00000002
+# [GPR MONITOR] Time=165000 ns | Write to $ 4 with Data=0x00000002
+# [GPR MONITOR] Time=175000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=185000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=195000 ns | Write to $ 2 with Data=0x00000003
+# [GPR MONITOR] Time=225000 ns | Write to $16 with Data=0x00000003
+# [GPR MONITOR] Time=235000 ns | Write to $17 with Data=0x00000001
+# [GPR MONITOR] Time=255000 ns | Write to $ 8 with Data=0x00000004
+# [GPR MONITOR] Time=265000 ns | Write to $ 1 with Data=0x7fff0000
+# [GPR MONITOR] Time=275000 ns | Write to $ 1 with Data=0x7fffffff
+# [GPR MONITOR] Time=285000 ns | Write to $24 with Data=0x7fffffff
+# [GPR MONITOR] Time=295000 ns | Write to $ 9 with Data=0x80000002
+# [GPR MONITOR] Time=305000 ns | Write to $10 with Data=0x80000004
+# [GPR MONITOR] Time=315000 ns | Write to $30 with Data=0x00000001
+# [GPR MONITOR] Time=335000 ns | Write to $14 with Data=0x80000002
+# [GPR MONITOR] Time=355000 ns | Write to $15 with Data=0x80000004
+# [GPR MONITOR] Time=375000 ns | Write to $18 with Data=0x00000002
+# [GPR MONITOR] Time=385000 ns | Write to $ 4 with Data=0x00000004
+# [GPR MONITOR] Time=395000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=405000 ns | Write to $31 with Data=0x0000306c
+# [GPR MONITOR] Time=415000 ns | Write to $ 2 with Data=0x80000006
+# [GPR MONITOR] Time=445000 ns | Write to $25 with Data=0x00000001
+# [GPR MONITOR] Time=465000 ns | Write to $20 with Data=0x00000000
+# [GPR MONITOR] Time=495000 ns | Write to $19 with Data=0xefef0000
+# [GPR MONITOR] Time=505000 ns | Write to $ 1 with Data=0xabab0000
+# [GPR MONITOR] Time=515000 ns | Write to $ 1 with Data=0xababcdcd
+# [GPR MONITOR] Time=525000 ns | Write to $ 3 with Data=0xababcdcd
+# [GPR MONITOR] Time=535000 ns | Write to $ 4 with Data=0xababcdcf
+# [GPR MONITOR] Time=545000 ns | Write to $23 with Data=0xababcdd2
+# [GPR MONITOR] Time=555000 ns | Write to $31 with Data=0x000030a0
+# [GPR MONITOR] Time=565000 ns | Write to $ 2 with Data=0x2babcdd1
+# [GPR MONITOR] Time=595000 ns | Write to $ 8 with Data=0x2babcdd1
+# [GPR MONITOR] Time=605000 ns | Write to $ 4 with Data=0x2babcdd1
+# [GPR MONITOR] Time=615000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=625000 ns | Write to $31 with Data=0x000030b0
+# [GPR MONITOR] Time=635000 ns | Write to $ 2 with Data=0xababcdd3
+# [GPR MONITOR] Time=665000 ns | Write to $ 9 with Data=0xababcdd3
+# [GPR MONITOR] Time=675000 ns | Write to $ 9 with Data=0x2babcdd1
+# [GPR MONITOR] Time=685000 ns | Write to $10 with Data=0x00690000
+# 
+# -----------------------------------------------------
+# ------ Processor Final State Snapshot at 2020000 ns ------
+# -----------------------------------------------------
+# s0-s7: 0x00000003, 0x00000001, 0x00000002, 0xefef0000, 0x00000000, 0x00000000, 0x00000000, 0xababcdd2
+# t0-t7: 0x2babcdd1, 0x2babcdd1, 0x00690000, 0x00000000, 0x0000abab, 0x000a0000, 0x80000002, 0x80000004
+# t8-t9: 0x7fffffff, 0x00000001
+# v0 (ret val) : 0xababcdd3
+# ra (ret addr): 0x000030b0
+# -----------------------------------------------------
+# 
+# ------ MIPS CPU Test End ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v(69)
+#    Time: 2020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v line 69
+# Simulation Breakpoint: 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v line 69
+# MACRO ./top_run_msim_rtl_verilog.do PAUSED at line 38
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/clk
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/rst
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/datapath_unit/gpr_unit/registers
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/datapath_unit/dm_unit/dm
+restart -f
+run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# [GPR MONITOR] Time=5000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=15000 ns | Write to $16 with Data=0x00000001
+# Reset released. Processor running...
+# [GPR MONITOR] Time=25000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=35000 ns | Write to $17 with Data=0x00000003
+# [GPR MONITOR] Time=45000 ns | Write to $ 8 with Data=0x00000001
+# [GPR MONITOR] Time=55000 ns | Write to $12 with Data=0x0000abab
+# [GPR MONITOR] Time=65000 ns | Write to $13 with Data=0x000a0000
+# [GPR MONITOR] Time=75000 ns | Write to $ 4 with Data=0x00000001
+# [GPR MONITOR] Time=85000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=95000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=105000 ns | Write to $ 2 with Data=0x00000002
+# [GPR MONITOR] Time=135000 ns | Write to $16 with Data=0x00000002
+# [GPR MONITOR] Time=145000 ns | Write to $17 with Data=0x00000002
+# [GPR MONITOR] Time=165000 ns | Write to $ 4 with Data=0x00000002
+# [GPR MONITOR] Time=175000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=185000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=195000 ns | Write to $ 2 with Data=0x00000003
+# [GPR MONITOR] Time=225000 ns | Write to $16 with Data=0x00000003
+# [GPR MONITOR] Time=235000 ns | Write to $17 with Data=0x00000001
+# [GPR MONITOR] Time=255000 ns | Write to $ 8 with Data=0x00000004
+# [GPR MONITOR] Time=265000 ns | Write to $ 1 with Data=0x7fff0000
+# [GPR MONITOR] Time=275000 ns | Write to $ 1 with Data=0x7fffffff
+# [GPR MONITOR] Time=285000 ns | Write to $24 with Data=0x7fffffff
+# [GPR MONITOR] Time=295000 ns | Write to $ 9 with Data=0x80000002
+# [GPR MONITOR] Time=305000 ns | Write to $10 with Data=0x80000004
+# [GPR MONITOR] Time=315000 ns | Write to $30 with Data=0x00000001
+# [GPR MONITOR] Time=335000 ns | Write to $14 with Data=0x80000002
+# [GPR MONITOR] Time=355000 ns | Write to $15 with Data=0x80000004
+# [GPR MONITOR] Time=375000 ns | Write to $18 with Data=0x00000002
+# [GPR MONITOR] Time=385000 ns | Write to $ 4 with Data=0x00000004
+# [GPR MONITOR] Time=395000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=405000 ns | Write to $31 with Data=0x0000306c
+# [GPR MONITOR] Time=415000 ns | Write to $ 2 with Data=0x80000006
+# [GPR MONITOR] Time=445000 ns | Write to $25 with Data=0x00000001
+# [GPR MONITOR] Time=465000 ns | Write to $20 with Data=0x00000000
+# [GPR MONITOR] Time=495000 ns | Write to $19 with Data=0xefef0000
+# [GPR MONITOR] Time=505000 ns | Write to $ 1 with Data=0xabab0000
+# [GPR MONITOR] Time=515000 ns | Write to $ 1 with Data=0xababcdcd
+# [GPR MONITOR] Time=525000 ns | Write to $ 3 with Data=0xababcdcd
+# [GPR MONITOR] Time=535000 ns | Write to $ 4 with Data=0xababcdcf
+# [GPR MONITOR] Time=545000 ns | Write to $23 with Data=0xababcdd2
+# [GPR MONITOR] Time=555000 ns | Write to $31 with Data=0x000030a0
+# [GPR MONITOR] Time=565000 ns | Write to $ 2 with Data=0x2babcdd1
+# [GPR MONITOR] Time=595000 ns | Write to $ 8 with Data=0x2babcdd1
+# [GPR MONITOR] Time=605000 ns | Write to $ 4 with Data=0x2babcdd1
+# [GPR MONITOR] Time=615000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=625000 ns | Write to $31 with Data=0x000030b0
+# [GPR MONITOR] Time=635000 ns | Write to $ 2 with Data=0xababcdd3
+# [GPR MONITOR] Time=665000 ns | Write to $ 9 with Data=0xababcdd3
+# [GPR MONITOR] Time=675000 ns | Write to $ 9 with Data=0x2babcdd1
+# [GPR MONITOR] Time=685000 ns | Write to $10 with Data=0x00690000
+# 
+# -----------------------------------------------------
+# ------ Processor Final State Snapshot at 2020000 ns ------
+# -----------------------------------------------------
+# s0-s7: 0x00000003, 0x00000001, 0x00000002, 0xefef0000, 0x00000000, 0x00000000, 0x00000000, 0xababcdd2
+# t0-t7: 0x2babcdd1, 0x2babcdd1, 0x00690000, 0x00000000, 0x0000abab, 0x000a0000, 0x80000002, 0x80000004
+# t8-t9: 0x7fffffff, 0x00000001
+# v0 (ret val) : 0xababcdd3
+# ra (ret addr): 0x000030b0
+# -----------------------------------------------------
+# 
+# ------ MIPS CPU Test End ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v(69)
+#    Time: 2020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v line 69
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/datapath_unit/pc_unit/PC
+restart -f
+run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# [GPR MONITOR] Time=5000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=15000 ns | Write to $16 with Data=0x00000001
+# Reset released. Processor running...
+# [GPR MONITOR] Time=25000 ns | Write to $16 with Data=0x00000001
+# [GPR MONITOR] Time=35000 ns | Write to $17 with Data=0x00000003
+# [GPR MONITOR] Time=45000 ns | Write to $ 8 with Data=0x00000001
+# [GPR MONITOR] Time=55000 ns | Write to $12 with Data=0x0000abab
+# [GPR MONITOR] Time=65000 ns | Write to $13 with Data=0x000a0000
+# [GPR MONITOR] Time=75000 ns | Write to $ 4 with Data=0x00000001
+# [GPR MONITOR] Time=85000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=95000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=105000 ns | Write to $ 2 with Data=0x00000002
+# [GPR MONITOR] Time=135000 ns | Write to $16 with Data=0x00000002
+# [GPR MONITOR] Time=145000 ns | Write to $17 with Data=0x00000002
+# [GPR MONITOR] Time=165000 ns | Write to $ 4 with Data=0x00000002
+# [GPR MONITOR] Time=175000 ns | Write to $ 5 with Data=0x00000001
+# [GPR MONITOR] Time=185000 ns | Write to $31 with Data=0x00003020
+# [GPR MONITOR] Time=195000 ns | Write to $ 2 with Data=0x00000003
+# [GPR MONITOR] Time=225000 ns | Write to $16 with Data=0x00000003
+# [GPR MONITOR] Time=235000 ns | Write to $17 with Data=0x00000001
+# [GPR MONITOR] Time=255000 ns | Write to $ 8 with Data=0x00000004
+# [GPR MONITOR] Time=265000 ns | Write to $ 1 with Data=0x7fff0000
+# [GPR MONITOR] Time=275000 ns | Write to $ 1 with Data=0x7fffffff
+# [GPR MONITOR] Time=285000 ns | Write to $24 with Data=0x7fffffff
+# [GPR MONITOR] Time=295000 ns | Write to $ 9 with Data=0x80000002
+# [GPR MONITOR] Time=305000 ns | Write to $10 with Data=0x80000004
+# [GPR MONITOR] Time=315000 ns | Write to $30 with Data=0x00000001
+# [GPR MONITOR] Time=335000 ns | Write to $14 with Data=0x80000002
+# [GPR MONITOR] Time=355000 ns | Write to $15 with Data=0x80000004
+# [GPR MONITOR] Time=375000 ns | Write to $18 with Data=0x00000002
+# [GPR MONITOR] Time=385000 ns | Write to $ 4 with Data=0x00000004
+# [GPR MONITOR] Time=395000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=405000 ns | Write to $31 with Data=0x0000306c
+# [GPR MONITOR] Time=415000 ns | Write to $ 2 with Data=0x80000006
+# [GPR MONITOR] Time=445000 ns | Write to $25 with Data=0x00000001
+# [GPR MONITOR] Time=465000 ns | Write to $20 with Data=0x00000000
+# [GPR MONITOR] Time=495000 ns | Write to $19 with Data=0xefef0000
+# [GPR MONITOR] Time=505000 ns | Write to $ 1 with Data=0xabab0000
+# [GPR MONITOR] Time=515000 ns | Write to $ 1 with Data=0xababcdcd
+# [GPR MONITOR] Time=525000 ns | Write to $ 3 with Data=0xababcdcd
+# [GPR MONITOR] Time=535000 ns | Write to $ 4 with Data=0xababcdcf
+# [GPR MONITOR] Time=545000 ns | Write to $23 with Data=0xababcdd2
+# [GPR MONITOR] Time=555000 ns | Write to $31 with Data=0x000030a0
+# [GPR MONITOR] Time=565000 ns | Write to $ 2 with Data=0x2babcdd1
+# [GPR MONITOR] Time=595000 ns | Write to $ 8 with Data=0x2babcdd1
+# [GPR MONITOR] Time=605000 ns | Write to $ 4 with Data=0x2babcdd1
+# [GPR MONITOR] Time=615000 ns | Write to $ 5 with Data=0x80000002
+# [GPR MONITOR] Time=625000 ns | Write to $31 with Data=0x000030b0
+# [GPR MONITOR] Time=635000 ns | Write to $ 2 with Data=0xababcdd3
+# [GPR MONITOR] Time=665000 ns | Write to $ 9 with Data=0xababcdd3
+# [GPR MONITOR] Time=675000 ns | Write to $ 9 with Data=0x2babcdd1
+# [GPR MONITOR] Time=685000 ns | Write to $10 with Data=0x00690000
+# 
+# -----------------------------------------------------
+# ------ Processor Final State Snapshot at 2020000 ns ------
+# -----------------------------------------------------
+# s0-s7: 0x00000003, 0x00000001, 0x00000002, 0xefef0000, 0x00000000, 0x00000000, 0x00000000, 0xababcdd2
+# t0-t7: 0x2babcdd1, 0x2babcdd1, 0x00690000, 0x00000000, 0x0000abab, 0x000a0000, 0x80000002, 0x80000004
+# t8-t9: 0x7fffffff, 0x00000001
+# v0 (ret val) : 0xababcdd3
+# ra (ret addr): 0x000030b0
+# -----------------------------------------------------
+# 
+# ------ MIPS CPU Test End ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v(69)
+#    Time: 2020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v line 69

@@ -1,0 +1,2 @@
+if a>b then a=b else a=b-1+c;
+while x<10 do { x=x+1; y=y*x; };

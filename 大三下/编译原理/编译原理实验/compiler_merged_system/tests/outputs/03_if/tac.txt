@@ -1,0 +1,5 @@
+if a > b goto L0
+goto L1
+L0:
+x := 1
+L1:

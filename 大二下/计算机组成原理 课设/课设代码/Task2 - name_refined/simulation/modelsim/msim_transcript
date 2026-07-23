@@ -1,0 +1,250 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do top_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ir.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir
+# 
+# Top level modules:
+# 	ir
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regb
+# 
+# Top level modules:
+# 	regb
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regaluout.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regaluout
+# 
+# Top level modules:
+# 	regaluout
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/rega.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rega
+# 
+# Top level modules:
+# 	rega
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/npc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module npc
+# 
+# Top level modules:
+# 	npc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/gpr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gpr
+# 
+# Top level modules:
+# 	gpr
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm
+# 
+# Top level modules:
+# 	dm
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/defines.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/im.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im
+# 
+# Top level modules:
+# 	im
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/defines.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm
+# 
+# Top level modules:
+# 	dm
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/gpr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gpr
+# 
+# Top level modules:
+# 	gpr
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/im.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im
+# 
+# Top level modules:
+# 	im
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/npc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module npc
+# 
+# Top level modules:
+# 	npc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_mips_tb
+# 
+# Top level modules:
+# 	test_mips_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  test_mips_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_mips_tb 
+# Loading work.test_mips_tb
+# Loading work.mips
+# Loading work.controller
+# Loading work.pc
+# Loading work.im
+# Loading work.ir
+# Loading work.gpr
+# Loading work.ext
+# Loading work.npc
+# Loading work.rega
+# Loading work.regb
+# Loading work.alu
+# Loading work.regaluout
+# Loading work.dm
+# ** Warning: (vsim-3017) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /test_mips_tb/my_mips/ALU
+# ** Warning: (vsim-3722) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Missing connection for port 'overflow'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# Reset released. Processor running...
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v(33)
+#    Time: 20020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+# Simulation Breakpoint: 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+# MACRO ./top_run_msim_rtl_verilog.do PAUSED at line 41
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/PC/PC
+add wave -position insertpoint sim:/test_mips_tb/my_mips/GPR/*
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/RegWrite
+restart -f
+# ** Warning: (vsim-3017) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /test_mips_tb/my_mips/ALU
+# ** Warning: (vsim-3722) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Missing connection for port 'overflow'.
+# 
+run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# Reset released. Processor running...
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v(33)
+#    Time: 20020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/registers
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/PC/PC
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/addi_overflow
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/RegWrite
+restart -f
+# ** Warning: (vsim-3017) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /test_mips_tb/my_mips/ALU
+# ** Warning: (vsim-3722) C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v(71): [TFMPC] - Missing connection for port 'overflow'.
+# 
+run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# Reset released. Processor running...
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v(33)
+#    Time: 20020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/rw
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/registers
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/wd
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/RegWrite

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task1\scanner\simulation\qsim
+vscanner
+Z1 IJe]4D>L:SdFSdMeLjBW`S1
+Z2 Vm8zJzOizBP_5VMCoRPB?a2
+Z3 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task1\scanner\simulation\qsim
+Z4 w1731936642
+Z5 8scanner.vo
+Z6 Fscanner.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 4G?E]N^m2T[87Z7=UHlMz1
+!s85 0
+Z10 !s108 1731936642.887000
+Z11 !s107 scanner.vo|
+Z12 !s90 -work|work|scanner.vo|
+!s101 -O0
+vscanner_vlg_check_tst
+!i10b 1
+!s100 2mVC29NTWLKPEB==0@S@B2
+I0fFmNCQnJ1GMYbmJlRHOP2
+VL2A[3WaKKRD3z=gRde3KK2
+R3
+Z13 w1731936641
+Z14 8scanner.vt
+Z15 Fscanner.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1731936642.964000
+Z17 !s107 scanner.vt|
+Z18 !s90 -work|work|scanner.vt|
+!s101 -O0
+R8
+vscanner_vlg_sample_tst
+!i10b 1
+!s100 dRlP8ILV[3fXW9g3@@hzg2
+IhOCCJj6MiHlA2?ZFB;b8X2
+VT0h^m:2aQ2Kk13VA<45fl0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vscanner_vlg_vec_tst
+!i10b 1
+!s100 1KPfUBfn`4E4ikYDA?4E23
+IC9S6_?PM42oPnM`K7a0Dd3
+VRNkKY8?bN8FjlTg;=7=`W0
+R3
+R13
+R14
+R15
+L0 339
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

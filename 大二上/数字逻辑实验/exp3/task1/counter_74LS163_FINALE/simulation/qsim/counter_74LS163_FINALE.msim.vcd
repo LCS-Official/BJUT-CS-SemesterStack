@@ -1,0 +1,688 @@
+$comment
+	File created using the following command:
+		vcd file counter_74LS163_FINALE.msim.vcd -direction
+$end
+$date
+	Tue Nov 12 13:38:34 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module counter_74LS163_FINALE_vlg_vec_tst $end
+$var reg 4 ! Q_in [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # clrn $end
+$var reg 1 $ enp $end
+$var reg 1 % ent $end
+$var reg 1 & ldn $end
+$var reg 1 ' n_en $end
+$var wire 1 ( LED_out [6] $end
+$var wire 1 ) LED_out [5] $end
+$var wire 1 * LED_out [4] $end
+$var wire 1 + LED_out [3] $end
+$var wire 1 , LED_out [2] $end
+$var wire 1 - LED_out [1] $end
+$var wire 1 . LED_out [0] $end
+$var wire 1 / rco $end
+$var wire 1 0 sel $end
+$var wire 1 1 sampler $end
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var tri1 1 5 devclrn $end
+$var tri1 1 6 devpor $end
+$var tri1 1 7 devoe $end
+$var wire 1 8 Q_in[3]~input_o $end
+$var wire 1 9 clk~input_o $end
+$var wire 1 : enp~input_o $end
+$var wire 1 ; Q_in[2]~input_o $end
+$var wire 1 < Q_in[0]~input_o $end
+$var wire 1 = Q_in[1]~input_o $end
+$var wire 1 > clk~inputclkctrl_outclk $end
+$var wire 1 ? rco~output_o $end
+$var wire 1 @ LED_out[0]~output_o $end
+$var wire 1 A LED_out[1]~output_o $end
+$var wire 1 B LED_out[2]~output_o $end
+$var wire 1 C LED_out[3]~output_o $end
+$var wire 1 D LED_out[4]~output_o $end
+$var wire 1 E LED_out[5]~output_o $end
+$var wire 1 F LED_out[6]~output_o $end
+$var wire 1 G sel~output_o $end
+$var wire 1 H clrn~input_o $end
+$var wire 1 I ldn~input_o $end
+$var wire 1 J counter_74LS163_ind|Q_out~3_combout $end
+$var wire 1 K ent~input_o $end
+$var wire 1 L counter_74LS163_ind|Q_out[0]~1_combout $end
+$var wire 1 M counter_74LS163_ind|Q_out~4_combout $end
+$var wire 1 N counter_74LS163_ind|Q_out~5_combout $end
+$var wire 1 O counter_74LS163_ind|Add0~1_combout $end
+$var wire 1 P counter_74LS163_ind|Q_out~2_combout $end
+$var wire 1 Q counter_74LS163_ind|Add0~0_combout $end
+$var wire 1 R counter_74LS163_ind|Q_out~0_combout $end
+$var wire 1 S counter_74LS163_ind|rco~0_combout $end
+$var wire 1 T counter_74LS163_ind|rco~combout $end
+$var wire 1 U n_en~input_o $end
+$var wire 1 V BCD_7seg_ind|WideOr6~0_combout $end
+$var wire 1 W BCD_7seg_ind|LED_out[0]~0_combout $end
+$var wire 1 X BCD_7seg_ind|WideOr5~0_combout $end
+$var wire 1 Y BCD_7seg_ind|LED_out[1]~1_combout $end
+$var wire 1 Z BCD_7seg_ind|WideOr4~0_combout $end
+$var wire 1 [ BCD_7seg_ind|LED_out[2]~2_combout $end
+$var wire 1 \ BCD_7seg_ind|WideOr3~0_combout $end
+$var wire 1 ] BCD_7seg_ind|LED_out[3]~3_combout $end
+$var wire 1 ^ BCD_7seg_ind|WideOr2~0_combout $end
+$var wire 1 _ BCD_7seg_ind|LED_out[4]~4_combout $end
+$var wire 1 ` BCD_7seg_ind|WideOr1~0_combout $end
+$var wire 1 a BCD_7seg_ind|LED_out[5]~5_combout $end
+$var wire 1 b BCD_7seg_ind|WideOr0~0_combout $end
+$var wire 1 c BCD_7seg_ind|LED_out[6]~6_combout $end
+$var wire 1 d counter_74LS163_ind|Q_out [3] $end
+$var wire 1 e counter_74LS163_ind|Q_out [2] $end
+$var wire 1 f counter_74LS163_ind|Q_out [1] $end
+$var wire 1 g counter_74LS163_ind|Q_out [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 !
+0"
+1#
+0$
+0%
+0&
+0'
+0.
+1-
+1,
+1+
+1*
+1)
+1(
+0/
+00
+x1
+02
+13
+x4
+15
+16
+17
+08
+09
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+1A
+1B
+1C
+1D
+1E
+1F
+0G
+1H
+0I
+1J
+0K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0g
+0f
+0e
+0d
+$end
+#50000
+1"
+19
+1>
+01
+1g
+1b
+1\
+1Z
+1X
+1c
+1]
+1[
+1Y
+0F
+0C
+0B
+0A
+0(
+0+
+0,
+0-
+#100000
+1&
+1$
+1%
+0"
+1I
+1:
+1K
+09
+0>
+11
+1M
+0J
+1N
+#150000
+1"
+19
+1>
+01
+1f
+0g
+0b
+1^
+0\
+0Z
+1V
+1J
+0c
+1_
+0]
+0[
+1W
+1F
+0D
+1C
+1B
+1@
+1(
+0*
+1+
+1,
+1.
+#200000
+0"
+09
+0>
+11
+#250000
+1"
+19
+1>
+01
+1g
+0^
+1Z
+1O
+0M
+0J
+0_
+1[
+1P
+0N
+1D
+0B
+1*
+0,
+#300000
+0"
+09
+0>
+11
+#350000
+1"
+19
+1>
+01
+1e
+0f
+0g
+1b
+1\
+0X
+1J
+1c
+1]
+0Y
+0F
+0C
+1A
+0(
+0+
+1-
+#400000
+0"
+09
+0>
+11
+#450000
+1"
+19
+1>
+01
+1g
+0b
+1`
+0\
+1M
+0J
+0c
+1a
+0]
+1N
+1F
+0E
+1C
+1(
+0)
+1+
+#500000
+0"
+09
+0>
+11
+#550000
+1"
+19
+1>
+01
+1f
+0g
+0Z
+1J
+0[
+1B
+1,
+#600000
+0"
+09
+0>
+11
+#650000
+1"
+19
+1>
+01
+1g
+0`
+1\
+1Z
+1X
+0V
+1S
+1Q
+0O
+0M
+0J
+0a
+1]
+1[
+1Y
+1R
+0P
+0N
+0W
+1E
+0C
+0B
+0A
+0@
+1)
+0+
+0,
+0-
+0.
+#700000
+0"
+09
+0>
+11
+#750000
+1"
+19
+1>
+01
+1d
+0e
+0f
+0g
+0\
+0Z
+0X
+1V
+0S
+1J
+1T
+0]
+0[
+0Y
+1?
+1/
+1W
+0T
+1C
+1B
+1A
+1@
+0?
+1+
+1,
+1-
+1.
+0/
+#800000
+0"
+09
+0>
+11
+#850000
+1"
+19
+1>
+01
+1g
+1Z
+1M
+0J
+1[
+1N
+0B
+0,
+#900000
+0"
+09
+0>
+11
+#950000
+1"
+19
+1>
+01
+1f
+0g
+1\
+0Z
+1J
+1]
+0[
+0C
+1B
+0+
+1,
+#1000000
+0"
+09
+0>
+11
+#1050000
+1"
+19
+1>
+01
+1g
+1b
+1`
+0\
+1O
+0M
+0J
+1c
+1a
+0]
+1P
+0N
+0F
+0E
+1C
+0(
+0)
+1+
+#1100000
+0"
+09
+0>
+11
+#1150000
+1"
+19
+1>
+01
+1e
+0f
+0g
+1^
+1X
+1J
+1_
+1Y
+0D
+0A
+0*
+0-
+#1200000
+0"
+09
+0>
+11
+#1250000
+1"
+19
+1>
+01
+1g
+0`
+0^
+1M
+0J
+0a
+0_
+1N
+1E
+1D
+1)
+1*
+#1300000
+0"
+09
+0>
+11
+#1350000
+1"
+19
+1>
+01
+1f
+0g
+0b
+1`
+1^
+0X
+1J
+0c
+1a
+1_
+0Y
+1F
+0E
+0D
+1A
+1(
+0)
+0*
+1-
+#1400000
+0"
+09
+0>
+11
+#1450000
+1"
+19
+1>
+01
+1g
+1\
+1S
+0Q
+0O
+0M
+0J
+1]
+0R
+0P
+0N
+1T
+0C
+1?
+0+
+1/
+#1500000
+0"
+09
+0>
+11
+#1550000
+1"
+19
+1>
+01
+0d
+0e
+0f
+0g
+0`
+0^
+0\
+0V
+0S
+1J
+0T
+0a
+0_
+0]
+0?
+0/
+0W
+1E
+1D
+1C
+0@
+1)
+1*
+1+
+0.
+#1600000
+0#
+0&
+0$
+0%
+0"
+0H
+0I
+0:
+0K
+09
+0>
+11
+0J
+#1650000
+1"
+19
+1>
+01
+#1700000
+1'
+0"
+1U
+09
+0>
+11
+1c
+1a
+1_
+1]
+1[
+1Y
+0F
+0E
+0D
+0C
+0B
+0A
+0(
+0)
+0*
+0+
+0,
+0-
+#1750000
+1"
+19
+1>
+01
+#1800000
+0'
+0"
+0U
+09
+0>
+11
+0c
+0a
+0_
+0]
+0[
+0Y
+1F
+1E
+1D
+1C
+1B
+1A
+1(
+1)
+1*
+1+
+1,
+1-
+#1850000
+1"
+19
+1>
+01
+#1900000
+0"
+09
+0>
+11
+#1950000
+1"
+19
+1>
+01
+#2000000

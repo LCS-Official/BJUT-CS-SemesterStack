@@ -1,0 +1,91 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="B81tuSViIczoaCqsWdmm">
+    <mxGraphModel dx="946" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-1" parent="1" style="ellipse;fillColor=strokeColor;fontSize=18;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="155.5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="待审批" vertex="1">
+          <mxGeometry height="73" width="75" x="125" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="已通过" vertex="1">
+          <mxGeometry height="69" width="79" x="374" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="已取消" vertex="1">
+          <mxGeometry height="80" width="91" x="109" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="使用中" vertex="1">
+          <mxGeometry height="70" width="79" x="374" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="疑似违约" vertex="1">
+          <mxGeometry height="70" width="79" x="561" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="已完成" vertex="1">
+          <mxGeometry height="70" width="79" x="374" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-8" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="违约已处理" vertex="1">
+          <mxGeometry height="70" width="97" x="553" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-9" parent="1" style="ellipse;shape=endState;fillColor=strokeColor;fontSize=18;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="500" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-10" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-1" style="curved=1;startArrow=none;;exitX=0.48;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-2" value="学生提交预约">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-11" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-2" style="startArrow=none;;exitX=1;exitY=0.5;entryX=0.5;entryY=0.01;rounded=0;fontSize=18;fontStyle=1;exitDx=0;exitDy=0;" target="9GgDQB5vgMIMnv_yzBva-3" value="管理员审核[同意]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-12" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-2" style="startArrow=none;;exitX=0.5;exitY=1;entryX=0.01;entryY=0.07;rounded=0;fontSize=18;fontStyle=1;exitDx=0;exitDy=0;" target="9GgDQB5vgMIMnv_yzBva-4" value="管理员审核[驳回]  / &#xa;学生自行取消">
+          <mxGeometry relative="1" x="-0.3335" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-13" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-3" style="startArrow=none;;exitX=0;exitY=0.7;entryX=0.51;entryY=0;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-4" value="学生提前取消&#xa;(无责或扣小分)">
+          <mxGeometry relative="1" x="0.1332" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-14" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-3" style="curved=1;startArrow=none;;exitX=0.5;exitY=1.01;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-5" value="在规定时间内&#xa;[现场签到]">
+          <mxGeometry relative="1" x="-0.1268" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-15" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-3" style="startArrow=none;;exitX=1;exitY=0.79;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-6" value="系统检测&#xa;[超时未签到]">
+          <mxGeometry relative="1" x="0.1365" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-16" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-5" style="curved=1;startArrow=none;;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-7" value="学生点击[签退]">
+          <mxGeometry relative="1" x="0.5094" y="7" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-17" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-6" style="curved=1;startArrow=none;;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-8" value="管理员判定违规&#xa;[扣除信用分]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-18" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-6" style="startArrow=none;;exitX=0;exitY=0.68;entryX=1;entryY=0.25;rounded=0;fontSize=18;fontStyle=1;entryDx=0;entryDy=0;" target="9GgDQB5vgMIMnv_yzBva-4" value="管理员判定&#xa;[非违规免责]">
+          <mxGeometry relative="1" x="0.3842" y="-9" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-19" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-4" style="startArrow=none;;exitX=0.51;exitY=1;entryX=-0.01;entryY=0.47;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-20" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-7" style="startArrow=none;;exitX=0.5;exitY=1;entryX=-0.01;entryY=0.34;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-21" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-8" style="startArrow=none;;exitX=0.5;exitY=1;entryX=0.99;entryY=0.34;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

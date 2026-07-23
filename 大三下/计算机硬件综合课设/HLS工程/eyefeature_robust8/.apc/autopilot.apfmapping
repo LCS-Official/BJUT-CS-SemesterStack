@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="eye_feature.cpp" path="C:\Users\LC\Desktop\HardWare_CD\eyefeature_robust8\code\eye_feature.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_eye_feature.cpp" path="C:\Users\LC\Desktop\HardWare_CD\eyefeature_robust8\code\tb_eye_feature.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

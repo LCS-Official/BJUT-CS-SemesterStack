@@ -1,0 +1,50 @@
+Start: P
+P -> S ; P' | ε
+S -> while C do S
+C -> E relop E
+E -> T E'
+T -> F T'
+F -> ( E )
+E -> T E'
+T -> F T'
+F -> id
+E' -> + T E'
+T -> F T'
+F -> int10
+E -> T E'
+T -> F T'
+F -> int16
+S -> if C then S [else S]
+C -> E relop E
+E -> T E'
+T -> F T'
+F -> id
+E -> T E'
+T -> F T'
+F -> int8
+S -> while C do S
+C -> E relop E
+E -> T E'
+T -> F T'
+F -> id
+E -> T E'
+T -> F T'
+F -> id
+S -> id = E
+E -> T E'
+T -> F T'
+F -> id
+T' -> * F T'
+F -> id
+T' -> / F T'
+F -> id
+S -> id = E
+E -> T E'
+T -> F T'
+F -> id
+T' -> * F T'
+F -> id
+E' -> + T E'
+T -> F T'
+F -> id
+Result: ACCEPT

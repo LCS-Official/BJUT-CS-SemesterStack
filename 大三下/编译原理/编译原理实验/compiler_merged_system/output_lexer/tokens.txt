@@ -1,0 +1,8 @@
+INT10 0
+INT10 92
++ _
+IDN data
+> _
+INT16 63
+INT8 0
+WHILE _

@@ -1,0 +1,29 @@
+L0:
+t1 := a3 + 15
+if t1 > 10 goto L1
+goto L2
+L1:
+if x2 = 7 goto L3
+goto L4
+L3:
+L5:
+if y < z goto L6
+goto L7
+L6:
+t2 := x * y
+t3 := t2 / z
+y := t3
+goto L5
+L7:
+L4:
+goto L0
+L2:
+t4 := b * c
+t5 := t4 + d
+c := t5
+t6 := a * 136.5
+t7 := 6.2 + t6
+a := t7
+t8 := c / 0
+my_var := t8
+octv := 7.5

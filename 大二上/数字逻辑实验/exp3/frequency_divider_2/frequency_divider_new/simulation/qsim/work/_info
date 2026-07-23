@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp3\frequency_divider_2\frequency_divider_new\simulation\qsim
+vfrequency_divider_new
+Z1 I`oN_lSQZK9UN=YkU=1`F=1
+Z2 VRbRdkkUP8`7CjI8CH7CJ^0
+Z3 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp3\frequency_divider_2\frequency_divider_new\simulation\qsim
+Z4 w1731332255
+Z5 8frequency_divider_new.vo
+Z6 Ffrequency_divider_new.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 8L6g3ZYYOTkg<MSaW?<[<0
+!s85 0
+Z10 !s108 1731332257.217000
+Z11 !s107 frequency_divider_new.vo|
+Z12 !s90 -work|work|frequency_divider_new.vo|
+!s101 -O0
+vfrequency_divider_new_vlg_check_tst
+!i10b 1
+!s100 3j[Df8F>[id]mCT5a<V[U3
+I@:SF9cS5=BOJ_VogNf[Pe2
+V0YTZEQ47j7m15HK399kRZ0
+R3
+Z13 w1731332254
+Z14 8frequency_divider_new.vt
+Z15 Ffrequency_divider_new.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z16 !s108 1731332257.316000
+Z17 !s107 frequency_divider_new.vt|
+Z18 !s90 -work|work|frequency_divider_new.vt|
+!s101 -O0
+R8
+vfrequency_divider_new_vlg_sample_tst
+!i10b 1
+!s100 lZFC_JKP64nYY4Jm;hInA1
+IHd8;Be8iSbo9fQJKh^fJF2
+Vo1fSL]H18C<4zjfBeCS;^0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vfrequency_divider_new_vlg_vec_tst
+!i10b 1
+!s100 Gm:IXOJ9075>]B3MPMU8^1
+Ij`I5I0MW7jQi0HT]3OUCF0
+VP0E?af?hK`S:LbW?EDTgS2
+R3
+R13
+R14
+R15
+L0 361
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

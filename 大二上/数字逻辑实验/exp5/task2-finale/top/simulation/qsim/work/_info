@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S5\Task2\TOP_keyboard_recognition\simulation\qsim
+vkeyboard_recognition_top
+Z1 IjH3cXd=TPlID_n2OA8m9O1
+Z2 VdCG1OhjhU@1n<Hh;Y@b402
+Z3 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task2-finale\top\simulation\qsim
+Z4 w1732005737
+Z5 8keyboard_recognition_top.vo
+Z6 Fkeyboard_recognition_top.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|keyboard_recognition_top.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 IAh9f7AI5KBA`JF9dnA^90
+!s85 0
+Z11 !s108 1732005738.590000
+Z12 !s107 keyboard_recognition_top.vo|
+!s101 -O0
+vkeyboard_recognition_top_vlg_check_tst
+!i10b 1
+Z13 !s100 Jb`2oia@DI<_e?7g]7I]G0
+Z14 InQHi>W?HDh>R8jK_fcY@`2
+Z15 Vcf5z3J1ffS<JH=o^TmI^T0
+R3
+R4
+Z16 8keyboard_recognition_top.vt
+Z17 Fkeyboard_recognition_top.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z18 !s108 1732005738.721000
+Z19 !s107 keyboard_recognition_top.vt|
+Z20 !s90 -work|work|keyboard_recognition_top.vt|
+!s101 -O0
+R9
+vkeyboard_recognition_top_vlg_sample_tst
+!i10b 1
+Z21 !s100 D4>ZGSze`elMLM@=`0B>21
+Z22 Im[VF8ohX5Q;Df6focO0^D0
+Z23 V7YWJ@O27G>H7:Egl57F;j1
+R3
+R4
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+vkeyboard_recognition_top_vlg_vec_tst
+!i10b 1
+Z24 !s100 9UFT4L5@Z@6@19k^>OP<73
+Z25 IAm16LRTU:S[95zAVL`YQo3
+Z26 VL;9XghEJ_7CSUiMV133Gn1
+R3
+R4
+R16
+R17
+Z27 L0 401
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9

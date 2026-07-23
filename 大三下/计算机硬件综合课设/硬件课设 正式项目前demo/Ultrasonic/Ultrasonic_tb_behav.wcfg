@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Ultrasonic_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Ultrasonic_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,000,999,993 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,001,000,005 ps"></ZoomEndTime>
+      <Cursor1Time time="1,001,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="228"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/Ultrasonic_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/echo" type="logic">
+      <obj_property name="ElementShortName">echo</obj_property>
+      <obj_property name="ObjectShortName">echo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/trig" type="logic">
+      <obj_property name="ElementShortName">trig</obj_property>
+      <obj_property name="ObjectShortName">trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/distance" type="array">
+      <obj_property name="ElementShortName">distance[21:0]</obj_property>
+      <obj_property name="ObjectShortName">distance[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/dist_valid" type="logic">
+      <obj_property name="ElementShortName">dist_valid</obj_property>
+      <obj_property name="ObjectShortName">dist_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/error" type="logic">
+      <obj_property name="ElementShortName">error</obj_property>
+      <obj_property name="ObjectShortName">error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Ultrasonic_tb/Ultrasonic_inst/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+</wave_config>

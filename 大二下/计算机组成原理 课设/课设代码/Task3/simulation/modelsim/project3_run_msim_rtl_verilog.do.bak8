@@ -1,0 +1,38 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/mux_1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/mux_2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/mux_3.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/mux_4.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/controller.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/outputDEV.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/mips.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/PC.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/NPC.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/ALU.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/ALUOUT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/AR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/BR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/EXT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/IR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/GPR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/DR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/DM.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/CP0.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/Bridge.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/Timer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/IM.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/simulation/modelsim {C:/Users/LC/Desktop/LCState_pjks/Project3_FINAL/simulation/modelsim/mips.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  mips_tb
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="EIMpEDAjih0dts3YM57e">
+    <mxGraphModel dx="946" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TIG19J-jBlk85zteXhts-15" value="do_timer_interrupt" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="64.5" y="343" width="171" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-16" value="硬件应答 (ACK)&#xa;通知中断控制器已收到信号" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="24" y="422" width="252" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-17" value="调用 do_timer&#xa;核心调用" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="20" y="516" width="260" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-18" value="性能分析 (Profiling)&#xa;记录 CPU 刚才在哪行代码运行" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="10" y="617" width="280" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-19" value="是否需要同步 RTC?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="44" y="730" width="212" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-20" value="回写 CMOS 硬件&#xa;(set_rtc_mmss)" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="129" y="896" width="173" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-21" value="结束" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="122" y="996" width="57" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-15" target="TIG19J-jBlk85zteXhts-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-16" target="TIG19J-jBlk85zteXhts-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-17" target="TIG19J-jBlk85zteXhts-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-25" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-18" target="TIG19J-jBlk85zteXhts-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-26" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-19" target="TIG19J-jBlk85zteXhts-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="216" y="859" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-27" value="否" style="curved=1;startArrow=none;endArrow=block;exitX=0.27;exitY=1;entryX=-0.01;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-19" target="TIG19J-jBlk85zteXhts-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TIG19J-jBlk85zteXhts-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.99;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="TIG19J-jBlk85zteXhts-20" target="TIG19J-jBlk85zteXhts-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

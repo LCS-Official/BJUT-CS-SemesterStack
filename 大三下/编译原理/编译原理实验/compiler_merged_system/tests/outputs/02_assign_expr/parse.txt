@@ -1,0 +1,12 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 1 条语句；后续 P' => ε
+S -> id = E                | S => a = b * c + d
+E -> T E'                  | E => b * c + d; place = t2
+T -> F T'                  | T => b * c; place = t1
+F -> id                    | F => b
+T' -> * F T'               | T => b * c; place = t1
+F -> id                    | F => c
+E' -> + T E'               | E => b * c + d; place = t2
+T -> F T'                  | T => d; place = d
+F -> id                    | F => d
+Result: ACCEPT

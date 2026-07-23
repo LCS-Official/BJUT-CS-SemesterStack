@@ -1,0 +1,9 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 1 条语句；后续 P' => ε
+S -> id = E                | S => c = c / 0
+E -> T E'                  | E => c / 0; place = t1
+T -> F T'                  | T => c / 0; place = t1
+F -> id                    | F => c
+T' -> / F T'               | T => c / 0; place = t1
+F -> int8                  | F => 0，源程序写作 00
+Result: REJECT WITH ERRORS

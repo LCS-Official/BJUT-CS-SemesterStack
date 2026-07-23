@@ -1,0 +1,14 @@
+              precision    recall  f1-score   support
+
+  non_closed     0.8947    0.9139    0.9042      2009
+      closed     0.4660    0.4114    0.4370       367
+
+    accuracy                         0.8363      2376
+   macro avg     0.6804    0.6627    0.6706      2376
+weighted avg     0.8285    0.8363    0.8321      2376
+
+confusion_matrix(labels=non_closed,closed):
+[[1836  173]
+ [ 216  151]]
+false_closed_rate(non_closed->closed)=0.086112
+missed_closed_rate(closed->non_closed)=0.588556

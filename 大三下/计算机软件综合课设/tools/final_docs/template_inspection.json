@@ -1,0 +1,2422 @@
+[
+  {
+    "path": "tools\\final_docs\\07_测试计划_模板参考.docx",
+    "sections": 1,
+    "paragraph_count": 86,
+    "table_count": 0,
+    "inline_shape_count": 0,
+    "image_part_count": 0,
+    "styles": [
+      [
+        "Normal",
+        23
+      ],
+      [
+        "toc 2",
+        19
+      ],
+      [
+        "Heading 2",
+        19
+      ],
+      [
+        "toc 1",
+        5
+      ],
+      [
+        "Heading 1",
+        5
+      ],
+      [
+        "Heading 3",
+        4
+      ]
+    ],
+    "fonts_weighted_chars": [
+      [
+        "('宋体', None, False, None)",
+        508
+      ],
+      [
+        "(None, None, False, None)",
+        46
+      ],
+      [
+        "('宋体', 12.0, False, None)",
+        33
+      ],
+      [
+        "('宋体', 26.0, False, None)",
+        6
+      ]
+    ],
+    "highlights": [],
+    "xml_marks": [],
+    "paragraphs": [
+      {
+        "index": 0,
+        "style": "Normal",
+        "text": "七、测试计划",
+        "runs": [
+          {
+            "text": "七、测试计划",
+            "font": "宋体",
+            "size_pt": 26.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "style": "toc 1",
+        "text": "1．引言\t1",
+        "runs": []
+      },
+      {
+        "index": 3,
+        "style": "toc 2",
+        "text": "1.1编写目的\t1",
+        "runs": []
+      },
+      {
+        "index": 4,
+        "style": "toc 2",
+        "text": "1.2项目背景\t2",
+        "runs": []
+      },
+      {
+        "index": 5,
+        "style": "toc 2",
+        "text": "1.3定义\t2",
+        "runs": []
+      },
+      {
+        "index": 6,
+        "style": "toc 2",
+        "text": "1.4参考资料\t2",
+        "runs": []
+      },
+      {
+        "index": 7,
+        "style": "toc 1",
+        "text": "2．任务概述\t2",
+        "runs": []
+      },
+      {
+        "index": 8,
+        "style": "toc 2",
+        "text": "2.1目标\t2",
+        "runs": []
+      },
+      {
+        "index": 9,
+        "style": "toc 2",
+        "text": "2.2运行环境\t2",
+        "runs": []
+      },
+      {
+        "index": 10,
+        "style": "toc 2",
+        "text": "2.3需求概述\t2",
+        "runs": []
+      },
+      {
+        "index": 11,
+        "style": "toc 2",
+        "text": "2.4条件与限制\t2",
+        "runs": []
+      },
+      {
+        "index": 12,
+        "style": "toc 1",
+        "text": "3．计划\t3",
+        "runs": []
+      },
+      {
+        "index": 13,
+        "style": "toc 2",
+        "text": "3.1测试方案\t3",
+        "runs": []
+      },
+      {
+        "index": 14,
+        "style": "toc 2",
+        "text": "3.2测试项目\t3",
+        "runs": []
+      },
+      {
+        "index": 15,
+        "style": "toc 2",
+        "text": "3.3测试准备\t3",
+        "runs": []
+      },
+      {
+        "index": 16,
+        "style": "toc 2",
+        "text": "3.4测试机构及人员\t3",
+        "runs": []
+      },
+      {
+        "index": 17,
+        "style": "toc 1",
+        "text": "4．测试项目说明\t3",
+        "runs": []
+      },
+      {
+        "index": 18,
+        "style": "toc 2",
+        "text": "4.1测试项目名称及测试内容\t3",
+        "runs": []
+      },
+      {
+        "index": 19,
+        "style": "toc 2",
+        "text": "4.2测试用例\t3",
+        "runs": []
+      },
+      {
+        "index": 20,
+        "style": "toc 2",
+        "text": "4.3进度\t3",
+        "runs": []
+      },
+      {
+        "index": 21,
+        "style": "toc 2",
+        "text": "4.4条件\t3",
+        "runs": []
+      },
+      {
+        "index": 22,
+        "style": "toc 2",
+        "text": "4.5测试资料\t3",
+        "runs": []
+      },
+      {
+        "index": 23,
+        "style": "toc 1",
+        "text": "5．评价\t3",
+        "runs": []
+      },
+      {
+        "index": 24,
+        "style": "toc 2",
+        "text": "5.1范围\t3",
+        "runs": []
+      },
+      {
+        "index": 25,
+        "style": "toc 2",
+        "text": "5.2准则\t3",
+        "runs": []
+      },
+      {
+        "index": 28,
+        "style": "Heading 1",
+        "text": "1．引言",
+        "runs": [
+          {
+            "text": "1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．引言",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 29,
+        "style": "Heading 2",
+        "text": "1.1编写目的",
+        "runs": [
+          {
+            "text": "1.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "编写目的",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 30,
+        "style": "Normal",
+        "text": "【阐明编写测试计划的目的，指明读者对象。】",
+        "runs": [
+          {
+            "text": "【阐明编写测试计划的目的，指明读者对象。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 32,
+        "style": "Heading 2",
+        "text": "1.2项目背景",
+        "runs": [
+          {
+            "text": "1.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "项目背景",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 33,
+        "style": "Normal",
+        "text": "【说明项目的来源、委托单位及主管部门。】",
+        "runs": [
+          {
+            "text": "【说明项目的来源、委托单位及主管部门。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 34,
+        "style": "Heading 2",
+        "text": "1.3定义",
+        "runs": [
+          {
+            "text": "1.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "定义",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 35,
+        "style": "Normal",
+        "text": "【列出测试计划中所用到的专门术语的定义和缩写词的原意。】",
+        "runs": [
+          {
+            "text": "【列出测试计划中所用到的专门术语的定义和缩写词的原意。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 36,
+        "style": "Heading 2",
+        "text": "1.4参考资料",
+        "runs": [
+          {
+            "text": "1.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "参考资料",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 37,
+        "style": "Normal",
+        "text": "【列出有关资料的作者、标题、编号、发表日期、出版单位或资料来源，可包括：",
+        "runs": [
+          {
+            "text": "【列出有关资料的作者、标题、编号、发表日期、出版单位或资料来源，可包括：",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " ",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 38,
+        "style": "Normal",
+        "text": "项目的计划任务书、合同或批文；",
+        "runs": [
+          {
+            "text": "项目的计划任务书、合同或批文；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 39,
+        "style": "Normal",
+        "text": "项目开发计划；",
+        "runs": [
+          {
+            "text": "项目开发计划；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 40,
+        "style": "Normal",
+        "text": "需求规格说明书；",
+        "runs": [
+          {
+            "text": "需求规格说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 41,
+        "style": "Normal",
+        "text": "概要设计说明书；",
+        "runs": [
+          {
+            "text": "概要设计说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 42,
+        "style": "Normal",
+        "text": "详细设计说明书；",
+        "runs": [
+          {
+            "text": "详细设计说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 43,
+        "style": "Normal",
+        "text": "用户操作手册；",
+        "runs": [
+          {
+            "text": "用户操作手册；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 44,
+        "style": "Normal",
+        "text": "本测试计划中引用的其他资料、采用的软件开发标准或规范。】",
+        "runs": [
+          {
+            "text": "本测试计划中引用的其他资料、采用的软件开发标准或规范。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 45,
+        "style": "Heading 1",
+        "text": "2．任务概述",
+        "runs": [
+          {
+            "text": "2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．任务概述",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 46,
+        "style": "Heading 2",
+        "text": "2.1目标",
+        "runs": [
+          {
+            "text": "2.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "目标",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 47,
+        "style": "Heading 2",
+        "text": "2.2运行环境",
+        "runs": [
+          {
+            "text": "2.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "运行环境",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 48,
+        "style": "Heading 2",
+        "text": "2.3需求概述",
+        "runs": [
+          {
+            "text": "2.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "需求概述",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 49,
+        "style": "Heading 2",
+        "text": "2.4条件与限制",
+        "runs": [
+          {
+            "text": "2.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件与限制",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 52,
+        "style": "Heading 1",
+        "text": "3．计划",
+        "runs": [
+          {
+            "text": "3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．计划",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 53,
+        "style": "Heading 2",
+        "text": "3.1测试方案",
+        "runs": [
+          {
+            "text": "3.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试方案",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 54,
+        "style": "Normal",
+        "text": "【说明确定测试方法和选取测试用例的原则。】",
+        "runs": [
+          {
+            "text": "【说明确定测试方法和选取测试用例的原则。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 55,
+        "style": "Heading 2",
+        "text": "3.2测试项目",
+        "runs": [
+          {
+            "text": "3.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 56,
+        "style": "Normal",
+        "text": "【列出组装测试和确认测试中每一项测试的内容、名称、目的和进度。】",
+        "runs": [
+          {
+            "text": "【列出组装测试和确认测试中每一项测试的内容、名称、目的和进度。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 57,
+        "style": "Heading 2",
+        "text": "3.3测试准备",
+        "runs": [
+          {
+            "text": "3.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试准备",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 59,
+        "style": "Heading 2",
+        "text": "3.4测试机构及人员",
+        "runs": [
+          {
+            "text": "3.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试机构及人员",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 60,
+        "style": "Normal",
+        "text": "【测试机构名称、负责人和职责。】",
+        "runs": [
+          {
+            "text": "【测试机构名称、负责人和职责。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 61,
+        "style": "Heading 1",
+        "text": "4．测试项目说明",
+        "runs": [
+          {
+            "text": "4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．测试项目说明",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 62,
+        "style": "Normal",
+        "text": "【按顺序逐个对测试项目做出说明：】",
+        "runs": [
+          {
+            "text": "【按顺序逐个对测试项目做出说明：】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 63,
+        "style": "Heading 2",
+        "text": "4.1测试项目名称及测试内容",
+        "runs": [
+          {
+            "text": "4.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目名称及测试内容",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 64,
+        "style": "Heading 2",
+        "text": "4.2测试用例",
+        "runs": [
+          {
+            "text": "4.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试用例",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 65,
+        "style": "Heading 3",
+        "text": "4.2.1输入",
+        "runs": [
+          {
+            "text": "4.2.1",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输入",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 66,
+        "style": "Normal",
+        "text": "【输入的数据和输入命令。】",
+        "runs": [
+          {
+            "text": "【输入的数据和输入命令。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 67,
+        "style": "Heading 3",
+        "text": "4.2.2输出",
+        "runs": [
+          {
+            "text": "4.2.2",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输出",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 68,
+        "style": "Normal",
+        "text": "【预期的输出数据。】",
+        "runs": [
+          {
+            "text": "【预期的输出数据。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 69,
+        "style": "Heading 3",
+        "text": "4.2.3步骤及操作",
+        "runs": [
+          {
+            "text": "4.2.3",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "步骤及操作",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 70,
+        "style": "Heading 3",
+        "text": "4.2.4允许偏差",
+        "runs": [
+          {
+            "text": "4.2.4",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "允许偏差",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 71,
+        "style": "Normal",
+        "text": "【给出实测结果与预期结果之间允许偏差的范围。】",
+        "runs": [
+          {
+            "text": "【给出实测结果与预期结果之间允许偏差的范围。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 72,
+        "style": "Heading 2",
+        "text": "4.3进度",
+        "runs": [
+          {
+            "text": "4.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "进度",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "style": "Heading 2",
+        "text": "4.4条件",
+        "runs": [
+          {
+            "text": "4.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 74,
+        "style": "Normal",
+        "text": "【给出测试对资源的特殊要求，如设备、软件、人员等。】",
+        "runs": [
+          {
+            "text": "【给出测试对资源的特殊要求，如设备、软件、人员等。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 75,
+        "style": "Heading 2",
+        "text": "4.5测试资料",
+        "runs": [
+          {
+            "text": "4.5",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试资料",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 76,
+        "style": "Normal",
+        "text": "【说明测试所需的资料。】",
+        "runs": [
+          {
+            "text": "【说明测试所需的资料。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 79,
+        "style": "Heading 1",
+        "text": "5．评价",
+        "runs": [
+          {
+            "text": "5",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．评价",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 80,
+        "style": "Heading 2",
+        "text": "5.1范围",
+        "runs": [
+          {
+            "text": "5.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "范围",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 81,
+        "style": "Normal",
+        "text": "【说明所完成的各项测试说明问题的范围及其局限性。】",
+        "runs": [
+          {
+            "text": "【说明所完成的各项测试说明问题的范围及其局限性。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 82,
+        "style": "Heading 2",
+        "text": "5.2准则",
+        "runs": [
+          {
+            "text": "5.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "准则",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 83,
+        "style": "Normal",
+        "text": "【说明评价测试结果的准则。】",
+        "runs": [
+          {
+            "text": "【说明评价测试结果的准则。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "headers_footers": {
+      "word/header1.xml": "七、测试计划",
+      "word/footer1.xml": ""
+    }
+  },
+  {
+    "path": "tools\\final_docs\\03_需求规格说明书_模板参考.docx",
+    "sections": 1,
+    "paragraph_count": 81,
+    "table_count": 0,
+    "inline_shape_count": 0,
+    "image_part_count": 0,
+    "styles": [
+      [
+        "toc 2",
+        21
+      ],
+      [
+        "Heading 2",
+        21
+      ],
+      [
+        "Normal",
+        19
+      ],
+      [
+        "toc 1",
+        7
+      ],
+      [
+        "Heading 1",
+        7
+      ]
+    ],
+    "fonts_weighted_chars": [
+      [
+        "(None, None, False, None)",
+        628
+      ],
+      [
+        "(None, 26.0, False, None)",
+        9
+      ]
+    ],
+    "highlights": [],
+    "xml_marks": [],
+    "paragraphs": [
+      {
+        "index": 0,
+        "style": "Normal",
+        "text": "三、需求规格说明书",
+        "runs": [
+          {
+            "text": "三、需求规格说明书",
+            "font": null,
+            "size_pt": 26.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "style": "toc 1",
+        "text": "1．引言\t1",
+        "runs": []
+      },
+      {
+        "index": 3,
+        "style": "toc 2",
+        "text": "1.1编写目的\t1",
+        "runs": []
+      },
+      {
+        "index": 4,
+        "style": "toc 2",
+        "text": "1.2项目背景\t2",
+        "runs": []
+      },
+      {
+        "index": 5,
+        "style": "toc 2",
+        "text": "1.3定义\t2",
+        "runs": []
+      },
+      {
+        "index": 6,
+        "style": "toc 2",
+        "text": "1.4参考资料\t2",
+        "runs": []
+      },
+      {
+        "index": 7,
+        "style": "toc 1",
+        "text": "2．任务概述\t2",
+        "runs": []
+      },
+      {
+        "index": 8,
+        "style": "toc 2",
+        "text": "2.1目标\t2",
+        "runs": []
+      },
+      {
+        "index": 9,
+        "style": "toc 2",
+        "text": "2.2运行环境\t2",
+        "runs": []
+      },
+      {
+        "index": 10,
+        "style": "toc 2",
+        "text": "2.3条件与限制\t2",
+        "runs": []
+      },
+      {
+        "index": 11,
+        "style": "toc 1",
+        "text": "3．数据描述\t3",
+        "runs": []
+      },
+      {
+        "index": 12,
+        "style": "toc 2",
+        "text": "3.1静态数据\t3",
+        "runs": []
+      },
+      {
+        "index": 13,
+        "style": "toc 2",
+        "text": "3.2动态数据\t3",
+        "runs": []
+      },
+      {
+        "index": 14,
+        "style": "toc 2",
+        "text": "3.3数据库介绍\t3",
+        "runs": []
+      },
+      {
+        "index": 15,
+        "style": "toc 2",
+        "text": "3.4数据词典\t3",
+        "runs": []
+      },
+      {
+        "index": 16,
+        "style": "toc 2",
+        "text": "3.5数据采集\t3",
+        "runs": []
+      },
+      {
+        "index": 17,
+        "style": "toc 1",
+        "text": "4．功能需求\t3",
+        "runs": []
+      },
+      {
+        "index": 18,
+        "style": "toc 2",
+        "text": "4.1功能划分\t3",
+        "runs": []
+      },
+      {
+        "index": 19,
+        "style": "toc 2",
+        "text": "4.2功能描述\t3",
+        "runs": []
+      },
+      {
+        "index": 20,
+        "style": "toc 1",
+        "text": "5．性能需求\t3",
+        "runs": []
+      },
+      {
+        "index": 21,
+        "style": "toc 2",
+        "text": "5.1数据精确度\t3",
+        "runs": []
+      },
+      {
+        "index": 22,
+        "style": "toc 2",
+        "text": "5.2时间特性\t3",
+        "runs": []
+      },
+      {
+        "index": 23,
+        "style": "toc 2",
+        "text": "5.3适应性\t3",
+        "runs": []
+      },
+      {
+        "index": 24,
+        "style": "toc 1",
+        "text": "6．运行需求\t3",
+        "runs": []
+      },
+      {
+        "index": 25,
+        "style": "toc 2",
+        "text": "6.1用户界面\t3",
+        "runs": []
+      },
+      {
+        "index": 26,
+        "style": "toc 2",
+        "text": "6.2硬件接口\t3",
+        "runs": []
+      },
+      {
+        "index": 27,
+        "style": "toc 2",
+        "text": "6.3软件接口\t3",
+        "runs": []
+      },
+      {
+        "index": 28,
+        "style": "toc 2",
+        "text": "6.4故障处理\t3",
+        "runs": []
+      },
+      {
+        "index": 29,
+        "style": "toc 1",
+        "text": "7．其它需求\t3",
+        "runs": []
+      },
+      {
+        "index": 32,
+        "style": "Heading 1",
+        "text": "1．引言",
+        "runs": [
+          {
+            "text": "1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．引言",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 33,
+        "style": "Heading 2",
+        "text": "1.1编写目的",
+        "runs": [
+          {
+            "text": "1.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "编写目的",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 34,
+        "style": "Normal",
+        "text": "【阐明编写需求说明书的目的，指明读者对象。】",
+        "runs": [
+          {
+            "text": "【阐明编写需求说明书的目的，指明读者对象。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 35,
+        "style": "Normal",
+        "text": "为明确软件需求、安排项目规划与进度、组织软件开发与测试，撰写本文档。",
+        "runs": [
+          {
+            "text": "\t",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "为明确软件需求、安排项目规划与进度、组织软件开发与测试，撰写本文档。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 36,
+        "style": "Normal",
+        "text": "本文档供项目经理、设计人员、开发人员参考。",
+        "runs": [
+          {
+            "text": "\t",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "本文档供项目经理、设计人员、开发人员参考。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 37,
+        "style": "Heading 2",
+        "text": "1.2项目背景",
+        "runs": [
+          {
+            "text": "1.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "项目背景",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 38,
+        "style": "Normal",
+        "text": "项目的委托单位、开发单位和主管部门",
+        "runs": [
+          {
+            "text": "项目的委托单位、开发单位和主管部门",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 39,
+        "style": "Normal",
+        "text": "该软件系统与其他",
+        "runs": [
+          {
+            "text": "该软件系统与其他",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 40,
+        "style": "Heading 2",
+        "text": "1.3定义",
+        "runs": [
+          {
+            "text": "1.3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "定义",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 41,
+        "style": "Normal",
+        "text": "【列出文当中所用到的专门术语的定义和缩写词的原文。】",
+        "runs": [
+          {
+            "text": "【列出文当中所用到的专门术语的定义和缩写词的原文。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 42,
+        "style": "Heading 2",
+        "text": "1.4参考资料",
+        "runs": [
+          {
+            "text": "1.4",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "参考资料",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 43,
+        "style": "Normal",
+        "text": "项目经核准的计划任务书、合同或上级机关的批文",
+        "runs": [
+          {
+            "text": "项目经核准的计划任务书、合同或上级机关的批文",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 44,
+        "style": "Normal",
+        "text": "项目开发计划",
+        "runs": [
+          {
+            "text": "项目开发计划",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 45,
+        "style": "Normal",
+        "text": "文档所引用的资料、标准和规范。列出这些资料的作者、标题、编号、发表日期、出版单位或资料来源",
+        "runs": [
+          {
+            "text": "文档所引用的资料、标准和规范。列出这些资料的作者、标题、编号、发表日期、出版单位或资料来源",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 46,
+        "style": "Heading 1",
+        "text": "2．任务概述",
+        "runs": [
+          {
+            "text": "2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．任务概述",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 47,
+        "style": "Heading 2",
+        "text": "2.1目标",
+        "runs": [
+          {
+            "text": "2.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "目标",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 48,
+        "style": "Heading 2",
+        "text": "2.2运行环境",
+        "runs": [
+          {
+            "text": "2.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "运行环境",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 49,
+        "style": "Normal",
+        "text": "操作系统：Microsoft Windows 2000 Advanced Server",
+        "runs": [
+          {
+            "text": "操作系统：",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "Microsoft Windows 2000 Advanced Server",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 50,
+        "style": "Normal",
+        "text": "支持环境：IIS 5.0",
+        "runs": [
+          {
+            "text": "支持环境：",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "IIS 5.0",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 51,
+        "style": "Normal",
+        "text": "数 据 库：Microsoft SQL Server 2000",
+        "runs": [
+          {
+            "text": "数",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "据",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "库：",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "Microsoft SQL Server 2000",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 52,
+        "style": "Heading 2",
+        "text": "2.3条件与限制",
+        "runs": [
+          {
+            "text": "2.3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件与限制",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 54,
+        "style": "Heading 1",
+        "text": "3．数据描述",
+        "runs": [
+          {
+            "text": "3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．数据描述",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 55,
+        "style": "Heading 2",
+        "text": "3.1静态数据",
+        "runs": [
+          {
+            "text": "3.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "静态数据",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 56,
+        "style": "Heading 2",
+        "text": "3.2动态数据",
+        "runs": [
+          {
+            "text": "3.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "动态数据",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 57,
+        "style": "Normal",
+        "text": "【包括输入数据和输出数据。】",
+        "runs": [
+          {
+            "text": "【包括输入数据和输出数据。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 58,
+        "style": "Heading 2",
+        "text": "3.3数据库介绍",
+        "runs": [
+          {
+            "text": "3.3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "数据库介绍",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 59,
+        "style": "Normal",
+        "text": "【给出使用数据库的名称和类型。】",
+        "runs": [
+          {
+            "text": "【给出使用数据库的名称和类型。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 60,
+        "style": "Heading 2",
+        "text": "3.4数据词典",
+        "runs": [
+          {
+            "text": "3.4",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "数据词典",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 61,
+        "style": "Heading 2",
+        "text": "3.5数据采集",
+        "runs": [
+          {
+            "text": "3.5",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "数据采集",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 62,
+        "style": "Heading 1",
+        "text": "4．功能需求",
+        "runs": [
+          {
+            "text": "4",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．功能需求",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 63,
+        "style": "Heading 2",
+        "text": "4.1功能划分",
+        "runs": [
+          {
+            "text": "4.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "功能划分",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 64,
+        "style": "Heading 2",
+        "text": "4.2功能描述",
+        "runs": [
+          {
+            "text": "4.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "功能描述",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 65,
+        "style": "Heading 1",
+        "text": "5．性能需求",
+        "runs": [
+          {
+            "text": "5",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．性能需求",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 66,
+        "style": "Heading 2",
+        "text": "5.1数据精确度",
+        "runs": [
+          {
+            "text": "5.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "数据精确度",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 67,
+        "style": "Heading 2",
+        "text": "5.2时间特性",
+        "runs": [
+          {
+            "text": "5.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "时间特性",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 68,
+        "style": "Normal",
+        "text": "【如响应时间、更新处理时间、数据转换与传输时间、运行时间等。】",
+        "runs": [
+          {
+            "text": "【如响应时间、更新处理时间、数据转换与传输时间、运行时间等。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 69,
+        "style": "Heading 2",
+        "text": "5.3适应性",
+        "runs": [
+          {
+            "text": "5.3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "适应性",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 70,
+        "style": "Normal",
+        "text": "【在操作方式、运行环境、与其它软件的接口以及开发计划等发生变化时，应具有的适应能力。】",
+        "runs": [
+          {
+            "text": "【在操作方式、运行环境、与其它软件的接口以及开发计划等发生变化时，应具有的适应能力。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 71,
+        "style": "Heading 1",
+        "text": "6．运行需求",
+        "runs": [
+          {
+            "text": "6",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．运行需求",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 72,
+        "style": "Heading 2",
+        "text": "6.1用户界面",
+        "runs": [
+          {
+            "text": "6.1",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "用户界面",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "style": "Normal",
+        "text": "【如屏幕格式、报表格式、菜单格式、输入输出时间等。】",
+        "runs": [
+          {
+            "text": "【如屏幕格式、报表格式、菜单格式、输入输出时间等。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 74,
+        "style": "Heading 2",
+        "text": "6.2硬件接口",
+        "runs": [
+          {
+            "text": "6.2",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "硬件接口",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 75,
+        "style": "Heading 2",
+        "text": "6.3软件接口",
+        "runs": [
+          {
+            "text": "6.3",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "软件接口",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 76,
+        "style": "Heading 2",
+        "text": "6.4故障处理",
+        "runs": [
+          {
+            "text": "6.4",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "故障处理",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 77,
+        "style": "Heading 1",
+        "text": "7．其它需求",
+        "runs": [
+          {
+            "text": "7",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．其它需求",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 78,
+        "style": "Normal",
+        "text": "【如可使用性、安全保密、可维护性、可移植性等。】",
+        "runs": [
+          {
+            "text": "【如可使用性、安全保密、可维护性、可移植性等。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "headers_footers": {
+      "word/header1.xml": "三、需求规格说明书",
+      "word/footer1.xml": ""
+    }
+  }
+]

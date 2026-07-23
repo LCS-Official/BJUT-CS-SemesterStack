@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'topk_sum_hist_Pipeline_INIT_HIST'
+================================================================
+* Date:           Wed Jun 10 14:09:02 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        eyefeature_robust8
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  5.780 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       67|       67|  1.340 us|  1.340 us|   67|   67|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- INIT_HIST  |       65|       65|         1|          1|          1|    65|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     28|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     27|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       9|     55|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln239_fu_120_p2   |         +|   0|  0|  14|           7|           1|
+    |icmp_ln239_fu_114_p2  |      icmp|   0|  0|  14|           7|           7|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  28|          14|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1  |   9|          2|    7|         14|
+    |i_fu_46               |   9|          2|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   15|         30|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_46      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+----------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |           Source Object          |    C Type    |
++-----------------+-----+-----+------------+----------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  topk_sum_hist_Pipeline_INIT_HIST|  return value|
+|hist_3_address0  |  out|    5|   ap_memory|                            hist_3|         array|
+|hist_3_ce0       |  out|    1|   ap_memory|                            hist_3|         array|
+|hist_3_we0       |  out|    1|   ap_memory|                            hist_3|         array|
+|hist_3_d0        |  out|   16|   ap_memory|                            hist_3|         array|
+|hist_2_address0  |  out|    5|   ap_memory|                            hist_2|         array|
+|hist_2_ce0       |  out|    1|   ap_memory|                            hist_2|         array|
+|hist_2_we0       |  out|    1|   ap_memory|                            hist_2|         array|
+|hist_2_d0        |  out|   16|   ap_memory|                            hist_2|         array|
+|hist_1_address0  |  out|    5|   ap_memory|                            hist_1|         array|
+|hist_1_ce0       |  out|    1|   ap_memory|                            hist_1|         array|
+|hist_1_we0       |  out|    1|   ap_memory|                            hist_1|         array|
+|hist_1_d0        |  out|   16|   ap_memory|                            hist_1|         array|
+|hist_address0    |  out|    5|   ap_memory|                              hist|         array|
+|hist_ce0         |  out|    1|   ap_memory|                              hist|         array|
+|hist_we0         |  out|    1|   ap_memory|                              hist|         array|
+|hist_d0          |  out|   16|   ap_memory|                              hist|         array|
++-----------------+-----+-----+------------+----------------------------------+--------------+
+

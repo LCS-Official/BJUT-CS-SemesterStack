@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp1\exp1-t2-finale\simulation\qsim
+vsel_led
+Z1 !s100 hDFLT@H9aZQHNDdd=]o7U0
+Z2 Ijef4DId:=5kT90AQh?LXH3
+Z3 VlfaU03G8L4C<RIBZYlW8W3
+Z4 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp1\task2\simulation\qsim
+Z5 w1730361102
+Z6 8sel_led.vo
+Z7 Fsel_led.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|sel_led.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1730361102.959000
+Z12 !s107 sel_led.vo|
+!s101 -O0
+vsel_led_vlg_check_tst
+!i10b 1
+Z13 !s100 >IXAG1Qe3E2:g?`HdmWko1
+Z14 I:QzO;Vl0gm9Ro_Ef6Rf9l0
+Z15 Vc@N4oT617CZ=S29mQ]N?l1
+R4
+Z16 w1730361101
+Z17 8sel_led.vt
+Z18 Fsel_led.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1730361103.079000
+Z20 !s107 sel_led.vt|
+Z21 !s90 -work|work|sel_led.vt|
+!s101 -O0
+R10
+vsel_led_vlg_sample_tst
+!i10b 1
+Z22 !s100 _`Bj?5i1NKaCDzQ2<iaji1
+Z23 IR>^QW3zcjW0Lelz:OdM9H2
+Z24 VjaX4WN1=1UeN2]S8_0N]I3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vsel_led_vlg_vec_tst
+!i10b 1
+Z25 !s100 oSd=@c^=f:kPU]LL>T[HQ1
+Z26 IWd9UT?1]gghb46n?WZO1l1
+Z27 Vhh211QFYzz0dT1U]UQ5``2
+R4
+R16
+R17
+R18
+Z28 L0 215
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

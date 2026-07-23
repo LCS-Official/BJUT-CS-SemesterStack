@@ -1,0 +1,5 @@
+type	lexeme	value	first_line	first_column	count
+INT8	01	1	2	14	1
+REAL10	6.2	6.2	1	3	1
+REAL16	0X88.80	136.5	1	9	1
+REAL8	07.4	7.5	3	8	1

@@ -1,0 +1,9 @@
+IF _
+IDN a
+> _
+IDN b
+THEN _
+IDN x
+= _
+INT10 1
+; _

@@ -1,0 +1,60 @@
+{
+  "note": "Eyeblink8 contributes only open/blink. selfrec contributes only manually annotated closed windows.",
+  "feature_names": [
+    "col_run_topk_fixed"
+  ],
+  "feature_cols": [
+    "ear_0",
+    "ear_1",
+    "ear_2",
+    "ear_3",
+    "ear_4",
+    "ear_5",
+    "ear_6",
+    "ear_7",
+    "ear_8",
+    "ear_9",
+    "ear_10",
+    "ear_11",
+    "ear_12",
+    "ear_13",
+    "ear_14"
+  ],
+  "window_size": 15,
+  "central_size": 7,
+  "train_samples": 24168,
+  "val_samples": 4012,
+  "test_samples": 2376,
+  "train_label_counts": {
+    "open": 17486,
+    "blink": 4390,
+    "closed": 2292
+  },
+  "val_label_counts": {
+    "open": 2656,
+    "blink": 986,
+    "closed": 370
+  },
+  "test_label_counts": {
+    "open": 1408,
+    "blink": 601,
+    "closed": 367
+  },
+  "selfrec_train_videos_used": [
+    "11",
+    "22",
+    "33",
+    "WIN_20260414_20_31_10_Pro",
+    "WIN_20260414_20_41_42_Pro",
+    "test1",
+    "test2"
+  ],
+  "selfrec_val_videos_used": [
+    "WIN_20260414_20_42_23_Pro",
+    "test3"
+  ],
+  "selfrec_test_videos_used": [
+    "WIN_20260414_21_29_13_Pro",
+    "test4"
+  ]
+}

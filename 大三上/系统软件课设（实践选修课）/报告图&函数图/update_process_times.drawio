@@ -1,0 +1,120 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="GYqZ8U484vQt_DWKbmNE">
+    <mxGraphModel dx="1455" dy="1018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-1" value="update_process_times" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="292" y="30" width="220" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-2" value="update_one_process&#xa;统计当前进程的 User/System 时间" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="272" y="109" width="260" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-3" value="是普通进程吗?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="312" y="240" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-4" value="时间片递减&#xa;--p-&amp;gt;counter" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="171" y="380" width="162" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-5" value="时间片用完了吗?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="110" y="490" width="196" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-6" value="贴调度标签" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="630" width="141" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-7" value="更新全局 CPU 统计&#xa;(kstat: User/Nice/System)" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="63" y="740" width="249" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-8" value="正在处理软硬中断?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="425" y="475" width="188" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-9" value="计入系统时间&#xa;kstat: System" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="323" y="830" width="169" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-10" value="结束" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="379" y="958" width="57" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-1" target="k-BThVvR6KKq-NKOV3Vp-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-2" target="k-BThVvR6KKq-NKOV3Vp-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-13" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.82;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-3" target="k-BThVvR6KKq-NKOV3Vp-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-4" target="k-BThVvR6KKq-NKOV3Vp-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-15" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0.21;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-5" target="k-BThVvR6KKq-NKOV3Vp-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-16" value="否" style="curved=1;startArrow=none;endArrow=block;exitX=0.79;exitY=1;entryX=0.66;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-5" target="k-BThVvR6KKq-NKOV3Vp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.25;entryY=0;rounded=0;fontSize=20;entryDx=0;entryDy=0;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-6" target="k-BThVvR6KKq-NKOV3Vp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-18" value="否 (Idle进程)" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.93;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-3" target="k-BThVvR6KKq-NKOV3Vp-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-19" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0.25;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-8" target="k-BThVvR6KKq-NKOV3Vp-9">
+          <mxGeometry x="0.0511" y="12" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="680" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-20" value="否" style="curved=1;startArrow=none;endArrow=block;exitX=0.75;exitY=1;entryX=0.99;entryY=0.24;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-8" target="k-BThVvR6KKq-NKOV3Vp-10">
+          <mxGeometry x="-0.306" y="-76" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="850" />
+            </Array>
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-21" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.37;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-7" target="k-BThVvR6KKq-NKOV3Vp-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k-BThVvR6KKq-NKOV3Vp-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=20;" edge="1" parent="1" source="k-BThVvR6KKq-NKOV3Vp-9" target="k-BThVvR6KKq-NKOV3Vp-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

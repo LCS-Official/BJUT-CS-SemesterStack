@@ -1,0 +1,21 @@
+    if a > b goto L1
+    goto L2
+L1:
+    a := b
+    goto L0
+L2:
+    t1 := b - 1
+    t2 := t1 + c
+    a := t2
+L0:
+L3:
+    if x < 10 goto L4
+    goto L5
+L4:
+    t3 := x + 1
+    x := t3
+L6:
+    t4 := y * x
+    y := t4
+    goto L3
+L5:

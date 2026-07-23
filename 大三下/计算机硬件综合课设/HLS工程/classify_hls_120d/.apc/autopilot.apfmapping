@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="practical_svm_weights_eyefeature_binary.h" path="C:\Users\LC\Desktop\HardWare_CD\classify_hls_120d\code\practical_svm_weights_eyefeature_binary.h"/>
+    <originFiles name="classify.cpp" path="C:\Users\LC\Desktop\HardWare_CD\classify_hls_120d\code\classify.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_classify.cpp" path="C:\Users\LC\Desktop\HardWare_CD\classify_hls_120d\code\tb_classify.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

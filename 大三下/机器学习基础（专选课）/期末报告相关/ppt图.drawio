@@ -1,0 +1,25 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="oIEPIz5QxHrLin9q6C3O">
+    <mxGraphModel dx="378" dy="265" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PFaCc0kJ5Zo0u1tUPdtP-1" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="124" width="105" x="383.5" y="303.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PFaCc0kJ5Zo0u1tUPdtP-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="符号结构保持" vertex="1">
+          <mxGeometry height="30" width="87" x="392.5" y="287" as="geometry" />
+        </mxCell>
+        <mxCell id="PFaCc0kJ5Zo0u1tUPdtP-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="空间关系绑定" vertex="1">
+          <mxGeometry height="30" width="74" x="318.5" y="411" as="geometry" />
+        </mxCell>
+        <mxCell id="PFaCc0kJ5Zo0u1tUPdtP-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="语义融合一致性" vertex="1">
+          <mxGeometry height="30" width="88" x="479.5" y="411" as="geometry" />
+        </mxCell>
+        <mxCell id="PFaCc0kJ5Zo0u1tUPdtP-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;line-height: 110%;&quot;&gt;&lt;font style=&quot;font-size: 10px; line-height: 110%;&quot;&gt;被遮挡文字&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px; line-height: 110%;&quot;&gt;情景&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;渲染&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="383.5" y="366" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

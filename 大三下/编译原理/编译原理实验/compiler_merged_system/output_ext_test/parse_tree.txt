@@ -1,0 +1,13 @@
+P
+├── S: id = E
+│   ├── id: a
+│   └── E: 6.2 + a * 136.5
+├── S: id = E
+│   ├── id: my_var
+│   └── E: a / 1
+├── S: id = E
+│   ├── id: octv
+│   └── E: 7.5
+└── S: id = E
+    ├── id: obj.field
+    └── E: my_var + octv

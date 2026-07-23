@@ -1,0 +1,78 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 8,821        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 2,014        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 1,449        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 1,450        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 1,436        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 2,308        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 2,171        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 2,171        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 2,163        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 2,464        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 2,458        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 2,456        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 2,251        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 2,251        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 2,229        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 2,105        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++---------------------------+---------------------+------------------+----------------+-----------------+-----------------+-----------------+
+| Function                  | Location            | Compile/Link     | Unroll/Inline  | Array/Struct    | Performance     | HW Transforms   |
++---------------------------+---------------------+------------------+----------------+-----------------+-----------------+-----------------+
+| + eye_feature             | eye_feature.cpp:446 | 8,821            | 1,436          | 2,464           | 2,251           | 2,105           |
+|  + robust_percent_params  | eye_feature.cpp:157 |   39             |                |                 |                 |                 |
+|     sanitize_low_percent  | eye_feature.cpp:142 |    8             |                |                 |                 |                 |
+|     sanitize_high_percent | eye_feature.cpp:148 |   17             |                |                 |                 |                 |
+|  + make_eye_cfg           | eye_feature.cpp:168 |  322 (2 calls)   |                |                 |                 |                 |
+|     clamp_int             | eye_feature.cpp:81  |  144 (16 calls)  |                |                 |                 |                 |
+|     round_ratio           | eye_feature.cpp:93  |   40 (8 calls)   |                |                 |                 |                 |
+|  + pixel_to_gray          | eye_feature.cpp:122 | 3,222            |                |                 |                 |                 |
+|     expand5               | eye_feature.cpp:104 |  382 (2 calls)   |                |                 |                 |                 |
+|     expand6               | eye_feature.cpp:110 |  191             |                |                 |                 |                 |
+|     weighted_gray         | eye_feature.cpp:116 | 2,226 (3 calls)  |                |                 |                 |                 |
+|  + compute_robust_stats   | eye_feature.cpp:270 | 2,286 (2 calls)  |  636 (2 calls) | 1,274 (2 calls) | 1,266 (2 calls) | 1,240 (2 calls) |
+|   + percentile_threshold  | eye_feature.cpp:208 |  264 (4 calls)   |  152 (4 calls) |  192 (4 calls)  |  188 (4 calls)  |  208 (4 calls)  |
+|      div_round_pos        | eye_feature.cpp:98  |   36 (4 calls)   |                |                 |                 |                 |
+|      clamp_int            | eye_feature.cpp:81  |   36 (4 calls)   |                |                 |                 |                 |
+|     div_round_pos         | eye_feature.cpp:98  |   54 (6 calls)   |                |                 |                 |                 |
+|     topk_sum_hist         | eye_feature.cpp:233 |  510 (2 calls)   |  114 (2 calls) |  248 (2 calls)  |  246 (2 calls)  |  272 (2 calls)  |
+|  + eye_max_run_q          | eye_feature.cpp:390 |   52 (2 calls)   |                |                 |                 |                 |
+|     div_round_pos         | eye_feature.cpp:98  |   18 (2 calls)   |                |                 |                 |                 |
+|  + eye_topk_run_q         | eye_feature.cpp:396 |   66 (2 calls)   |                |                 |                 |                 |
+|     div_round_pos         | eye_feature.cpp:98  |   18 (2 calls)   |                |                 |                 |                 |
+|  + eye_dark_high_q        | eye_feature.cpp:403 |   66 (2 calls)   |                |                 |                 |                 |
+|     div_round_pos         | eye_feature.cpp:98  |   18 (2 calls)   |                |                 |                 |                 |
+|  + eye_row_run_high_q     | eye_feature.cpp:409 |   52 (2 calls)   |                |                 |                 |                 |
+|     div_round_pos         | eye_feature.cpp:98  |   18 (2 calls)   |                |                 |                 |                 |
+|    combine_two_eyes       | eye_feature.cpp:415 |   52 (4 calls)   |                |                 |                 |                 |
+|  + diff_two_eyes          | eye_feature.cpp:423 |   60 (4 calls)   |                |                 |                 |                 |
+|     abs_int               | eye_feature.cpp:88  |   28 (4 calls)   |                |                 |                 |                 |
+|    pack_debug             | eye_feature.cpp:429 |   21             |                |                 |                 |                 |
+|    write_out_word         | eye_feature.cpp:436 | 1,793 (11 calls) |                |                 |                 |                 |
++---------------------------+---------------------+------------------+----------------+-----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

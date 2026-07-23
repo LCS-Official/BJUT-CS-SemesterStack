@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task1\top_level\simulation\qsim
+vtop_level
+Z1 !s100 ONKa_JnQKQ55=W=z8@jN`1
+Z2 I8WfX^koDg]KXUXkmmTRdP2
+Z3 VdMVaeZ@SDKTGTjPgk?;cN3
+Z4 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task1\top_level\simulation\qsim
+Z5 w1731936411
+Z6 8top_level.vo
+Z7 Ftop_level.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|top_level.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1731936412.319000
+Z12 !s107 top_level.vo|
+!s101 -O0
+vtop_level_vlg_check_tst
+!i10b 1
+!s100 S76I=gWY?g07`LTcd_ceG2
+IIJ16?Ln3NA_9_<M;V?kVR2
+Z13 V2Kaf9K^JG2f>BlN6G=moG1
+R4
+R5
+Z14 8top_level.vt
+Z15 Ftop_level.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z16 !s108 1731936412.423000
+Z17 !s107 top_level.vt|
+Z18 !s90 -work|work|top_level.vt|
+!s101 -O0
+R10
+vtop_level_vlg_sample_tst
+!i10b 1
+Z19 !s100 77j7WQ]_^;OFPCFUV<:nS0
+Z20 ILeC=@jfOS6@z[>khm7BK`0
+Z21 VkhPiJ6OKYiXT^CSJFRS;F0
+R4
+R5
+R14
+R15
+L0 29
+R8
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R10
+vtop_level_vlg_vec_tst
+!i10b 1
+!s100 NQ<WTe`H7>zbh0L`]PTEE3
+IlZ23oX=Mk7n7DWR@S7j3R1
+Z22 V=nL=_2N5S:^=<U4>RnULe1
+R4
+R5
+R14
+R15
+L0 443
+R8
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R10

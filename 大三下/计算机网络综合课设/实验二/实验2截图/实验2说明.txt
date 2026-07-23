@@ -1,0 +1,18 @@
+实验2已完成的证据文件：
+1. exp2_mix.pcapng：原始抓包文件，接口 WLAN，122 个包，0 丢包。
+2. filter_arp.pcapng / filter_icmp.pcapng / filter_tcp_ipv4.pcapng / filter_udp_dns.pcapng：按协议过滤后的包。
+3. wireshark_gui_01_overview.png 到 wireshark_gui_06_protocol_hierarchy.png：真实 Wireshark GUI 截图。
+
+报告可写的关键包号：
+ARP：21/22/39/40
+ICMP：13/14
+IPv4 + TCP：24
+UDP/DNS：80/82
+
+IEEE802 说明：
+当前抓包含 Ethernet II、ARP、IPv4、ICMP、TCP、UDP/DNS、IPv6、802.1Q VLAN。
+未抓到 IEEE 802.3 LLC 帧；普通 Windows WLAN/IP 流量通常是 Ethernet II，802.3 LLC 需要特定二层控制/旧协议流量或交换机环境支持。
+已补充构造包：
+ieee8023_llc_demo.pcap：构造的 IEEE 802.3 LLC 示例包，3 帧。
+wireshark_gui_07_ieee8023_llc_demo.png：Wireshark GUI 打开构造包后的截图。
+报告中建议写明“该 IEEE 802.3 LLC 帧为补充格式分析而构造，不属于 WLAN 自然抓包流量”。

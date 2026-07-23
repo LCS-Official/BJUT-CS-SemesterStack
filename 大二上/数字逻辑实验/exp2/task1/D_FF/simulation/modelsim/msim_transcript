@@ -1,0 +1,52 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do D_FF_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/LCsexp2/exp2-task1/D_FF {D:/LCsexp2/exp2-task1/D_FF/D_FF.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# 
+# vlog -vlog01compat -work work +incdir+D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim {D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module D_FF_vlg_tst
+# 
+# Top level modules:
+# 	D_FF_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  D_FF_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps D_FF_vlg_tst 
+# Loading work.D_FF_vlg_tst
+# Loading work.D_FF
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 30557  Hostname: MAGICBOOK  ProcessID: 20124
+# 
+#           Attempting to use alternate WLF file "./wlfti8k2a7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfti8k2a7
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module D_FF_vlg_tst at D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt line 21
+# Simulation Breakpoint: Break in Module D_FF_vlg_tst at D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt line 21
+# MACRO ./D_FF_run_msim_rtl_verilog.do PAUSED at line 17
+run -all
+# Break key hit 
+# Simulation stop requested.

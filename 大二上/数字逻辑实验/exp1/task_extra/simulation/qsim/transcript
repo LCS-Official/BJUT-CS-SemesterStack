@@ -1,0 +1,9 @@
+# do task_extra.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: (vlog-7) Failed to open design unit file "combined_task_23071005.vo" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: d:/quartusii/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./task_extra.do line 3

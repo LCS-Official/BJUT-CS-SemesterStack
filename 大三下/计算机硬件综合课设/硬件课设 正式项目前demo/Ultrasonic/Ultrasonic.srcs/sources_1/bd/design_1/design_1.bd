@@ -1,0 +1,202 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6DD4F6312ADD8FD3",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../Ultrasonic.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Ultrasonic_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "ila_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "trig_0": {
+        "direction": "O"
+      },
+      "echo_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Ultrasonic_0": {
+        "vlnv": "xilinx.com:module_ref:Ultrasonic:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_Ultrasonic_0_0",
+        "xci_path": "ip\\design_1_Ultrasonic_0_0\\design_1_Ultrasonic_0_0.xci",
+        "inst_hier_path": "Ultrasonic_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Ultrasonic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "echo": {
+            "direction": "I"
+          },
+          "trig": {
+            "direction": "O"
+          },
+          "distance": {
+            "direction": "O",
+            "left": "21",
+            "right": "0"
+          },
+          "dist_valid": {
+            "direction": "O"
+          },
+          "error": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "design_1_xlconstant_0_2",
+        "xci_path": "ip\\design_1_xlconstant_0_2\\design_1_xlconstant_0_2.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "14",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip\\design_1_ila_0_0\\design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "131072"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "22"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Ultrasonic_0_dist_valid": {
+        "ports": [
+          "Ultrasonic_0/dist_valid",
+          "ila_0/probe3"
+        ]
+      },
+      "Ultrasonic_0_distance": {
+        "ports": [
+          "Ultrasonic_0/distance",
+          "ila_0/probe2"
+        ]
+      },
+      "Ultrasonic_0_error": {
+        "ports": [
+          "Ultrasonic_0/error",
+          "ila_0/probe4"
+        ]
+      },
+      "Ultrasonic_0_trig": {
+        "ports": [
+          "Ultrasonic_0/trig",
+          "trig_0",
+          "ila_0/probe0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Ultrasonic_0/clk",
+          "ila_0/clk"
+        ]
+      },
+      "echo_0_1": {
+        "ports": [
+          "echo_0",
+          "Ultrasonic_0/echo",
+          "ila_0/probe1"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "Ultrasonic_0/rstn"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "Ultrasonic_0/en"
+        ]
+      }
+    }
+  }
+}

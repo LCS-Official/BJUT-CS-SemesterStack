@@ -1,0 +1,87 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 8821, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 2014, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 1449, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 1450, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1436, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 2308, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 2171, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 2171, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 2163, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 2464, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 2458, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 2456, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 2251, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 2251, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 2229, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 2105, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="eye_feature" col1="eye_feature.cpp:446" col2="8821" col3="1436" col4="2464" col5="2251" col6="2105">
+                    <row id="22" col0="robust_percent_params" col1="eye_feature.cpp:157" col2="39" col3="" col4="" col5="" col6="">
+                        <row id="18" col0="sanitize_low_percent" col1="eye_feature.cpp:142" col2="8" col3="" col4="" col5="" col6=""/>
+                        <row id="19" col0="sanitize_high_percent" col1="eye_feature.cpp:148" col2="17" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="21" col0="make_eye_cfg" col1="eye_feature.cpp:168" col2="322" col2_disp=" 322 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="9" col0="clamp_int" col1="eye_feature.cpp:81" col2="144" col2_disp=" 144 (16 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="20" col0="round_ratio" col1="eye_feature.cpp:93" col2="40" col2_disp="  40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="11" col0="pixel_to_gray" col1="eye_feature.cpp:122" col2="3222" col3="" col4="" col5="" col6="">
+                        <row id="16" col0="expand5" col1="eye_feature.cpp:104" col2="382" col2_disp=" 382 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="expand6" col1="eye_feature.cpp:110" col2="191" col3="" col4="" col5="" col6=""/>
+                        <row id="17" col0="weighted_gray" col1="eye_feature.cpp:116" col2="2226" col2_disp="2,226 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="15" col0="compute_robust_stats" col1="eye_feature.cpp:270" col2="2286" col2_disp="2,286 (2 calls)" col3="636" col3_disp=" 636 (2 calls)" col4="1274" col4_disp="1,274 (2 calls)" col5="1266" col5_disp="1,266 (2 calls)" col6="1240" col6_disp="1,240 (2 calls)">
+                        <row id="12" col0="percentile_threshold" col1="eye_feature.cpp:208" col2="264" col2_disp=" 264 (4 calls)" col3="152" col3_disp=" 152 (4 calls)" col4="192" col4_disp=" 192 (4 calls)" col5="188" col5_disp=" 188 (4 calls)" col6="208" col6_disp=" 208 (4 calls)">
+                            <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="36" col2_disp="  36 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="9" col0="clamp_int" col1="eye_feature.cpp:81" col2="36" col2_disp="  36 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="54" col2_disp="  54 (6 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="topk_sum_hist" col1="eye_feature.cpp:233" col2="510" col2_disp=" 510 (2 calls)" col3="114" col3_disp=" 114 (2 calls)" col4="248" col4_disp=" 248 (2 calls)" col5="246" col5_disp=" 246 (2 calls)" col6="272" col6_disp=" 272 (2 calls)"/>
+                    </row>
+                    <row id="5" col0="eye_max_run_q" col1="eye_feature.cpp:390" col2="52" col2_disp="  52 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="13" col0="eye_topk_run_q" col1="eye_feature.cpp:396" col2="66" col2_disp="  66 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="10" col0="eye_dark_high_q" col1="eye_feature.cpp:403" col2="66" col2_disp="  66 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="3" col0="eye_row_run_high_q" col1="eye_feature.cpp:409" col2="52" col2_disp="  52 (2 calls)" col3="" col4="" col5="" col6="">
+                        <row id="1" col0="div_round_pos" col1="eye_feature.cpp:98" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="6" col0="combine_two_eyes" col1="eye_feature.cpp:415" col2="52" col2_disp="  52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="4" col0="diff_two_eyes" col1="eye_feature.cpp:423" col2="60" col2_disp="  60 (4 calls)" col3="" col4="" col5="" col6="">
+                        <row id="7" col0="abs_int" col1="eye_feature.cpp:88" col2="28" col2_disp="  28 (4 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="23" col0="pack_debug" col1="eye_feature.cpp:429" col2="21" col3="" col4="" col5="" col6=""/>
+                    <row id="8" col0="write_out_word" col1="eye_feature.cpp:436" col2="1793" col2_disp="1,793 (11 calls)" col3="" col4="" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

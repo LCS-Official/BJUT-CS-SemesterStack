@@ -1,0 +1,77 @@
+{
+  "config": {
+    "config_id": 141,
+    "feature_pair_name": "col_run_max_fixed+col_run_topk_adapt",
+    "feature_names": [
+      "col_run_max_fixed",
+      "col_run_topk_adapt"
+    ],
+    "dataset_rule_name": "strict_9_8_openstep3_blinkasnonclosed",
+    "central_size": 9,
+    "min_closed_in_central": 8,
+    "open_step": 3,
+    "eyeblink8_policy": "open_blink_as_nonclosed",
+    "C": 0.03,
+    "class_weight": "balanced"
+  },
+  "input_dim": 30,
+  "feature_cols": [
+    "col_run_max_fixed_0",
+    "col_run_max_fixed_1",
+    "col_run_max_fixed_2",
+    "col_run_max_fixed_3",
+    "col_run_max_fixed_4",
+    "col_run_max_fixed_5",
+    "col_run_max_fixed_6",
+    "col_run_max_fixed_7",
+    "col_run_max_fixed_8",
+    "col_run_max_fixed_9",
+    "col_run_max_fixed_10",
+    "col_run_max_fixed_11",
+    "col_run_max_fixed_12",
+    "col_run_max_fixed_13",
+    "col_run_max_fixed_14",
+    "col_run_topk_adapt_0",
+    "col_run_topk_adapt_1",
+    "col_run_topk_adapt_2",
+    "col_run_topk_adapt_3",
+    "col_run_topk_adapt_4",
+    "col_run_topk_adapt_5",
+    "col_run_topk_adapt_6",
+    "col_run_topk_adapt_7",
+    "col_run_topk_adapt_8",
+    "col_run_topk_adapt_9",
+    "col_run_topk_adapt_10",
+    "col_run_topk_adapt_11",
+    "col_run_topk_adapt_12",
+    "col_run_topk_adapt_13",
+    "col_run_topk_adapt_14"
+  ],
+  "train_label_counts": {
+    "non_closed": 22250,
+    "closed": 2252
+  },
+  "val_label_counts": {
+    "non_closed": 3735,
+    "closed": 362
+  },
+  "test_label_counts": {
+    "non_closed": 2065,
+    "closed": 359
+  },
+  "train_orig_label_counts": {
+    "open": 17299,
+    "blink": 4951,
+    "closed": 2252
+  },
+  "val_orig_label_counts": {
+    "open": 2610,
+    "blink": 1125,
+    "closed": 362
+  },
+  "test_orig_label_counts": {
+    "open": 1379,
+    "blink": 686,
+    "closed": 359
+  }
+}

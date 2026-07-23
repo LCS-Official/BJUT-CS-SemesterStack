@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux 时间片轮转机制模拟</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-run: #4CAF50; /* 运行中绿色 */
+            --accent-flag: #F44336; /* 贴条红色 */
+            --accent-wait: #FF9800; /* 等待中橙色 */
+            --border: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Consolas, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* 左侧：控制台与代码 */
+        .control-pane {
+            width: 380px;
+            background-color: var(--card-bg);
+            border-right: 1px solid var(--border);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        h2 { margin: 0; font-size: 1.2rem; color: var(--accent-run); }
+        .subtitle { font-size: 0.8rem; color: #888; margin-bottom: 10px; }
+
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+        button {
+            padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+            font-weight: bold; transition: all 0.2s; flex: 1;
+        }
+        .btn-tick { background-color: var(--accent-run); color: white; flex: 2; font-size: 1.1em; }
+        .btn-tick:hover { background-color: #43a047; transform: translateY(-2px); }
+        .btn-tick:active { transform: translateY(0); }
+        .btn-auto { background-color: #2196F3; color: white; }
+        .btn-reset { background-color: #555; color: white; }
+
+        /* 代码显示区 */
+        .code-block {
+            background-color: #000;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85rem;
+            color: #d4d4d4;
+            border: 1px solid var(--border);
+            line-height: 1.4;
+        }
+        .active-line { background-color: rgba(76, 175, 80, 0.25); border-left: 3px solid var(--accent-run); padding-left: 7px; margin-left: -10px; display: block; }
+        .active-line-flag { background-color: rgba(244, 67, 54, 0.25); border-left: 3px solid var(--accent-flag); }
+
+        .log-box {
+            flex: 1;
+            background-color: #000;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 10px;
+            overflow-y: auto;
+            font-family: 'Consolas', monospace;
+            font-size: 0.8rem;
+        }
+        .log-item { margin-bottom: 4px; border-bottom: 1px solid #222; padding-bottom: 2px; }
+        .log-time { color: #569CD6; margin-right: 5px; }
+        .log-flag { color: var(--accent-flag); font-weight: bold; }
+        .log-sched { color: var(--accent-run); font-weight: bold; }
+
+        /* 右侧：可视化区域 */
+        .visual-pane {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .cpu-core {
+            width: 100px; height: 100px;
+            border: 4px solid var(--border);
+            border-radius: 50%;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            margin-bottom: 30px;
+            background: #1a1a1a;
+            transition: all 0.3s;
+        }
+        .cpu-core.active { border-color: var(--accent-run); box-shadow: 0 0 20px rgba(76, 175, 80, 0.2); transform: scale(1.1); }
+        .cpu-label { font-size: 0.9rem; color: #666; }
+        .cpu-val { font-size: 1.8rem; color: var(--text-primary); }
+
+        /* 进程队列 */
+        .process-container { width: 100%; max-width: 700px; display: flex; flex-direction: column; gap: 15px; }
+
+        .process-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            display: flex; align-items: center; gap: 20px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: visible; /* 允许标签突出 */
+        }
+
+        .process-card.running {
+            border-color: var(--accent-run);
+            background: linear-gradient(90deg, rgba(76, 175, 80, 0.1) 0%, var(--card-bg) 100%);
+            transform: translateX(10px);
+        }
+
+        /* 贴条（Need Resched 标志） */
+        .resched-flag-sticker {
+            position: absolute;
+            top: -8px;
+            right: 10px;
+            background-color: var(--accent-flag);
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            display: none;
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 5;
+        }
+        
+        .process-card.flagged .resched-flag-sticker { display: block; }
+        .process-card.flagged { border-color: var(--accent-flag); }
+
+        @keyframes popIn {
+            from { transform: scale(0) translateY(10px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        .pid-badge {
+            background-color: #333; color: #fff; padding: 5px 10px;
+            border-radius: 4px; font-family: monospace; font-weight: bold; min-width: 40px; text-align: center;
+        }
+
+        .info-group { flex: 1; }
+        .proc-name { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; }
+        .proc-detail { font-size: 0.85rem; color: var(--text-secondary); }
+
+        .slice-track { width: 200px; height: 10px; background-color: #333; border-radius: 5px; overflow: hidden; position: relative; }
+        .slice-bar { height: 100%; background-color: var(--accent-wait); width: 100%; transition: width 0.2s linear; }
+        .process-card.running .slice-bar { background-color: var(--accent-run); }
+        .process-card.running .slice-bar.danger { background-color: var(--accent-flag); }
+    </style>
+</head>
+<body>
+
+<div class="control-pane">
+    <div>
+        <h2>Linux 时间片流转机制</h2>
+        <div class="subtitle">演示 jiffies++ 和 update_process_times 标记任务</div>
+        
+        <div class="btn-group">
+            <button class="btn-tick" onclick="sim.tick()" id="btnTick">Tick (时钟中断)</button>
+        </div>
+        <div class="btn-group" style="margin-top:10px;">
+            <button class="btn-auto" onclick="sim.toggleAuto()" id="btnAuto">自动运行</button>
+            <button class="btn-reset" onclick="sim.reset()">重置系统</button>
+            <button class="btn-reset" onclick="sim.addProcess()">+ 加进程</button>
+        </div>
+    </div>
+
+    <div>
+        <h3>代码追踪</h3>
+        <div class="code-block" id="codeBlock">
+<div id="line-intr">void timer_interrupt() {</div>
+<div id="line-update">  update_process_times() {</div>
+<div id="line-dec">    --current->counter;</div>
+<div id="line-check">    if (counter == 0)</div>
+<div id="line-flag">      current->need_resched = 1; <span style="color:#F44336">// 贴条</span></div>
+<div id="line-end">  }</div>
+<div id="line-bh">  mark_bh(TIMER_BH);</div>
+<div id="line-ret">} // 中断处理结束</div>
+<div style="color:#666; margin: 5px 0;">----------------------------------</div>
+<div id="line-ret-entry">// ret_from_intr (中断返回前):</div>
+<div id="line-sched-check">if (need_resched)</div>
+<div id="line-sched">    schedule(); <span style="color:#4CAF50">// 调度逻辑</span></div>
+        </div>
+    </div>
+
+    <div class="log-box" id="logBox">
+        <div class="log-item">系统就绪。请点击 Tick...</div>
+    </div>
+</div>
+
+<div class="visual-pane">
+    <div class="cpu-core" id="cpuCore">
+        <div class="cpu-label">Jiffies</div>
+        <div class="cpu-val" id="dispJiffies">0</div>
+    </div>
+    <div class="process-container" id="procContainer"></div>
+</div>
+
+<script>
+class Task {
+    constructor(pid, name, priority, counter) {
+        this.pid = pid;
+        this.name = name;
+        this.initialCounter = counter;
+        this.counter = counter;
+        this.needResched = false; // 这里的 Flag 就是“条”
+        this.state = 'READY';
+    }
+}
+
+class SchedulerSim {
+    constructor() {
+        this.jiffies = 0;
+        this.tasks = [
+            new Task(101, "System Daemon", "High", 4),
+            new Task(102, "User Shell", "Normal", 8),
+            new Task(103, "Background Job", "Low", 12)
+        ];
+        this.currentTaskIdx = 0;
+        this.tasks[0].state = 'RUNNING';
+        this.autoInterval = null;
+        this.render();
+    }
+
+    // 模拟时钟中断
+    tick() {
+        if (this.isProcessing) return; // 防止连点
+        this.isProcessing = true;
+
+        // 1. 中断入口
+        this.jiffies++;
+        document.getElementById('dispJiffies').innerText = this.jiffies;
+        this.highlightCode('line-intr');
+
+        setTimeout(() => {
+            this.highlightCode('line-update');
+            let current = this.tasks[this.currentTaskIdx];
+
+            setTimeout(() => {
+                // 2. 扣除时间片
+                this.highlightCode('line-dec');
+                current.counter--;
+                
+                // 如果时间片用完，进行“贴条”
+                if (current.counter <= 0) {
+                    current.counter = 0;
+                    this.checkAndFlag(current);
+                } else {
+                    this.log(`PID ${current.pid} 运行中, 剩余时间片: ${current.counter}`);
+                    this.finishInterrupt(false);
+                }
+                this.render();
+            }, 200);
+        }, 200);
+    }
+
+    // 核心逻辑：检测并贴条
+    checkAndFlag(current) {
+        setTimeout(() => {
+            this.highlightCode('line-check');
+            
+            setTimeout(() => {
+                this.highlightCode('line-flag', true); // 红色高亮
+                
+                // --- 动作：贴条 ---
+                current.needResched = true; 
+                this.log(`<span class="log-flag">贴条!</span> PID ${current.pid} 时间片耗尽，标记 need_resched`);
+                this.render(); // 界面上会出现红色标签
+
+                // 继续中断流程
+                setTimeout(() => {
+                    this.highlightCode('line-end');
+                    setTimeout(() => {
+                        this.highlightCode('line-bh');
+                        this.finishInterrupt(true); // 传入 true 表示有贴条
+                    }, 200);
+                }, 400);
+
+            }, 300);
+        }, 200);
+    }
+
+    // 3. 中断结束与调度检查 (Ret from Intr)
+    finishInterrupt(hasFlag) {
+        setTimeout(() => {
+            this.highlightCode('line-ret');
+            
+            setTimeout(() => {
+                // 模拟中断返回前的检查
+                this.highlightCode('line-sched-check');
+                
+                if (hasFlag) {
+                    this.log("中断返回检查: 发现贴条，准备调度...");
+                    setTimeout(() => {
+                        this.highlightCode('line-sched');
+                        this.performSchedule();
+                    }, 500);
+                } else {
+                    this.log("中断返回检查: 无贴条，返回用户态。");
+                    this.clearHighlight();
+                    this.isProcessing = false;
+                }
+            }, 300);
+        }, 300);
+    }
+
+    // 4. 真正换人 (Schedule)
+    performSchedule() {
+        let prev = this.tasks[this.currentTaskIdx];
+        
+        // 调度算法：简单的轮转
+        // 检查是否所有人都没时间了 (Epoch 结束)
+        if (this.tasks.every(t => t.counter === 0)) {
+            this.log("所有进程时间片耗尽，重新分配 (Epoch)...");
+            this.tasks.forEach(t => {
+                t.counter = t.initialCounter;
+                t.needResched = false; // 清除之前的条
+            });
+        }
+
+        // 找下一个有时间片的
+        let nextIdx = (this.currentTaskIdx + 1) % this.tasks.length;
+        let loops = 0;
+        while (this.tasks[nextIdx].counter <= 0 && loops < this.tasks.length) {
+            nextIdx = (nextIdx + 1) % this.tasks.length;
+            loops++;
+        }
+        
+        // 切换
+        prev.state = 'READY';
+        // 注意：旧进程的 needResched 标记虽然在逻辑上完成了使命，但在内核中通常是在 switch_to 之后清理
+        // 这里为了视觉清晰，我们先把旧的条撕掉，或者保留表示它被惩罚了也可以。我们选择重置。
+        prev.needResched = false; 
+
+        this.currentTaskIdx = nextIdx;
+        let next = this.tasks[this.currentTaskIdx];
+        next.state = 'RUNNING';
+
+        // UI 动画
+        document.getElementById('cpuCore').classList.add('active');
+        setTimeout(() => document.getElementById('cpuCore').classList.remove('active'), 300);
+
+        this.log(`<span class="log-sched">上下文切换</span> PID ${prev.pid} -> PID ${next.pid}`);
+        this.render();
+        
+        setTimeout(() => {
+            this.clearHighlight();
+            this.isProcessing = false;
+        }, 500);
+    }
+
+    // --- 辅助功能 ---
+
+    toggleAuto() {
+        if (this.autoInterval) {
+            clearInterval(this.autoInterval);
+            this.autoInterval = null;
+            document.getElementById('btnAuto').innerText = "自动运行";
+            document.getElementById('btnAuto').style.backgroundColor = "#2196F3";
+        } else {
+            this.autoInterval = setInterval(() => {
+                if (!this.isProcessing) this.tick();
+            }, 2000); // 慢一点以便看清动画
+            document.getElementById('btnAuto').innerText = "停止";
+            document.getElementById('btnAuto').style.backgroundColor = "#F44336";
+        }
+    }
+
+    addProcess() {
+        let pid = 100 + this.tasks.length + 1;
+        this.tasks.push(new Task(pid, "New Process", "Normal", 6));
+        this.render();
+        this.log(`添加进程 PID ${pid}`);
+    }
+
+    reset() {
+        if(this.autoInterval) this.toggleAuto();
+        this.jiffies = 0;
+        this.currentTaskIdx = 0;
+        this.tasks.forEach(t => {
+            t.counter = t.initialCounter;
+            t.state = 'READY';
+            t.needResched = false;
+        });
+        this.tasks[0].state = 'RUNNING';
+        this.isProcessing = false;
+        document.getElementById('logBox').innerHTML = '';
+        document.getElementById('dispJiffies').innerText = '0';
+        this.clearHighlight();
+        this.render();
+    }
+
+    highlightCode(id, isFlag = false) {
+        document.querySelectorAll('.active-line, .active-line-flag').forEach(el => {
+            el.classList.remove('active-line', 'active-line-flag');
+        });
+        let el = document.getElementById(id);
+        if(el) {
+            el.classList.add(isFlag ? 'active-line-flag' : 'active-line');
+            el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+
+    clearHighlight() {
+        document.querySelectorAll('.active-line, .active-line-flag').forEach(el => {
+            el.classList.remove('active-line', 'active-line-flag');
+        });
+    }
+
+    log(msg) {
+        let box = document.getElementById('logBox');
+        let div = document.createElement('div');
+        div.className = 'log-item';
+        div.innerHTML = `<span class="log-time">[${this.jiffies}]</span> ${msg}`;
+        box.prepend(div);
+    }
+
+    render() {
+        let container = document.getElementById('procContainer');
+        container.innerHTML = '';
+        
+        this.tasks.forEach((t, idx) => {
+            let isRunning = (idx === this.currentTaskIdx);
+            let percent = (t.counter / t.initialCounter) * 100;
+            let flagHtml = t.needResched ? '<div class="resched-flag-sticker">需调度</div>' : '';
+            let cardClass = `process-card ${isRunning ? 'running' : ''} ${t.needResched ? 'flagged' : ''}`;
+            
+            // 进度条颜色
+            let barColorClass = 'slice-bar';
+            if (t.counter <= 2 && t.counter > 0) barColorClass += ' danger';
+
+            let html = `
+                <div class="${cardClass}">
+                    ${flagHtml}
+                    <div class="pid-badge">${t.pid}</div>
+                    <div class="info-group">
+                        <div class="proc-name">${t.name}</div>
+                        <div class="proc-detail">剩余时间片: ${t.counter} / ${t.initialCounter}</div>
+                    </div>
+                    <div>
+                        <div class="slice-track">
+                            <div class="${barColorClass}" style="width: ${percent}%"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += html;
+        });
+    }
+}
+
+const sim = new SchedulerSim();
+</script>
+</body>
+</html>

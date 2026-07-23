@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>智能实验室预约与设备管理系统 - 轻量原型</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --line: #d8e0ec;
+      --text: #1f2937;
+      --muted: #667085;
+      --blue: #2563eb;
+      --green: #16a34a;
+      --orange: #f59e0b;
+      --red: #dc2626;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.6 "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 22px;
+      background: #0f172a;
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, .18);
+    }
+    header h1 { margin: 0; font-size: 18px; }
+    header small { color: #cbd5e1; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 3px 9px;
+      background: #e0ecff;
+      color: #1d4ed8;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .badge.green { background: #dcfce7; color: #15803d; }
+    .badge.orange { background: #fef3c7; color: #b45309; }
+    .badge.red { background: #fee2e2; color: #b91c1c; }
+    .layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      min-height: calc(100vh - 62px);
+    }
+    nav {
+      padding: 18px 14px;
+      border-right: 1px solid var(--line);
+      background: #fff;
+    }
+    nav .group-title {
+      margin: 16px 8px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    nav button {
+      width: 100%;
+      margin: 4px 0;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+    }
+    nav button:hover, nav button.active {
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+    main { padding: 22px; }
+    .screen { display: none; }
+    .screen.active { display: block; }
+    .screen h2 {
+      margin: 0 0 6px;
+      font-size: 22px;
+    }
+    .hint {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .card {
+      grid-column: span 6;
+      min-width: 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, .04);
+    }
+    .card.full { grid-column: 1 / -1; }
+    .card.third { grid-column: span 4; }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0;
+    }
+    label {
+      display: grid;
+      gap: 5px;
+      min-width: 150px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 9px 10px;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+    }
+    textarea { min-height: 74px; resize: vertical; }
+    button.action {
+      border: 0;
+      border-radius: 9px;
+      padding: 9px 13px;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button.action.secondary { background: #475569; }
+    button.action.green { background: var(--green); }
+    button.action.orange { background: var(--orange); color: #111827; }
+    button.action.red { background: var(--red); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 12px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .step {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px;
+      background: #fff;
+      text-align: center;
+    }
+    .step.done { border-color: #86efac; background: #f0fdf4; }
+    .step.current { border-color: #93c5fd; background: #eff6ff; font-weight: 700; }
+    .log {
+      max-height: 220px;
+      overflow: auto;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 10px;
+      background: #f8fafc;
+      color: #334155;
+      font-family: Consolas, monospace;
+      font-size: 12px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      color: var(--muted);
+      text-align: center;
+      background: #f8fafc;
+    }
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      max-width: 380px;
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #0f172a;
+      color: #fff;
+      box-shadow: 0 10px 28px rgba(15,23,42,.25);
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+      transition: .18s ease;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      nav { position: static; border-right: 0; border-bottom: 1px solid var(--line); }
+      .card, .card.third { grid-column: 1 / -1; }
+      .timeline { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>智能实验室预约与设备管理系统 - 原型 Demo</h1>
+      <small>第二次检查用：展示主流程与页面结构，不连接真实数据库。</small>
+    </div>
+    <span class="badge orange">原型模式 / 静态页面</span>
+  </header>
+
+  <div class="layout">
+    <nav>
+      <button class="active" data-target="overview">0. 流程总览</button>
+      <div class="group-title">学生端</div>
+      <button data-target="student-search">资源查询与预约</button>
+      <button data-target="student-mine">我的预约 / 签到签退</button>
+      <button data-target="student-repair">设备报修</button>
+      <button data-target="student-credit">信用中心</button>
+      <div class="group-title">实验室管理员端</div>
+      <button data-target="admin-approval">预约审批</button>
+      <button data-target="admin-equipment">设备与报修处理</button>
+      <button data-target="admin-violation">违规处理 / 统计</button>
+      <div class="group-title">系统管理员端</div>
+      <button data-target="sys-admin">用户权限 / 参数 / 日志</button>
+    </nav>
+
+    <main>
+      <section id="overview" class="screen active">
+        <h2>0. 业务流程总览</h2>
+        <p class="hint">用于向老师说明：原型覆盖学生预约、管理员审批、现场使用、设备报修、信用与日志等主流程。</p>
+        <div class="grid">
+          <div class="card full">
+            <h3>预约使用主链路</h3>
+            <div class="timeline">
+              <div class="step done">登录 / 角色权限<br><small>A 模块</small></div>
+              <div class="step current">查询资源并提交预约<br><small>B + C</small></div>
+              <div class="step">管理员审批<br><small>B + A</small></div>
+              <div class="step">签到 / 签退 / IoT<br><small>C + B</small></div>
+              <div class="step">信用 / 通知 / 统计<br><small>D</small></div>
+            </div>
+          </div>
+          <div class="card third">
+            <h3>A 平台与集成</h3>
+            <p>登录、角色切换、RBAC、管辖范围、系统参数、操作日志、统一 Flask 主入口。</p>
+            <span class="badge green">已作为统一入口基线</span>
+          </div>
+          <div class="card third">
+            <h3>B 资源与预约</h3>
+            <p>提交预约、幂等、并发冲突、审批、取消、和 C/D 的联动接口。</p>
+            <span class="badge green">后端已有测试</span>
+          </div>
+          <div class="card third">
+            <h3>C / D 后续模块</h3>
+            <p>C 负责设备、签到、报修；D 负责信用、通知、统计。本原型先展示页面入口和交互预期。</p>
+            <span class="badge orange">继续联调</span>
+          </div>
+          <div class="card full">
+            <h3>当前模拟状态</h3>
+            <p id="stateText">尚未提交预约。可以从左侧“资源查询与预约”开始演示。</p>
+            <button class="action secondary" onclick="resetDemo()">重置演示数据</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="student-search" class="screen">
+        <h2>学生端：资源查询与预约</h2>
+        <p class="hint">体现 FR-02、FR-03：筛选资源、提交预约、后端进行幂等和冲突检测。</p>
+        <div class="grid">
+          <div class="card full">
+            <h3>筛选条件</h3>
+            <div class="toolbar">
+              <label>实验室
+                <select>
+                  <option>信息楼 436 - 智能实验室</option>
+                  <option>信息楼 502 - 计算机实验室</option>
+                </select>
+              </label>
+              <label>设备类型
+                <select>
+                  <option>GPU 工作站</option>
+                  <option>嵌入式开发板</option>
+                  <option>普通机位</option>
+                </select>
+              </label>
+              <label>日期
+                <input type="date" value="2026-07-13" />
+              </label>
+              <label>开始时间
+                <input id="startTime" type="time" value="09:00" />
+              </label>
+              <label>结束时间
+                <input id="endTime" type="time" value="10:00" />
+              </label>
+              <button class="action secondary" onclick="loadState('已刷新可预约资源：排除维修中、停用和已占用设备。')">查询资源</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>可预约设备</h3>
+            <table>
+              <thead><tr><th>设备</th><th>状态</th><th>可用时段</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>GPU-01 工作站</td>
+                  <td><span class="badge green">正常</span></td>
+                  <td>09:00-12:00</td>
+                  <td><button class="action" onclick="fillDevice('GPU-01 工作站')">选择</button></td>
+                </tr>
+                <tr>
+                  <td>GPU-02 工作站</td>
+                  <td><span class="badge red">维修中</span></td>
+                  <td>不可预约</td>
+                  <td><button class="action secondary" onclick="toast('该设备维修中，不能提交预约。')">查看原因</button></td>
+                </tr>
+                <tr>
+                  <td>普通机位 A12</td>
+                  <td><span class="badge green">正常</span></td>
+                  <td>10:00-18:00</td>
+                  <td><button class="action" onclick="fillDevice('普通机位 A12')">选择</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>提交预约申请</h3>
+            <label>预约设备
+              <input id="deviceInput" value="GPU-01 工作站" />
+            </label>
+            <label>预约事由
+              <textarea id="purposeInput">软件课设联调与模型测试</textarea>
+            </label>
+            <p><span class="badge">Idempotency-Key</span> <code id="requestKey">demo-20260713-001</code></p>
+            <button class="action green" onclick="submitReservation()">提交预约</button>
+            <button class="action secondary" onclick="submitReservation()">模拟重复点击</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="student-mine" class="screen">
+        <h2>学生端：我的预约 / 签到签退</h2>
+        <p class="hint">体现 FR-05、FR-06：学生查看预约状态，审批通过后进入签到、签退流程。</p>
+        <div class="grid">
+          <div class="card full">
+            <h3>我的预约</h3>
+            <table>
+              <thead><tr><th>预约号</th><th>资源</th><th>时间</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>R-20260713-001</td>
+                  <td id="mineDevice">GPU-01 工作站</td>
+                  <td>2026-07-13 09:00-10:00</td>
+                  <td><span id="reservationStatus" class="badge orange">待审批</span></td>
+                  <td>
+                    <button class="action red" onclick="cancelReservation(false)">取消预约</button>
+                    <button class="action green" onclick="checkIn()">签到</button>
+                    <button class="action secondary" onclick="checkOut()">签退</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>签到校验</h3>
+            <p>演示环境用按钮模拟动态二维码和浏览器定位，实际设计会写入 check_record 与 iot_command_log。</p>
+            <p><span class="badge">二维码</span> LAB436-20260713-0900</p>
+            <p><span class="badge green">定位</span> 信息楼 436 附近，误差 18 米</p>
+          </div>
+          <div class="card">
+            <h3>预约状态流转</h3>
+            <div class="timeline">
+              <div id="stepPending" class="step current">pending<br>待审批</div>
+              <div id="stepApproved" class="step">approved<br>已通过</div>
+              <div id="stepUsing" class="step">using<br>使用中</div>
+              <div id="stepCompleted" class="step">completed<br>已完成</div>
+              <div id="stepCancelled" class="step">cancelled<br>已取消</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="student-repair" class="screen">
+        <h2>学生端：设备报修</h2>
+        <p class="hint">体现 FR-07：学生可对正在使用或近 7 天使用过的设备报修。</p>
+        <div class="grid">
+          <div class="card">
+            <h3>提交报修</h3>
+            <label>故障设备
+              <input value="GPU-01 工作站" />
+            </label>
+            <label>故障类型
+              <select><option>无法开机</option><option>网络异常</option><option>外设损坏</option></select>
+            </label>
+            <label>故障描述
+              <textarea>运行过程中突然断电，重启后无显示。</textarea>
+            </label>
+            <button class="action green" onclick="createRepair()">提交报修</button>
+          </div>
+          <div class="card">
+            <h3>我的报修记录</h3>
+            <table>
+              <thead><tr><th>报修号</th><th>设备</th><th>状态</th><th>时间</th></tr></thead>
+              <tbody>
+                <tr><td>REP-001</td><td>GPU-01 工作站</td><td><span class="badge orange">待确认</span></td><td>2026-07-13 10:12</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="student-credit" class="screen">
+        <h2>学生端：信用中心</h2>
+        <p class="hint">体现 FR-09、FR-10：查看信用分、扣分明细、提交恢复申请。</p>
+        <div class="grid">
+          <div class="card third"><h3>当前信用分</h3><p id="creditScore" style="font-size:42px;margin:0;color:var(--green);font-weight:800">96</p><p id="creditStatus">状态：可预约</p></div>
+          <div class="card third"><h3>本月恢复机会</h3><p>自然恢复：0/5 分</p><p>规范使用恢复：5/10 分</p></div>
+          <div class="card third"><h3>封禁状态</h3><p><span class="badge green">未封禁</span></p><p>低于阈值时禁止提交新预约。</p></div>
+          <div class="card full">
+            <h3>信用明细</h3>
+            <table>
+              <thead><tr><th>时间</th><th>类型</th><th>分值变化</th><th>说明</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr><td>2026-07-10</td><td>临期取消</td><td>-2</td><td>距离开始不足 2 小时取消</td><td><button class="action secondary" onclick="toast('已进入信用恢复申请表单：需填写原因并上传证明。')">申请恢复</button></td></tr>
+                <tr><td>2026-07-06</td><td>规范使用恢复</td><td>+5</td><td>连续 5 次按时签到签退</td><td>-</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin-approval" class="screen">
+        <h2>实验室管理员端：预约审批</h2>
+        <p class="hint">体现 FR-04：只展示管辖实验室内待审批预约，审批前再次检查设备状态和冲突。</p>
+        <div class="card full">
+          <table>
+            <thead><tr><th>预约号</th><th>学生</th><th>资源</th><th>时间</th><th>信用</th><th>操作</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>R-20260713-001</td>
+                <td>学生 LC</td>
+                <td>GPU-01 工作站</td>
+                <td>2026-07-13 09:00-10:00</td>
+                <td><span class="badge green">96 / 可预约</span></td>
+                <td>
+                  <button class="action green" onclick="approveReservation()">通过</button>
+                  <button class="action red" onclick="rejectReservation()">驳回</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="admin-equipment" class="screen">
+        <h2>实验室管理员端：设备与报修处理</h2>
+        <p class="hint">体现 FR-07、FR-08：维护设备状态、可用时段，处理报修并联动受影响预约。</p>
+        <div class="grid">
+          <div class="card">
+            <h3>设备状态</h3>
+            <table>
+              <thead><tr><th>设备</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr><td>GPU-01 工作站</td><td><span class="badge green">正常</span></td><td><button class="action orange" onclick="maintenanceCancel()">设为维修并取消受影响预约</button></td></tr>
+                <tr><td>GPU-02 工作站</td><td><span class="badge red">维修中</span></td><td><button class="action green" onclick="restoreEquipment('GPU-02 工作站')">恢复正常</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>可用时段规则</h3>
+            <label>开放规则
+              <input value="周一至周五 08:00-21:00" />
+            </label>
+            <label>临时停用
+              <input value="2026-07-14 14:00-18:00 设备维护" />
+            </label>
+            <button class="action" onclick="updateParameters()">保存规则</button>
+          </div>
+          <div class="card full">
+            <h3>报修处理</h3>
+            <table>
+              <thead><tr><th>报修号</th><th>报修人</th><th>设备</th><th>故障</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr><td>REP-001</td><td>学生 LC</td><td>GPU-01</td><td>无法开机</td><td><button class="action orange" onclick="handleRepair('repairing')">确认维修</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin-violation" class="screen">
+        <h2>实验室管理员端：违规处理 / 统计</h2>
+        <p class="hint">体现 FR-09、FR-13：疑似违规由系统扫描生成，管理员确认后进入信用处理。</p>
+        <div class="grid">
+          <div class="card">
+            <h3>疑似违规待办</h3>
+            <table>
+              <thead><tr><th>学生</th><th>类型</th><th>建议扣分</th><th>操作</th></tr></thead>
+              <tbody>
+                <tr><td>学生 LC</td><td>迟到签到</td><td>5</td><td><button class="action red" onclick="confirmViolation()">确认扣分</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>统计看板</h3>
+            <p>今日预约量：18</p>
+            <p>设备利用率：72.35%</p>
+            <p>待处理报修：2</p>
+            <p>疑似违规：1</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sys-admin" class="screen">
+        <h2>系统管理员端：用户权限 / 参数 / 日志</h2>
+        <p class="hint">体现 FR-01、FR-11、FR-12：用户、角色、权限、参数版本和操作日志。</p>
+        <div class="grid">
+          <div class="card">
+            <h3>用户与角色</h3>
+            <table>
+              <thead><tr><th>用户</th><th>角色</th><th>状态</th></tr></thead>
+              <tbody>
+                <tr><td>student</td><td>学生</td><td><span class="badge green">active</span></td></tr>
+                <tr><td>labadmin</td><td>实验室管理员</td><td><span class="badge green">active</span></td></tr>
+                <tr><td>assistant</td><td>学生 + 实验室管理员</td><td><span class="badge green">active</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>系统参数</h3>
+            <label>取消免责时限（小时）
+              <input id="paramCancel" value="2" />
+            </label>
+            <label>签到窗口（分钟）
+              <input id="paramCheckin" value="15" />
+            </label>
+            <label>信用封禁阈值
+              <input id="paramBan" value="60" />
+            </label>
+            <button class="action" onclick="updateParameters()">发布参数</button>
+          </div>
+          <div class="card full">
+            <h3>操作日志</h3>
+            <div id="logBox" class="log"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    let state = null;
+
+    document.querySelectorAll("nav button[data-target]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+        button.classList.add("active");
+        document.getElementById(button.dataset.target).classList.add("active");
+      });
+    });
+
+    async function callApi(path, body = {}, method = "POST") {
+      const response = await fetch(path, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: method === "GET" ? undefined : JSON.stringify(body)
+      });
+      const data = await response.json();
+      if (data.state) state = data.state;
+      refreshState();
+      toast(data.message || (data.ok ? "操作成功" : "操作失败"));
+      return data;
+    }
+
+    async function loadState(message) {
+      const response = await fetch("/api/state");
+      const data = await response.json();
+      state = data.state;
+      refreshState();
+      if (message) toast(message);
+    }
+
+    function reservation() {
+      return state?.reservation || {};
+    }
+
+    function fillDevice(name) {
+      document.getElementById("deviceInput").value = name;
+      document.getElementById("mineDevice").textContent = name;
+      toast(`已选择 ${name}。`);
+    }
+
+    async function submitReservation() {
+      await callApi("/api/reservations", {
+        request_id: document.getElementById("requestKey").textContent,
+        device: document.getElementById("deviceInput").value,
+        start: document.getElementById("startTime").value,
+        end: document.getElementById("endTime").value,
+        purpose: document.getElementById("purposeInput").value
+      });
+    }
+
+    async function approveReservation() {
+      await callApi("/api/reservations/approve");
+    }
+
+    async function rejectReservation() {
+      await callApi("/api/reservations/reject");
+    }
+
+    async function cancelReservation(maintenance) {
+      await callApi("/api/reservations/cancel", { maintenance });
+    }
+
+    async function maintenanceCancel() {
+      await callApi("/api/equipment/maintenance");
+    }
+
+    async function checkIn() {
+      await callApi("/api/check-in");
+    }
+
+    async function checkOut() {
+      await callApi("/api/check-out");
+    }
+
+    async function createRepair() {
+      await callApi("/api/repairs", {
+        device: document.getElementById("deviceInput").value || reservation().device,
+        fault: "无法开机"
+      });
+    }
+
+    async function handleRepair(status) {
+      await callApi("/api/repairs/handle", { status });
+    }
+
+    async function restoreEquipment(device) {
+      await callApi("/api/equipment/restore", { device });
+    }
+
+    async function confirmViolation() {
+      await callApi("/api/violations/confirm");
+    }
+
+    async function updateParameters() {
+      await callApi("/api/parameters", {
+        cancel_exemption_hours: document.getElementById("paramCancel")?.value || "2",
+        checkin_window_minutes: document.getElementById("paramCheckin")?.value || "15",
+        ban_threshold: document.getElementById("paramBan")?.value || "60"
+      });
+    }
+
+    async function resetDemo() {
+      await callApi("/api/reset");
+    }
+
+    function refreshState() {
+      if (!state) return;
+      const res = reservation();
+      const label = {
+        none: ["未提交", ""],
+        pending: ["待审批", "orange"],
+        approved: ["已通过", "green"],
+        using: ["使用中", "green"],
+        completed: ["已完成", "green"],
+        cancelled: ["已取消", "red"],
+        rejected: ["已驳回", "red"]
+      }[res.status] || ["未提交", ""];
+      const status = document.getElementById("reservationStatus");
+      status.textContent = label[0];
+      status.className = `badge ${label[1]}`.trim();
+      document.getElementById("mineDevice").textContent = res.device || "GPU-01 工作站";
+      document.getElementById("deviceInput").value = res.device || document.getElementById("deviceInput").value;
+      document.getElementById("stateText").textContent =
+        `当前预约状态：${res.status}；资源：${res.device}；后端日志 ${state.logs.length} 条。可切换左侧页面继续演示审批、签到、维护取消等流程。`;
+      ["Pending", "Approved", "Using", "Completed", "Cancelled"].forEach(name => {
+        document.getElementById(`step${name}`).className = "step";
+      });
+      const active = {
+        pending: "stepPending",
+        approved: "stepApproved",
+        using: "stepUsing",
+        completed: "stepCompleted",
+        cancelled: "stepCancelled",
+        rejected: "stepCancelled"
+      }[res.status];
+      if (active) document.getElementById(active).classList.add("current");
+      if (state.credit) {
+        document.getElementById("creditScore").textContent = state.credit.score;
+        document.getElementById("creditStatus").textContent = state.credit.banned ? "状态：已封禁" : "状态：可预约";
+      }
+      if (state.parameters) {
+        document.getElementById("paramCancel").value = state.parameters.cancel_exemption_hours;
+        document.getElementById("paramCheckin").value = state.parameters.checkin_window_minutes;
+        document.getElementById("paramBan").value = state.parameters.ban_threshold;
+      }
+      renderLogs();
+    }
+
+    function renderLogs() {
+      document.getElementById("logBox").textContent = (state?.logs || []).join("\n");
+    }
+
+    function toast(message) {
+      const box = document.getElementById("toast");
+      box.textContent = message;
+      box.classList.add("show");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => box.classList.remove("show"), 2600);
+    }
+
+    loadState();
+  </script>
+</body>
+</html>

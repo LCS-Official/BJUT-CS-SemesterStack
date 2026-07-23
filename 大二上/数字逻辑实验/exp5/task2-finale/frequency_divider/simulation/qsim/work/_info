@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S3\frequency_divider\frequency_divider\simulation\qsim
+vfrequency_divider
+Z1 !s100 ]h8@Jn5z3R21F=mN76:Bk2
+Z2 I7B9N@IZV0mTNPcfYiFal72
+Z3 VU^=o4`>SJSe2X6gm6cN2U3
+Z4 dD:\SLSY Project\S3\frequency_divider\frequency_divider\simulation\qsim
+Z5 w1731336641
+Z6 8frequency_divider.vo
+Z7 Ffrequency_divider.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|frequency_divider.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1731336642.071000
+Z12 !s107 frequency_divider.vo|
+!s101 -O0
+vfrequency_divider_vlg_check_tst
+!i10b 1
+Z13 !s100 X3<9Y`Ued>KCVMJ0ckO9h2
+Z14 Il:H82_6=071m3dJ]UT8F52
+Z15 V^VkTTFgN^Ukm9CdQg_M_D3
+R4
+R5
+Z16 8frequency_divider.vt
+Z17 Ffrequency_divider.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z18 !s108 1731336642.138000
+Z19 !s107 frequency_divider.vt|
+Z20 !s90 -work|work|frequency_divider.vt|
+!s101 -O0
+R10
+vfrequency_divider_vlg_sample_tst
+!i10b 1
+Z21 !s100 1j>5_mnd4omFiX;LZRcY[3
+Z22 IRCImgJDiPH^o0P0lzNUdH0
+Z23 VQDTgcG`VL::EQ[ckS7DPX0
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vfrequency_divider_vlg_vec_tst
+!i10b 1
+Z24 !s100 z]h^1<>o]_T8EWBHhP^<Y0
+Z25 ImU]RiLjfimZJbIzdFPIBH0
+Z26 V[YC]6l^Em9J3W1<=;=j?I3
+R4
+R5
+R16
+R17
+Z27 L0 239
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

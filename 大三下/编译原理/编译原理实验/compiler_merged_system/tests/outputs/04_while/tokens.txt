@@ -1,0 +1,11 @@
+WHILE _
+IDN a
+< _
+IDN b
+DO _
+IDN a
+= _
+IDN a
++ _
+INT10 1
+; _

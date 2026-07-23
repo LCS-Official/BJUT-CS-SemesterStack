@@ -1,0 +1,122 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="R6JpyluxO9FmK5FgDqkP">
+    <mxGraphModel dx="1113" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-1" value="" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="180" y="514" width="760" height="286" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-2" value="" style="whiteSpace=wrap;strokeWidth=2;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="40" y="130" width="640" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-3" value="timer_interrupt" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="244.5" y="140" width="137" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-4" value="do_timer_interrupt&#xa;ACK/分析/写回RTC" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="214" y="206" width="198" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-5" value="do_timer&#xa;核心逻辑" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="251" y="290" width="125" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-6" value="jiffies + 1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="55" y="400" width="98" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-7" value="update_process_times&#xa;扣除进程时间片/记账" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="203" y="394" width="220" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-8" value="mark_bh&#xa;标记底半部需执行" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="473" y="394" width="188" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-9" value="timer_bh(void)" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="508" y="539" width="118" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-10" value="update_times(void)&#xa;把 jiffies 增量转换为人类可读" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="296" y="632" width="247" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-11" value="run_timer_list(void)&#xa;执行时间轮算法" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="593" y="632" width="172" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-12" value="cascade_timers(struct timer_vec *tv)&#xa;搬运任务: 时针 到 分针" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="439" y="715" width="213" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-13" value="detach_timer (struct timer_list *timer)&#xa;去掉到期的软件定时器" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="702" y="715" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-3" target="IxNIF-8vnX1hZoZNov4H-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-4" target="IxNIF-8vnX1hZoZNov4H-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-16" value="系统跳动" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.75;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-5" target="IxNIF-8vnX1hZoZNov4H-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="104" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-17" value="进程管理" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-5" target="IxNIF-8vnX1hZoZNov4H-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-18" value="安排杂活" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.71;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-5" target="IxNIF-8vnX1hZoZNov4H-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="567" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-19" value="稍后执行" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-8" target="IxNIF-8vnX1hZoZNov4H-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-20" value="更新人类时间" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.92;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-9" target="IxNIF-8vnX1hZoZNov4H-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="424" y="605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-21" value="检查软件定时器" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.93;entryX=0.5;entryY=0;rounded=0;fontSize=16;" parent="1" source="IxNIF-8vnX1hZoZNov4H-9" target="IxNIF-8vnX1hZoZNov4H-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.173;exitY=1.012;entryX=0.5;entryY=0;rounded=0;fontSize=16;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IxNIF-8vnX1hZoZNov4H-11" target="IxNIF-8vnX1hZoZNov4H-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxNIF-8vnX1hZoZNov4H-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.833;exitY=1.034;entryX=0.5;entryY=0;rounded=0;fontSize=16;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IxNIF-8vnX1hZoZNov4H-11" target="IxNIF-8vnX1hZoZNov4H-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JalfGysxhkM3ufVVlwM7-1" value="calc_load(unsigned long ticks)&#xa;计算负载" style="whiteSpace=wrap;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="200" y="715" width="213" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JalfGysxhkM3ufVVlwM7-2" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.316;exitY=1.023;entryX=0.5;entryY=0;rounded=0;exitDx=0;exitDy=0;fontSize=16;exitPerimeter=0;" parent="1" source="IxNIF-8vnX1hZoZNov4H-10" target="JalfGysxhkM3ufVVlwM7-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="690" />
+            </Array>
+            <mxPoint x="445" y="710" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp2\exp2-task2\main-reg_8_32\simulation\qsim
+vreg_8_32
+Z1 InR7?F:8O3Gl9i1O@h0;Pn2
+Z2 VHggmCT;S6TEoH`EU@Y0Kk2
+Z3 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp2\exp2-task2\main-reg_8_32\simulation\qsim
+Z4 w1730730369
+Z5 8reg_8_32.vo
+Z6 Freg_8_32.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|reg_8_32.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 [AUVAc?GTdo]:1UPcE=>o3
+!s85 0
+Z11 !s108 1730730370.258000
+Z12 !s107 reg_8_32.vo|
+!s101 -O0
+vreg_8_32_vlg_check_tst
+!i10b 1
+Z13 !s100 kQ`JI4dTh_n4lDJj;;]JH2
+Z14 IYe1TfWjo^@N`NGV8nj0D@0
+Z15 VLPA<G:CT4X=eB^D7Y;JJ[3
+R3
+Z16 w1730730368
+Z17 8reg_8_32.vt
+Z18 Freg_8_32.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z19 !s108 1730730370.383000
+Z20 !s107 reg_8_32.vt|
+Z21 !s90 -work|work|reg_8_32.vt|
+!s101 -O0
+R9
+vreg_8_32_vlg_sample_tst
+!i10b 1
+Z22 !s100 E^<:LnjPk;8b7NRZ[<4Xf1
+Z23 I7WD^VbURFadTHfS:`mj>S3
+Z24 VDjhAXXGOg7`Q:>=CGM1oW0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vreg_8_32_vlg_vec_tst
+!i10b 1
+!s100 aDJJh>>2NF@l8XmY`[6c:1
+IQ_XVH7Lgd;:JK>h7bk[[X1
+Z25 VM;l4c>8M5`Em1cjQcbb]R2
+R3
+R16
+R17
+R18
+Z26 L0 749
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

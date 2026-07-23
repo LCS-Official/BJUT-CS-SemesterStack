@@ -1,0 +1,130 @@
+Frame 13: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:24.124355700 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:24.124355700 UTC
+    Epoch Arrival Time: 1783408824.124355700
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 2.435604400 seconds]
+    [Time since reference or first frame: 3.296030100 seconds]
+    Frame Number: 13
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: Intel_09:59:c0 (88:f4:da:09:59:c0), Dst: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+    Destination: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.138.120, Dst: 192.168.138.246
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 60
+    Identification: 0xf2fb (62203)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: ICMP (1)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.138.120
+    Destination Address: 192.168.138.246
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: Echo (ping) request (8)
+    Code: 0
+    Checksum: 0x4ca0 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence Number (BE): 187 (0x00bb)
+    Sequence Number (LE): 47872 (0xbb00)
+    Data (32 bytes)
+
+0000  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0010  71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69   qrstuvwabcdefghi
+        Data: 6162636465666768696a6b6c6d6e6f7071727374757677616263646566676869
+        [Length: 32]
+
+Frame 14: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:24.140023600 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:24.140023600 UTC
+    Epoch Arrival Time: 1783408824.140023600
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 15.667900 milliseconds]
+    [Time delta from previous displayed frame: 15.667900 milliseconds]
+    [Time since reference or first frame: 3.311698000 seconds]
+    Frame Number: 14
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f), Dst: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Destination: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 192.168.138.246, Dst: 192.168.138.120
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 60
+    Identification: 0x736e (29550)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0x7093 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.138.246
+    Destination Address: 192.168.138.120
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: Echo (ping) reply (0)
+    Code: 0
+    Checksum: 0x54a0 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence Number (BE): 187 (0x00bb)
+    Sequence Number (LE): 47872 (0xbb00)
+    [Request frame: 13]
+    [Response time: 15.668 ms]
+    Data (32 bytes)
+
+0000  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0010  71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69   qrstuvwabcdefghi
+        Data: 6162636465666768696a6b6c6d6e6f7071727374757677616263646566676869
+        [Length: 32]

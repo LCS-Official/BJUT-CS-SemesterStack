@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S5\keyboard_recognition\simulation\qsim
+vkeyboard_recognition
+Z1 !s100 HnzXZ::TFiSoUMi?:0G9c0
+Z2 IZiJ;n3^jlI_Vd@fD5zPjN1
+Z3 VY11z5KWI3NZg>72S<V^H22
+Z4 dD:\SLSY Project\S5\Task2\keyboard_recognition\simulation\qsim
+Z5 w1731502064
+Z6 8keyboard_recognition.vo
+Z7 Fkeyboard_recognition.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|keyboard_recognition.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1731502065.943000
+Z12 !s107 keyboard_recognition.vo|
+!s101 -O0
+vkeyboard_recognition_vlg_check_tst
+!i10b 1
+Z13 !s100 ;1cBi8U_ai>_1:>1i9:oY2
+Z14 IF28[8bHIKE3Y90=ZEZFUi0
+Z15 Vl[ob6TFbVehdI79In_^lI1
+R4
+R5
+Z16 8keyboard_recognition.vt
+Z17 Fkeyboard_recognition.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z18 !s108 1731502066.133000
+Z19 !s107 keyboard_recognition.vt|
+Z20 !s90 -work|work|keyboard_recognition.vt|
+!s101 -O0
+R10
+vkeyboard_recognition_vlg_sample_tst
+!i10b 1
+Z21 !s100 TBijI>XkH<:mb8BEPL7Wn1
+Z22 IAK<eMN2:6coe^ehi2a4Ub3
+Z23 Va]YY<]hZ6;c3;WEb6V8<Y0
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vkeyboard_recognition_vlg_vec_tst
+!i10b 1
+Z24 !s100 GWmX@R=2Y5c<7[_B20]I]1
+Z25 I^:LomQH<Hc5<FALT5?YhI2
+Z26 V=_l21ZA953VbPH?z74a8g3
+R4
+R5
+R16
+R17
+Z27 L0 316
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

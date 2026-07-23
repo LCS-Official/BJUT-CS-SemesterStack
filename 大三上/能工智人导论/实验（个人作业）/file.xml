@@ -1,0 +1,199 @@
+<mxfile host="app.diagrams.net" modified="2024-05-23T12:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="WjC9" version="21.2.9" type="device">
+  <diagram id="ACO_TSP_Flowchart" name="ACO_TSP_Flowchart">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- ================= 主干流程 ================= -->
+        <!-- 开始 -->
+        <mxCell id="start" value="程序开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 生成数据 -->
+        <mxCell id="initData" value="生成随机&lt;br&gt;城市坐标数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="initData">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 选择模式 -->
+        <mxCell id="selectMode" value="选择运行模式" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="490" y="210" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="initData" target="selectMode">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================= 左侧分支 (单次演示) ================= -->
+        <mxCell id="demoConfig" value="初始化参数&lt;br&gt;Rho=0.1, Alpha=1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="250" y="320" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 连线：选择模式 -> 左侧 -->
+        <mxCell id="edge_mode1" value="模式1 (演示)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#0000FF;" edge="1" parent="1" source="selectMode" target="demoConfig">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="runAlgo1" value="调用 ACO 算法&lt;br&gt;(迭代100次)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="250" y="410" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="demoConfig" target="runAlgo1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="plot" value="绘制收敛曲线&lt;br&gt;与最佳路径图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="250" y="500" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="runAlgo1" target="plot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================= 右侧分支 (自动实验) ================= -->
+        <mxCell id="expRho" value="实验1: 遍历Rho&lt;br&gt;(0.1 ~ 0.9)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="730" y="320" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 连线：选择模式 -> 右侧 -->
+        <mxCell id="edge_mode2" value="模式2 (实验)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#0000FF;" edge="1" parent="1" source="selectMode" target="expRho">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="runAlgo2" value="多次运行算法&lt;br&gt;取平均值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="400" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="expRho" target="runAlgo2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="expAlpha" value="实验2: 遍历Alpha&lt;br&gt;(1 ~ 4)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="runAlgo2" target="expAlpha">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="runAlgo3" value="多次运行算法&lt;br&gt;取平均值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="560" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="expAlpha" target="runAlgo3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="expBeta" value="实验3: 遍历Beta&lt;br&gt;(1 ~ 5)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="730" y="640" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="runAlgo3" target="expBeta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="runAlgo4" value="多次运行算法&lt;br&gt;取平均值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="720" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="expBeta" target="runAlgo4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="printTable" value="输出三张&lt;br&gt;数据统计表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="730" y="800" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="runAlgo4" target="printTable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================= 中间：ACO核心算法子流程 ================= -->
+        <!-- 虚线框 -->
+        <mxCell id="group" value="ACO 核心算法内部逻辑" style="group;dashed=1;strokeColor=#666666;verticalAlign=top;align=left;spacingTop=5;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="440" y="380" width="240" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;strokeWidth=1;dashed=1;" vertex="1" parent="group">
+          <mxGeometry x="0" y="20" width="240" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="acoStart" value="初始化信息素" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="loopStart" value="达到迭代次数?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="490" y="500" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeAco1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="acoStart" target="loopStart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="antMove" value="蚂蚁轮盘赌&lt;br&gt;构建路径" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="590" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeAco2" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="loopStart" target="antMove">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="updatePhe" value="更新信息素&lt;br&gt;(挥发+增强)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="680" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeAco3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="antMove" target="updatePhe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 循环回连 -->
+        <mxCell id="edgeLoop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="updatePhe" target="loopStart">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="705" />
+              <mxPoint x="460" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 退出循环 -->
+        <mxCell id="edgeExit" value="是(返回)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="loopStart">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ================= 结束节点与汇聚 ================= -->
+        <mxCell id="end" value="程序结束" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry x="500" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- 左侧分支结束 -->
+        <mxCell id="edgeEnd1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="plot" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 右侧分支结束 -->
+        <mxCell id="edgeEnd2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="printTable" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 中间算法结束 -->
+        <mxCell id="edgeEnd3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="780" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="640" y="790" />
+              <mxPoint x="560" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+t1 := a * 136.5
+t2 := 6.2 + t1
+a := t2
+t3 := a / 1
+my_var := t3
+octv := 7.5
+t4 := my_var + octv
+obj.field := t4

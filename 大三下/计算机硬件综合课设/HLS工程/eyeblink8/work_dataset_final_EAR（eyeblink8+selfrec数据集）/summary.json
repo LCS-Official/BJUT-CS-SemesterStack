@@ -1,0 +1,51 @@
+{
+  "note": "Eyeblink8 contributes only open/blink. selfrec contributes only closed. If val/test have no selfrec video ids assigned, they will contain no ground-truth closed.",
+  "selfrec_video_ids_all": [
+    "11",
+    "22",
+    "33",
+    "WIN_20260414_20_31_10_Pro",
+    "WIN_20260414_20_41_42_Pro",
+    "WIN_20260414_20_42_23_Pro",
+    "WIN_20260414_21_29_13_Pro",
+    "test1",
+    "test2",
+    "test3",
+    "test4"
+  ],
+  "selfrec_train_videos_used": [
+    "11",
+    "22",
+    "33",
+    "WIN_20260414_20_31_10_Pro",
+    "WIN_20260414_20_41_42_Pro",
+    "test1",
+    "test2"
+  ],
+  "selfrec_val_videos_used": [
+    "WIN_20260414_20_42_23_Pro",
+    "test3"
+  ],
+  "selfrec_test_videos_used": [
+    "WIN_20260414_21_29_13_Pro",
+    "test4"
+  ],
+  "train_samples": 22948,
+  "val_samples": 3777,
+  "test_samples": 2188,
+  "train_label_counts": {
+    "open": 17436,
+    "blink": 3220,
+    "closed": 2292
+  },
+  "val_label_counts": {
+    "open": 2646,
+    "blink": 761,
+    "closed": 370
+  },
+  "test_label_counts": {
+    "open": 1339,
+    "blink": 439,
+    "closed": 410
+  }
+}

@@ -1,0 +1,225 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\LC\Desktop\LCState_pjks\Task1\simulation\modelsim
+valu
+IOWBDWk]eKFE;9?FgkKe<D2
+VUD><n5BdYc;]8LikSQCcL2
+Z1 dC:\Users\LC\Desktop\LCState_pjks\Task1\simulation\modelsim
+w1750399209
+8C:/Users/LC/Desktop/LCState_pjks/Task1/alu.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/alu.v
+L0 12
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task1 -O0
+!i10b 1
+!s100 S:jMloiYImG]^GjJV_nE43
+!s85 0
+!s108 1751118051.037000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v|C:/Users/LC/Desktop/LCState_pjks/Task1/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/alu.v|
+!s101 -O0
+vcontroller
+IJ@niQcF]AXAfQBHY4:_`a1
+V]LncHUQG>[Ffm5oj3zFMD1
+R1
+w1750649846
+8C:/Users/LC/Desktop/LCState_pjks/Task1/controller.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/controller.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 6H:A_U>1m13I4fJTgSJX=2
+!s85 0
+!s108 1751118051.077000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v|C:/Users/LC/Desktop/LCState_pjks/Task1/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/controller.v|
+!s101 -O0
+vdatapath
+ID8EeVF6o`G;Uo;FIj1?L43
+Vm^=<f;zU6Sc:eMFegM1nE2
+R1
+w1751038771
+8C:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v
+L0 9
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 [F?cLon_zbCJX[g9Z0Rj30
+!s85 0
+!s108 1751118051.113000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v|C:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/datapath.v|
+!s101 -O0
+vdm
+I^kV3;ELL:>bPGhzgoU80R3
+V4SCUJPjY^UOoz0nR9cVLJ0
+R1
+w1750640762
+8C:/Users/LC/Desktop/LCState_pjks/Task1/dm.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/dm.v
+L0 10
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 9kcn6BT]IEL2i26FJ[]8g1
+!s85 0
+!s108 1751118051.174000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/dm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/dm.v|
+!s101 -O0
+vext
+ID<R5INVjWHW7^;0BGd1L;1
+VTzlg^f<nh90e[X=7h]d1V3
+R1
+w1750399505
+8C:/Users/LC/Desktop/LCState_pjks/Task1/ext.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/ext.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 kGo=ZY]Pno4NIVVIcojcg2
+!s85 0
+!s108 1751118051.220000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/ext.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/ext.v|
+!s101 -O0
+vgpr
+ICod6[c56:IoV7_`@UgBT[3
+V_g[LVJc9`ToffM:Vf]K=D0
+R1
+w1751091826
+8C:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v
+L0 6
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 9Nz=^bW=RS6gi7:Ozo@nT0
+!s85 0
+!s108 1751118051.251000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/gpr.v|
+!s101 -O0
+vim
+Ib^:NC_3G>bKNSZ_D9Njb_1
+Vm0:5P3:e0BSeazIJi>]o[2
+R1
+w1750397604
+8C:/Users/LC/Desktop/LCState_pjks/Task1/im.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/im.v
+L0 7
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 GSB8;dQ^L=gWgmma@NjUO0
+!s85 0
+!s108 1751118051.300000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/im.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/im.v|
+!s101 -O0
+vmips
+IP=odnVH7WW14UalMUFPJ73
+V^lO[ZOI0I1e8M8GJjI9B:3
+R1
+w1751038134
+8C:/Users/LC/Desktop/LCState_pjks/Task1/mips.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/mips.v
+L0 9
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1gIg6eGoS[YlETHFkLDdP3
+!s85 0
+!s108 1751118051.342000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v|C:/Users/LC/Desktop/LCState_pjks/Task1/mips.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/mips.v|
+!s101 -O0
+vnpc
+IXXI:d:SLiUKn@YAmi>BNK1
+VfW79N_:@0>81OK_i@21@j0
+R1
+w1750608020
+8C:/Users/LC/Desktop/LCState_pjks/Task1/npc.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/npc.v
+L0 10
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 jFKJRe0U2Z_Xd6;;EfP@b2
+!s85 0
+!s108 1751118051.373000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/defines.v|C:/Users/LC/Desktop/LCState_pjks/Task1/npc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/npc.v|
+!s101 -O0
+vpc
+IVW10J^6j73H1@UIJ9H`MM0
+V@I7OHKcaN2h42P0:XR]DL0
+R1
+w1750601539
+8C:/Users/LC/Desktop/LCState_pjks/Task1/pc.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/pc.v
+L0 7
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 J<=Ra3z6Pofh>]C3mK`H10
+!s85 0
+!s108 1751118051.418000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/pc.v|
+!s101 -O0
+vtest_mips_tb
+!i10b 1
+!s100 ;?ZX`EM=nm8YSCk77]TYX0
+IZ@^1AiceU64LBYVzg58b13
+VF_cRjX846n6YOI[2o3m9B2
+R1
+w1750608031
+8C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v
+FC:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1751118051.464000
+!s107 C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/LC/Desktop/LCState_pjks/Task1|C:/Users/LC/Desktop/LCState_pjks/Task1/test_mips_tb.v|
+!s101 -O0
+R3
+R4

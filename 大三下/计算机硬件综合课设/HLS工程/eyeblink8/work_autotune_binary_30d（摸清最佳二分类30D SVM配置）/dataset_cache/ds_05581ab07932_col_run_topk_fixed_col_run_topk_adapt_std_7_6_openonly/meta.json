@@ -1,0 +1,74 @@
+{
+  "config": {
+    "config_id": 81,
+    "feature_pair_name": "col_run_topk_fixed+col_run_topk_adapt",
+    "feature_names": [
+      "col_run_topk_fixed",
+      "col_run_topk_adapt"
+    ],
+    "dataset_rule_name": "std_7_6_openonly",
+    "central_size": 7,
+    "min_closed_in_central": 6,
+    "open_step": 3,
+    "eyeblink8_policy": "open_only",
+    "C": 0.03,
+    "class_weight": "balanced"
+  },
+  "input_dim": 30,
+  "feature_cols": [
+    "col_run_topk_adapt_0",
+    "col_run_topk_adapt_1",
+    "col_run_topk_adapt_2",
+    "col_run_topk_adapt_3",
+    "col_run_topk_adapt_4",
+    "col_run_topk_adapt_5",
+    "col_run_topk_adapt_6",
+    "col_run_topk_adapt_7",
+    "col_run_topk_adapt_8",
+    "col_run_topk_adapt_9",
+    "col_run_topk_adapt_10",
+    "col_run_topk_adapt_11",
+    "col_run_topk_adapt_12",
+    "col_run_topk_adapt_13",
+    "col_run_topk_adapt_14",
+    "col_run_topk_fixed_0",
+    "col_run_topk_fixed_1",
+    "col_run_topk_fixed_2",
+    "col_run_topk_fixed_3",
+    "col_run_topk_fixed_4",
+    "col_run_topk_fixed_5",
+    "col_run_topk_fixed_6",
+    "col_run_topk_fixed_7",
+    "col_run_topk_fixed_8",
+    "col_run_topk_fixed_9",
+    "col_run_topk_fixed_10",
+    "col_run_topk_fixed_11",
+    "col_run_topk_fixed_12",
+    "col_run_topk_fixed_13",
+    "col_run_topk_fixed_14"
+  ],
+  "train_label_counts": {
+    "non_closed": 17486,
+    "closed": 2292
+  },
+  "val_label_counts": {
+    "non_closed": 2656,
+    "closed": 370
+  },
+  "test_label_counts": {
+    "non_closed": 1408,
+    "closed": 367
+  },
+  "train_orig_label_counts": {
+    "open": 17486,
+    "closed": 2292
+  },
+  "val_orig_label_counts": {
+    "open": 2656,
+    "closed": 370
+  },
+  "test_orig_label_counts": {
+    "open": 1408,
+    "closed": 367
+  }
+}

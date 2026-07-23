@@ -1,0 +1,6 @@
+while (a3+15)>0xa do if x2 = 07 then while y<z do y = x * y / z; c=b*c+d;
+a = 5 + 3 * 2;
+if a > b then a = a - 1 else a = a + 1;
+while i < 10 do i = i + 1;
+x = (a + b) * (c - d);
+if x <> y then z = 0;

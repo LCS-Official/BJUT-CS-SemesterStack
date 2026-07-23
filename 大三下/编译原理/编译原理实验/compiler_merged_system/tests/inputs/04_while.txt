@@ -1,0 +1,1 @@
+while a < b do a = a + 1;

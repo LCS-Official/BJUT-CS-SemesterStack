@@ -1,0 +1,28 @@
+P
+├── S: while C do S
+│   ├── C: E > E
+│   │   ├── E: (a3 + 15)
+│   │   └── E: 10
+│   └── S: if C then S
+│       ├── C: E = E
+│       │   ├── E: x2
+│       │   └── E: 7
+│       └── S: while C do S
+│           ├── C: E < E
+│           │   ├── E: y
+│           │   └── E: z
+│           └── S: id = E
+│               ├── id: y
+│               └── E: x * y / z
+├── S: id = E
+│   ├── id: c
+│   └── E: b * c + d
+├── S: id = E
+│   ├── id: a
+│   └── E: 6.2 + a * 136.5
+├── S: id = E
+│   ├── id: my_var
+│   └── E: c / 0
+└── S: id = E
+    ├── id: octv
+    └── E: 7.5

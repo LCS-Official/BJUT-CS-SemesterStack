@@ -1,0 +1,11 @@
+P
+└── S: if C then S else S
+    ├── C: E > E
+    │   ├── E: a
+    │   └── E: b
+    ├── S: id = E
+    │   ├── id: x
+    │   └── E: 1
+    └── S: id = E
+        ├── id: x
+        └── E: 2

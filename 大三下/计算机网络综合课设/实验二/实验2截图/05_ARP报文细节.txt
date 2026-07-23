@@ -1,0 +1,158 @@
+Frame 21: Packet, 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:26.176782700 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:26.176782700 UTC
+    Epoch Arrival Time: 1783408826.176782700
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 19.305400 milliseconds]
+    [Time since reference or first frame: 5.348457100 seconds]
+    Frame Number: 21
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: Intel_09:59:c0 (88:f4:da:09:59:c0), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 1]
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Sender IP address: 192.168.138.120
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.138.1
+
+Frame 22: Packet, 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:27.050655300 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:27.050655300 UTC
+    Epoch Arrival Time: 1783408827.050655300
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 873.872600 milliseconds]
+    [Time delta from previous displayed frame: 873.872600 milliseconds]
+    [Time since reference or first frame: 6.222329700 seconds]
+    Frame Number: 22
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: Intel_09:59:c0 (88:f4:da:09:59:c0), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 1]
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Sender IP address: 192.168.138.120
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.138.1
+
+Frame 39: Packet, 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:33.542691100 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:33.542691100 UTC
+    Epoch Arrival Time: 1783408833.542691100
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 970.357400 milliseconds]
+    [Time delta from previous displayed frame: 6.492035800 seconds]
+    [Time since reference or first frame: 12.714365500 seconds]
+    Frame Number: 39
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: Intel_09:59:c0 (88:f4:da:09:59:c0), Dst: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+    Destination: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 0]
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Sender IP address: 192.168.138.120
+    Target MAC address: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+    Target IP address: 192.168.138.246
+
+Frame 40: Packet, 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F})
+        Interface name: \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+        Interface description: WLAN
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jul  7, 2026 15:20:33.555611100 中国标准时间
+    UTC Arrival Time: Jul  7, 2026 07:20:33.555611100 UTC
+    Epoch Arrival Time: 1783408833.555611100
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 12.920000 milliseconds]
+    [Time delta from previous displayed frame: 12.920000 milliseconds]
+    [Time since reference or first frame: 12.727285500 seconds]
+    Frame Number: 40
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    Character encoding: ASCII (0)
+Ethernet II, Src: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f), Dst: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Destination: Intel_09:59:c0 (88:f4:da:09:59:c0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 0]
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: ce:fe:72:ac:80:5f (ce:fe:72:ac:80:5f)
+    Sender IP address: 192.168.138.246
+    Target MAC address: Intel_09:59:c0 (88:f4:da:09:59:c0)
+    Target IP address: 192.168.138.120

@@ -1,0 +1,1 @@
+run_id,prompt_id,scenario_id,geometry_type,obstacle_type,level,perturbation_type,motion_constraint,image_path,image_role,model_key,temperature,reference_judgment,final_judgment,is_correct,judgment_flip,reasoning_step_count,uses_formula,uses_coordinate_system,spatial_modeling_depth,failure_mode,error_note,response_text

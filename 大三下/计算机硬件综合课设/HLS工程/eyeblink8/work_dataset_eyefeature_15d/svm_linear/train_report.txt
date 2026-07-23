@@ -1,0 +1,15 @@
+              precision    recall  f1-score   support
+
+        open     0.8194    0.9748    0.8904     17486
+       blink     0.6082    0.0774    0.1374      4390
+      closed     0.8123    0.9948    0.8943      2292
+
+    accuracy                         0.8137     24168
+   macro avg     0.7466    0.6824    0.6407     24168
+weighted avg     0.7804    0.8137    0.7540     24168
+
+
+confusion_matrix(labels=open,blink,closed):
+[[17046   216   224]
+ [ 3747   340   303]
+ [    9     3  2280]]

@@ -1,0 +1,16 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 1 条语句；后续 P' => ε
+S -> { P }                 | S => { 多条语句 }
+P -> S ; P' | ε            | P => 共识别 2 条语句；后续 P' => ε
+S -> id = E                | S => x = 1
+E -> T E'                  | E => 1; place = 1
+T -> F T'                  | T => 1; place = 1
+F -> int10                 | F => 1
+S -> id = E                | S => y = x + 2
+E -> T E'                  | E => x + 2; place = t1
+T -> F T'                  | T => x; place = x
+F -> id                    | F => x
+E' -> + T E'               | E => x + 2; place = t1
+T -> F T'                  | T => 2; place = 2
+F -> int10                 | F => 2
+Result: ACCEPT

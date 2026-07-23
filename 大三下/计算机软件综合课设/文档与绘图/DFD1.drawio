@@ -1,0 +1,144 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="B81tuSViIczoaCqsWdmm">
+    <mxGraphModel dx="1892" dy="155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w1q4vQYsq1hfwY_oxsFC-1" connectable="0" parent="1" style="group;fontSize=22;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="820" width="1880" x="170" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-95" parent="w1q4vQYsq1hfwY_oxsFC-1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="学生" vertex="1">
+          <mxGeometry height="38.30449826989619" width="115.61497326203208" x="1589.9982352941176" y="205.70508650519034" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-96" parent="w1q4vQYsq1hfwY_oxsFC-1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="实验室管理员" vertex="1">
+          <mxGeometry height="38.30449826989619" width="196.0427807486631" y="118.46020761245676" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-97" parent="w1q4vQYsq1hfwY_oxsFC-1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="系统管理员" vertex="1">
+          <mxGeometry height="38.30449826989619" width="175.93582887700535" x="666.0427807486631" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-98" parent="w1q4vQYsq1hfwY_oxsFC-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="D1: 预约记录表" vertex="1">
+          <mxGeometry height="53.91003460207613" width="155.8288770053476" x="1470.3208556149734" y="712.1799307958478" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-99" parent="w1q4vQYsq1hfwY_oxsFC-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="D2: 设备资源状态库" vertex="1">
+          <mxGeometry height="57.46" width="212.99" x="847.01" y="397.23" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-100" parent="w1q4vQYsq1hfwY_oxsFC-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="D3: 用户档案与信用库" vertex="1">
+          <mxGeometry height="58.17" width="228.56" x="741.44" y="588.75" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-101" parent="w1q4vQYsq1hfwY_oxsFC-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="D4: 故障维修记录表" vertex="1">
+          <mxGeometry height="57.46" width="213.29" x="1110" y="397.23" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-102" parent="w1q4vQYsq1hfwY_oxsFC-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="D5: 系统参数配置表" vertex="1">
+          <mxGeometry height="57.46" width="206.58" x="560" y="397.23" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-103" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="1. 预约与冲突检测" vertex="1">
+          <mxGeometry height="103.56401384083046" width="103.56401384083046" x="1189.999679144385" y="543.356643598616" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-104" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="2. 现场签到与联控" vertex="1">
+          <mxGeometry height="103.56401384083046" width="103.56401384083046" x="1696.524064171123" y="347.5778546712803" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-105" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="3. 审批与信用处理" vertex="1">
+          <mxGeometry height="103.56401384083046" width="103.56401384083046" x="454.91978609625664" y="716.4359861591696" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-106" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="4. 故障与维修管理" vertex="1">
+          <mxGeometry height="103.56401384083046" width="103.56401384083046" x="1080.7486631016043" y="148.96193771626298" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-107" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="5. 基础数据维护" vertex="1">
+          <mxGeometry height="92.21453287197231" width="92.21453287197231" x="271.4438502673797" y="205.70934256055364" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-108" parent="w1q4vQYsq1hfwY_oxsFC-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" value="6. 系统配置管理" vertex="1">
+          <mxGeometry height="92.21453287197231" width="92.21453287197231" x="702.4866310160428" y="220.60553633217992" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-109" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-97" style="startArrow=none;endArrow=block;exitX=0.16;exitY=0.99;entryX=1;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-107" value="1. 录入/更新人员、设备信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-110" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-107" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.28;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-100" value="2. 更新用户档案/角色">
+          <mxGeometry relative="1" x="-0.4296" y="-11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-111" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-107" style="startArrow=none;endArrow=block;exitX=1;exitY=0.87;entryX=0;entryY=0.23;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-99" value="3. 维护设备/空间档案">
+          <mxGeometry relative="1" x="-0.3414" y="13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-112" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-97" style="startArrow=none;endArrow=block;exitX=0.54;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-108" value="4. 设置业务规则(如扣分分值)">
+          <mxGeometry relative="1" x="-0.4422" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-113" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-108" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.07;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-102" value="5. 写入配置参数">
+          <mxGeometry relative="1" x="-0.1422" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-114" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-95" style="startArrow=none;endArrow=block;exitX=0;exitY=0.77;entryX=1;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-103" value="6. 提交预约申请">
+          <mxGeometry relative="1" x="-0.0743" y="-36" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-115" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-102" style="startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0;entryY=0.43;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=-10;exitPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-103" value="7. 提供规则(如取消时限)">
+          <mxGeometry relative="1" x="-0.3953" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-116" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-100" style="startArrow=none;endArrow=block;exitX=1;exitY=0.39;entryX=0;entryY=1;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-103" value="8. 读取信用等级">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-117" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-99" style="startArrow=none;endArrow=block;exitX=0.855;exitY=1;entryX=0;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=-2.9;exitPerimeter=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-103" value="9. 返回资源状态">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-118" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-103" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-98" value="10. 写入申请单">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-119" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-103" style="startArrow=none;endArrow=block;exitX=1;exitY=0.38;entryX=0.5;entryY=1;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-95" value="11. 反馈结果/智能推荐">
+          <mxGeometry relative="1" x="-0.032" y="-29" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-120" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-95" style="startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-104" value="12. 现场签到/上报故障">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-121" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-104" style="startArrow=none;endArrow=block;exitX=0.32;exitY=1;entryX=1;entryY=0.41;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-98" value="13. 校验预约单">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-122" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-104" style="startArrow=none;endArrow=block;entryX=1;entryY=0.4;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-106" value="14. 记录故障信息">
+          <mxGeometry relative="1" x="0.4562" y="-19" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-123" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-98" style="startArrow=none;endArrow=block;exitX=0.17;exitY=1;entryX=1;entryY=1;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-105" value="15. 推送待办申请">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-124" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-102" style="startArrow=none;endArrow=block;exitX=0.69;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-105" value="16. 提供扣分标准">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-125" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-96" style="startArrow=none;endArrow=block;exitX=0.42;exitY=0.99;entryX=0;entryY=0.4;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-105" value="17. 提交审批/扣分决策">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-126" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-105" style="startArrow=none;endArrow=block;exitX=1;exitY=0.37;entryX=0;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;entryDx=0;entryDy=24;entryPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-98" value="18. 更新单据/信用分">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-127" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-105" style="startArrow=none;endArrow=block;exitX=1;exitY=0;entryX=0.145;entryY=1;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;entryDx=0;entryDy=-2.9;entryPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-100" value="19. 记录扣分日志">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-128" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-101" style="startArrow=none;endArrow=block;exitX=0.855;exitY=0;entryX=1;entryY=0.7;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=2.9;exitPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-106" value="20. 推送报修信息">
+          <mxGeometry relative="1" x="0.3237" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-129" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-96" style="startArrow=none;endArrow=block;exitX=0.94;exitY=0.99;entryX=0;entryY=0.36;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-106" value="21. 维修结单/更新状态">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-130" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-106" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.145;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;entryDx=0;entryDy=2.9;entryPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-101" value="22. 写入维修记录">
+          <mxGeometry relative="1" x="0.6" y="11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-131" edge="1" parent="w1q4vQYsq1hfwY_oxsFC-1" source="9GgDQB5vgMIMnv_yzBva-106" style="startArrow=none;endArrow=block;exitX=0;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=22;snapToPoint=0;fixDash=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-99" value="23. 恢复设备状态">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,22 @@
+IDN a
+= _
+IDN b
++ _
+; _
+IDN x
+= _
+INT10 1
+ERROR LexicalError at line 2, column 7: illegal character '@'
+INT10 2
+; _
+WHILE _
+IDN a
+< _
+IDN b
+DO _
+IDN y
+= _
+IDN y
++ _
+INT10 1
+; _

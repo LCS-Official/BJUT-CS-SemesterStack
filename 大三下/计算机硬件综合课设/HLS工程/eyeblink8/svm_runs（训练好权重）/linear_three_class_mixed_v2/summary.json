@@ -1,0 +1,51 @@
+{
+  "model_type": "StandardScaler + LinearSVC",
+  "C": 1.0,
+  "class_weight": {
+    "0": 1.0,
+    "1": 1.2,
+    "2": 0.9
+  },
+  "max_iter": 20000,
+  "fixed_scale": 4096,
+  "feature_dim": 15,
+  "train_samples": 22948,
+  "val_samples": 3777,
+  "test_samples": 2188,
+  "train_seconds": 0.07957839965820312,
+  "train_metrics_sklearn": {
+    "accuracy": 0.8724943350183022,
+    "macro_f1": 0.7361843064046489,
+    "weighted_f1": 0.8463197206747408
+  },
+  "val_metrics_sklearn": {
+    "accuracy": 0.8080487159120996,
+    "macro_f1": 0.7061787004480493,
+    "weighted_f1": 0.7909004865006097
+  },
+  "test_metrics_sklearn": {
+    "accuracy": 0.7385740402193784,
+    "macro_f1": 0.6310100051508823,
+    "weighted_f1": 0.7116677496079696
+  },
+  "val_metrics_folded_float": {
+    "accuracy": 0.8080487159120996,
+    "macro_f1": 0.7061787004480493,
+    "weighted_f1": 0.7909004865006097
+  },
+  "test_metrics_folded_float": {
+    "accuracy": 0.7385740402193784,
+    "macro_f1": 0.6310100051508823,
+    "weighted_f1": 0.7116677496079696
+  },
+  "val_metrics_quantized": {
+    "accuracy": 0.8080487159120996,
+    "macro_f1": 0.7061787004480493,
+    "weighted_f1": 0.7909004865006097
+  },
+  "test_metrics_quantized": {
+    "accuracy": 0.7385740402193784,
+    "macro_f1": 0.6310100051508823,
+    "weighted_f1": 0.7116677496079696
+  }
+}

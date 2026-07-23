@@ -1,0 +1,8 @@
+L0:
+if a < b goto L1
+goto L2
+L1:
+t1 := a + 1
+a := t1
+goto L0
+L2:

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S2\D\D_latch\simulation\qsim
+vD_latch
+Z1 !s100 @XkAT3:gi]XY8[R7gS_UJ0
+Z2 IZemMUT7SSz^h1O`>ne;OE0
+Z3 V:Y3aJJZB6k5Vj>H_zD`9a3
+Z4 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp2\exp2-task1\D_latch\simulation\qsim
+Z5 w1730700362
+Z6 8D_latch.vo
+Z7 FD_latch.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|D_latch.vo|
+Z10 o-work work -O0
+Z11 n@d_latch
+!i10b 1
+!s85 0
+Z12 !s108 1730700365.273000
+Z13 !s107 D_latch.vo|
+!s101 -O0
+vD_latch_vlg_check_tst
+!i10b 1
+Z14 !s100 =75Aj9;JfH?6WYZ9KHJoE1
+Z15 I>z4[PL=hP=Rkgg9E_ieiW2
+Z16 Vk`B5feCM;oAHkFg>T[IW]0
+R4
+Z17 w1730700361
+Z18 8D_latch.vt
+Z19 FD_latch.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1730700365.400000
+Z21 !s107 D_latch.vt|
+Z22 !s90 -work|work|D_latch.vt|
+!s101 -O0
+R10
+Z23 n@d_latch_vlg_check_tst
+vD_latch_vlg_sample_tst
+!i10b 1
+Z24 !s100 Xj=L1bm0[F9HkR_A1EQiz0
+Z25 ISGn;S^c0X:;2damIKnVZ<3
+Z26 VGj<;W_<KlEXH@;7O`o]7O3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@d_latch_vlg_sample_tst
+vD_latch_vlg_vec_tst
+!i10b 1
+Z28 !s100 ]JPF>]jd>jaiUQ8nN>WMP0
+Z29 I1VgakJjZcS;VUehTU8nXm1
+Z30 Vz?fIfid]_0Ig`lKzKR<aF0
+R4
+R17
+R18
+R19
+Z31 L0 154
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@d_latch_vlg_vec_tst

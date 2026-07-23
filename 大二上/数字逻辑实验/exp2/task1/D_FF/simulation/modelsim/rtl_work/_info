@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\LCsexp2\exp2-task1\D_FF\simulation\modelsim
+vD_FF
+IQc<5LA6MQ>IB[3KWA`Zl50
+VT5]^JG3ZP<oWnO8QbC6Jc1
+Z1 dD:\LCsexp2\exp2-task1\D_FF\simulation\modelsim
+w1730685946
+8D:/LCsexp2/exp2-task1/D_FF/D_FF.v
+FD:/LCsexp2/exp2-task1/D_FF/D_FF.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@d_@f@f
+!i10b 1
+!s100 ^nG1fXZKV@6nbQ>I;^3n;1
+!s85 0
+!s108 1730793979.645000
+!s107 D:/LCsexp2/exp2-task1/D_FF/D_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/LCsexp2/exp2-task1/D_FF|D:/LCsexp2/exp2-task1/D_FF/D_FF.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/LCsexp2/exp2-task1/D_FF -O0
+vD_FF_vlg_tst
+!i10b 1
+!s100 ZY5F>ZkfMk_7L=^XI`nS32
+IehD;zQ?zEM]8[nEc5TL`e1
+V9mG8idM=HA60?A=SFbYT=3
+R1
+w1730639510
+8D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt
+FD:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1730793979.723000
+!s107 D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim|D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim -O0
+n@d_@f@f_vlg_tst

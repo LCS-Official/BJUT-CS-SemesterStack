@@ -1,0 +1,24 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 2 条语句；后续 P' => ε
+S -> id = E                | S => a = b + <error>
+E -> T E'                  | E => b + <error>; place = t1
+T -> F T'                  | T => b; place = b
+F -> id                    | F => b
+E' -> + T E'               | E => b + <error>; place = t1
+T -> F T'                  | T => <error>; place = 0
+S -> while C do S          | S => while C do S; 每轮从 L0 判断，真进 L1，假跳 L2
+C -> E relop E             | C => a < b; 真->L1, 假->L2
+E -> T E'                  | E => a; place = a
+T -> F T'                  | T => a; place = a
+F -> id                    | F => a
+E -> T E'                  | E => b; place = b
+T -> F T'                  | T => b; place = b
+F -> id                    | F => b
+S -> id = E                | S => y = y + 1
+E -> T E'                  | E => y + 1; place = t2
+T -> F T'                  | T => y; place = y
+F -> id                    | F => y
+E' -> + T E'               | E => y + 1; place = t2
+T -> F T'                  | T => 1; place = 1
+F -> int10                 | F => 1
+Result: REJECT WITH ERRORS

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S2\register\reg_32\simulation\qsim
+vreg_32
+Z1 !s100 O[L>CJmljMC_F9n?R]B5N1
+Z2 IkMLGgTABF:[5Te2U0[g4l1
+Z3 VXI:l]efBAPN]7Tlg:J93l0
+Z4 dD:\SLSY Project\S2\register\reg_32\simulation\qsim
+Z5 w1730776041
+Z6 8reg_32.vo
+Z7 Freg_32.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|reg_32.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1730776042.606000
+Z12 !s107 reg_32.vo|
+!s101 -O0
+vreg_32_vlg_check_tst
+!i10b 1
+Z13 !s100 _UhZnL3:1F4RKkXzO9`M70
+Z14 Ie4?LEmC<LkDZSgigTiWnE0
+Z15 V8Q<ah08zDB5CJJb@gO3393
+R4
+Z16 w1730776040
+Z17 8reg_32.vt
+Z18 Freg_32.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1730776042.750000
+Z20 !s107 reg_32.vt|
+Z21 !s90 -work|work|reg_32.vt|
+!s101 -O0
+R10
+vreg_32_vlg_sample_tst
+!i10b 1
+Z22 !s100 NOg@RblX:lW5>D>H2^amc3
+Z23 IUimZUTmmJNQ]Q`6?`^DVl2
+Z24 VGo3S67QkEaSG?:J@j=:;`2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vreg_32_vlg_vec_tst
+!i10b 1
+!s100 d1KRZaO[2H[`cCnZPizJP3
+Ibi[RiG0TS?:ckU5inVZAX3
+Z25 Vj=DgeZn>aACG`FYlccY=m1
+R4
+R16
+R17
+R18
+Z26 L0 747
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

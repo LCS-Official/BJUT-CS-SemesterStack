@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S2\register\decoder3_8\simulation\qsim
+vdecoder3_8
+Z1 !s100 D>fbLbLP62Rcz@Xlo^3@>2
+Z2 I:^V7LEAbjU5f;hA`1O1DR3
+Z3 VSUW?LhmcbVR?k8ad^d]@z3
+Z4 dD:\SLSY Project\S2\register\decoder3_8\simulation\qsim
+Z5 w1730780331
+Z6 8decoder3_8.vo
+Z7 Fdecoder3_8.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|decoder3_8.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1730780331.500000
+Z12 !s107 decoder3_8.vo|
+!s101 -O0
+vdecoder3_8_vlg_check_tst
+!i10b 1
+Z13 !s100 3H>LYRCkJdY3TX8ZM]cMg2
+Z14 Ih@>Jl8hlO@MXX]9TN@>hl2
+Z15 VLnKfTGfE;hVBeb=i[cOoG3
+R4
+Z16 w1730780330
+Z17 8decoder3_8.vt
+Z18 Fdecoder3_8.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z19 !s108 1730780331.571000
+Z20 !s107 decoder3_8.vt|
+Z21 !s90 -work|work|decoder3_8.vt|
+!s101 -O0
+R10
+vdecoder3_8_vlg_sample_tst
+!i10b 1
+Z22 !s100 E=ID>HZ:i7=XXa2b@zM@<1
+Z23 IhImWADD0WDz:ji@9VCmbJ1
+Z24 VMzE0CaB?HRE;beW<ZQiPf1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vdecoder3_8_vlg_vec_tst
+!i10b 1
+Z25 !s100 Q>aD5cM=cd6_Ad8aC0i:73
+Z26 I>HC`N=`8R4gQDWBY:RTlf0
+Z27 VmlhK=<6?FN@`eB1m;W4Kf1
+R4
+R16
+R17
+R18
+Z28 L0 349
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

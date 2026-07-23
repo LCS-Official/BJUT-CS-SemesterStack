@@ -1,0 +1,8 @@
+P
+└── S: while C do S
+    ├── C: E < E
+    │   ├── E: a
+    │   └── E: b
+    └── S: id = E
+        ├── id: a
+        └── E: a + 1

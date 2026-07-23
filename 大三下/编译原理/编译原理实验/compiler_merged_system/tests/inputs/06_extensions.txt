@@ -1,0 +1,4 @@
+a=6.2+a*0X88.80;
+my_var = a / 01;
+octv = 07.4;
+obj.field = my_var + octv;

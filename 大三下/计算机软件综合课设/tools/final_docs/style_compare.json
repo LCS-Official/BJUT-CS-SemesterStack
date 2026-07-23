@@ -1,0 +1,4364 @@
+[
+  {
+    "path": "tools\\final_docs\\07_测试计划_模板参考.docx",
+    "sections": 1,
+    "paragraph_count": 86,
+    "table_count": 0,
+    "inline_shape_count": 0,
+    "image_part_count": 0,
+    "styles": [
+      [
+        "Normal",
+        23
+      ],
+      [
+        "toc 2",
+        19
+      ],
+      [
+        "Heading 2",
+        19
+      ],
+      [
+        "toc 1",
+        5
+      ],
+      [
+        "Heading 1",
+        5
+      ],
+      [
+        "Heading 3",
+        4
+      ]
+    ],
+    "style_definitions": {
+      "Normal": {
+        "font": null,
+        "size_pt": 10.5,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "JUSTIFY (3)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Heading 1": {
+        "font": null,
+        "size_pt": 22.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 17.0,
+        "space_after_pt": 16.5,
+        "line_spacing": 2.408333333333333,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "Heading 2": {
+        "font": "Arial",
+        "size_pt": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 13.0,
+        "space_after_pt": 13.0,
+        "line_spacing": 1.7333333333333334,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "Heading 3": {
+        "font": null,
+        "size_pt": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 13.0,
+        "space_after_pt": 13.0,
+        "line_spacing": 1.7333333333333334,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "toc 1": {
+        "font": null,
+        "size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "toc 2": {
+        "font": null,
+        "size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": 21.0,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Header": {
+        "font": null,
+        "size_pt": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Footer": {
+        "font": null,
+        "size_pt": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "LEFT (0)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      }
+    },
+    "fonts_weighted_chars": [
+      [
+        "('宋体', None, False, None)",
+        508
+      ],
+      [
+        "(None, None, False, None)",
+        46
+      ],
+      [
+        "('宋体', 12.0, False, None)",
+        33
+      ],
+      [
+        "('宋体', 26.0, False, None)",
+        6
+      ]
+    ],
+    "highlights": [],
+    "xml_marks": [],
+    "paragraphs": [
+      {
+        "index": 0,
+        "style": "Normal",
+        "text": "七、测试计划",
+        "runs": [
+          {
+            "text": "七、测试计划",
+            "font": "宋体",
+            "size_pt": 26.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "style": "toc 1",
+        "text": "1．引言\t1",
+        "runs": []
+      },
+      {
+        "index": 3,
+        "style": "toc 2",
+        "text": "1.1编写目的\t1",
+        "runs": []
+      },
+      {
+        "index": 4,
+        "style": "toc 2",
+        "text": "1.2项目背景\t2",
+        "runs": []
+      },
+      {
+        "index": 5,
+        "style": "toc 2",
+        "text": "1.3定义\t2",
+        "runs": []
+      },
+      {
+        "index": 6,
+        "style": "toc 2",
+        "text": "1.4参考资料\t2",
+        "runs": []
+      },
+      {
+        "index": 7,
+        "style": "toc 1",
+        "text": "2．任务概述\t2",
+        "runs": []
+      },
+      {
+        "index": 8,
+        "style": "toc 2",
+        "text": "2.1目标\t2",
+        "runs": []
+      },
+      {
+        "index": 9,
+        "style": "toc 2",
+        "text": "2.2运行环境\t2",
+        "runs": []
+      },
+      {
+        "index": 10,
+        "style": "toc 2",
+        "text": "2.3需求概述\t2",
+        "runs": []
+      },
+      {
+        "index": 11,
+        "style": "toc 2",
+        "text": "2.4条件与限制\t2",
+        "runs": []
+      },
+      {
+        "index": 12,
+        "style": "toc 1",
+        "text": "3．计划\t3",
+        "runs": []
+      },
+      {
+        "index": 13,
+        "style": "toc 2",
+        "text": "3.1测试方案\t3",
+        "runs": []
+      },
+      {
+        "index": 14,
+        "style": "toc 2",
+        "text": "3.2测试项目\t3",
+        "runs": []
+      },
+      {
+        "index": 15,
+        "style": "toc 2",
+        "text": "3.3测试准备\t3",
+        "runs": []
+      },
+      {
+        "index": 16,
+        "style": "toc 2",
+        "text": "3.4测试机构及人员\t3",
+        "runs": []
+      },
+      {
+        "index": 17,
+        "style": "toc 1",
+        "text": "4．测试项目说明\t3",
+        "runs": []
+      },
+      {
+        "index": 18,
+        "style": "toc 2",
+        "text": "4.1测试项目名称及测试内容\t3",
+        "runs": []
+      },
+      {
+        "index": 19,
+        "style": "toc 2",
+        "text": "4.2测试用例\t3",
+        "runs": []
+      },
+      {
+        "index": 20,
+        "style": "toc 2",
+        "text": "4.3进度\t3",
+        "runs": []
+      },
+      {
+        "index": 21,
+        "style": "toc 2",
+        "text": "4.4条件\t3",
+        "runs": []
+      },
+      {
+        "index": 22,
+        "style": "toc 2",
+        "text": "4.5测试资料\t3",
+        "runs": []
+      },
+      {
+        "index": 23,
+        "style": "toc 1",
+        "text": "5．评价\t3",
+        "runs": []
+      },
+      {
+        "index": 24,
+        "style": "toc 2",
+        "text": "5.1范围\t3",
+        "runs": []
+      },
+      {
+        "index": 25,
+        "style": "toc 2",
+        "text": "5.2准则\t3",
+        "runs": []
+      },
+      {
+        "index": 28,
+        "style": "Heading 1",
+        "text": "1．引言",
+        "runs": [
+          {
+            "text": "1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．引言",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 29,
+        "style": "Heading 2",
+        "text": "1.1编写目的",
+        "runs": [
+          {
+            "text": "1.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "编写目的",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 30,
+        "style": "Normal",
+        "text": "【阐明编写测试计划的目的，指明读者对象。】",
+        "runs": [
+          {
+            "text": "【阐明编写测试计划的目的，指明读者对象。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 32,
+        "style": "Heading 2",
+        "text": "1.2项目背景",
+        "runs": [
+          {
+            "text": "1.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "项目背景",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 33,
+        "style": "Normal",
+        "text": "【说明项目的来源、委托单位及主管部门。】",
+        "runs": [
+          {
+            "text": "【说明项目的来源、委托单位及主管部门。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 34,
+        "style": "Heading 2",
+        "text": "1.3定义",
+        "runs": [
+          {
+            "text": "1.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "定义",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 35,
+        "style": "Normal",
+        "text": "【列出测试计划中所用到的专门术语的定义和缩写词的原意。】",
+        "runs": [
+          {
+            "text": "【列出测试计划中所用到的专门术语的定义和缩写词的原意。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 36,
+        "style": "Heading 2",
+        "text": "1.4参考资料",
+        "runs": [
+          {
+            "text": "1.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "参考资料",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 37,
+        "style": "Normal",
+        "text": "【列出有关资料的作者、标题、编号、发表日期、出版单位或资料来源，可包括：",
+        "runs": [
+          {
+            "text": "【列出有关资料的作者、标题、编号、发表日期、出版单位或资料来源，可包括：",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " ",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 38,
+        "style": "Normal",
+        "text": "项目的计划任务书、合同或批文；",
+        "runs": [
+          {
+            "text": "项目的计划任务书、合同或批文；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 39,
+        "style": "Normal",
+        "text": "项目开发计划；",
+        "runs": [
+          {
+            "text": "项目开发计划；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 40,
+        "style": "Normal",
+        "text": "需求规格说明书；",
+        "runs": [
+          {
+            "text": "需求规格说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 41,
+        "style": "Normal",
+        "text": "概要设计说明书；",
+        "runs": [
+          {
+            "text": "概要设计说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 42,
+        "style": "Normal",
+        "text": "详细设计说明书；",
+        "runs": [
+          {
+            "text": "详细设计说明书；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 43,
+        "style": "Normal",
+        "text": "用户操作手册；",
+        "runs": [
+          {
+            "text": "用户操作手册；",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 44,
+        "style": "Normal",
+        "text": "本测试计划中引用的其他资料、采用的软件开发标准或规范。】",
+        "runs": [
+          {
+            "text": "本测试计划中引用的其他资料、采用的软件开发标准或规范。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 45,
+        "style": "Heading 1",
+        "text": "2．任务概述",
+        "runs": [
+          {
+            "text": "2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．任务概述",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 46,
+        "style": "Heading 2",
+        "text": "2.1目标",
+        "runs": [
+          {
+            "text": "2.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "目标",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 47,
+        "style": "Heading 2",
+        "text": "2.2运行环境",
+        "runs": [
+          {
+            "text": "2.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "运行环境",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 48,
+        "style": "Heading 2",
+        "text": "2.3需求概述",
+        "runs": [
+          {
+            "text": "2.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "需求概述",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 49,
+        "style": "Heading 2",
+        "text": "2.4条件与限制",
+        "runs": [
+          {
+            "text": "2.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件与限制",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 52,
+        "style": "Heading 1",
+        "text": "3．计划",
+        "runs": [
+          {
+            "text": "3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．计划",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 53,
+        "style": "Heading 2",
+        "text": "3.1测试方案",
+        "runs": [
+          {
+            "text": "3.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试方案",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 54,
+        "style": "Normal",
+        "text": "【说明确定测试方法和选取测试用例的原则。】",
+        "runs": [
+          {
+            "text": "【说明确定测试方法和选取测试用例的原则。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 55,
+        "style": "Heading 2",
+        "text": "3.2测试项目",
+        "runs": [
+          {
+            "text": "3.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 56,
+        "style": "Normal",
+        "text": "【列出组装测试和确认测试中每一项测试的内容、名称、目的和进度。】",
+        "runs": [
+          {
+            "text": "【列出组装测试和确认测试中每一项测试的内容、名称、目的和进度。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 57,
+        "style": "Heading 2",
+        "text": "3.3测试准备",
+        "runs": [
+          {
+            "text": "3.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试准备",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 59,
+        "style": "Heading 2",
+        "text": "3.4测试机构及人员",
+        "runs": [
+          {
+            "text": "3.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试机构及人员",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 60,
+        "style": "Normal",
+        "text": "【测试机构名称、负责人和职责。】",
+        "runs": [
+          {
+            "text": "【测试机构名称、负责人和职责。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 61,
+        "style": "Heading 1",
+        "text": "4．测试项目说明",
+        "runs": [
+          {
+            "text": "4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．测试项目说明",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 62,
+        "style": "Normal",
+        "text": "【按顺序逐个对测试项目做出说明：】",
+        "runs": [
+          {
+            "text": "【按顺序逐个对测试项目做出说明：】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 63,
+        "style": "Heading 2",
+        "text": "4.1测试项目名称及测试内容",
+        "runs": [
+          {
+            "text": "4.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目名称及测试内容",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 64,
+        "style": "Heading 2",
+        "text": "4.2测试用例",
+        "runs": [
+          {
+            "text": "4.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试用例",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 65,
+        "style": "Heading 3",
+        "text": "4.2.1输入",
+        "runs": [
+          {
+            "text": "4.2.1",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输入",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 66,
+        "style": "Normal",
+        "text": "【输入的数据和输入命令。】",
+        "runs": [
+          {
+            "text": "【输入的数据和输入命令。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 67,
+        "style": "Heading 3",
+        "text": "4.2.2输出",
+        "runs": [
+          {
+            "text": "4.2.2",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输出",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 68,
+        "style": "Normal",
+        "text": "【预期的输出数据。】",
+        "runs": [
+          {
+            "text": "【预期的输出数据。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 69,
+        "style": "Heading 3",
+        "text": "4.2.3步骤及操作",
+        "runs": [
+          {
+            "text": "4.2.3",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "步骤及操作",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 70,
+        "style": "Heading 3",
+        "text": "4.2.4允许偏差",
+        "runs": [
+          {
+            "text": "4.2.4",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "允许偏差",
+            "font": "宋体",
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 71,
+        "style": "Normal",
+        "text": "【给出实测结果与预期结果之间允许偏差的范围。】",
+        "runs": [
+          {
+            "text": "【给出实测结果与预期结果之间允许偏差的范围。】",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 72,
+        "style": "Heading 2",
+        "text": "4.3进度",
+        "runs": [
+          {
+            "text": "4.3",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "进度",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "style": "Heading 2",
+        "text": "4.4条件",
+        "runs": [
+          {
+            "text": "4.4",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 74,
+        "style": "Normal",
+        "text": "【给出测试对资源的特殊要求，如设备、软件、人员等。】",
+        "runs": [
+          {
+            "text": "【给出测试对资源的特殊要求，如设备、软件、人员等。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 75,
+        "style": "Heading 2",
+        "text": "4.5测试资料",
+        "runs": [
+          {
+            "text": "4.5",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试资料",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 76,
+        "style": "Normal",
+        "text": "【说明测试所需的资料。】",
+        "runs": [
+          {
+            "text": "【说明测试所需的资料。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 79,
+        "style": "Heading 1",
+        "text": "5．评价",
+        "runs": [
+          {
+            "text": "5",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．评价",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 80,
+        "style": "Heading 2",
+        "text": "5.1范围",
+        "runs": [
+          {
+            "text": "5.1",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "范围",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 81,
+        "style": "Normal",
+        "text": "【说明所完成的各项测试说明问题的范围及其局限性。】",
+        "runs": [
+          {
+            "text": "【说明所完成的各项测试说明问题的范围及其局限性。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 82,
+        "style": "Heading 2",
+        "text": "5.2准则",
+        "runs": [
+          {
+            "text": "5.2",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "准则",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 83,
+        "style": "Normal",
+        "text": "【说明评价测试结果的准则。】",
+        "runs": [
+          {
+            "text": "【说明评价测试结果的准则。】",
+            "font": "宋体",
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "headers_footers": {
+      "word/header1.xml": "七、测试计划",
+      "word/footer1.xml": ""
+    }
+  },
+  {
+    "path": "最终文档等\\测试计划.docx",
+    "sections": 1,
+    "paragraph_count": 114,
+    "table_count": 7,
+    "inline_shape_count": 0,
+    "image_part_count": 0,
+    "styles": [
+      [
+        "Normal",
+        49
+      ],
+      [
+        "toc 2",
+        19
+      ],
+      [
+        "Heading 2",
+        19
+      ],
+      [
+        "toc 1",
+        5
+      ],
+      [
+        "Heading 1",
+        5
+      ],
+      [
+        "toc 3",
+        4
+      ],
+      [
+        "Heading 3",
+        4
+      ]
+    ],
+    "style_definitions": {
+      "Normal": {
+        "font": "宋体",
+        "size_pt": 10.5,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "JUSTIFY (3)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": 21.0,
+        "space_before_pt": null,
+        "space_after_pt": 4.0,
+        "line_spacing": 1.5,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Heading 1": {
+        "font": "黑体",
+        "size_pt": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": "000000",
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 12.0,
+        "space_after_pt": 6.0,
+        "line_spacing": 2.4,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "Heading 2": {
+        "font": "黑体",
+        "size_pt": 14.0,
+        "bold": true,
+        "italic": null,
+        "color": "000000",
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 8.0,
+        "space_after_pt": 6.0,
+        "line_spacing": 1.7291666666666667,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "Heading 3": {
+        "font": "黑体",
+        "size_pt": 12.0,
+        "bold": true,
+        "italic": null,
+        "color": "000000",
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": 8.0,
+        "space_after_pt": 6.0,
+        "line_spacing": 1.7291666666666667,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      "toc 1": {
+        "font": null,
+        "size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "toc 2": {
+        "font": null,
+        "size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "left_indent_pt": 10.0,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Header": {
+        "font": null,
+        "size_pt": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      "Footer": {
+        "font": null,
+        "size_pt": 9.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "LEFT (0)",
+        "left_indent_pt": null,
+        "right_indent_pt": null,
+        "first_line_indent_pt": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      }
+    },
+    "fonts_weighted_chars": [
+      [
+        "(None, None, False, None)",
+        2062
+      ],
+      [
+        "('宋体', 10.5, False, None)",
+        214
+      ],
+      [
+        "('黑体', 22.0, True, None)",
+        14
+      ],
+      [
+        "(None, 14.0, False, None)",
+        13
+      ],
+      [
+        "(None, 12.0, False, None)",
+        12
+      ],
+      [
+        "('黑体', 28.0, True, None)",
+        4
+      ],
+      [
+        "('黑体', 18.0, True, None)",
+        2
+      ]
+    ],
+    "highlights": [],
+    "xml_marks": [],
+    "paragraphs": [
+      {
+        "index": 0,
+        "style": "Normal",
+        "text": "智能实验室预约与设备管理系统",
+        "runs": [
+          {
+            "text": "智能实验室预约与设备管理系统",
+            "font": "黑体",
+            "size_pt": 22.0,
+            "bold": true,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "style": "Normal",
+        "text": "测试计划",
+        "runs": [
+          {
+            "text": "测试计划",
+            "font": "黑体",
+            "size_pt": 28.0,
+            "bold": true,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "style": "Normal",
+        "text": "计算机软件类综合性课程设计",
+        "runs": [
+          {
+            "text": "计算机软件类综合性课程设计",
+            "font": null,
+            "size_pt": 14.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "style": "Normal",
+        "text": "完成日期：2026年7月",
+        "runs": [
+          {
+            "text": "完成日期：",
+            "font": null,
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "2026",
+            "font": null,
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "年",
+            "font": null,
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "7",
+            "font": null,
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "月",
+            "font": null,
+            "size_pt": 12.0,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "style": "Normal",
+        "text": "目录",
+        "runs": [
+          {
+            "text": "目录",
+            "font": "黑体",
+            "size_pt": 18.0,
+            "bold": true,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "style": "toc 1",
+        "text": "1．引言\t4",
+        "runs": []
+      },
+      {
+        "index": 7,
+        "style": "toc 2",
+        "text": "1.1 编写目的\t4",
+        "runs": []
+      },
+      {
+        "index": 8,
+        "style": "toc 2",
+        "text": "1.2 项目背景\t4",
+        "runs": []
+      },
+      {
+        "index": 9,
+        "style": "toc 2",
+        "text": "1.3 定义\t4",
+        "runs": []
+      },
+      {
+        "index": 10,
+        "style": "toc 2",
+        "text": "1.4 参考资料\t4",
+        "runs": []
+      },
+      {
+        "index": 11,
+        "style": "toc 1",
+        "text": "2．任务概述\t5",
+        "runs": []
+      },
+      {
+        "index": 12,
+        "style": "toc 2",
+        "text": "2.1 目标\t5",
+        "runs": []
+      },
+      {
+        "index": 13,
+        "style": "toc 2",
+        "text": "2.2 运行环境\t5",
+        "runs": []
+      },
+      {
+        "index": 14,
+        "style": "toc 2",
+        "text": "2.3 需求概述\t5",
+        "runs": []
+      },
+      {
+        "index": 15,
+        "style": "toc 2",
+        "text": "2.4 条件与限制\t6",
+        "runs": []
+      },
+      {
+        "index": 16,
+        "style": "toc 1",
+        "text": "3．计划\t6",
+        "runs": []
+      },
+      {
+        "index": 17,
+        "style": "toc 2",
+        "text": "3.1 测试方案\t6",
+        "runs": []
+      },
+      {
+        "index": 18,
+        "style": "toc 2",
+        "text": "3.2 测试项目\t6",
+        "runs": []
+      },
+      {
+        "index": 19,
+        "style": "toc 2",
+        "text": "3.3 测试准备\t7",
+        "runs": []
+      },
+      {
+        "index": 20,
+        "style": "toc 2",
+        "text": "3.4 测试机构及人员\t7",
+        "runs": []
+      },
+      {
+        "index": 21,
+        "style": "toc 1",
+        "text": "4．测试项目说明\t8",
+        "runs": []
+      },
+      {
+        "index": 22,
+        "style": "toc 2",
+        "text": "4.1 测试项目名称及测试内容\t8",
+        "runs": []
+      },
+      {
+        "index": 23,
+        "style": "toc 2",
+        "text": "4.2 测试用例\t8",
+        "runs": []
+      },
+      {
+        "index": 24,
+        "style": "toc 3",
+        "text": "4.2.1 输入\t10",
+        "runs": []
+      },
+      {
+        "index": 25,
+        "style": "toc 3",
+        "text": "4.2.2 输出\t10",
+        "runs": []
+      },
+      {
+        "index": 26,
+        "style": "toc 3",
+        "text": "4.2.3 步骤及操作\t11",
+        "runs": []
+      },
+      {
+        "index": 27,
+        "style": "toc 3",
+        "text": "4.2.4 允许偏差\t11",
+        "runs": []
+      },
+      {
+        "index": 28,
+        "style": "toc 2",
+        "text": "4.3 进度\t11",
+        "runs": []
+      },
+      {
+        "index": 29,
+        "style": "toc 2",
+        "text": "4.4 条件\t11",
+        "runs": []
+      },
+      {
+        "index": 30,
+        "style": "toc 2",
+        "text": "4.5 测试资料\t12",
+        "runs": []
+      },
+      {
+        "index": 31,
+        "style": "toc 1",
+        "text": "5．评价\t12",
+        "runs": []
+      },
+      {
+        "index": 32,
+        "style": "toc 2",
+        "text": "5.1 范围\t12",
+        "runs": []
+      },
+      {
+        "index": 33,
+        "style": "toc 2",
+        "text": "5.2 准则\t12",
+        "runs": []
+      },
+      {
+        "index": 35,
+        "style": "Heading 1",
+        "text": "1．引言",
+        "runs": [
+          {
+            "text": "1",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．引言",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 36,
+        "style": "Heading 2",
+        "text": "1.1 编写目的",
+        "runs": [
+          {
+            "text": "1.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "编写目的",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 37,
+        "style": "Normal",
+        "text": "本计划规定智能实验室预约与设备管理系统的测试范围、方法、环境、人员、进度、用例和通过准则，用于系统性发现功能、权限、状态、并发、数据一致性和部署问题，并为最终验收与测试分析报告提供依据。",
+        "runs": [
+          {
+            "text": "本计划规定智能实验室预约与设备管理系统的测试范围、方法、环境、人员、进度、用例和通过准则，用于系统性发现功能、权限、状态、并发、数据一致性和部署问题，并为最终验收与测试分析报告提供依据。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 38,
+        "style": "Heading 2",
+        "text": "1.2 项目背景",
+        "runs": [
+          {
+            "text": "1.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "项目背景",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 39,
+        "style": "Normal",
+        "text": "被测系统为部署在云服务器上的模块化单体 Web 应用，包含平台权限、资源预约、现场设备、信用运营和整合适配层。用户通过浏览器访问，后端使用 Flask，数据保存在 SQLite。",
+        "runs": [
+          {
+            "text": "被测系统为部署在云服务器上的模块化单体",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " Web ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "应用，包含平台权限、资源预约、现场设备、信用运营和整合适配层。用户通过浏览器访问，后端使用",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " Flask",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "，数据保存在",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " SQLite",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 40,
+        "style": "Heading 2",
+        "text": "1.3 定义",
+        "runs": [
+          {
+            "text": "1.3 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "定义",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 42,
+        "style": "Heading 2",
+        "text": "1.4 参考资料",
+        "runs": [
+          {
+            "text": "1.4 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "参考资料",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 43,
+        "style": "Normal",
+        "text": "《智能实验室预约与设备管理系统需求规格说明书》FR-01～FR-13。",
+        "runs": [
+          {
+            "text": "《智能实验室预约与设备管理系统需求规格说明书》",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "FR-01",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "～",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "FR-13",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 44,
+        "style": "Normal",
+        "text": "《智能实验室预约与设备管理系统软件设计说明书》。",
+        "runs": [
+          {
+            "text": "《智能实验室预约与设备管理系统软件设计说明书》。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 45,
+        "style": "Normal",
+        "text": "课程软件工程文档模板《测试计划》与项目开发样例。",
+        "runs": [
+          {
+            "text": "课程软件工程文档模板《测试计划》与项目开发样例。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 46,
+        "style": "Normal",
+        "text": "最终检查演示与复位流程、部署交接文档及数据库结构。",
+        "runs": [
+          {
+            "text": "最终检查演示与复位流程、部署交接文档及数据库结构。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 47,
+        "style": "Heading 1",
+        "text": "2．任务概述",
+        "runs": [
+          {
+            "text": "2",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．任务概述",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 48,
+        "style": "Heading 2",
+        "text": "2.1 目标",
+        "runs": [
+          {
+            "text": "2.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "目标",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 49,
+        "style": "Normal",
+        "text": "验证 FR-01～FR-13 功能、角色权限和异常分支符合需求。",
+        "runs": [
+          {
+            "text": "验证",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " FR-01",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "～",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "FR-13 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "功能、角色权限和异常分支符合需求。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 50,
+        "style": "Normal",
+        "text": "验证预约、设备、报修、信用和通知跨模块闭环的一致性。",
+        "runs": [
+          {
+            "text": "验证预约、设备、报修、信用和通知跨模块闭环的一致性。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 51,
+        "style": "Normal",
+        "text": "验证重复提交、并发抢约、后台扫描和通知生成具备幂等性。",
+        "runs": [
+          {
+            "text": "验证重复提交、并发抢约、后台扫描和通知生成具备幂等性。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 52,
+        "style": "Normal",
+        "text": "验证 HTTPS、Session、密码、范围控制、审计和备份恢复。",
+        "runs": [
+          {
+            "text": "验证",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " HTTPS",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "Session",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、密码、范围控制、审计和备份恢复。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 53,
+        "style": "Normal",
+        "text": "验证课程规模下的响应性能、100 个在线会话和可重复演示能力。",
+        "runs": [
+          {
+            "text": "验证课程规模下的响应性能、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "100 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "个在线会话和可重复演示能力。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 54,
+        "style": "Heading 2",
+        "text": "2.2 运行环境",
+        "runs": [
+          {
+            "text": "2.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "运行环境",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 56,
+        "style": "Heading 2",
+        "text": "2.3 需求概述",
+        "runs": [
+          {
+            "text": "2.3 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "需求概述",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 57,
+        "style": "Normal",
+        "text": "测试覆盖登录与 RBAC、资源查询、预约与审批取消、签到签退与人工核验、设备报修和时段、违规信用与恢复、基础数据和参数、通知日志、统计导出，以及安全、性能、备份和恢复。",
+        "runs": [
+          {
+            "text": "测试覆盖登录与",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " RBAC",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、资源查询、预约与审批取消、签到签退与人工核验、设备报修和时段、违规信用与恢复、基础数据和参数、通知日志、统计导出，以及安全、性能、备份和恢复。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 58,
+        "style": "Heading 2",
+        "text": "2.4 条件与限制",
+        "runs": [
+          {
+            "text": "2.4 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件与限制",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 59,
+        "style": "Normal",
+        "text": "课程环境未连接真实门禁、供电和扫码器，IoT 行为通过接口与日志模拟。",
+        "runs": [
+          {
+            "text": "课程环境未连接真实门禁、供电和扫码器，",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "IoT ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "行为通过接口与日志模拟。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 60,
+        "style": "Normal",
+        "text": "浏览器真实定位取决于 HTTPS、系统位置服务和用户授权；人工核验作为独立可测分支。",
+        "runs": [
+          {
+            "text": "浏览器真实定位取决于",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " HTTPS",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、系统位置服务和用户授权；人工核验作为独立可测分支。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 61,
+        "style": "Normal",
+        "text": "SQLite 与单 Gunicorn worker 是课程部署基线，不将多节点容灾列入本轮验收。",
+        "runs": [
+          {
+            "text": "SQLite ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "与单",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " Gunicorn worker ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "是课程部署基线，不将多节点容灾列入本轮验收。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 62,
+        "style": "Normal",
+        "text": "上传文件只验证格式、大小和访问控制，不执行恶意文件扫描。",
+        "runs": [
+          {
+            "text": "上传文件只验证格式、大小和访问控制，不执行恶意文件扫描。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 63,
+        "style": "Normal",
+        "text": "破坏性用例必须在临时数据库或演示重置后执行，正式演示数据应在最后恢复。",
+        "runs": [
+          {
+            "text": "破坏性用例必须在临时数据库或演示重置后执行，正式演示数据应在最后恢复。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 64,
+        "style": "Heading 1",
+        "text": "3．计划",
+        "runs": [
+          {
+            "text": "3",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．计划",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 65,
+        "style": "Heading 2",
+        "text": "3.1 测试方案",
+        "runs": [
+          {
+            "text": "3.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试方案",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 66,
+        "style": "Normal",
+        "text": "采用需求驱动和风险驱动结合的方法。服务层和规则采用白盒单元测试；接口、权限、状态和事务采用 Flask 测试客户端；跨模块闭环采用集成测试；真实浏览器用于角色页面、定位权限和响应式检查；公网环境执行冒烟、性能、HTTPS 和恢复验证。",
+        "runs": [
+          {
+            "text": "采用需求驱动和风险驱动结合的方法。服务层和规则采用白盒单元测试；接口、权限、状态和事务采用",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " Flask ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试客户端；跨模块闭环采用集成测试；真实浏览器用于角色页面、定位权限和响应式检查；公网环境执行冒烟、性能、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "HTTPS ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "和恢复验证。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 67,
+        "style": "Normal",
+        "text": "测试顺序为：静态检查与初始化→单元测试→模块接口测试→四模块集成→角色系统测试→并发性能与安全→缺陷回归→验收彩排。",
+        "runs": [
+          {
+            "text": "测试顺序为：静态检查与初始化",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "单元测试",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "模块接口测试",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "四模块集成",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "角色系统测试",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "并发性能与安全",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "缺陷回归",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "→",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "验收彩排。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 68,
+        "style": "Heading 2",
+        "text": "3.2 测试项目",
+        "runs": [
+          {
+            "text": "3.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 70,
+        "style": "Heading 2",
+        "text": "3.3 测试准备",
+        "runs": [
+          {
+            "text": "3.3 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试准备",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 71,
+        "style": "Normal",
+        "text": "确认本地依赖安装完成并能创建临时数据库。",
+        "runs": [
+          {
+            "text": "确认本地依赖安装完成并能创建临时数据库。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 72,
+        "style": "Normal",
+        "text": "执行服务器健康检查，确认 HTTPS、systemd、Nginx 和证书状态。",
+        "runs": [
+          {
+            "text": "执行服务器健康检查，确认",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " HTTPS",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "systemd",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "Nginx ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "和证书状态。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 73,
+        "style": "Normal",
+        "text": "在正式演示前 0～5 分钟执行演示重置并保存状态清单。",
+        "runs": [
+          {
+            "text": "在正式演示前",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " 0",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "～",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "5 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "分钟执行演示重置并保存状态清单。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 74,
+        "style": "Normal",
+        "text": "准备 student、labadmin、admin、assistant 四个账号和三个独立浏览器会话。",
+        "runs": [
+          {
+            "text": "准备",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " student",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "labadmin",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "admin",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "assistant ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "四个账号和三个独立浏览器会话。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 75,
+        "style": "Normal",
+        "text": "准备五行用户导入 CSV、报修图片、合法与冲突预约时间、定位授权。",
+        "runs": [
+          {
+            "text": "准备五行用户导入",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " CSV",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、报修图片、合法与冲突预约时间、定位授权。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 76,
+        "style": "Normal",
+        "text": "记录测试版本、数据库备份、执行时间、执行人、结果和缺陷编号。",
+        "runs": [
+          {
+            "text": "记录测试版本、数据库备份、执行时间、执行人、结果和缺陷编号。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 77,
+        "style": "Heading 2",
+        "text": "3.4 测试机构及人员",
+        "runs": [
+          {
+            "text": "3.4 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试机构及人员",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 79,
+        "style": "Heading 1",
+        "text": "4．测试项目说明",
+        "runs": [
+          {
+            "text": "4",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．测试项目说明",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 80,
+        "style": "Heading 2",
+        "text": "4.1 测试项目名称及测试内容",
+        "runs": [
+          {
+            "text": "4.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试项目名称及测试内容",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 81,
+        "style": "Normal",
+        "text": "测试项目以需求编号为主线，每个项目同时检查正常流程、非法参数、权限、状态、数据落库、通知审计和重复执行。高风险项目包括同资源并发抢约、维修批量取消、信用扣分封禁、人工核验补签和系统管理员基础数据维护。",
+        "runs": [
+          {
+            "text": "测试项目以需求编号为主线，每个项目同时检查正常流程、非法参数、权限、状态、数据落库、通知审计和重复执行。高风险项目包括同资源并发抢约、维修批量取消、信用扣分封禁、人工核验补签和系统管理员基础数据维护。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 82,
+        "style": "Heading 2",
+        "text": "4.2 测试用例",
+        "runs": [
+          {
+            "text": "4.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试用例",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 84,
+        "style": "Heading 3",
+        "text": "4.2.1 输入",
+        "runs": [
+          {
+            "text": "4.2.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输入",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 85,
+        "style": "Normal",
+        "text": "输入包括账号密码、角色、实验室与设备编号、预约时间、用途、幂等键、审批意见、定位数据、令牌、报修文字与图片、违规扣分、恢复材料、系统参数、筛选条件和 CSV 文件。时间统一使用 YYYY-MM-DDTHH:MM:SS，接口 JSON 使用 UTF-8。",
+        "runs": [
+          {
+            "text": "输入包括账号密码、角色、实验室与设备编号、预约时间、用途、幂等键、审批意见、定位数据、令牌、报修文字与图片、违规扣分、恢复材料、系统参数、筛选条件和",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " CSV ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "文件。时间统一使用",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " YYYY-MM-DDTHH:MM:SS",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "，接口",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " JSON ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "使用",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " UTF-8",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 86,
+        "style": "Heading 3",
+        "text": "4.2.2 输出",
+        "runs": [
+          {
+            "text": "4.2.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "输出",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 87,
+        "style": "Normal",
+        "text": "输出包括 HTTP 状态码和 JSON、页面状态、预约/设备/报修/信用状态变化、通知、操作/IoT/信用/异常日志、CSV 文件、数据库备份和健康检查结果。",
+        "runs": [
+          {
+            "text": "输出包括",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " HTTP ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "状态码和",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " JSON",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、页面状态、预约",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "/",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "设备",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "/",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "报修",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "/",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "信用状态变化、通知、操作",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "/IoT/",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "信用",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "/",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "异常日志、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "CSV ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "文件、数据库备份和健康检查结果。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 88,
+        "style": "Heading 3",
+        "text": "4.2.3 步骤及操作",
+        "runs": [
+          {
+            "text": "4.2.3 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "步骤及操作",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 89,
+        "style": "Normal",
+        "text": "每条用例记录版本和数据基线，执行准备、操作、观察页面与接口、查询数据库或日志、比较预期、保存证据、恢复数据。失败用例建立缺陷记录，修复后执行原用例和相关回归。",
+        "runs": [
+          {
+            "text": "每条用例记录版本和数据基线，执行准备、操作、观察页面与接口、查询数据库或日志、比较预期、保存证据、恢复数据。失败用例建立缺陷记录，修复后执行原用例和相关回归。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 90,
+        "style": "Heading 3",
+        "text": "4.2.4 允许偏差",
+        "runs": [
+          {
+            "text": "4.2.4 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "允许偏差",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 91,
+        "style": "Normal",
+        "text": "时间展示允许因页面刷新产生不超过 2 秒差异；业务规则仍按服务器时间判定。",
+        "runs": [
+          {
+            "text": "时间展示允许因页面刷新产生不超过",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " 2 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "秒差异；业务规则仍按服务器时间判定。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 92,
+        "style": "Normal",
+        "text": "并发和性能响应时间按 P95 评价，单次偶发值不得超过明确的最大阈值。",
+        "runs": [
+          {
+            "text": "并发和性能响应时间按",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " P95 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "评价，单次偶发值不得超过明确的最大阈值。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 93,
+        "style": "Normal",
+        "text": "定位精度由设备提供，距离作为签到辅助判断，不作为自动处罚的唯一依据。",
+        "runs": [
+          {
+            "text": "定位精度由设备提供，距离作为签到辅助判断，不作为自动处罚的唯一依据。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 94,
+        "style": "Normal",
+        "text": "CSV 行顺序和数据库自增编号可以变化，但记录数量、字段、关联和状态必须一致。",
+        "runs": [
+          {
+            "text": "CSV ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "行顺序和数据库自增编号可以变化，但记录数量、字段、关联和状态必须一致。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 95,
+        "style": "Normal",
+        "text": "IoT 为模拟接口，允许执行失败，但签到结果、失败日志和管理员通知必须符合设计。",
+        "runs": [
+          {
+            "text": "IoT ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "为模拟接口，允许执行失败，但签到结果、失败日志和管理员通知必须符合设计。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 96,
+        "style": "Heading 2",
+        "text": "4.3 进度",
+        "runs": [
+          {
+            "text": "4.3 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "进度",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 98,
+        "style": "Heading 2",
+        "text": "4.4 条件",
+        "runs": [
+          {
+            "text": "4.4 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "条件",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 99,
+        "style": "Normal",
+        "text": "进入条件：需求和主要设计冻结，代码可启动，数据库可初始化，演示账号可登录。",
+        "runs": [
+          {
+            "text": "进入条件：需求和主要设计冻结，代码可启动，数据库可初始化，演示账号",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "可登录。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 100,
+        "style": "Normal",
+        "text": "暂停条件：数据库结构无法初始化、核心服务不可用、测试数据不可恢复或高风险缺陷阻断后续用例。",
+        "runs": [
+          {
+            "text": "暂停条件：数据库结构无法初始化、核心服务不可用、测试数据不可恢复或高风险缺陷阻断后续用例。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 101,
+        "style": "Normal",
+        "text": "恢复条件：阻断问题修复，环境健康检查通过，数据恢复到已知基线。",
+        "runs": [
+          {
+            "text": "恢复条件：阻断问题修复，环境健康检查通过，数据恢复到已知基线。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 102,
+        "style": "Normal",
+        "text": "退出条件：高优先级用例全部通过，无未关闭的严重缺陷，完整回归、冒烟和备份恢复通过。",
+        "runs": [
+          {
+            "text": "退出条件：高优先级用例全部通过，无未关闭的严重缺陷，完整回归、冒烟和备份恢复通过。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 103,
+        "style": "Heading 2",
+        "text": "4.5 测试资料",
+        "runs": [
+          {
+            "text": "4.5 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "测试资料",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 104,
+        "style": "Normal",
+        "text": "需求规格说明书、软件设计说明书、数据库脚本和接口实现。",
+        "runs": [
+          {
+            "text": "需求规格说明书、软件设计说明书、数据库脚本和接口实现。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 105,
+        "style": "Normal",
+        "text": "tests 目录下的 60 项自动化回归测试及角色冒烟、性能脚本。",
+        "runs": [
+          {
+            "text": "tests ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "目录下的",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": " 60 ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "项自动化回归测试及角色冒烟、性能脚本。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 106,
+        "style": "Normal",
+        "text": "教师检查演示与完整测试流程、最终检查演示与复位流程。",
+        "runs": [
+          {
+            "text": "教师检查演示与完整测试流程、最终检查演示与复位流程。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 107,
+        "style": "Normal",
+        "text": "演示用户批量导入.csv、报修测试图片、演示重置状态清单。",
+        "runs": [
+          {
+            "text": "演示用户批量导入",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": ".csv",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "、报修测试图片、演示重置状态清单。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 108,
+        "style": "Normal",
+        "text": "服务日志、操作日志、IoT 日志、信用日志、异常日志和数据库备份。",
+        "runs": [
+          {
+            "text": "服务日志、操作日志、",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "IoT ",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "日志、信用日志、异常日志和数据库备份。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 109,
+        "style": "Heading 1",
+        "text": "5．评价",
+        "runs": [
+          {
+            "text": "5",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "．评价",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 110,
+        "style": "Heading 2",
+        "text": "5.1 范围",
+        "runs": [
+          {
+            "text": "5.1 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "范围",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 111,
+        "style": "Normal",
+        "text": "评价范围包括所有功能需求、三类角色、模块间接口、主要数据表和状态机、正常与异常流程、并发一致性、性能、安全、兼容、部署、备份恢复和文档一致性。真实硬件控制、多节点高可用、对象存储和恶意文件扫描不在课程验收范围。",
+        "runs": [
+          {
+            "text": "评价范围包括所有功能需求、三类角色、模块间接口、主要数据表和状态机、正常与异常流程、并发一致性、性能、安全、兼容、部署、备份恢复和文档一致性。真实硬件控制、多节点高可用、对象存储和恶意文件扫描不在课程验收范围。",
+            "font": null,
+            "size_pt": null,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      },
+      {
+        "index": 112,
+        "style": "Heading 2",
+        "text": "5.2 准则",
+        "runs": [
+          {
+            "text": "5.2 ",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          },
+          {
+            "text": "准则",
+            "font": "宋体",
+            "size_pt": 10.5,
+            "bold": false,
+            "italic": false,
+            "highlight": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "index": 0,
+        "rows": [
+          [
+            "术语",
+            "含义"
+          ],
+          [
+            "单元测试",
+            "针对服务类、数据访问、规则和工具函数的独立测试。"
+          ],
+          [
+            "集成测试",
+            "验证模块接口、共享数据库、回调和跨模块事务。"
+          ],
+          [
+            "系统测试",
+            "从浏览器或 HTTP 接口验证完整角色与业务流程。"
+          ],
+          [
+            "回归测试",
+            "缺陷修复或整合变更后重新执行既有用例。"
+          ],
+          [
+            "冒烟测试",
+            "快速验证健康检查、三类角色登录和主要只读页面。"
+          ],
+          [
+            "P95",
+            "95% 请求响应时间不超过该值。"
+          ]
+        ]
+      },
+      {
+        "index": 1,
+        "rows": [
+          [
+            "环境",
+            "配置"
+          ],
+          [
+            "本地测试",
+            "Windows，Python 3.12，Flask 测试客户端，临时 SQLite 数据库。"
+          ],
+          [
+            "服务器测试",
+            "Linux 云服务器，Gunicorn、Nginx、SQLite、systemd。"
+          ],
+          [
+            "客户端",
+            "Chrome 或 Edge，桌面 1440×900；补充移动宽度 390×844。"
+          ],
+          [
+            "网络",
+            "HTTPS 公网入口及服务器本机 127.0.0.1 健康检查。"
+          ],
+          [
+            "测试数据",
+            "演示重置生成 4 个固定账号、2 个实验室、3 台设备和 7 条预约。"
+          ]
+        ]
+      },
+      {
+        "index": 2,
+        "rows": [
+          [
+            "测试组",
+            "范围",
+            "优先级"
+          ],
+          [
+            "身份与权限",
+            "登录、退出、角色切换、功能权限、实验室范围、越权审计",
+            "高"
+          ],
+          [
+            "资源与预约",
+            "组合查询、日程、创建、冲突、幂等、并发、审批、取消",
+            "高"
+          ],
+          [
+            "现场与设备",
+            "令牌、定位、人工核验、签到签退、IoT、设备、时段、报修维修",
+            "高"
+          ],
+          [
+            "信用与运营",
+            "违规、扣分、封禁、恢复、通知、后台扫描、统计导出",
+            "高"
+          ],
+          [
+            "系统管理",
+            "用户、批量导入、角色权限、实验室设备、参数、日志、备份",
+            "高"
+          ],
+          [
+            "非功能",
+            "响应时间、100 会话、HTTPS、Cookie、备份恢复、浏览器兼容",
+            "中"
+          ]
+        ]
+      },
+      {
+        "index": 3,
+        "rows": [
+          [
+            "职责",
+            "承担者",
+            "工作"
+          ],
+          [
+            "测试协调与环境",
+            "平台与集成负责人",
+            "统一测试入口、部署、演示重置、全量回归和结果汇总。"
+          ],
+          [
+            "预约模块测试",
+            "资源与预约负责人",
+            "资源、预约、审批、取消、冲突、幂等和并发。"
+          ],
+          [
+            "现场设备测试",
+            "现场使用与设备负责人",
+            "签到签退、设备时段、报修维修和 IoT。"
+          ],
+          [
+            "信用运营测试",
+            "信用与运营负责人",
+            "违规、信用、封禁恢复、通知、统计和后台扫描。"
+          ],
+          [
+            "验收测试",
+            "全体成员",
+            "三角色完整演示、交叉测试、缺陷复核和最终签字。"
+          ]
+        ]
+      },
+      {
+        "index": 4,
+        "rows": [
+          [
+            "编号",
+            "需求",
+            "输入/前置条件",
+            "步骤及操作",
+            "预期输出"
+          ],
+          [
+            "TC-01",
+            "FR-01",
+            "正确账号密码",
+            "登录 student，查询当前用户",
+            "建立 Session，返回学生角色和权限"
+          ],
+          [
+            "TC-02",
+            "FR-01",
+            "错误密码/停用账号",
+            "分别登录",
+            "返回 401，停用账号不可登录并记录日志"
+          ],
+          [
+            "TC-03",
+            "FR-01",
+            "双角色账号 assistant",
+            "登录并切换 student、lab_admin",
+            "菜单、权限和数据范围随服务端角色切换"
+          ],
+          [
+            "TC-04",
+            "FR-01",
+            "学生直接访问管理接口",
+            "请求审批或系统管理接口",
+            "返回 403，记录越权审计"
+          ],
+          [
+            "TC-05",
+            "FR-02",
+            "实验室、设备类型、日期和时段条件",
+            "组合查询资源",
+            "仅返回满足状态和开放时段的资源"
+          ],
+          [
+            "TC-06",
+            "FR-02",
+            "选择设备和日期",
+            "查询设备日程",
+            "展示开放、占用、停用和可预约区间，不泄露他人信息"
+          ],
+          [
+            "TC-07",
+            "FR-03",
+            "合法时间与可用设备",
+            "提交预约及 Idempotency-Key",
+            "创建一条 pending 预约并通知管理员"
+          ],
+          [
+            "TC-08",
+            "FR-03",
+            "相同设备重叠时段",
+            "再次提交预约",
+            "返回 409，附日程或同类设备建议并写异常日志"
+          ],
+          [
+            "TC-09",
+            "FR-03",
+            "20 个并发相同请求",
+            "同时提交同资源同时间预约",
+            "仅一条有效预约成功"
+          ],
+          [
+            "TC-10",
+            "FR-04",
+            "范围内待审批预约",
+            "管理员审批并填写意见",
+            "状态变 approved，通知学生并记录审计"
+          ],
+          [
+            "TC-11",
+            "FR-04",
+            "非管辖实验室预约",
+            "管理员审批",
+            "返回 403，不改变预约"
+          ],
+          [
+            "TC-12",
+            "FR-05",
+            "普通取消与临期取消",
+            "学生确认取消",
+            "普通取消不扣分；临期取消按参数扣分"
+          ],
+          [
+            "TC-13",
+            "FR-06",
+            "有效动态令牌与定位",
+            "在签到窗口签到并签退",
+            "状态 approved→using→completed，生成检查与 IoT 日志"
+          ],
+          [
+            "TC-14",
+            "FR-06",
+            "定位不可用",
+            "学生申请人工核验，管理员通过补签",
+            "验证方式为 manual，记录核验人"
+          ],
+          [
+            "TC-15",
+            "FR-06",
+            "IoT 模拟失败",
+            "完成签到",
+            "签到保留，记录失败日志并通知管理员"
+          ],
+          [
+            "TC-16",
+            "FR-07",
+            "学生提交含图片报修",
+            "管理员处理维修",
+            "报修状态闭环，设备状态更新并通知相关人员"
+          ],
+          [
+            "TC-17",
+            "FR-08",
+            "重叠开放/维护规则",
+            "新增时段规则",
+            "非法重叠返回 409；影响预约时要求二次确认"
+          ],
+          [
+            "TC-18",
+            "FR-09",
+            "历史未签到预约",
+            "执行疑似违规扫描并确认",
+            "幂等生成违规、扣分，低于阈值时封禁"
+          ],
+          [
+            "TC-19",
+            "FR-10",
+            "学生关联扣分提交恢复申请",
+            "管理员范围内审核",
+            "生成恢复日志，满足条件时解除封禁并通知"
+          ],
+          [
+            "TC-20",
+            "FR-11",
+            "五行 CSV 用户数据",
+            "系统管理员批量导入",
+            "导入 5 人，角色、默认角色、联系方式和范围正确"
+          ],
+          [
+            "TC-21",
+            "FR-11",
+            "修改系统参数",
+            "保存新值再恢复",
+            "版本号递增，历史记录和操作日志完整"
+          ],
+          [
+            "TC-22",
+            "FR-12",
+            "预约、审批、报修、信用事件",
+            "检查通知和四类日志",
+            "接收人、关联对象、幂等键和时间正确"
+          ],
+          [
+            "TC-23",
+            "FR-13",
+            "日期、实验室、设备筛选",
+            "查询统计并导出 CSV",
+            "统计口径与数据库一致，范围外数据不可见"
+          ],
+          [
+            "TC-24",
+            "NFR",
+            "100 个已登录会话",
+            "并发查询资源",
+            "请求均成功，P95 不超过 2 秒"
+          ],
+          [
+            "TC-25",
+            "SEC",
+            "HTTPS 与 Cookie",
+            "访问 HTTP/HTTPS 并检查响应",
+            "HTTP 跳转 HTTPS，Cookie 启用 Secure、HttpOnly、SameSite=Lax"
+          ],
+          [
+            "TC-26",
+            "REC",
+            "演示数据已被修改",
+            "执行一键重置",
+            "先备份后恢复固定账号、资源、7 条预约和信用基线"
+          ]
+        ]
+      },
+      {
+        "index": 5,
+        "rows": [
+          [
+            "日期",
+            "活动",
+            "输出"
+          ],
+          [
+            "7.7～7.10",
+            "模块单元和接口测试",
+            "各模块测试与缺陷清单"
+          ],
+          [
+            "7.11～7.13",
+            "跨模块集成和第二次检查彩排",
+            "端到端流程、设计复核问题"
+          ],
+          [
+            "7.14～7.15",
+            "需求反向核对、权限异常和回归",
+            "FR-01～FR-13 覆盖记录"
+          ],
+          [
+            "7.16",
+            "性能、HTTPS、备份恢复和最终全量回归",
+            "最终测试证据与演示基线"
+          ],
+          [
+            "7.17",
+            "教师验收与现场测试",
+            "验收结论和测试分析报告"
+          ]
+        ]
+      },
+      {
+        "index": 6,
+        "rows": [
+          [
+            "级别",
+            "通过准则"
+          ],
+          [
+            "功能",
+            "FR-01～FR-13 高优先级用例全部通过，主业务闭环可重复演示。"
+          ],
+          [
+            "权限",
+            "未登录、错误角色和范围外访问均被服务端拒绝，无越权读取或写入。"
+          ],
+          [
+            "一致性",
+            "状态、事务、通知、信用和日志一致；重复执行不产生重复业务结果。"
+          ],
+          [
+            "性能",
+            "登录和资源查询 P95 满足需求；20 并发抢约仅一条成功；100 会话查询全部成功。"
+          ],
+          [
+            "安全",
+            "HTTPS、密码哈希、安全 Cookie、输入校验、上传限制和审计符合设计。"
+          ],
+          [
+            "恢复",
+            "数据库可备份，业务失败事务回滚，演示重置可恢复固定基线。"
+          ],
+          [
+            "缺陷",
+            "无未关闭的致命或严重缺陷；一般缺陷有明确规避、责任人和后续安排。"
+          ]
+        ]
+      }
+    ],
+    "headers_footers": {
+      "word/header1.xml": "测试计划",
+      "word/footer1.xml": "PAGE 1"
+    }
+  }
+]

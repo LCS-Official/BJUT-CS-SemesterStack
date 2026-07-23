@@ -1,0 +1,219 @@
+
+
+================================================================
+== Vitis HLS Report for 'classify'
+================================================================
+* Date:           Wed Jun 10 19:31:42 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        classify_hls_120d
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  14.552 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      253|      253|  5.060 us|  5.060 us|  254|  254|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------+-------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                          |                               |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                 Instance                 |             Module            |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------------------------------+-------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_classify_Pipeline_READ_WINDOW_fu_164  |classify_Pipeline_READ_WINDOW  |      122|      122|  2.440 us|  2.440 us|  122|  122|       no|
+        |grp_classify_Pipeline_MAC_LOOP_fu_184     |classify_Pipeline_MAC_LOOP     |      123|      123|  2.460 us|  2.460 us|  123|  123|       no|
+        +------------------------------------------+-------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    497|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        1|    2|     212|    374|    -|
+|Memory           |        0|    -|     256|     64|    0|
+|Multiplexer      |        -|    -|       -|    395|    -|
+|Register         |        -|    -|      76|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        1|    2|     544|   1330|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|   ~0|      ~0|      2|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |                 Instance                 |             Module            | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |CTRL_s_axi_U                              |CTRL_s_axi                     |        0|   0|   74|  104|    0|
+    |grp_classify_Pipeline_MAC_LOOP_fu_184     |classify_Pipeline_MAC_LOOP     |        1|   2|  129|  204|    0|
+    |grp_classify_Pipeline_READ_WINDOW_fu_164  |classify_Pipeline_READ_WINDOW  |        0|   0|    9|   66|    0|
+    +------------------------------------------+-------------------------------+---------+----+-----+-----+-----+
+    |Total                                     |                               |        1|   2|  212|  374|    0|
+    +------------------------------------------+-------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------+-----------------+---------+----+----+-----+------+-----+------+-------------+
+    | Memory|      Module     | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------+-----------------+---------+----+----+-----+------+-----+------+-------------+
+    |x_U    |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_1_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_2_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_3_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_4_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_5_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_6_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    |x_7_U  |x_RAM_AUTO_1R1W  |        0|  32|   8|    0|    15|   32|     1|          480|
+    +-------+-----------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total  |                 |        0| 256|  64|    0|   120|  256|     8|         3840|
+    +-------+-----------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |sub_ln47_1_fu_242_p2   |         -|   0|  0|  67|           1|          60|
+    |sub_ln47_2_fu_284_p2   |         -|   0|  0|  60|           1|          53|
+    |sub_ln47_fu_228_p2     |         -|   0|  0|  67|          12|          60|
+    |icmp_ln34_fu_316_p2    |      icmp|   0|  0|  29|          22|           1|
+    |icmp_ln35_fu_322_p2    |      icmp|   0|  0|  60|          53|          33|
+    |pred_fu_354_p2         |      icmp|   0|  0|  39|          32|          32|
+    |ap_block_state9        |        or|   0|  0|   2|           1|           1|
+    |or_ln34_fu_340_p2      |        or|   0|  0|   2|           1|           1|
+    |q_1_fu_298_p3          |    select|   0|  0|  53|           1|          53|
+    |q_fu_290_p3            |    select|   0|  0|  53|           1|          53|
+    |score_q_fu_346_p3      |    select|   0|  0|  32|           1|          32|
+    |select_ln34_fu_332_p3  |    select|   0|  0|  33|           1|          31|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 497|         127|         410|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  53|         10|    1|         10|
+    |in_stream_TREADY_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TDATA_blk_n         |   9|          2|    1|          2|
+    |out_stream_TDATA_int_regslice  |  14|          3|   32|         96|
+    |out_stream_TLAST_int_regslice  |  14|          3|    1|          3|
+    |x_1_address0                   |  14|          3|    4|         12|
+    |x_1_ce0                        |  14|          3|    1|          3|
+    |x_1_we0                        |   9|          2|    1|          2|
+    |x_2_address0                   |  14|          3|    4|         12|
+    |x_2_ce0                        |  14|          3|    1|          3|
+    |x_2_we0                        |   9|          2|    1|          2|
+    |x_3_address0                   |  14|          3|    4|         12|
+    |x_3_ce0                        |  14|          3|    1|          3|
+    |x_3_we0                        |   9|          2|    1|          2|
+    |x_4_address0                   |  14|          3|    4|         12|
+    |x_4_ce0                        |  14|          3|    1|          3|
+    |x_4_we0                        |   9|          2|    1|          2|
+    |x_5_address0                   |  14|          3|    4|         12|
+    |x_5_ce0                        |  14|          3|    1|          3|
+    |x_5_we0                        |   9|          2|    1|          2|
+    |x_6_address0                   |  14|          3|    4|         12|
+    |x_6_ce0                        |  14|          3|    1|          3|
+    |x_6_we0                        |   9|          2|    1|          2|
+    |x_7_address0                   |  14|          3|    4|         12|
+    |x_7_ce0                        |  14|          3|    1|          3|
+    |x_7_we0                        |   9|          2|    1|          2|
+    |x_address0                     |  14|          3|    4|         12|
+    |x_ce0                          |  14|          3|    1|          3|
+    |x_we0                          |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          | 395|         84|   84|        249|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                         | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                              |   9|   0|    9|          0|
+    |grp_classify_Pipeline_MAC_LOOP_fu_184_ap_start_reg     |   1|   0|    1|          0|
+    |grp_classify_Pipeline_READ_WINDOW_fu_164_ap_start_reg  |   1|   0|    1|          0|
+    |pred_reg_379                                           |   1|   0|    1|          0|
+    |score_q_reg_374                                        |  32|   0|   32|          0|
+    |threshold_q_read_reg_363                               |  32|   0|   32|          0|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                  |  76|   0|   76|          0|
+    +-------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+---------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++--------------------+-----+-----+------------+---------------------+--------------+
+|s_axi_CTRL_AWVALID  |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWREADY  |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWADDR   |   in|    5|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WVALID   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WREADY   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WDATA    |   in|   32|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WSTRB    |   in|    4|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARVALID  |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARREADY  |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARADDR   |   in|    5|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RVALID   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RREADY   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RDATA    |  out|   32|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RRESP    |  out|    2|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BVALID   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BREADY   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BRESP    |  out|    2|       s_axi|                 CTRL|        scalar|
+|ap_clk              |   in|    1|  ap_ctrl_hs|             classify|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|             classify|  return value|
+|interrupt           |  out|    1|  ap_ctrl_hs|             classify|  return value|
+|in_stream_TDATA     |   in|   32|        axis|   in_stream_V_data_V|       pointer|
+|in_stream_TVALID    |   in|    1|        axis|   in_stream_V_last_V|       pointer|
+|in_stream_TREADY    |  out|    1|        axis|   in_stream_V_last_V|       pointer|
+|in_stream_TLAST     |   in|    1|        axis|   in_stream_V_last_V|       pointer|
+|in_stream_TKEEP     |   in|    4|        axis|   in_stream_V_keep_V|       pointer|
+|in_stream_TSTRB     |   in|    4|        axis|   in_stream_V_strb_V|       pointer|
+|out_stream_TDATA    |  out|   32|        axis|  out_stream_V_data_V|       pointer|
+|out_stream_TVALID   |  out|    1|        axis|  out_stream_V_last_V|       pointer|
+|out_stream_TREADY   |   in|    1|        axis|  out_stream_V_last_V|       pointer|
+|out_stream_TLAST    |  out|    1|        axis|  out_stream_V_last_V|       pointer|
+|out_stream_TKEEP    |  out|    4|        axis|  out_stream_V_keep_V|       pointer|
+|out_stream_TSTRB    |  out|    4|        axis|  out_stream_V_strb_V|       pointer|
++--------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.81743",
+   "Default View_TopLeft":"-94,-25",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_clk_0 -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_trig_0 -pg 1 -lvl 4 -x 690 -y 220 -defaultsOSRD
+preplace port port-id_echo_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace inst Ultrasonic_0 -pg 1 -lvl 2 -x 320 -y 190 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 100 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 200 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 570 -y 110 -defaultsOSRD
+preplace netloc Ultrasonic_0_dist_valid 1 2 1 460 140n
+preplace netloc Ultrasonic_0_distance 1 2 1 440 120n
+preplace netloc Ultrasonic_0_error 1 2 1 470 160n
+preplace netloc Ultrasonic_0_trig 1 2 2 450 220 NJ
+preplace netloc clk_0_1 1 0 3 NJ 40 200 60 NJ
+preplace netloc echo_0_1 1 0 3 NJ 260 190 100 NJ
+preplace netloc xlconstant_0_dout 1 1 1 180J 100n
+preplace netloc xlconstant_1_dout 1 1 1 NJ 200
+levelinfo -pg 1 0 100 320 570 690
+pagesize -pg 1 -db -bbox -sgen -100 0 790 280
+"
+}
+0

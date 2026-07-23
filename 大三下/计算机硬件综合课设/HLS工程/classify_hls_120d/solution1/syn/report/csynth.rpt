@@ -1,0 +1,152 @@
+
+
+================================================================
+== Synthesis Summary Report of 'classify'
+================================================================
++ General Information: 
+    * Date:           Wed Jun 10 19:31:42 2026
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        classify_hls_120d
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+    |              Modules             | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |         |         |           |           |     |
+    |              & Loops             | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF    |    LUT    | URAM|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+    |+ classify                        |     -|   0.05|      253|  5.060e+03|         -|      254|     -|        no|  1 (~0%)|  2 (~0%)|  544 (~0%)|  1330 (2%)|    -|
+    | + classify_Pipeline_READ_WINDOW  |     -|   7.82|      122|  2.440e+03|         -|      122|     -|        no|        -|        -|    9 (~0%)|   66 (~0%)|    -|
+    |  o READ_WINDOW                   |     -|  14.60|      120|  2.400e+03|         1|        1|   120|       yes|        -|        -|          -|          -|    -|
+    | + classify_Pipeline_MAC_LOOP     |     -|   1.46|      123|  2.460e+03|         -|      123|     -|        no|  1 (~0%)|  2 (~0%)|  129 (~0%)|  204 (~0%)|    -|
+    |  o MAC_LOOP                      |     -|  14.60|      121|  2.420e+03|         3|        1|   120|       yes|        -|        -|          -|          -|    -|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 5             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | threshold_q | 0x10   | 32    | W      | Data signal of threshold_q       |                                                                      |
++------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| in_stream  | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_stream | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+---------------------------------------------------------+
+| Argument    | Direction | Datatype                                                |
++-------------+-----------+---------------------------------------------------------+
+| in_stream   | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| out_stream  | out       | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| threshold_q | in        | int                                                     |
++-------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+---------------------------------------+
+| Argument    | HW Interface | HW Type   | HW Info                               |
++-------------+--------------+-----------+---------------------------------------+
+| in_stream   | in_stream    | interface |                                       |
+| out_stream  | out_stream   | interface |                                       |
+| threshold_q | s_axi_CTRL   | register  | name=threshold_q offset=0x10 range=32 |
++-------------+--------------+-----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                             | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++----------------------------------+-----+--------+------------+-----+--------+---------+
+| + classify                       | 2   |        |            |     |        |         |
+|   sub_ln47_fu_228_p2             |     |        | sub_ln47   | sub | fabric | 0       |
+|   sub_ln47_1_fu_242_p2           |     |        | sub_ln47_1 | sub | fabric | 0       |
+|   sub_ln47_2_fu_284_p2           |     |        | sub_ln47_2 | sub | fabric | 0       |
+|  + classify_Pipeline_READ_WINDOW | 0   |        |            |     |        |         |
+|    add_ln79_fu_218_p2            |     |        | add_ln79   | add | fabric | 0       |
+|  + classify_Pipeline_MAC_LOOP    | 2   |        |            |     |        |         |
+|    add_ln87_fu_229_p2            |     |        | add_ln87   | add | fabric | 0       |
+|    mul_32s_22s_53_1_1_U13        | 2   |        | mul_ln89   | mul | auto   | 0       |
+|    acc_1_fu_326_p2               |     |        | acc_1      | add | fabric | 0       |
++----------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                          | Usage        | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                               |              |           |      |      |        |          |      |         | Banks            |
++-------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + classify                    |              |           | 1    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U                | interface    | s_axilite |      |      |        |          |      |         |                  |
+|   x_U                         | ram_1p array |           |      |      |        | x        | auto | 1       | 32, 15, 1        |
+|   x_1_U                       | ram_1p array |           |      |      |        | x_1      | auto | 1       | 32, 15, 1        |
+|   x_2_U                       | ram_1p array |           |      |      |        | x_2      | auto | 1       | 32, 15, 1        |
+|   x_3_U                       | ram_1p array |           |      |      |        | x_3      | auto | 1       | 32, 15, 1        |
+|   x_4_U                       | ram_1p array |           |      |      |        | x_4      | auto | 1       | 32, 15, 1        |
+|   x_5_U                       | ram_1p array |           |      |      |        | x_5      | auto | 1       | 32, 15, 1        |
+|   x_6_U                       | ram_1p array |           |      |      |        | x_6      | auto | 1       | 32, 15, 1        |
+|   x_7_U                       | ram_1p array |           |      |      |        | x_7      | auto | 1       | 32, 15, 1        |
+|  + classify_Pipeline_MAC_LOOP |              |           | 1    | 0    |        |          |      |         |                  |
+|    SVM_W_U                    | rom_1p       |           | 1    |      |        | SVM_W    | auto | 1       | 22, 120, 1       |
++-------------------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------------+-----------------------------------------------------------------+
+| Type            | Options                                | Location                                                        |
++-----------------+----------------------------------------+-----------------------------------------------------------------+
+| inline          |                                        | classify_hls_120d/code/classify.cpp:31 in saturate_i32          |
+| inline          |                                        | classify_hls_120d/code/classify.cpp:40 in score_to_q            |
+| inline          |                                        | classify_hls_120d/code/classify.cpp:56 in write_axis_word       |
+| interface       | axis port=in_stream                    | classify_hls_120d/code/classify.cpp:70 in classify, in_stream   |
+| interface       | axis port=out_stream                   | classify_hls_120d/code/classify.cpp:71 in classify, out_stream  |
+| interface       | s_axilite port=threshold_q bundle=CTRL | classify_hls_120d/code/classify.cpp:72 in classify, threshold_q |
+| interface       | s_axilite port=return bundle=CTRL      | classify_hls_120d/code/classify.cpp:73 in classify, return      |
+| array_partition | variable=x cyclic factor=8 dim=1       | classify_hls_120d/code/classify.cpp:76 in classify, x           |
+| pipeline        | II=1                                   | classify_hls_120d/code/classify.cpp:80 in classify              |
+| pipeline        | II=1                                   | classify_hls_120d/code/classify.cpp:88 in classify              |
++-----------------+----------------------------------------+-----------------------------------------------------------------+
+
+

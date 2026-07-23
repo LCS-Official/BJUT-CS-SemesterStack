@@ -1,0 +1,10 @@
+#pragma once
+#include <stdint.h>
+
+// Binary EyeFeature SVM. score_q > 0 => closed, else non_closed.
+#define SVM_INPUT_DIM 30
+#define SVM_INPUT_SCALE 4096
+#define SVM_WEIGHT_SCALE 1048576
+
+static const int32_t SVM_W[SVM_INPUT_DIM] = {-390928, -429218, -379818, -369716, -231452, -253883, -187063, -124755, -273922, -299167, -355949, -396098, -457142, -426802, -472411, 918354, 718660, 573812, 588857, 540124, 471636, 335497, 157600, 302242, 470913, 586501, 692369, 848161, 971678, 1256125};
+static const int64_t SVM_B = -11864947438;

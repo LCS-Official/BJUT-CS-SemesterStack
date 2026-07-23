@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\LCsexp2\exp2-task1\D_LF\simulation\modelsim
+vD_FF
+!i10b 1
+!s100 @h?T>T:7mXRnVE;O2782^0
+I]Pck;=ABhBTQ>jMXOZheT1
+VT5]^JG3ZP<oWnO8QbC6Jc1
+Z1 dD:\LCsexp2\exp2-task1\D_LF\simulation\modelsim
+w1730685946
+8D:/LCsexp2/exp2-task1/D_LF/D_FF.v
+FD:/LCsexp2/exp2-task1/D_LF/D_FF.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1730793866.833000
+!s107 D:/LCsexp2/exp2-task1/D_LF/D_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/LCsexp2/exp2-task1/D_LF|D:/LCsexp2/exp2-task1/D_LF/D_FF.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/LCsexp2/exp2-task1/D_LF -O0
+n@d_@f@f
+vD_latch
+I1UElUg:J1=zDBRD18CVge0
+V:Y3aJJZB6k5Vj>H_zD`9a3
+R1
+w1730686278
+8D:/LCsexp2/exp2-task1/D_LF/D_latch.v
+FD:/LCsexp2/exp2-task1/D_LF/D_latch.v
+L0 1
+R2
+r1
+31
+R3
+n@d_latch
+!i10b 1
+!s100 :5E85ECZbQRdcIgO9jY6>0
+!s85 0
+!s108 1730793866.763000
+!s107 D:/LCsexp2/exp2-task1/D_LF/D_latch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/LCsexp2/exp2-task1/D_LF|D:/LCsexp2/exp2-task1/D_LF/D_latch.v|
+!s101 -O0
+R4

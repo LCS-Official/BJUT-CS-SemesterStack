@@ -1,0 +1,263 @@
+===== 计网课设实验报告-LC.docx =====
+001 [Normal] 计算机网络综合课设
+002 [Normal] 实验报告
+009 [Normal] 班级   230702班
+010 [Normal] 姓名    王宏天
+011 [Normal] 学号     23070219
+012 [Normal] 组长姓名学号    23070219
+013 [Normal] 组长联系方式  13011884082
+014 [Normal] 同组人姓名学号 侯景祺 23071005
+015 [Normal] 23070225 贺子淇、23070226 尹先炜、23070214 宋天翔
+016 [Normal] 实验日期     2026/7/8
+018 [Normal] 年    月   日
+022 [Normal] 一、实验内容和要求
+023 [Normal] 1、实验一
+024 [Normal] 搭建网络环境。两台路由器通过Serial口连接起来，PC通过交换机连接到路由器Ethernet口；配置路由器和PC的IP地址和路由，使得各设备能相互通信。具体的内容（不局限于以下的内容）：
+025 [Normal] （1）根据拓扑图连接路由器、交换机和PC等设备；
+026 [Normal] （2）配置路由器的接口；
+027 [Normal] （3）配置路由器的静态路由，使得各网络能够互相连通；
+028 [Normal] （4）配置路由器的RIP或OSPF动态路由，使得各网络能够互相连通；
+029 [Normal] （5）配置PC的IP地址、子网掩码和默认路由，使得各PC机能够互相连通；
+030 [Normal] （6）测试网络连通性。
+031 [Normal] （7）测试ACL的访问控制功能。
+032 [Normal] （8）测试DNS
+033 [Normal] 2、实验二
+034 [Normal] （1）Wireshark软件的安装；
+035 [Normal] （2）Wireshark软件的启动，并设置网卡的状态为混杂状态，使得Wireshark可以监控局域网的状态；
+036 [Normal] （3）启动数据包的捕获，跟踪PC之间的报文，并存入文件以备重新查；
+037 [Normal] （4）设置过滤器过滤网络报文以检测特定数据流；
+038 [Normal] （5）对常用协议的数据包的报文格式进行分析，利用协议分析软件的统计工具显示网络报文的各种统计信息。
+039 [Normal] 3、实验四
+040 [Normal] 本实验要求设计并实现一个简单的聊天程序，包括服务器实现和客户端实现，具体内容和要求如下：
+041 [Normal] 使用MSN或者QQ，分析聊天程序的功能需求；
+042 [Normal] 在给定的参考程序的基础上，参考MSN或者QQ，对功能做出扩充，不局限于以下的范围：
+043 [Normal] 在客户端界面上显示所有联入聊天服务器的用户；
+044 [Normal] 支持两个用户之间的聊天；
+045 [Normal] 支持增加好友的功能，好友上线时如果该用户在线，则做出提醒；
+046 [Normal] 增加用户的个人信息修改、保存和查询；
+047 [Normal] 在聊天内容中支持中文；
+048 [Normal] 在聊天内容中支持图片等多媒体信息；
+049 [Normal] 支持在用户之间传输文件等附件；
+050 [Normal] 二、实验环境
+051 [Normal] 1、实验一
+052 [Normal] 硬件设施：
+053 [Normal] 路由器DCR-2626、交换机、PC、RJ-45转DB-9串口转换器、Console专用电缆线、路由器DTE-DCE线缆(V.35电缆)、双绞线等。
+054 [Normal] 软件系统：
+055 [Normal] Windows XP，超级终端。
+056 [Normal] 2、实验二
+057 [Normal] 软件系统：Windows系统，Wireshark软件
+058 [Normal] 3、实验四
+059 [Normal] 本地开发机：Windows 操作系统，用于代码编写与本地测试
+060 [Normal] 云服务器：云计算平台实例，用于公网部署与远程联调
+061 [Normal] JDK版本：OpenJDK 25
+062 [Normal] 编程语言：Java
+063 [Normal] 操作系统：本地：Windows 11 / Windows 10；服务器：Linux（AutoDL 实例）
+064 [Normal] 开发工具：IntelliJ IDEA / VS Code + PowerShell 命令行
+065 [Normal] 编译方式：手动 javac 命令编译，输出至 out/ 目录
+066 [Normal] 字符编码：统一使用 UTF-8，支持中文通信
+067 [Normal] 三、实验需求分析与逻辑框图
+068 [Normal] 1、实验一
+069 [Normal] （1）两台路由器通过Serial接口连接起来
+070 [Normal] （2）配置路由器的Ethernet和Serial接口的IP地址和子网掩码
+071 [Normal] （3）配置路由器的静态路由和动态路由，使得各子网能相互通信
+072 [Normal] （4）PC通过交换机连接到路由器的Ethernet接口，配置每台PC的IP地址、子网掩码和默认网关，使得各PC能相互通信
+073 [Normal] （5）测试网络连通性
+074 [Normal] （6）在配置静态路由或动态路由基础上配置ACL
+075 [Normal] （7）安装DNS服务器
+076 [Normal] （8）DNS服务器的设置。建立正向搜索区域，建立反向搜索区域
+077 [Normal] （9）设置DNS客户端DNS
+078 [Normal] 2、实验二
+079 [Normal] （1）设置过滤器属性，如目的地址，源地址，协议类型等。如过滤不需要的网络报文，过滤器允许设置第二层，第三层或第四层的协议字段。
+080 [Normal] （2）使用过滤器的两种工作方式进行过滤：
+081 [Normal] ①捕获前过滤：协议分析软件用过滤器匹配网络上的数据报文，仅当匹配通过时才捕获报文。
+082 [Normal] ②捕获后过滤：协议分析软件捕获所有报文，但仅显示匹配符合过滤条件的报文。
+083 [Normal] 3、实验四
+084 [Normal] 本系统为基于Java Socket的C/S架构聊天程序，包含客户端和服务器端，满足以下需求：
+085 [Normal] 用户管理：注册（自动分配UID）、登录、退出、搜索用户。
+086 [Normal] 好友管理：添加/接受好友、好友上线提醒、好友标记、关系持久化。
+087 [Normal] 消息管理：公共频道群聊、私聊、多人群聊、消息格式规范、历史记录保存、空消息过滤。
+088 [Normal] 个人资料管理：查看/修改资料，支持昵称、头像、城市、电话、邮箱、签名等字段，持久化保存。
+089 [Normal] 文件与多媒体传输：发送/接收文件和图片（Base64编码），图片缩略图预览，文件大小限制2MB，文件名冲突自动处理，文本文件预览。
+090 [Normal] 群聊管理：创建群聊、独立显示、命名、修改群名（仅群主）、查看成员、删除群聊（仅群主）。
+091 [Normal] 前端界面：连接设置、登录/注册切换、联系人列表、聊天记录区、消息输入区（Enter发送）、状态栏、消息气泡区分、系统消息、图片缩略图、文件信息显示。
+092 [Normal] 网络通信：TCP长连接、连接超时（8秒）、断开重连、状态回调、异常捕获、0xff消息结束符。
+093 [Normal] 数据持久化：用户数据（MD5密码）存文件、资料存文件、聊天记录存.log、好友关系存文件、客户端配置存.properties。
+094 [Normal] 非功能性要求：支持20+并发用户、消息延迟<1秒、异常不崩溃、密码MD5加密不存明文、跨平台（需Java 8）、关键参数可配置。
+095 [Normal] 约束条件：Java + Swing + BIO + 文本文件存储 + UTF-8编码。
+097 [Caption] 图 1 实验四逻辑框图
+098 [Normal] 四、核心功能的实现机制
+099 [Normal] 1、实验一
+101 [Caption] 图 2 实验一拓扑图
+102 [Normal] 上图为实验一路由器、交换机、四台PC之间的IP部署的拓扑图。
+103 [Normal] 首先连接按照拓扑图连接路由器、交换机和四台PC，分别配置四台PC的IP地址，编号从3到6的IP设置图示依次如下：
+105 [Caption] 图 3 机器3IP设置                       图 4 机器3IP设置
+107 [Caption] 图 5 机器4IP设置                    图 6 机器5IP设置
+108 [Normal] 随后打开Windows XP系统中的超级终端，使用4号和6号机器风别远程连接RouteA、RouteB并开始路由器配置，执行以下命令：
+109 [Normal] Router>enable                                         //进入特权模式
+110 [Normal] Rouer#config                                      //进入全局配置模式
+111 [Normal] Router_config#hostname RouterA           //路由器命名，可改为RouterB
+112 [Normal] RouterA_config#interface f0/0              //进入接口（f0/0）配置模式
+113 [Normal] RouterA_config_f0/0#ip address 192.168.16.1 255.255.255.0
+114 [Normal] //配置RouterB需改为192.168.116.1
+115 [Normal] RouterA_config_f0/0#no shutdown                           //激活接口
+116 [Normal] RouterA_config_f0/0#exit                              //退回至上一级
+117 [Normal] RouterA_config#interface s0/2             //进入接口（S0/2）配置模式
+118 [Normal] RouterA_config_s0/2#ip address 192.168.0.16 255.255.255.0
+119 [Normal] //配置RouterB需改为192.168.0.116
+120 [Normal] RouterA_config_s0/2#encapsulation PPP            //定义封装类型为PPP
+121 [Normal] RouterA_config_s0/2#physical-layer speed 64000       // 配置时钟频率
+122 [Normal] RouterA_config_s0/2#no shutdown                           //激活接口
+123 [Normal] RouterA_config_s0/2#exit                              //退回至上一级
+124 [Normal] //配置静态路由。目的网络192.168.116.0/24和下一跳192.168.0.116
+125 [Normal] RouterA_config#ip route 192.168.116.0 255.255.255.0 192.168.0.116
+126 [Normal] //配置RouterB，需改为目的网络192.168.16.0/24和下一跳192.168.0.16
+127 [Normal] RouterA_config#exit                                   //退回至上一级
+129 [Caption] 图 7 机器4路由表
+131 [Caption] 图 8 机器6路由表
+132 [Normal] //静态路由配置完成，以下是动态路由过程
+133 [Normal] RouerA#config                                     //进入全局配置模式
+134 [Normal] //启动RIP协议
+135 [Normal] RouterA_config#router rip
+136 [Normal] RouterA_config_router#version 2
+137 [Normal] RouterA_config_router#no auto-summary
+138 [Normal] RouterA_config_router#network 192.168.16.0//RouterB改为192.168.116.0
+139 [Normal] RouterA_config_router#network 192.168.0.0
+140 [Normal] RouterA_config_router#exit
+141 [Normal] //删除原来的静态路由，方便动态路由后续验证
+142 [Normal] RouterA_config#no ip route 192.168.116.0 255.255.255.0 192.168.0.116
+143 [Normal] //RouterB改为192.168.16.0 255.255.255.0 192.168.0.16
+144 [Normal] RouterA_config#exit                                   //退回至上一级
+145 [Normal] RouterA# write                                            //保存配置
+146 [Normal] //动态路由配置完成
+148 [Caption] 图 9 机器4动态路由表
+150 [Caption] 图 10 机器6动态路由表
+151 [Normal] 2、实验四
+152 [List Paragraph] 在客户端界面上显示所有联入聊天服务器的用户
+153 [Normal] 核心逻辑：服务器维护一个在线用户池（LinkedList<ConnectedClient>），每当用户登录成功或断开连接时，服务器主动推送最新的在线用户列表给所有客户端。
+154 [Normal] 关键步骤：
+155 [Normal] 用户登录时触发更新：用户通过 /login 或 /register 认证成功后，服务器调用 ConnectionKeeper.notifyUsers() 方法，遍历当前在线用户池，将每个用户的 UID|昵称 拼接成字符串。
+156 [Normal] 广播推送：服务器将封装好的 @USERS uid1|nick1,uid2|nick2,... 消息通过 broadcast() 方法发送给所有在线客户端。
+157 [Normal] 客户端解析与渲染：客户端 ClientKernel 收到 @USERS 前缀消息后，在 storeMsg() 中调用 updateUsers() 方法。该方法解析逗号分隔的用户列表，更新内存中的在线用户集合，并通过 SwingUtilities.invokeLater() 在 UI 线程中刷新左侧联系人列表（Defau
+158 [Normal] 上下线同步：用户主动退出或异常断开时，ConnectionKeeper.remove() 同样调用 notifyUsers()，确保所有客户端看到一致的在线状态。
+159 [Normal] 关键类与方法：
+160 [Normal] ConnectionKeeper.notifyUsers() —— 生成在线列表并广播
+161 [Normal] ConnectionKeeper.users() —— 获取当前在线用户池快照
+162 [Normal] ClientKernel.updateUsers() —— 解析并更新客户端用户列表
+163 [Normal] ChatClient.updateUsers() —— 刷新 UI 联系人列表
+164 [List Paragraph] 支持两个用户之间的聊天
+165 [Normal] 核心逻辑：私聊采用"发送者指定接收者，服务器定向转发"的模式。消息不经过服务器持久化（除日志记录外），直接转发给目标用户。
+166 [Normal] 关键步骤：
+167 [Normal] 客户端发送私聊命令：用户在输入框中输入 /msg <用户> <消息内容>，ClientKernel 将该命令通过 Socket 发送给服务器。
+168 [Normal] 服务器命令解析：BroadcastCommandParser.runCommand() 识别 msg 命令，调用 privateMsg(ConnectedClient cc, String user, String msg) 方法。
+169 [Normal] 查找目标用户：通过 ConnectionKeeper.findUser(user) 根据 UID 或昵称在在线用户池中查找接收者。若目标不在线，向发送者返回 @SYSTEM User offline 提示。
+170 [Normal] 消息封装与转发：服务器将消息封装为 @CHAT2 发送者UID|发送者昵称|接收者UID|接收者昵称|消息内容 格式，调用 receiver.sendMessage(payload) 发送给接收者。
+171 [Normal] 消息回显：同时向发送者发送相同的 @CHAT2 消息，用于在发送者界面上显示自己发出的消息。
+172 [Normal] 聊天记录保存：调用 ServerChatLog.chat() 将私聊记录写入 history/私聊(昵称A,昵称B).log 文件。
+173 [Normal] 关键类与方法：
+174 [Normal] BroadcastCommandParser.privateMsg() —— 私聊核心逻辑
+175 [Normal] ConnectionKeeper.findUser() —— 在线用户查找
+176 [Normal] ConnectedClient.sendMessage() —— 向单个客户端推送消息
+177 [Normal] ServerChatLog.chat() —— 聊天记录持久化
+178 [List Paragraph] 支持增加好友的功能，好友上线时如果该用户在线，则做出提醒
+179 [Normal] 核心逻辑：好友关系分为"待处理"和"已确认"两种状态。好友上线提醒通过登录时遍历好友列表主动推送实现。
+180 [Normal] 关键步骤：
+181 [Normal] 发送好友请求：用户输入 /friend add <用户>，服务器调用 friend() 方法。检查目标用户是否在线以及是否已是好友，若通过则生成一个待处理请求：pendingFriends.add(friendKey(发送者UID, 目标UID))，并向目标用户推送 @FRIEND_REQUEST 发送者UID|发送者
+182 [Normal] 接受好友请求：目标用户输入 /friend accept <用户>，服务器验证 pendingFriends 中是否存在对应的待处理请求。若存在，调用 makeFriends() 方法将好友关系写入双方的 friends Map 中。
+183 [Normal] 好友关系存储：friends Map 以 UID.toLowerCase() 为键，存储 Set<String> 类型的好友 UID 集合。双方互相添加：friends.computeIfAbsent(a.uid.toLowerCase(), k -> new HashSet<>()).add(b.uid.toLowe
+184 [Normal] 上线提醒机制：当用户登录成功后，BroadcastCommandParser.notifyFriendsOnline(ConnectedClient online) 被调用。该方法遍历当前所有在线用户，检查在线用户的 friends 集合中是否包含新登录用户的 UID。若包含，向该在线用户推送 @SYSTEM frie
+185 [Normal] 好友标记显示：客户端收到好友相关推送后，在联系人列表中通过 ★ 星标标记好友。
+186 [Normal] 关键类与方法：
+187 [Normal] BroadcastCommandParser.friend() —— 好友请求/接受处理
+188 [Normal] BroadcastCommandParser.makeFriends() —— 确认好友关系
+189 [Normal] BroadcastCommandParser.notifyFriendsOnline() —— 上线提醒遍历
+190 [Normal] BroadcastCommandParser.isFriend() —— 检查是否好友关系
+191 [List Paragraph] 增加用户的个人信息修改、保存和查询
+192 [Normal] 核心逻辑：用户资料以"字段=值"的键值对形式存储，每个用户可以拥有多个资料字段。服务端通过 FileDataSource 将资料持久化到 chat-data/info 文件中。
+193 [Normal] 关键步骤：
+194 [Normal] 修改资料：用户输入 /profile set <字段>=<值>，BroadcastCommandParser.profile() 方法解析字段名和值。调用 ds.addInfo(cc.uid, field, value) 保存。
+195 [Normal] 资料写入存储：FileDataSource.addInfo() 首先从内存中的 infoList 移除该用户同字段的旧记录（removeInfoFromMemory()），然后添加新记录。最后调用 rewriteInfoFile() 将全部资料重新写入 chat-data/info 文件。
+196 [Normal] 查询他人资料：用户输入 /profile view <用户>，服务器根据 UID 或昵称调用 ds.getAllUserInfo(target) 获取该用户的所有资料字段数组。封装为 @PROFILE2 可见UID|昵称|字段1=值1;字段2=值2 格式返回给请求者。
+197 [Normal] 权限控制：查询他人资料时，若目标用户不是好友或不是自己，visibleId 字段置空，仅返回昵称和公开资料字段，保护用户隐私。
+198 [Normal] 头像特殊处理：当修改的字段为 avatar 时，服务器额外调用 broadcast("@AVATAR2 " + uid + "|" + nick + "|" + value)，向所有在线用户广播头像更新。
+199 [Normal] 关键类与方法：
+200 [Normal] BroadcastCommandParser.profile() —— 资料修改/查询入口
+201 [Normal] FileDataSource.addInfo() —— 资料写入内存与文件
+202 [Normal] FileDataSource.getAllUserInfo() —— 获取用户全部资料
+203 [Normal] FileDataSource.rewriteInfoFile() —— 资料文件重写
+204 [List Paragraph] 在聊天内容中支持中文
+205 [Normal] 核心逻辑：从客户端到服务器、从服务器到客户端的全链路统一使用 UTF-8 字符编码，确保中文在多字节传输中不被破坏。
+206 [Normal] 关键步骤：
+207 [Normal] 客户端发送：ClientMsgSender.run() 在发送消息时，调用 msg.getBytes(StandardCharsets.UTF_8) 将字符串编码为字节数组后写入 DataOutputStream。
+208 [Normal] 服务器接收：ServerMsgListener.run() 读取字节流后，使用 new String(bytes.toByteArray(), StandardCharsets.UTF_8) 将字节数组解码为字符串。
+209 [Normal] 服务器发送：ServerMsgSender.run() 同样使用 msg.getBytes(StandardCharsets.UTF_8) 编码后发送。
+210 [Normal] 客户端接收：ClientMsgListener.run() 使用 new String(bytes.toByteArray(), StandardCharsets.UTF_8) 解码服务器推送的消息。
+211 [Normal] 文件存储编码：FileDataSource 读写用户数据文件和聊天记录文件时，也统一使用 "UTF-8" 编码，确保中文在持久化后不出现乱码。
+212 [Normal] 关键类与方法：
+213 [Normal] ClientMsgSender.run() —— 客户端发送 UTF-8 编码
+214 [Normal] ClientMsgListener.run() —— 客户端接收 UTF-8 解码
+215 [Normal] ServerMsgSender.run() —— 服务器发送 UTF-8 编码
+216 [Normal] ServerMsgListener.run() —— 服务器接收 UTF-8 解码
+217 [Normal] FileDataSource.appendToFile() —— 文件写入 UTF-8
+218 [List Paragraph] 在聊天内容中支持图片等多媒体信息
+219 [Normal] 核心逻辑：图片通过 Base64 编码转换为文本字符串，嵌入聊天协议中传输。接收端解码 Base64 还原为图片文件，并在聊天窗口生成缩略图预览。
+220 [Normal] 关键步骤：
+221 [Normal] 图片发送：用户在客户端选择图片文件，客户端使用 Base64.getEncoder().encodeToString(Files.readAllBytes(file.toPath())) 将图片文件编码为 Base64 字符串。构造命令 /image <用户> <文件名>|<Base64字符串> 发送给服务器。
+222 [Normal] 服务器转发：服务器将 /image 命令识别为附件类型，调用 attachment() 方法，封装为 @IMAGE 发送者昵称|文件名|Base64数据 转发给目标用户（同时回显给发送者）。服务器还调用 ServerChatLog.attachment() 记录附件发送日志。
+223 [Normal] 客户端接收与解码：ClientKernel.handleAttachment() 收到 @IMAGE 前缀消息后，使用 Base64.getMimeDecoder().decode(base64Data.trim()) 将 Base64 还原为字节数组。
+224 [Normal] 文件保存：解码后的字节数组写入 ~/.mihalychat/downloads/ 目录。若文件名冲突，自动追加 _1、_2 等后缀。
+225 [Normal] 缩略图渲染：ClientKernel.attachmentHtml() 生成包含图片标签的 HTML 片段。ChatClient.ClientHistory 渲染时，通过 <img src="file:/路径"> 显示图片缩略图（最大宽度 240px，最大高度 180px）。点击图片可调用系统默认图片查看器打开原始图片
+226 [Normal] 关键类与方法：
+227 [Normal] ChatClient.sendAttachment() —— 图片文件读取与 Base64 编码
+228 [Normal] BroadcastCommandParser.attachment() —— 服务器转发附件
+229 [Normal] ClientKernel.handleAttachment() —— Base64 解码与文件保存
+230 [Normal] ClientKernel.attachmentHtml() —— 缩略图 HTML 生成
+231 [Normal] ClientKernel.imagePreviewTag() —— 图片尺寸适配与预览标签
+232 [List Paragraph] 支持在用户之间传输文件等附件
+233 [Normal] 核心逻辑：文件的传输机制与图片完全一致，也采用 Base64 编码嵌入协议。区别在于客户端收到文件后，不生成缩略图预览，而是显示文件图标、文件名、文件大小和打开链接。
+234 [Normal] 关键步骤：
+235 [Normal] 文件发送：用户选择文件后，客户端同样进行 Base64 编码，构造命令 /file <用户> <文件名>|<Base64字符串> 发送给服务器。
+236 [Normal] 服务器转发：服务器识别 /file 命令，封装为 @FILE 发送者昵称|文件名|Base64数据 转发给目标用户。
+237 [Normal] 客户端接收与解码：ClientKernel.handleAttachment() 根据消息前缀判断是 @IMAGE 还是 @FILE，执行相同的 Base64 解码和文件保存逻辑。
+238 [Normal] 文件大小限制：客户端在发送和接收时均进行大小检查，通过 ClientKernel.MAX_FILE_SIZE（默认 2MB）限制单个文件大小，防止单条消息过大导致内存溢出或网络拥塞。
+239 [Normal] 文件展示：attachmentHtml() 生成文件消息卡片，显示文件图标、文件名（加粗显示）、文件大小（如 "1.2MB"）、"打开文件" 超链接，点击后调用系统默认程序打开
+240 [Normal] 文本文件预览：若文件为常见文本格式（.txt、.java、.json、.log 等），客户端自动读取并显示前 6 行内容作为预览。
+241 [Normal] 关键类与方法：
+242 [Normal] ChatClient.sendAttachment() —— 文件读取与 Base64 编码（与图片共用）
+243 [Normal] BroadcastCommandParser.attachment() —— 服务器转发附件
+244 [Normal] ClientKernel.handleAttachment() —— 接收解码与保存（共用）
+245 [Normal] ClientKernel.attachmentHtml() —— 文件卡片 HTML 生成
+246 [Normal] ClientKernel.filePreview() —— 文本文件预览
+247 [Normal] ClientKernel.formatSize() —— 文件大小格式化
+248 [Normal] 五、程序源代码（核心部分）
+249 [Normal] 实验四
+250 [List Paragraph] 客户端核心类 ChatClient
+251 [Normal] // 界面初始化（创建顶部状态栏、联系人列表、聊天区域、底部输入）
+252 [Normal] public void uiInit() {
+253 [Normal] setLayout(new BorderLayout());
+254 [Normal] // 顶部状态栏
+255 [Normal] topStatusPanel = createStatusBar();
+256 [Normal] // 登录/注册面板（CardLayout）
+257 [Normal] centerPanel = new JPanel(centerCards);
+258 [Normal] centerPanel.add(loginPanel, "login");
+259 [Normal] centerPanel.add(mainSplitPane, "chat");
+
+===== 计算机网络课程设计要求.docx =====
+Traceback (most recent call last):
+  File "C:\Users\LC\Desktop\计网课设\inspect_docx_structure.py", line 7, in <module>
+    doc = Document(name)
+          ^^^^^^^^^^^^^^
+  File "C:\Users\LC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\docx\opc\package.py", line 107, in main_document_part
+    return self.part_related_by(RT.OFFICE_DOCUMENT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\docx\opc\package.py", line 137, in part_related_by
+    return self.rels.part_with_reltype(reltype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\docx\opc\rel.py", line 52, in part_with_reltype
+    rel = self._get_rel_of_type(reltype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\site-packages\docx\opc\rel.py", line 98, in _get_rel_of_type
+    raise KeyError(tmpl % reltype)
+KeyError: "no relationship of type 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' in collection"

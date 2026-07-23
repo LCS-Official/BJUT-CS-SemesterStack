@@ -1,0 +1,29 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 4 条语句；后续 P' => ε
+S -> id = E                | S => a = 6.2 + a * 136.5
+E -> T E'                  | E => 6.2 + a * 136.5; place = t2
+T -> F T'                  | T => 6.2; place = 6.2
+F -> real10                | F => 6.2
+E' -> + T E'               | E => 6.2 + a * 136.5; place = t2
+T -> F T'                  | T => a * 136.5; place = t1
+F -> id                    | F => a
+T' -> * F T'               | T => a * 136.5; place = t1
+F -> real16                | F => 136.5，源程序写作 0X88.80
+S -> id = E                | S => my_var = a / 1
+E -> T E'                  | E => a / 1; place = t3
+T -> F T'                  | T => a / 1; place = t3
+F -> id                    | F => a
+T' -> / F T'               | T => a / 1; place = t3
+F -> int8                  | F => 1，源程序写作 01
+S -> id = E                | S => octv = 7.5
+E -> T E'                  | E => 7.5; place = 7.5
+T -> F T'                  | T => 7.5; place = 7.5
+F -> real8                 | F => 7.5，源程序写作 07.4
+S -> id = E                | S => obj.field = my_var + octv
+E -> T E'                  | E => my_var + octv; place = t4
+T -> F T'                  | T => my_var; place = my_var
+F -> id                    | F => my_var
+E' -> + T E'               | E => my_var + octv; place = t4
+T -> F T'                  | T => octv; place = octv
+F -> id                    | F => octv
+Result: ACCEPT

@@ -1,0 +1,19 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 1 条语句；后续 P' => ε
+S -> if C then S [else S]  | S => if C then S else S; then->L0, else->L1, 结束->L2
+C -> E relop E             | C => a > b; 真->L0, 假->L1
+E -> T E'                  | E => a; place = a
+T -> F T'                  | T => a; place = a
+F -> id                    | F => a
+E -> T E'                  | E => b; place = b
+T -> F T'                  | T => b; place = b
+F -> id                    | F => b
+S -> id = E                | S => x = 1
+E -> T E'                  | E => 1; place = 1
+T -> F T'                  | T => 1; place = 1
+F -> int10                 | F => 1
+S -> id = E                | S => x = 2
+E -> T E'                  | E => 2; place = 2
+T -> F T'                  | T => 2; place = 2
+F -> int10                 | F => 2
+Result: ACCEPT

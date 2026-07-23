@@ -1,0 +1,9 @@
+# Info file for Chat Server
+# Used when the server is running in FileDataSource mode
+# <username> <field> <data>
+# username is the name of the user which the info belongs to
+User60676 city 北京
+Bob city 北京
+Alice city 北京
+Alice 我 傻逼
+Bob avatar 🙂

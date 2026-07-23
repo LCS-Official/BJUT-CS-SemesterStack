@@ -1,0 +1,6 @@
+学号/账号,姓名,联系方式,初始密码,角色,默认角色,管辖实验室编号
+20260088,批量学生甲,13800000088,<SET_BEFORE_IMPORT>,student,student,
+20260089,批量学生乙,13800000089,<SET_BEFORE_IMPORT>,student,student,
+20260090,批量学生丙,13800000090,<SET_BEFORE_IMPORT>,student,student,
+lab_batch01,批量实验室管理员,13900000001,<SET_BEFORE_IMPORT>,lab_admin,lab_admin,1|2
+multi_batch01,批量助管,13900000002,<SET_BEFORE_IMPORT>,student|lab_admin,student,1

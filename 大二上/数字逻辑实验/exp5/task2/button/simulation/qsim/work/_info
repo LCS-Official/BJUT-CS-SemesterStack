@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task2\button\simulation\qsim
+vbutton
+Z1 II^8;Tcm^[4Uzc[I39T<2h0
+Z2 VknGaOQI?Bk<JQ`ZCLL:^02
+Z3 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp5\task2\button\simulation\qsim
+Z4 w1731940552
+Z5 8button.vo
+Z6 Fbutton.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 Vec[zZ3<RX0_?[kg_3CEP3
+!s85 0
+Z10 !s108 1731940553.646000
+Z11 !s107 button.vo|
+Z12 !s90 -work|work|button.vo|
+!s101 -O0
+vbutton_vlg_check_tst
+!i10b 1
+!s100 U=I7d>_CHiE60EALK61X51
+IXND`96J3`hC]A?<KhZ`;R2
+VLPI2V<YLK`YKZkdh4GM7e0
+R3
+Z13 w1731940551
+Z14 8button.vt
+Z15 Fbutton.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1731940553.724000
+Z17 !s107 button.vt|
+Z18 !s90 -work|work|button.vt|
+!s101 -O0
+R8
+vbutton_vlg_sample_tst
+!i10b 1
+!s100 FKM>4662j4CMBM5>G?QGg3
+IAhiE6M]A;63mgzJU>K_g33
+V1c<K>]ER9TAn_2783aI>B2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vbutton_vlg_vec_tst
+!i10b 1
+!s100 FX;]<eS?J5WjF1jm<0GdU2
+IKoY?2cHUhlahkecoG5dVV3
+VN=gdAY8bzT`lYgiV8WDYJ3
+R3
+R13
+R14
+R15
+L0 315
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

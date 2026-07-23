@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+database=/var/lib/lab-system/reservations.db
+backup_dir=/var/backups/lab-system
+
+[ -f "$database" ] || exit 0
+install -d -o labapp -g labapp -m 0750 "$backup_dir"
+sqlite3 "$database" ".backup '$backup_dir/reservations-$(date +%F).db'"
+chown labapp:labapp "$backup_dir"/*.db
+chmod 0640 "$backup_dir"/*.db
+find "$backup_dir" -type f -name 'reservations-*.db' -mtime +7 -delete

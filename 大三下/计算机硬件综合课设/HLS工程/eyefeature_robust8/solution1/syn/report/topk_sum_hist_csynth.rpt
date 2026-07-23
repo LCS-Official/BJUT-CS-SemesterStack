@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vitis HLS Report for 'topk_sum_hist'
+================================================================
+* Date:           Wed Jun 10 14:09:02 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        eyefeature_robust8
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  13.348 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      399|      399|  7.980 us|  7.980 us|  399|  399|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                              |                                   |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                   Instance                   |               Module              |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_topk_sum_hist_Pipeline_INIT_HIST_fu_66    |topk_sum_hist_Pipeline_INIT_HIST   |       67|       67|  1.340 us|  1.340 us|   67|   67|       no|
+        |grp_topk_sum_hist_Pipeline_BUILD_HIST_fu_78   |topk_sum_hist_Pipeline_BUILD_HIST  |      258|      258|  5.160 us|  5.160 us|  258|  258|       no|
+        |grp_topk_sum_hist_Pipeline_ACCUM_TOPK_fu_100  |topk_sum_hist_Pipeline_ACCUM_TOPK  |       68|       68|  1.360 us|  1.360 us|   68|   68|       no|
+        +----------------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    2|     182|    700|    -|
+|Memory           |        0|    -|      64|     20|    0|
+|Multiplexer      |        -|    -|       -|    314|    -|
+|Register         |        -|    -|      10|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    2|     256|   1034|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
+    |                   Instance                   |               Module              | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
+    |grp_topk_sum_hist_Pipeline_ACCUM_TOPK_fu_100  |topk_sum_hist_Pipeline_ACCUM_TOPK  |        0|   2|  127|  382|    0|
+    |grp_topk_sum_hist_Pipeline_BUILD_HIST_fu_78   |topk_sum_hist_Pipeline_BUILD_HIST  |        0|   0|   46|  263|    0|
+    |grp_topk_sum_hist_Pipeline_INIT_HIST_fu_66    |topk_sum_hist_Pipeline_INIT_HIST   |        0|   0|    9|   55|    0|
+    +----------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
+    |Total                                         |                                   |        0|   2|  182|  700|    0|
+    +----------------------------------------------+-----------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |  Memory  |              Module              | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |hist_U    |topk_sum_hist_hist_RAM_AUTO_1R1W  |        0|  16|   5|    0|    17|   16|     1|          272|
+    |hist_1_U  |topk_sum_hist_hist_RAM_AUTO_1R1W  |        0|  16|   5|    0|    17|   16|     1|          272|
+    |hist_2_U  |topk_sum_hist_hist_RAM_AUTO_1R1W  |        0|  16|   5|    0|    17|   16|     1|          272|
+    |hist_3_U  |topk_sum_hist_hist_RAM_AUTO_1R1W  |        0|  16|   5|    0|    17|   16|     1|          272|
+    +----------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total     |                                  |        0|  64|  20|    0|    68|   64|     4|         1088|
+    +----------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm        |  42|          8|    1|          8|
+    |hist_1_address0  |  20|          4|    5|         20|
+    |hist_1_ce0       |  20|          4|    1|          4|
+    |hist_1_d0        |  14|          3|   16|         48|
+    |hist_1_we0       |  14|          3|    1|          3|
+    |hist_2_address0  |  20|          4|    5|         20|
+    |hist_2_ce0       |  20|          4|    1|          4|
+    |hist_2_d0        |  14|          3|   16|         48|
+    |hist_2_we0       |  14|          3|    1|          3|
+    |hist_3_address0  |  20|          4|    5|         20|
+    |hist_3_ce0       |  20|          4|    1|          4|
+    |hist_3_d0        |  14|          3|   16|         48|
+    |hist_3_we0       |  14|          3|    1|          3|
+    |hist_address0    |  20|          4|    5|         20|
+    |hist_ce0         |  20|          4|    1|          4|
+    |hist_d0          |  14|          3|   16|         48|
+    |hist_we0         |  14|          3|    1|          3|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            | 314|         64|   93|        308|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------+---+----+-----+-----------+
+    |                            Name                           | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                  |  7|   0|    7|          0|
+    |grp_topk_sum_hist_Pipeline_ACCUM_TOPK_fu_100_ap_start_reg  |  1|   0|    1|          0|
+    |grp_topk_sum_hist_Pipeline_BUILD_HIST_fu_78_ap_start_reg   |  1|   0|    1|          0|
+    |grp_topk_sum_hist_Pipeline_INIT_HIST_fu_66_ap_start_reg    |  1|   0|    1|          0|
+    +-----------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                      | 10|   0|   10|          0|
+    +-----------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+---------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  | Source Object |    C Type    |
++-----------------+-----+-----+------------+---------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|ap_return        |  out|   32|  ap_ctrl_hs|  topk_sum_hist|  return value|
+|runs_0_address0  |  out|    5|   ap_memory|         runs_0|         array|
+|runs_0_ce0       |  out|    1|   ap_memory|         runs_0|         array|
+|runs_0_q0        |   in|   16|   ap_memory|         runs_0|         array|
+|runs_1_address0  |  out|    5|   ap_memory|         runs_1|         array|
+|runs_1_ce0       |  out|    1|   ap_memory|         runs_1|         array|
+|runs_1_q0        |   in|   16|   ap_memory|         runs_1|         array|
+|runs_2_address0  |  out|    5|   ap_memory|         runs_2|         array|
+|runs_2_ce0       |  out|    1|   ap_memory|         runs_2|         array|
+|runs_2_q0        |   in|   16|   ap_memory|         runs_2|         array|
+|runs_3_address0  |  out|    5|   ap_memory|         runs_3|         array|
+|runs_3_ce0       |  out|    1|   ap_memory|         runs_3|         array|
+|runs_3_q0        |   in|   16|   ap_memory|         runs_3|         array|
+|cw               |   in|    8|     ap_none|             cw|        scalar|
+|ch               |   in|    7|     ap_none|             ch|        scalar|
+|k                |   in|    6|     ap_none|              k|        scalar|
++-----------------+-----+-----+------------+---------------+--------------+
+

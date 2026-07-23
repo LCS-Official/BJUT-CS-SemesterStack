@@ -1,0 +1,19 @@
+[
+  {
+    "model_key": "local_gemma4_12b_vision",
+    "provider": "openai_compatible",
+    "base_url": "http://localhost:1234/v1",
+    "api_key_env": "LMSTUDIO_API_KEY",
+    "model": "google/gemma-4-12b",
+    "temperature": 0,
+    "max_tokens": 80000,
+    "top_p": 0.95,
+    "max_retries": 3,
+    "retry_base_delay": 5,
+    "timeout_seconds": 24000,
+    "trust_env": false,
+    "extra_payload": {
+      "stream": false
+    }
+  }
+]

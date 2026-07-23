@@ -1,0 +1,162 @@
+=== ipconfig /all ===
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : LC-OmniBook
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Radmin VPN:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Famatech Radmin VPN Ethernet Adapter
+   Physical Address. . . . . . . . . : 02-50-9E-D2-45-C8
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : fdfd::1a22:9d74(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::7296:207f:51d3:f68f%20(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 26.34.157.116(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.0.0.0
+   Default Gateway . . . . . . . . . : 26.0.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 587354270
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-0B-7C-5C-60-7D-09-66-00-3A
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter WLAN 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 7 BE201 320MHz #3
+   Physical Address. . . . . . . . . : 88-F4-DA-09-59-C1
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter WLAN 4:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 7 BE201 320MHz #4
+   Physical Address. . . . . . . . . : 8A-F4-DA-09-59-C0
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter ��̫�� 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : TAP-Windows Adapter V9
+   Physical Address. . . . . . . . . : 00-FF-F2-AF-F1-A8
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter WLAN:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 7 BE201 320MHz
+   Physical Address. . . . . . . . . : 88-F4-DA-09-59-C0
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2408:8409:24f0:6545:d2a1:1515:b66f:b35d(Preferred) 
+   Temporary IPv6 Address. . . . . . : 2408:8409:24f0:6545:7c8b:3dc5:7291:23f6(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::dd94:2b38:a9f2:7f1%16(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.138.120(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : 2026��7��7�� 15:06:58
+   Lease Expires . . . . . . . . . . : 2026��7��7�� 16:06:57
+   Default Gateway . . . . . . . . . : fe80::ccfe:72ff:feac:805f%16
+                                       192.168.138.246
+   DHCP Server . . . . . . . . . . . : 192.168.138.246
+   DHCPv6 IAID . . . . . . . . . . . : 176747738
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-0B-7C-5C-60-7D-09-66-00-3A
+   DNS Servers . . . . . . . . . . . : 192.168.138.246
+                                       2408:8409:24f0:6545::6a
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter ������������:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : 88-F4-DA-09-59-C4
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Teredo Tunneling Adapter
+   Physical Address. . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:0:14c9:d502:1c34:9053:8d09:1115(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::1c34:9053:8d09:1115%19(Preferred) 
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 268435456
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-0B-7C-5C-60-7D-09-66-00-3A
+   NetBIOS over Tcpip. . . . . . . . : Disabled
+
+=== route print -4 ===
+
+===========================================================================
+Interface List
+ 20...02 50 9e d2 45 c8 ......Famatech Radmin VPN Ethernet Adapter
+  4...88 f4 da 09 59 c1 ......Intel(R) Wi-Fi 7 BE201 320MHz #3
+  5...8a f4 da 09 59 c0 ......Intel(R) Wi-Fi 7 BE201 320MHz #4
+ 22...00 ff f2 af f1 a8 ......TAP-Windows Adapter V9
+ 16...88 f4 da 09 59 c0 ......Intel(R) Wi-Fi 7 BE201 320MHz
+  3...88 f4 da 09 59 c4 ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+ 19...00 00 00 00 00 00 00 e0 Microsoft Teredo Tunneling Adapter
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0         26.0.0.1    26.34.157.116   9257
+          0.0.0.0          0.0.0.0  192.168.138.246  192.168.138.120     35
+         26.0.0.0        255.0.0.0         On-link     26.34.157.116    257
+    26.34.157.116  255.255.255.255         On-link     26.34.157.116    257
+   26.255.255.255  255.255.255.255         On-link     26.34.157.116    257
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+    192.168.138.0    255.255.255.0         On-link   192.168.138.120    291
+  192.168.138.120  255.255.255.255         On-link   192.168.138.120    291
+  192.168.138.255  255.255.255.255         On-link   192.168.138.120    291
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link     26.34.157.116    257
+        224.0.0.0        240.0.0.0         On-link   192.168.138.120    291
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link     26.34.157.116    257
+  255.255.255.255  255.255.255.255         On-link   192.168.138.120    291
+===========================================================================
+Persistent Routes:
+  Network Address          Netmask  Gateway Address  Metric
+          0.0.0.0          0.0.0.0         26.0.0.1    9256
+===========================================================================
+
+=== arp -a ===
+
+Interface: 192.168.138.120 --- 0x10
+  Internet Address      Physical Address      Type
+  192.168.138.246       ce-fe-72-ac-80-5f     dynamic   
+  192.168.138.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 26.34.157.116 --- 0x14
+  Internet Address      Physical Address      Type
+  26.0.0.1              02-00-00-00-51-00     dynamic   
+  26.255.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.2             01-00-5e-00-00-02     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  230.0.0.1             01-00-5e-00-00-01     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static

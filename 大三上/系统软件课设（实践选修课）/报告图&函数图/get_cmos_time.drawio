@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="zm40099jG2rCvbWbQe3t">
+    <mxGraphModel dx="1113" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-1" value="开始" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="324" width="177" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-2" value="加锁 (rtc_lock)&#xa;保护硬件访问" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="65" y="393" width="167" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-3" value="等待UIP信号&#xa;(避开RTC更新)" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="37" y="501" width="223" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-4" value="读取 RTC 寄存器&#xa;(秒/分/时/日/月/年)" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="43" y="673" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-5" value="一致性校验&#xa;(读取期间秒数&#xa;是否跳变?)" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="20" y="790" width="256" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-6" value="格式处理&#xa;BCD 转二进制" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="69" y="966" width="157" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-7" value="年份修正&#xa;(Y2K / 1970 epoch 调整)" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1068" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-8" value="解锁 (rtc_lock)" style="whiteSpace=wrap;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="64" y="1168" width="167" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-9" value="mktime 合成时间戳&#xa;返回结果" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="53.75" y="1238" width="187.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-1" target="mSryTf_yG3X1xQKVQ-xT-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-2" target="mSryTf_yG3X1xQKVQ-xT-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-12" value="更新完成 (安全)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-3" target="mSryTf_yG3X1xQKVQ-xT-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.41;exitY=1.01;entryX=0.39;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-4" target="mSryTf_yG3X1xQKVQ-xT-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-14" value="是 (数据脏了)" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=0;entryX=0.59;entryY=1.01;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-5" target="mSryTf_yG3X1xQKVQ-xT-4">
+          <mxGeometry x="0.08" y="7" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="760" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-15" value="否 (数据有效)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-5" target="mSryTf_yG3X1xQKVQ-xT-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-6" target="mSryTf_yG3X1xQKVQ-xT-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-7" target="mSryTf_yG3X1xQKVQ-xT-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mSryTf_yG3X1xQKVQ-xT-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=20;" edge="1" parent="1" source="mSryTf_yG3X1xQKVQ-xT-8" target="mSryTf_yG3X1xQKVQ-xT-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

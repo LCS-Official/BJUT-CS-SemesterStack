@@ -1,0 +1,44 @@
+`timescale 1ms / 1ns
+
+module mips_tb;
+
+	reg clk;
+	reg rst;
+	reg [31:0] dev1_rd; 
+	wire [31:0]Data2out;
+	wire[31:0]COUNT;
+	wire IntReq;
+	integer i;
+	
+	mips uut (.clk(clk), .rst(rst), .dev1_rd(dev1_rd), .Data2out(Data2out), .COUNT(COUNT), .IntReq(IntReq));
+    
+	initial
+		begin
+			clk = 0;
+			forever #50 clk = ~clk; 
+		end
+    
+	initial begin
+			dev1_rd = 32'h0000_1111;
+			rst = 1;
+			#100 rst = 0;
+			#100000;
+			dev1_rd = 32'h1111_0000; 
+			#100000;
+			$display("----- GPR -----");
+			for (i = 0; i < 32; i = i + 1)
+				$display("GPR[%0d] = 0x%08h", i, uut.u_gpr.reg_files[i]);
+				
+			$finish;
+    end
+    
+	always @ (negedge clk)
+		begin
+			$display("----- CP0 Registers -----");
+			$display("SR   : 0x%8h", uut.u_cp0.rf_cp0[12]);
+			$display("CAUSE: 0x%8h", uut.u_cp0.rf_cp0[13]);
+			$display("EPC  : 0x%8h", uut.u_cp0.rf_cp0[14]);
+			$display("PRID : 0x%8h", uut.u_cp0.rf_cp0[15]);
+		end
+
+endmodule

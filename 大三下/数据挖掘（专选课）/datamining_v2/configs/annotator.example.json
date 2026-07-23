@@ -1,0 +1,16 @@
+{
+  "model_key": "yunwu_auto_annotator",
+  "provider": "openai_compatible",
+  "base_url": "https://yunwu.ai/v1",
+  "api_key_env": "YUNWU_API_KEY",
+  "model": "gpt-5.5",
+  "temperature": 0,
+  "max_tokens": 900,
+  "max_retries": 4,
+  "retry_base_delay": 3,
+  "timeout_seconds": 120,
+  "response_format": {
+    "type": "json_object"
+  }
+}
+

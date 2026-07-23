@@ -1,0 +1,121 @@
+# do three_t.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module three_t
+# 
+# Top level modules:
+# 	three_t
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module three_t_vlg_sample_tst
+# -- Compiling module three_t_vlg_check_tst
+# -- Compiling module three_t_vlg_vec_tst
+# 
+# Top level modules:
+# 	three_t_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.three_t_vlg_vec_tst 
+# Loading work.three_t_vlg_vec_tst
+# Loading work.three_t
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading work.three_t_vlg_sample_tst
+# Loading work.three_t_vlg_check_tst
+# ERROR! Vector Mismatch for output port out[14] :: @time = 1000000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000100100000000000000
+# ERROR! Vector Mismatch for output port out[17] :: @time = 1000000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000100100000000000000
+# ERROR! Vector Mismatch for output port out[0] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[1] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[2] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[3] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[4] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[5] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[6] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[7] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[8] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[9] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[10] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[11] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[12] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[13] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[15] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[16] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[18] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[19] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[20] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[21] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[22] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[23] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[24] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[25] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[26] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[27] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[28] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[29] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[30] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port out[31] :: @time = 1050000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+#          32 mismatched vectors : Simulation failed !
+# ** Note: $finish    : three_t.vt(739)
+#    Time: 2 us  Iteration: 0  Instance: /three_t_vlg_vec_tst/tb_out

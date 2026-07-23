@@ -1,0 +1,64 @@
+{
+  "input": "C:\\Users\\LC\\Desktop\\SoftWare_CD\\tools\\final_docs\\07_\u6d4b\u8bd5\u8ba1\u5212_\u6a21\u677f\u53c2\u8003.docx",
+  "fonts_by_char_count": {
+    "\u5b8b\u4f53": 547
+  },
+  "direct_run_formatting_runs": 77,
+  "direct_paragraph_formatting_paragraphs": 4,
+  "heading_like_paragraphs_not_heading_style": [],
+  "examples": {
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "\u4e03\u3001\u6d4b\u8bd5\u8ba1\u5212",
+        "style": "Normal"
+      },
+      {
+        "para_index": 29,
+        "run_text": "1",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 29,
+        "run_text": "\uff0e\u5f15\u8a00",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 30,
+        "run_text": "1.1",
+        "style": "Heading 2"
+      },
+      {
+        "para_index": 30,
+        "run_text": "\u7f16\u5199\u76ee\u7684",
+        "style": "Heading 2"
+      }
+    ],
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 66,
+        "text": "4.2.1\u8f93\u5165",
+        "style": "Heading 3"
+      },
+      {
+        "para_index": 68,
+        "text": "4.2.2\u8f93\u51fa",
+        "style": "Heading 3"
+      },
+      {
+        "para_index": 70,
+        "text": "4.2.3\u6b65\u9aa4\u53ca\u64cd\u4f5c",
+        "style": "Heading 3"
+      },
+      {
+        "para_index": 71,
+        "text": "4.2.4\u5141\u8bb8\u504f\u5dee",
+        "style": "Heading 3"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

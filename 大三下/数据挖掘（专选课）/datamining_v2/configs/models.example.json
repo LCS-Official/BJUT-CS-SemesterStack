@@ -1,0 +1,62 @@
+[
+  {
+    "model_key": "yunwu_chatgpt",
+    "provider": "openai_compatible",
+    "base_url": "https://yunwu.ai/v1",
+    "api_key_env": "YUNWU_API_KEY",
+    "model": "gpt-5.4",
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_retries": 4,
+    "retry_base_delay": 3,
+    "timeout_seconds": 120
+  },
+  {
+    "model_key": "yunwu_gemini",
+    "provider": "openai_compatible",
+    "base_url": "https://yunwu.ai/v1",
+    "api_key_env": "YUNWU_API_KEY",
+    "model": "gemini-3.1-flash-lite",
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_retries": 4,
+    "retry_base_delay": 3,
+    "timeout_seconds": 120
+  },
+  {
+    "model_key": "yunwu_qwen",
+    "provider": "openai_compatible",
+    "base_url": "https://yunwu.ai/v1",
+    "api_key_env": "YUNWU_API_KEY",
+    "model": "qwen3-vl-flash",
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_retries": 4,
+    "retry_base_delay": 3,
+    "timeout_seconds": 120
+  },
+  {
+    "model_key": "yunwu_doubao",
+    "provider": "openai_compatible",
+    "base_url": "https://yunwu.ai/v1",
+    "api_key_env": "YUNWU_API_KEY",
+    "model": "doubao-seed-2-0-mini-260215",
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_retries": 4,
+    "retry_base_delay": 3,
+    "timeout_seconds": 120
+  },
+  {
+    "model_key": "yunwu_claude",
+    "provider": "openai_compatible",
+    "base_url": "https://yunwu.ai/v1",
+    "api_key_env": "YUNWU_API_KEY",
+    "model": "claude-haiku-4-5-20251001",
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_retries": 4,
+    "retry_base_delay": 3,
+    "timeout_seconds": 120
+  }
+]

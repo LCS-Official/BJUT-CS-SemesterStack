@@ -1,0 +1,15 @@
+Wireshark/Dumpcap 接口列表：
+1. \Device\NPF_{1FDC9C09-3CE6-46D4-83C1-D8AC8FF2A1DA} (本地连接* 8)
+2. \Device\NPF_{F3987A2D-184D-4D1F-875D-912E7EFBC15E} (本地连接* 7)
+3. \Device\NPF_{512206EE-AF71-4758-81CB-A65FB6A5EE27} (本地连接* 6)
+4. \Device\NPF_{0C44B357-5697-4583-998C-29F25B6CB8F4} (蓝牙网络连接)
+5. \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F} (WLAN)
+6. \Device\NPF_{1BCD8A4B-8E80-4C3E-BCAB-B103760CE28E} (WLAN 4)
+7. \Device\NPF_{0F965C11-6E7E-425C-8C89-95F54FAE9A83} (WLAN 3)
+8. \Device\NPF_{C4ECE000-4911-43FC-A240-64663487120F} (Radmin VPN)
+9. \Device\NPF_Loopback (Adapter for loopback traffic capture)
+10. \Device\NPF_{F2AFF1A8-C618-4A74-BDA5-2ECF8CD5931D} (以太网 2)
+
+本次抓包接口：5. WLAN
+抓包命令：dumpcap -i 5 -a duration:25 -w 实验2截图\exp2_mix.pcapng
+混杂模式：dumpcap 默认开启；未使用 -p（no promiscuous mode）参数。

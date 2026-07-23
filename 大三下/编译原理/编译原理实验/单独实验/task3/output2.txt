@@ -1,0 +1,20 @@
+L1:
+    t1 := a3 + 15
+    if t1 > 10 goto L2
+    goto L0
+L2:
+    if x2 = 7 goto L3
+    goto L1
+L3:
+    if y < z goto L4
+    goto L1
+L4:
+    t2 := x * y
+    t3 := t2 / z
+    y := t3
+    goto L3
+    goto L1
+L0:
+    t4 := b * c
+    t5 := t4 + d
+    c := t5

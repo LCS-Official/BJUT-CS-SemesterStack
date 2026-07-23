@@ -1,0 +1,228 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do top_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regb
+# 
+# Top level modules:
+# 	regb
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regaluout.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regaluout
+# 
+# Top level modules:
+# 	regaluout
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/rega.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rega
+# 
+# Top level modules:
+# 	rega
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/NPC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module NPC
+# 
+# Top level modules:
+# 	NPC
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/GPR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module GPR
+# 
+# Top level modules:
+# 	GPR
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/EXT.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EXT
+# 
+# Top level modules:
+# 	EXT
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm_1k
+# 
+# Top level modules:
+# 	dm_1k
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/im_1k.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im_1k
+# 
+# Top level modules:
+# 	im_1k
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm_1k
+# 
+# Top level modules:
+# 	dm_1k
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/EXT.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EXT
+# 
+# Top level modules:
+# 	EXT
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/GPR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module GPR
+# 
+# Top level modules:
+# 	GPR
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/im_1k.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im_1k
+# 
+# Top level modules:
+# 	im_1k
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_mips_tb
+# 
+# Top level modules:
+# 	test_mips_tb
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regb
+# 
+# Top level modules:
+# 	regb
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/regaluout.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regaluout
+# 
+# Top level modules:
+# 	regaluout
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/rega.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rega
+# 
+# Top level modules:
+# 	rega
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/NPC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module NPC
+# 
+# Top level modules:
+# 	NPC
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  test_mips_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_mips_tb 
+# Loading work.test_mips_tb
+# Loading work.mips
+# Loading work.Controller
+# Loading work.ALU
+# Loading work.dm_1k
+# Loading work.EXT
+# Loading work.GPR
+# Loading work.im_1k
+# Loading work.NPC
+# Loading work.PC
+# Loading work.IR
+# Loading work.rega
+# Loading work.regb
+# Loading work.regaluout
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# Reset released. Processor running...
+# 
+# ------ Test Finished ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v(33)
+#    Time: 20020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+# Simulation Breakpoint: 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33
+# MACRO ./top_run_msim_rtl_verilog.do PAUSED at line 42
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/PC/PC
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/GPR/registers
+add wave -position insertpoint  \
+sim:/test_mips_tb/my_mips/DM/dm
+restart -f
+run -all
+# 
+# ------ MIPS CPU Run-to-Completion Test Start ------
+# Reset released. Processor running...
+# 
+# ------ Test Finished ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v(33)
+#    Time: 20020 ns  Iteration: 0  Instance: /test_mips_tb
+# 1
+# Break in Module test_mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/test_mips_tb.v line 33

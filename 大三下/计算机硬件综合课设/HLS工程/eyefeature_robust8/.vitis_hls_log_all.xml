@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="eyefeature_robust8" solutionName="solution1" date="2026-06-10T14:09:02.931+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'topk_sum_hist_Pipeline_BUILD_HIST' (loop 'BUILD_HIST'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation 0 bit ('hist_addr_write_ln251', eyefeature_robust8/code/eye_feature.cpp:251) of variable 'add_ln251', eyefeature_robust8/code/eye_feature.cpp:251 on array 'hist' and 'load' operation 16 bit ('hist_load', eyefeature_robust8/code/eye_feature.cpp:251) on array 'hist'.&#xD;&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="eyefeature_robust8" solutionName="solution1" date="2026-06-10T14:09:00.143+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'eye_feature_Pipeline_FRAME_X' (loop 'FRAME_X'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation 0 bit ('hist0_addr_write_ln542', eyefeature_robust8/code/eye_feature.cpp:542) of variable 'add_ln542', eyefeature_robust8/code/eye_feature.cpp:542 on array 'hist0' and 'load' operation 16 bit ('hist0_load', eyefeature_robust8/code/eye_feature.cpp:542) on array 'hist0'.&#xD;&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="eyefeature_robust8" solutionName="solution1" date="2026-06-10T14:08:59.117+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'ROBUST_ROWS' (eyefeature_robust8/code/eye_feature.cpp:331:5) in function 'compute_robust_stats' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="eyefeature_robust8" solutionName="solution1" date="2026-06-10T14:08:58.716+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'FRAME_Y' (eyefeature_robust8/code/eye_feature.cpp:520:5) in function 'eye_feature' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="eyefeature_robust8" solutionName="solution1" date="2026-06-10T14:08:58.435+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

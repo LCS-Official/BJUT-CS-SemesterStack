@@ -1,0 +1,10 @@
+t1 := b + 0
+a := t1
+L0:
+if a < b goto L1
+goto L2
+L1:
+t2 := y + 1
+y := t2
+goto L0
+L2:

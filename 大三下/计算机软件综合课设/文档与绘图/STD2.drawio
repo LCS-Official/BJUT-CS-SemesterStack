@@ -1,0 +1,54 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="B81tuSViIczoaCqsWdmm">
+    <mxGraphModel dx="946" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-1" parent="1" style="ellipse;fillColor=strokeColor;fontSize=18;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="710" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="正常运行" vertex="1">
+          <mxGeometry height="67" width="80" x="677" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="待确认故障" vertex="1">
+          <mxGeometry height="81" width="126" x="420" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="维修中" vertex="1">
+          <mxGeometry height="60" width="106" x="614" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontSize=18;fontStyle=1" value="已报废" vertex="1">
+          <mxGeometry height="69" width="80" x="870" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-6" parent="1" style="ellipse;shape=endState;fillColor=strokeColor;fontSize=18;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="903" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-7" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-1" style="curved=1;startArrow=none;;exitX=0.52;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-2" value="系统管理员录入设备">
+          <mxGeometry relative="1" x="0.0014" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-8" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-2" style="startArrow=none;;exitX=0;exitY=0.25;entryX=0.25;entryY=0;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-3" value="学生上报故障">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-9" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-3" style="startArrow=none;;exitX=0.5;exitY=1.01;entryX=0;entryY=0.25;rounded=0;fontSize=18;entryDx=0;entryDy=0;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-4" value="实验室管理员核实[冻结预约档期]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-10" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-3" style="startArrow=none;;exitX=1;exitY=0.25;entryX=0.25;entryY=1;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-2" value="管理员驳回[属误报]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-11" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-4" style="startArrow=none;;exitX=1.01;exitY=0.04;entryX=0.71;entryY=0.99;rounded=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-2" value="维修完毕[释放预约档期]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-12" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-2" style="startArrow=none;;exitX=1;exitY=0.77;entryX=0.5;entryY=0.01;rounded=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-5" value="达使用年限/彻底损坏">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIENm7cPrPGQ7NH8SfFv-13" edge="1" parent="1" source="JIENm7cPrPGQ7NH8SfFv-5" style="curved=1;startArrow=none;;exitX=0.5;exitY=1.01;entryX=0.51;entryY=-0.03;rounded=0;fontSize=18;fontStyle=1" target="JIENm7cPrPGQ7NH8SfFv-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

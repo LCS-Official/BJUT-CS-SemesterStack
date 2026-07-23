@@ -1,0 +1,2116 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/05/2024 12:27:02"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    mux8_1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module mux8_1_vlg_sample_tst(
+	in1,
+	in2,
+	in3,
+	in4,
+	in5,
+	in6,
+	in7,
+	in8,
+	sel,
+	sampler_tx
+);
+input [31:0] in1;
+input [31:0] in2;
+input [31:0] in3;
+input [31:0] in4;
+input [31:0] in5;
+input [31:0] in6;
+input [31:0] in7;
+input [31:0] in8;
+input [2:0] sel;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(in1 or in2 or in3 or in4 or in5 or in6 or in7 or in8 or sel)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module mux8_1_vlg_check_tst (
+	out,
+	sampler_rx
+);
+input [31:0] out;
+input sampler_rx;
+
+reg [31:0] out_expected;
+
+reg [31:0] out_prev;
+
+reg [31:0] out_expected_prev;
+
+reg [31:0] last_out_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	out_prev = out;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	out_expected_prev = out_expected;
+end
+
+
+// expected out[ 31 ]
+initial
+begin
+	out_expected[31] = 1'bX;
+	out_expected[31] = #999000 1'b0;
+end 
+// expected out[ 30 ]
+initial
+begin
+	out_expected[30] = 1'bX;
+	out_expected[30] = #999000 1'b0;
+end 
+// expected out[ 29 ]
+initial
+begin
+	out_expected[29] = 1'bX;
+	out_expected[29] = #999000 1'b0;
+end 
+// expected out[ 28 ]
+initial
+begin
+	out_expected[28] = 1'bX;
+	out_expected[28] = #999000 1'b0;
+end 
+// expected out[ 27 ]
+initial
+begin
+	out_expected[27] = 1'bX;
+	out_expected[27] = #999000 1'b0;
+end 
+// expected out[ 26 ]
+initial
+begin
+	out_expected[26] = 1'bX;
+	out_expected[26] = #999000 1'b0;
+end 
+// expected out[ 25 ]
+initial
+begin
+	out_expected[25] = 1'bX;
+	out_expected[25] = #999000 1'b0;
+end 
+// expected out[ 24 ]
+initial
+begin
+	out_expected[24] = 1'bX;
+	out_expected[24] = #999000 1'b0;
+end 
+// expected out[ 23 ]
+initial
+begin
+	out_expected[23] = 1'bX;
+	out_expected[23] = #999000 1'b0;
+end 
+// expected out[ 22 ]
+initial
+begin
+	out_expected[22] = 1'bX;
+	out_expected[22] = #999000 1'b0;
+end 
+// expected out[ 21 ]
+initial
+begin
+	out_expected[21] = 1'bX;
+	out_expected[21] = #999000 1'b0;
+end 
+// expected out[ 20 ]
+initial
+begin
+	out_expected[20] = 1'bX;
+	out_expected[20] = #999000 1'b0;
+end 
+// expected out[ 19 ]
+initial
+begin
+	out_expected[19] = 1'bX;
+	out_expected[19] = #999000 1'b0;
+end 
+// expected out[ 18 ]
+initial
+begin
+	out_expected[18] = 1'bX;
+	out_expected[18] = #999000 1'b0;
+end 
+// expected out[ 17 ]
+initial
+begin
+	out_expected[17] = 1'bX;
+	out_expected[17] = #999000 1'b0;
+end 
+// expected out[ 16 ]
+initial
+begin
+	out_expected[16] = 1'bX;
+	out_expected[16] = #999000 1'b0;
+end 
+// expected out[ 15 ]
+initial
+begin
+	out_expected[15] = 1'bX;
+	out_expected[15] = #999000 1'b0;
+end 
+// expected out[ 14 ]
+initial
+begin
+	out_expected[14] = 1'bX;
+	out_expected[14] = #999000 1'b0;
+end 
+// expected out[ 13 ]
+initial
+begin
+	out_expected[13] = 1'bX;
+	out_expected[13] = #999000 1'b0;
+end 
+// expected out[ 12 ]
+initial
+begin
+	out_expected[12] = 1'bX;
+	out_expected[12] = #999000 1'b0;
+end 
+// expected out[ 11 ]
+initial
+begin
+	out_expected[11] = 1'bX;
+	out_expected[11] = #999000 1'b0;
+end 
+// expected out[ 10 ]
+initial
+begin
+	out_expected[10] = 1'bX;
+	out_expected[10] = #999000 1'b0;
+end 
+// expected out[ 9 ]
+initial
+begin
+	out_expected[9] = 1'bX;
+	out_expected[9] = #999000 1'b0;
+end 
+// expected out[ 8 ]
+initial
+begin
+	out_expected[8] = 1'bX;
+	out_expected[8] = #999000 1'b0;
+end 
+// expected out[ 7 ]
+initial
+begin
+	out_expected[7] = 1'bX;
+	out_expected[7] = #999000 1'b0;
+end 
+// expected out[ 6 ]
+initial
+begin
+	out_expected[6] = 1'bX;
+	out_expected[6] = #999000 1'b0;
+end 
+// expected out[ 5 ]
+initial
+begin
+	out_expected[5] = 1'bX;
+	out_expected[5] = #999000 1'b0;
+end 
+// expected out[ 4 ]
+initial
+begin
+	out_expected[4] = 1'bX;
+	out_expected[4] = #999000 1'b0;
+end 
+// expected out[ 3 ]
+initial
+begin
+	out_expected[3] = 1'bX;
+	out_expected[3] = #999000 1'b0;
+end 
+// expected out[ 2 ]
+initial
+begin
+	out_expected[2] = 1'bX;
+	out_expected[2] = #999000 1'b0;
+end 
+// expected out[ 1 ]
+initial
+begin
+	out_expected[1] = 1'bX;
+	out_expected[1] = #999000 1'b0;
+end 
+// expected out[ 0 ]
+initial
+begin
+	out_expected[0] = 1'bX;
+	out_expected[0] = #999000 1'b0;
+end 
+// generate trigger
+always @(out_expected or out)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected out = %b | ",out_expected_prev);
+	$display("| real out = %b | ",out_prev);
+`endif
+	if (
+		( out_expected_prev[0] !== 1'bx ) && ( out_prev[0] !== out_expected_prev[0] )
+		&& ((out_expected_prev[0] !== last_out_exp[0]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[0] = out_expected_prev[0];
+	end
+	if (
+		( out_expected_prev[1] !== 1'bx ) && ( out_prev[1] !== out_expected_prev[1] )
+		&& ((out_expected_prev[1] !== last_out_exp[1]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[1] = out_expected_prev[1];
+	end
+	if (
+		( out_expected_prev[2] !== 1'bx ) && ( out_prev[2] !== out_expected_prev[2] )
+		&& ((out_expected_prev[2] !== last_out_exp[2]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[2] = out_expected_prev[2];
+	end
+	if (
+		( out_expected_prev[3] !== 1'bx ) && ( out_prev[3] !== out_expected_prev[3] )
+		&& ((out_expected_prev[3] !== last_out_exp[3]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[3] = out_expected_prev[3];
+	end
+	if (
+		( out_expected_prev[4] !== 1'bx ) && ( out_prev[4] !== out_expected_prev[4] )
+		&& ((out_expected_prev[4] !== last_out_exp[4]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[4] = out_expected_prev[4];
+	end
+	if (
+		( out_expected_prev[5] !== 1'bx ) && ( out_prev[5] !== out_expected_prev[5] )
+		&& ((out_expected_prev[5] !== last_out_exp[5]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[5] = out_expected_prev[5];
+	end
+	if (
+		( out_expected_prev[6] !== 1'bx ) && ( out_prev[6] !== out_expected_prev[6] )
+		&& ((out_expected_prev[6] !== last_out_exp[6]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[6] = out_expected_prev[6];
+	end
+	if (
+		( out_expected_prev[7] !== 1'bx ) && ( out_prev[7] !== out_expected_prev[7] )
+		&& ((out_expected_prev[7] !== last_out_exp[7]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[7] = out_expected_prev[7];
+	end
+	if (
+		( out_expected_prev[8] !== 1'bx ) && ( out_prev[8] !== out_expected_prev[8] )
+		&& ((out_expected_prev[8] !== last_out_exp[8]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[8] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[8] = out_expected_prev[8];
+	end
+	if (
+		( out_expected_prev[9] !== 1'bx ) && ( out_prev[9] !== out_expected_prev[9] )
+		&& ((out_expected_prev[9] !== last_out_exp[9]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[9] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[9] = out_expected_prev[9];
+	end
+	if (
+		( out_expected_prev[10] !== 1'bx ) && ( out_prev[10] !== out_expected_prev[10] )
+		&& ((out_expected_prev[10] !== last_out_exp[10]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[10] = out_expected_prev[10];
+	end
+	if (
+		( out_expected_prev[11] !== 1'bx ) && ( out_prev[11] !== out_expected_prev[11] )
+		&& ((out_expected_prev[11] !== last_out_exp[11]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[11] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[11] = out_expected_prev[11];
+	end
+	if (
+		( out_expected_prev[12] !== 1'bx ) && ( out_prev[12] !== out_expected_prev[12] )
+		&& ((out_expected_prev[12] !== last_out_exp[12]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[12] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[12] = out_expected_prev[12];
+	end
+	if (
+		( out_expected_prev[13] !== 1'bx ) && ( out_prev[13] !== out_expected_prev[13] )
+		&& ((out_expected_prev[13] !== last_out_exp[13]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[13] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[13] = out_expected_prev[13];
+	end
+	if (
+		( out_expected_prev[14] !== 1'bx ) && ( out_prev[14] !== out_expected_prev[14] )
+		&& ((out_expected_prev[14] !== last_out_exp[14]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[14] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[14] = out_expected_prev[14];
+	end
+	if (
+		( out_expected_prev[15] !== 1'bx ) && ( out_prev[15] !== out_expected_prev[15] )
+		&& ((out_expected_prev[15] !== last_out_exp[15]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[15] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[15] = out_expected_prev[15];
+	end
+	if (
+		( out_expected_prev[16] !== 1'bx ) && ( out_prev[16] !== out_expected_prev[16] )
+		&& ((out_expected_prev[16] !== last_out_exp[16]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[16] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[16] = out_expected_prev[16];
+	end
+	if (
+		( out_expected_prev[17] !== 1'bx ) && ( out_prev[17] !== out_expected_prev[17] )
+		&& ((out_expected_prev[17] !== last_out_exp[17]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[17] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[17] = out_expected_prev[17];
+	end
+	if (
+		( out_expected_prev[18] !== 1'bx ) && ( out_prev[18] !== out_expected_prev[18] )
+		&& ((out_expected_prev[18] !== last_out_exp[18]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[18] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[18] = out_expected_prev[18];
+	end
+	if (
+		( out_expected_prev[19] !== 1'bx ) && ( out_prev[19] !== out_expected_prev[19] )
+		&& ((out_expected_prev[19] !== last_out_exp[19]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[19] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[19] = out_expected_prev[19];
+	end
+	if (
+		( out_expected_prev[20] !== 1'bx ) && ( out_prev[20] !== out_expected_prev[20] )
+		&& ((out_expected_prev[20] !== last_out_exp[20]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[20] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[20] = out_expected_prev[20];
+	end
+	if (
+		( out_expected_prev[21] !== 1'bx ) && ( out_prev[21] !== out_expected_prev[21] )
+		&& ((out_expected_prev[21] !== last_out_exp[21]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[21] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[21] = out_expected_prev[21];
+	end
+	if (
+		( out_expected_prev[22] !== 1'bx ) && ( out_prev[22] !== out_expected_prev[22] )
+		&& ((out_expected_prev[22] !== last_out_exp[22]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[22] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[22] = out_expected_prev[22];
+	end
+	if (
+		( out_expected_prev[23] !== 1'bx ) && ( out_prev[23] !== out_expected_prev[23] )
+		&& ((out_expected_prev[23] !== last_out_exp[23]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[23] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[23] = out_expected_prev[23];
+	end
+	if (
+		( out_expected_prev[24] !== 1'bx ) && ( out_prev[24] !== out_expected_prev[24] )
+		&& ((out_expected_prev[24] !== last_out_exp[24]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[24] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[24] = out_expected_prev[24];
+	end
+	if (
+		( out_expected_prev[25] !== 1'bx ) && ( out_prev[25] !== out_expected_prev[25] )
+		&& ((out_expected_prev[25] !== last_out_exp[25]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[25] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[25] = out_expected_prev[25];
+	end
+	if (
+		( out_expected_prev[26] !== 1'bx ) && ( out_prev[26] !== out_expected_prev[26] )
+		&& ((out_expected_prev[26] !== last_out_exp[26]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[26] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[26] = out_expected_prev[26];
+	end
+	if (
+		( out_expected_prev[27] !== 1'bx ) && ( out_prev[27] !== out_expected_prev[27] )
+		&& ((out_expected_prev[27] !== last_out_exp[27]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[27] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[27] = out_expected_prev[27];
+	end
+	if (
+		( out_expected_prev[28] !== 1'bx ) && ( out_prev[28] !== out_expected_prev[28] )
+		&& ((out_expected_prev[28] !== last_out_exp[28]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[28] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[28] = out_expected_prev[28];
+	end
+	if (
+		( out_expected_prev[29] !== 1'bx ) && ( out_prev[29] !== out_expected_prev[29] )
+		&& ((out_expected_prev[29] !== last_out_exp[29]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[29] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[29] = out_expected_prev[29];
+	end
+	if (
+		( out_expected_prev[30] !== 1'bx ) && ( out_prev[30] !== out_expected_prev[30] )
+		&& ((out_expected_prev[30] !== last_out_exp[30]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[30] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[30] = out_expected_prev[30];
+	end
+	if (
+		( out_expected_prev[31] !== 1'bx ) && ( out_prev[31] !== out_expected_prev[31] )
+		&& ((out_expected_prev[31] !== last_out_exp[31]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out[31] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_expected_prev);
+		$display ("     Real value = %b", out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_exp[31] = out_expected_prev[31];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#2000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module mux8_1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [31:0] in1;
+reg [31:0] in2;
+reg [31:0] in3;
+reg [31:0] in4;
+reg [31:0] in5;
+reg [31:0] in6;
+reg [31:0] in7;
+reg [31:0] in8;
+reg [2:0] sel;
+// wires                                               
+wire [31:0] out;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+mux8_1 i1 (
+// port map - connection between master ports and signals/registers   
+	.in1(in1),
+	.in2(in2),
+	.in3(in3),
+	.in4(in4),
+	.in5(in5),
+	.in6(in6),
+	.in7(in7),
+	.in8(in8),
+	.out(out),
+	.sel(sel)
+);
+// in1[ 31 ]
+initial
+begin
+	in1[31] = 1'b0;
+end 
+// in1[ 30 ]
+initial
+begin
+	in1[30] = 1'b0;
+end 
+// in1[ 29 ]
+initial
+begin
+	in1[29] = 1'b0;
+end 
+// in1[ 28 ]
+initial
+begin
+	in1[28] = 1'b0;
+end 
+// in1[ 27 ]
+initial
+begin
+	in1[27] = 1'b0;
+end 
+// in1[ 26 ]
+initial
+begin
+	in1[26] = 1'b0;
+end 
+// in1[ 25 ]
+initial
+begin
+	in1[25] = 1'b0;
+end 
+// in1[ 24 ]
+initial
+begin
+	in1[24] = 1'b0;
+end 
+// in1[ 23 ]
+initial
+begin
+	in1[23] = 1'b0;
+end 
+// in1[ 22 ]
+initial
+begin
+	in1[22] = 1'b0;
+end 
+// in1[ 21 ]
+initial
+begin
+	in1[21] = 1'b0;
+end 
+// in1[ 20 ]
+initial
+begin
+	in1[20] = 1'b0;
+end 
+// in1[ 19 ]
+initial
+begin
+	in1[19] = 1'b0;
+end 
+// in1[ 18 ]
+initial
+begin
+	in1[18] = 1'b0;
+end 
+// in1[ 17 ]
+initial
+begin
+	in1[17] = 1'b0;
+end 
+// in1[ 16 ]
+initial
+begin
+	in1[16] = 1'b0;
+end 
+// in1[ 15 ]
+initial
+begin
+	in1[15] = 1'b0;
+end 
+// in1[ 14 ]
+initial
+begin
+	in1[14] = 1'b0;
+end 
+// in1[ 13 ]
+initial
+begin
+	in1[13] = 1'b0;
+end 
+// in1[ 12 ]
+initial
+begin
+	in1[12] = 1'b0;
+end 
+// in1[ 11 ]
+initial
+begin
+	in1[11] = 1'b0;
+end 
+// in1[ 10 ]
+initial
+begin
+	in1[10] = 1'b0;
+end 
+// in1[ 9 ]
+initial
+begin
+	in1[9] = 1'b1;
+end 
+// in1[ 8 ]
+initial
+begin
+	in1[8] = 1'b1;
+end 
+// in1[ 7 ]
+initial
+begin
+	in1[7] = 1'b0;
+end 
+// in1[ 6 ]
+initial
+begin
+	in1[6] = 1'b0;
+end 
+// in1[ 5 ]
+initial
+begin
+	in1[5] = 1'b0;
+end 
+// in1[ 4 ]
+initial
+begin
+	in1[4] = 1'b0;
+end 
+// in1[ 3 ]
+initial
+begin
+	in1[3] = 1'b0;
+end 
+// in1[ 2 ]
+initial
+begin
+	in1[2] = 1'b0;
+end 
+// in1[ 1 ]
+initial
+begin
+	in1[1] = 1'b0;
+end 
+// in1[ 0 ]
+initial
+begin
+	in1[0] = 1'b0;
+end 
+// in2[ 31 ]
+initial
+begin
+	in2[31] = 1'b0;
+end 
+// in2[ 30 ]
+initial
+begin
+	in2[30] = 1'b0;
+end 
+// in2[ 29 ]
+initial
+begin
+	in2[29] = 1'b0;
+end 
+// in2[ 28 ]
+initial
+begin
+	in2[28] = 1'b0;
+end 
+// in2[ 27 ]
+initial
+begin
+	in2[27] = 1'b0;
+end 
+// in2[ 26 ]
+initial
+begin
+	in2[26] = 1'b0;
+end 
+// in2[ 25 ]
+initial
+begin
+	in2[25] = 1'b0;
+end 
+// in2[ 24 ]
+initial
+begin
+	in2[24] = 1'b0;
+end 
+// in2[ 23 ]
+initial
+begin
+	in2[23] = 1'b0;
+end 
+// in2[ 22 ]
+initial
+begin
+	in2[22] = 1'b0;
+end 
+// in2[ 21 ]
+initial
+begin
+	in2[21] = 1'b0;
+end 
+// in2[ 20 ]
+initial
+begin
+	in2[20] = 1'b0;
+end 
+// in2[ 19 ]
+initial
+begin
+	in2[19] = 1'b0;
+end 
+// in2[ 18 ]
+initial
+begin
+	in2[18] = 1'b0;
+end 
+// in2[ 17 ]
+initial
+begin
+	in2[17] = 1'b0;
+end 
+// in2[ 16 ]
+initial
+begin
+	in2[16] = 1'b0;
+end 
+// in2[ 15 ]
+initial
+begin
+	in2[15] = 1'b0;
+end 
+// in2[ 14 ]
+initial
+begin
+	in2[14] = 1'b0;
+end 
+// in2[ 13 ]
+initial
+begin
+	in2[13] = 1'b0;
+end 
+// in2[ 12 ]
+initial
+begin
+	in2[12] = 1'b0;
+end 
+// in2[ 11 ]
+initial
+begin
+	in2[11] = 1'b1;
+end 
+// in2[ 10 ]
+initial
+begin
+	in2[10] = 1'b1;
+end 
+// in2[ 9 ]
+initial
+begin
+	in2[9] = 1'b0;
+end 
+// in2[ 8 ]
+initial
+begin
+	in2[8] = 1'b0;
+end 
+// in2[ 7 ]
+initial
+begin
+	in2[7] = 1'b0;
+end 
+// in2[ 6 ]
+initial
+begin
+	in2[6] = 1'b0;
+end 
+// in2[ 5 ]
+initial
+begin
+	in2[5] = 1'b0;
+end 
+// in2[ 4 ]
+initial
+begin
+	in2[4] = 1'b0;
+end 
+// in2[ 3 ]
+initial
+begin
+	in2[3] = 1'b0;
+end 
+// in2[ 2 ]
+initial
+begin
+	in2[2] = 1'b0;
+end 
+// in2[ 1 ]
+initial
+begin
+	in2[1] = 1'b0;
+end 
+// in2[ 0 ]
+initial
+begin
+	in2[0] = 1'b0;
+end 
+// in3[ 31 ]
+initial
+begin
+	in3[31] = 1'b0;
+end 
+// in3[ 30 ]
+initial
+begin
+	in3[30] = 1'b0;
+end 
+// in3[ 29 ]
+initial
+begin
+	in3[29] = 1'b0;
+end 
+// in3[ 28 ]
+initial
+begin
+	in3[28] = 1'b0;
+end 
+// in3[ 27 ]
+initial
+begin
+	in3[27] = 1'b0;
+end 
+// in3[ 26 ]
+initial
+begin
+	in3[26] = 1'b0;
+end 
+// in3[ 25 ]
+initial
+begin
+	in3[25] = 1'b0;
+end 
+// in3[ 24 ]
+initial
+begin
+	in3[24] = 1'b0;
+end 
+// in3[ 23 ]
+initial
+begin
+	in3[23] = 1'b0;
+end 
+// in3[ 22 ]
+initial
+begin
+	in3[22] = 1'b0;
+end 
+// in3[ 21 ]
+initial
+begin
+	in3[21] = 1'b0;
+end 
+// in3[ 20 ]
+initial
+begin
+	in3[20] = 1'b0;
+end 
+// in3[ 19 ]
+initial
+begin
+	in3[19] = 1'b0;
+end 
+// in3[ 18 ]
+initial
+begin
+	in3[18] = 1'b0;
+end 
+// in3[ 17 ]
+initial
+begin
+	in3[17] = 1'b0;
+end 
+// in3[ 16 ]
+initial
+begin
+	in3[16] = 1'b0;
+end 
+// in3[ 15 ]
+initial
+begin
+	in3[15] = 1'b0;
+end 
+// in3[ 14 ]
+initial
+begin
+	in3[14] = 1'b0;
+end 
+// in3[ 13 ]
+initial
+begin
+	in3[13] = 1'b1;
+end 
+// in3[ 12 ]
+initial
+begin
+	in3[12] = 1'b1;
+end 
+// in3[ 11 ]
+initial
+begin
+	in3[11] = 1'b0;
+end 
+// in3[ 10 ]
+initial
+begin
+	in3[10] = 1'b0;
+end 
+// in3[ 9 ]
+initial
+begin
+	in3[9] = 1'b0;
+end 
+// in3[ 8 ]
+initial
+begin
+	in3[8] = 1'b0;
+end 
+// in3[ 7 ]
+initial
+begin
+	in3[7] = 1'b0;
+end 
+// in3[ 6 ]
+initial
+begin
+	in3[6] = 1'b0;
+end 
+// in3[ 5 ]
+initial
+begin
+	in3[5] = 1'b0;
+end 
+// in3[ 4 ]
+initial
+begin
+	in3[4] = 1'b0;
+end 
+// in3[ 3 ]
+initial
+begin
+	in3[3] = 1'b0;
+end 
+// in3[ 2 ]
+initial
+begin
+	in3[2] = 1'b0;
+end 
+// in3[ 1 ]
+initial
+begin
+	in3[1] = 1'b0;
+end 
+// in3[ 0 ]
+initial
+begin
+	in3[0] = 1'b0;
+end 
+// in4[ 31 ]
+initial
+begin
+	in4[31] = 1'b0;
+end 
+// in4[ 30 ]
+initial
+begin
+	in4[30] = 1'b0;
+end 
+// in4[ 29 ]
+initial
+begin
+	in4[29] = 1'b0;
+end 
+// in4[ 28 ]
+initial
+begin
+	in4[28] = 1'b0;
+end 
+// in4[ 27 ]
+initial
+begin
+	in4[27] = 1'b0;
+end 
+// in4[ 26 ]
+initial
+begin
+	in4[26] = 1'b0;
+end 
+// in4[ 25 ]
+initial
+begin
+	in4[25] = 1'b0;
+end 
+// in4[ 24 ]
+initial
+begin
+	in4[24] = 1'b0;
+end 
+// in4[ 23 ]
+initial
+begin
+	in4[23] = 1'b0;
+end 
+// in4[ 22 ]
+initial
+begin
+	in4[22] = 1'b0;
+end 
+// in4[ 21 ]
+initial
+begin
+	in4[21] = 1'b0;
+end 
+// in4[ 20 ]
+initial
+begin
+	in4[20] = 1'b0;
+end 
+// in4[ 19 ]
+initial
+begin
+	in4[19] = 1'b0;
+end 
+// in4[ 18 ]
+initial
+begin
+	in4[18] = 1'b0;
+end 
+// in4[ 17 ]
+initial
+begin
+	in4[17] = 1'b0;
+end 
+// in4[ 16 ]
+initial
+begin
+	in4[16] = 1'b0;
+end 
+// in4[ 15 ]
+initial
+begin
+	in4[15] = 1'b1;
+end 
+// in4[ 14 ]
+initial
+begin
+	in4[14] = 1'b1;
+end 
+// in4[ 13 ]
+initial
+begin
+	in4[13] = 1'b0;
+end 
+// in4[ 12 ]
+initial
+begin
+	in4[12] = 1'b0;
+end 
+// in4[ 11 ]
+initial
+begin
+	in4[11] = 1'b0;
+end 
+// in4[ 10 ]
+initial
+begin
+	in4[10] = 1'b0;
+end 
+// in4[ 9 ]
+initial
+begin
+	in4[9] = 1'b0;
+end 
+// in4[ 8 ]
+initial
+begin
+	in4[8] = 1'b0;
+end 
+// in4[ 7 ]
+initial
+begin
+	in4[7] = 1'b0;
+end 
+// in4[ 6 ]
+initial
+begin
+	in4[6] = 1'b0;
+end 
+// in4[ 5 ]
+initial
+begin
+	in4[5] = 1'b0;
+end 
+// in4[ 4 ]
+initial
+begin
+	in4[4] = 1'b0;
+end 
+// in4[ 3 ]
+initial
+begin
+	in4[3] = 1'b0;
+end 
+// in4[ 2 ]
+initial
+begin
+	in4[2] = 1'b0;
+end 
+// in4[ 1 ]
+initial
+begin
+	in4[1] = 1'b0;
+end 
+// in4[ 0 ]
+initial
+begin
+	in4[0] = 1'b0;
+end 
+// in5[ 31 ]
+initial
+begin
+	in5[31] = 1'b0;
+end 
+// in5[ 30 ]
+initial
+begin
+	in5[30] = 1'b0;
+end 
+// in5[ 29 ]
+initial
+begin
+	in5[29] = 1'b0;
+end 
+// in5[ 28 ]
+initial
+begin
+	in5[28] = 1'b0;
+end 
+// in5[ 27 ]
+initial
+begin
+	in5[27] = 1'b0;
+end 
+// in5[ 26 ]
+initial
+begin
+	in5[26] = 1'b0;
+end 
+// in5[ 25 ]
+initial
+begin
+	in5[25] = 1'b0;
+end 
+// in5[ 24 ]
+initial
+begin
+	in5[24] = 1'b0;
+end 
+// in5[ 23 ]
+initial
+begin
+	in5[23] = 1'b0;
+end 
+// in5[ 22 ]
+initial
+begin
+	in5[22] = 1'b0;
+end 
+// in5[ 21 ]
+initial
+begin
+	in5[21] = 1'b0;
+end 
+// in5[ 20 ]
+initial
+begin
+	in5[20] = 1'b0;
+end 
+// in5[ 19 ]
+initial
+begin
+	in5[19] = 1'b0;
+end 
+// in5[ 18 ]
+initial
+begin
+	in5[18] = 1'b0;
+end 
+// in5[ 17 ]
+initial
+begin
+	in5[17] = 1'b1;
+end 
+// in5[ 16 ]
+initial
+begin
+	in5[16] = 1'b1;
+end 
+// in5[ 15 ]
+initial
+begin
+	in5[15] = 1'b0;
+end 
+// in5[ 14 ]
+initial
+begin
+	in5[14] = 1'b0;
+end 
+// in5[ 13 ]
+initial
+begin
+	in5[13] = 1'b0;
+end 
+// in5[ 12 ]
+initial
+begin
+	in5[12] = 1'b0;
+end 
+// in5[ 11 ]
+initial
+begin
+	in5[11] = 1'b0;
+end 
+// in5[ 10 ]
+initial
+begin
+	in5[10] = 1'b0;
+end 
+// in5[ 9 ]
+initial
+begin
+	in5[9] = 1'b0;
+end 
+// in5[ 8 ]
+initial
+begin
+	in5[8] = 1'b0;
+end 
+// in5[ 7 ]
+initial
+begin
+	in5[7] = 1'b0;
+end 
+// in5[ 6 ]
+initial
+begin
+	in5[6] = 1'b0;
+end 
+// in5[ 5 ]
+initial
+begin
+	in5[5] = 1'b0;
+end 
+// in5[ 4 ]
+initial
+begin
+	in5[4] = 1'b0;
+end 
+// in5[ 3 ]
+initial
+begin
+	in5[3] = 1'b0;
+end 
+// in5[ 2 ]
+initial
+begin
+	in5[2] = 1'b0;
+end 
+// in5[ 1 ]
+initial
+begin
+	in5[1] = 1'b0;
+end 
+// in5[ 0 ]
+initial
+begin
+	in5[0] = 1'b0;
+end 
+// in6[ 31 ]
+initial
+begin
+	in6[31] = 1'b0;
+end 
+// in6[ 30 ]
+initial
+begin
+	in6[30] = 1'b0;
+end 
+// in6[ 29 ]
+initial
+begin
+	in6[29] = 1'b0;
+end 
+// in6[ 28 ]
+initial
+begin
+	in6[28] = 1'b0;
+end 
+// in6[ 27 ]
+initial
+begin
+	in6[27] = 1'b0;
+end 
+// in6[ 26 ]
+initial
+begin
+	in6[26] = 1'b0;
+end 
+// in6[ 25 ]
+initial
+begin
+	in6[25] = 1'b0;
+end 
+// in6[ 24 ]
+initial
+begin
+	in6[24] = 1'b0;
+end 
+// in6[ 23 ]
+initial
+begin
+	in6[23] = 1'b0;
+end 
+// in6[ 22 ]
+initial
+begin
+	in6[22] = 1'b0;
+end 
+// in6[ 21 ]
+initial
+begin
+	in6[21] = 1'b0;
+end 
+// in6[ 20 ]
+initial
+begin
+	in6[20] = 1'b0;
+end 
+// in6[ 19 ]
+initial
+begin
+	in6[19] = 1'b1;
+end 
+// in6[ 18 ]
+initial
+begin
+	in6[18] = 1'b1;
+end 
+// in6[ 17 ]
+initial
+begin
+	in6[17] = 1'b0;
+end 
+// in6[ 16 ]
+initial
+begin
+	in6[16] = 1'b0;
+end 
+// in6[ 15 ]
+initial
+begin
+	in6[15] = 1'b0;
+end 
+// in6[ 14 ]
+initial
+begin
+	in6[14] = 1'b0;
+end 
+// in6[ 13 ]
+initial
+begin
+	in6[13] = 1'b0;
+end 
+// in6[ 12 ]
+initial
+begin
+	in6[12] = 1'b0;
+end 
+// in6[ 11 ]
+initial
+begin
+	in6[11] = 1'b0;
+end 
+// in6[ 10 ]
+initial
+begin
+	in6[10] = 1'b0;
+end 
+// in6[ 9 ]
+initial
+begin
+	in6[9] = 1'b0;
+end 
+// in6[ 8 ]
+initial
+begin
+	in6[8] = 1'b0;
+end 
+// in6[ 7 ]
+initial
+begin
+	in6[7] = 1'b0;
+end 
+// in6[ 6 ]
+initial
+begin
+	in6[6] = 1'b0;
+end 
+// in6[ 5 ]
+initial
+begin
+	in6[5] = 1'b0;
+end 
+// in6[ 4 ]
+initial
+begin
+	in6[4] = 1'b0;
+end 
+// in6[ 3 ]
+initial
+begin
+	in6[3] = 1'b0;
+end 
+// in6[ 2 ]
+initial
+begin
+	in6[2] = 1'b0;
+end 
+// in6[ 1 ]
+initial
+begin
+	in6[1] = 1'b0;
+end 
+// in6[ 0 ]
+initial
+begin
+	in6[0] = 1'b0;
+end 
+// in7[ 31 ]
+initial
+begin
+	in7[31] = 1'b0;
+end 
+// in7[ 30 ]
+initial
+begin
+	in7[30] = 1'b0;
+end 
+// in7[ 29 ]
+initial
+begin
+	in7[29] = 1'b0;
+end 
+// in7[ 28 ]
+initial
+begin
+	in7[28] = 1'b0;
+end 
+// in7[ 27 ]
+initial
+begin
+	in7[27] = 1'b0;
+end 
+// in7[ 26 ]
+initial
+begin
+	in7[26] = 1'b0;
+end 
+// in7[ 25 ]
+initial
+begin
+	in7[25] = 1'b0;
+end 
+// in7[ 24 ]
+initial
+begin
+	in7[24] = 1'b0;
+end 
+// in7[ 23 ]
+initial
+begin
+	in7[23] = 1'b0;
+end 
+// in7[ 22 ]
+initial
+begin
+	in7[22] = 1'b0;
+end 
+// in7[ 21 ]
+initial
+begin
+	in7[21] = 1'b1;
+end 
+// in7[ 20 ]
+initial
+begin
+	in7[20] = 1'b1;
+end 
+// in7[ 19 ]
+initial
+begin
+	in7[19] = 1'b0;
+end 
+// in7[ 18 ]
+initial
+begin
+	in7[18] = 1'b0;
+end 
+// in7[ 17 ]
+initial
+begin
+	in7[17] = 1'b0;
+end 
+// in7[ 16 ]
+initial
+begin
+	in7[16] = 1'b0;
+end 
+// in7[ 15 ]
+initial
+begin
+	in7[15] = 1'b0;
+end 
+// in7[ 14 ]
+initial
+begin
+	in7[14] = 1'b0;
+end 
+// in7[ 13 ]
+initial
+begin
+	in7[13] = 1'b0;
+end 
+// in7[ 12 ]
+initial
+begin
+	in7[12] = 1'b0;
+end 
+// in7[ 11 ]
+initial
+begin
+	in7[11] = 1'b0;
+end 
+// in7[ 10 ]
+initial
+begin
+	in7[10] = 1'b0;
+end 
+// in7[ 9 ]
+initial
+begin
+	in7[9] = 1'b0;
+end 
+// in7[ 8 ]
+initial
+begin
+	in7[8] = 1'b0;
+end 
+// in7[ 7 ]
+initial
+begin
+	in7[7] = 1'b0;
+end 
+// in7[ 6 ]
+initial
+begin
+	in7[6] = 1'b0;
+end 
+// in7[ 5 ]
+initial
+begin
+	in7[5] = 1'b0;
+end 
+// in7[ 4 ]
+initial
+begin
+	in7[4] = 1'b0;
+end 
+// in7[ 3 ]
+initial
+begin
+	in7[3] = 1'b0;
+end 
+// in7[ 2 ]
+initial
+begin
+	in7[2] = 1'b0;
+end 
+// in7[ 1 ]
+initial
+begin
+	in7[1] = 1'b0;
+end 
+// in7[ 0 ]
+initial
+begin
+	in7[0] = 1'b0;
+end 
+// in8[ 31 ]
+initial
+begin
+	in8[31] = 1'b0;
+end 
+// in8[ 30 ]
+initial
+begin
+	in8[30] = 1'b0;
+end 
+// in8[ 29 ]
+initial
+begin
+	in8[29] = 1'b0;
+end 
+// in8[ 28 ]
+initial
+begin
+	in8[28] = 1'b0;
+end 
+// in8[ 27 ]
+initial
+begin
+	in8[27] = 1'b0;
+end 
+// in8[ 26 ]
+initial
+begin
+	in8[26] = 1'b0;
+end 
+// in8[ 25 ]
+initial
+begin
+	in8[25] = 1'b0;
+end 
+// in8[ 24 ]
+initial
+begin
+	in8[24] = 1'b0;
+end 
+// in8[ 23 ]
+initial
+begin
+	in8[23] = 1'b1;
+end 
+// in8[ 22 ]
+initial
+begin
+	in8[22] = 1'b1;
+end 
+// in8[ 21 ]
+initial
+begin
+	in8[21] = 1'b0;
+end 
+// in8[ 20 ]
+initial
+begin
+	in8[20] = 1'b0;
+end 
+// in8[ 19 ]
+initial
+begin
+	in8[19] = 1'b0;
+end 
+// in8[ 18 ]
+initial
+begin
+	in8[18] = 1'b0;
+end 
+// in8[ 17 ]
+initial
+begin
+	in8[17] = 1'b0;
+end 
+// in8[ 16 ]
+initial
+begin
+	in8[16] = 1'b0;
+end 
+// in8[ 15 ]
+initial
+begin
+	in8[15] = 1'b0;
+end 
+// in8[ 14 ]
+initial
+begin
+	in8[14] = 1'b0;
+end 
+// in8[ 13 ]
+initial
+begin
+	in8[13] = 1'b0;
+end 
+// in8[ 12 ]
+initial
+begin
+	in8[12] = 1'b0;
+end 
+// in8[ 11 ]
+initial
+begin
+	in8[11] = 1'b0;
+end 
+// in8[ 10 ]
+initial
+begin
+	in8[10] = 1'b0;
+end 
+// in8[ 9 ]
+initial
+begin
+	in8[9] = 1'b0;
+end 
+// in8[ 8 ]
+initial
+begin
+	in8[8] = 1'b0;
+end 
+// in8[ 7 ]
+initial
+begin
+	in8[7] = 1'b0;
+end 
+// in8[ 6 ]
+initial
+begin
+	in8[6] = 1'b0;
+end 
+// in8[ 5 ]
+initial
+begin
+	in8[5] = 1'b0;
+end 
+// in8[ 4 ]
+initial
+begin
+	in8[4] = 1'b0;
+end 
+// in8[ 3 ]
+initial
+begin
+	in8[3] = 1'b0;
+end 
+// in8[ 2 ]
+initial
+begin
+	in8[2] = 1'b0;
+end 
+// in8[ 1 ]
+initial
+begin
+	in8[1] = 1'b0;
+end 
+// in8[ 0 ]
+initial
+begin
+	in8[0] = 1'b0;
+end 
+// sel[ 2 ]
+initial
+begin
+	sel[2] = 1'b0;
+	sel[2] = #600000 1'b1;
+	sel[2] = #600000 1'b0;
+end 
+// sel[ 1 ]
+initial
+begin
+	sel[1] = 1'b0;
+	sel[1] = #300000 1'b1;
+	sel[1] = #300000 1'b0;
+	sel[1] = #300000 1'b1;
+	sel[1] = #300000 1'b0;
+end 
+// sel[ 0 ]
+initial
+begin
+	sel[0] = 1'b0;
+	sel[0] = #150000 1'b1;
+	sel[0] = #150000 1'b0;
+	sel[0] = #150000 1'b1;
+	sel[0] = #150000 1'b0;
+	sel[0] = #150000 1'b1;
+	sel[0] = #150000 1'b0;
+	sel[0] = #150000 1'b1;
+	sel[0] = #150000 1'b0;
+end 
+
+mux8_1_vlg_sample_tst tb_sample (
+	.in1(in1),
+	.in2(in2),
+	.in3(in3),
+	.in4(in4),
+	.in5(in5),
+	.in6(in6),
+	.in7(in7),
+	.in8(in8),
+	.sel(sel),
+	.sampler_tx(sampler)
+);
+
+mux8_1_vlg_check_tst tb_out(
+	.out(out),
+	.sampler_rx(sampler)
+);
+endmodule
+

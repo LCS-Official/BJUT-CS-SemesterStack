@@ -1,0 +1,45 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="eVJ6TrnouM4WzKOVcSiy">
+    <mxGraphModel dx="946" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-48" value="time_init&#xa;时钟初始化入口" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="79" y="20" width="143" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-49" value="get_cmos_time&#xa;读取 RTC 硬件时间" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="60.5" y="133" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-50" value="calibrate_tsc&#xa;校准 CPU 频率" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="65.5" y="259" width="170" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-51" value="setup_irq&#xa;注册时钟中断" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="80.5" y="386" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-52" value="初始化完成" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="98" y="512" width="105" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-53" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=18;" parent="1" source="ogRHfdNR4TfQoAwwNKat-48" target="ogRHfdNR4TfQoAwwNKat-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-54" value="获取 Wall Time" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;rounded=0;fontSize=18;" parent="1" source="ogRHfdNR4TfQoAwwNKat-49" target="ogRHfdNR4TfQoAwwNKat-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-55" value="计算准确的 CPU MHz" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=-0.01;rounded=0;fontSize=18;" parent="1" source="ogRHfdNR4TfQoAwwNKat-50" target="ogRHfdNR4TfQoAwwNKat-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ogRHfdNR4TfQoAwwNKat-56" value="开启 IRQ0 心跳" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=18;" parent="1" source="ogRHfdNR4TfQoAwwNKat-51" target="ogRHfdNR4TfQoAwwNKat-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

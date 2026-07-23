@@ -1,0 +1,60 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="B81tuSViIczoaCqsWdmm">
+    <mxGraphModel dx="996" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-36" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;fontStyle=1" value="学生" vertex="1">
+          <mxGeometry height="54" width="92" x="44" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-37" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;fontStyle=1" value="实验室管理员" vertex="1">
+          <mxGeometry height="54" width="156" x="820" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-38" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;fontStyle=1" value="系统管理员" vertex="1">
+          <mxGeometry height="54" width="140" x="20" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-39" parent="1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fontSize=18;fontStyle=1" value="智能实验室预约&#xa;与设备管理系统" vertex="1">
+          <mxGeometry height="215" width="215" x="392" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-40" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-36" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.37;entryX=0;entryY=0.37;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-39" value="预约请求&#xa;签到位置&#xa;故障上报">
+          <mxGeometry relative="1" x="0.067" y="7" as="geometry">
+            <mxPoint x="-2" as="offset" />
+            <Array as="points">
+              <mxPoint x="276" y="67" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-41" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-39" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.5;entryX=1;entryY=0.64;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-36" value="审批结果&#xa;推荐档期&#xa;信用警告">
+          <mxGeometry relative="1" x="0.0218" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="230" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-42" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-37" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=1;entryY=0.62;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-39" value="审批决定&#xa;违规判定&#xa;设备更新">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-43" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-39" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.48;entryX=0;entryY=0.43;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-37" value="待办提醒&#xa;违规名单&#xa;统计报表">
+          <mxGeometry relative="1" x="0.0471" y="10" as="geometry">
+            <mxPoint x="-5" y="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="720" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GgDQB5vgMIMnv_yzBva-44" edge="1" parent="1" source="9GgDQB5vgMIMnv_yzBva-38" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.68;rounded=0;fontSize=18;fontStyle=1" target="9GgDQB5vgMIMnv_yzBva-39" value="用户初始名单&#xa;基础设备档案&#xa;规则参数">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,25 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="第 1 页" id="z-nxFJQ__Uh4YVWdZVro">
+    <mxGraphModel dx="591" dy="414" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="630" pageHeight="1969" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_jOMzp4qfUtEXzxQBR5T-1" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="285" width="170" x="230" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="_jOMzp4qfUtEXzxQBR5T-6" edge="1" parent="1" source="_jOMzp4qfUtEXzxQBR5T-1" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="_jOMzp4qfUtEXzxQBR5T-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="370" as="sourcePoint" />
+            <mxPoint x="360" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_jOMzp4qfUtEXzxQBR5T-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="P0：核心交付" vertex="1">
+          <mxGeometry height="30" width="100" x="265" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="_jOMzp4qfUtEXzxQBR5T-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="P1：亮点功能" vertex="1">
+          <mxGeometry height="30" width="100" x="265" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

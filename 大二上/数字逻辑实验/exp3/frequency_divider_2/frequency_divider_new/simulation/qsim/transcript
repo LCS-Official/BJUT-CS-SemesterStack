@@ -1,0 +1,50 @@
+# do frequency_divider_new.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module frequency_divider_new
+# 
+# Top level modules:
+# 	frequency_divider_new
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module frequency_divider_new_vlg_sample_tst
+# -- Compiling module frequency_divider_new_vlg_check_tst
+# -- Compiling module frequency_divider_new_vlg_vec_tst
+# 
+# Top level modules:
+# 	frequency_divider_new_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.frequency_divider_new_vlg_vec_tst 
+# Loading work.frequency_divider_new_vlg_vec_tst
+# Loading work.frequency_divider_new
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading work.frequency_divider_new_vlg_sample_tst
+# Loading work.frequency_divider_new_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port clk_1hz :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port clk_10hz :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port clk_100hz :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port clk_1000hz :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port q_out[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port q_out[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port q_out[1] :: @time = 1200000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+#           7 mismatched vectors : Simulation failed !
+# ** Note: $finish    : frequency_divider_new.vt(357)
+#    Time: 1800 ns  Iteration: 0  Instance: /frequency_divider_new_vlg_vec_tst/tb_out

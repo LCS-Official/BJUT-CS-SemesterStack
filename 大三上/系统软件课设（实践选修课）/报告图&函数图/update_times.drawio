@@ -1,0 +1,89 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="XhKskRFObLDGu_x8_Fr4">
+    <mxGraphModel dx="1113" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-1" value="update_times" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="158.5" y="125" width="123" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-2" value="加锁 xtime_lock&#xa;(保护时间数据)" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="132" y="185" width="175" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-3" value="计算 Tick 增量&#xa;ticks = jiffies - wall_jiffies" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="95" y="265" width="249" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-4" value="有增量吗?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="145" y="365" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-5" value="更新墙上时间 (Wall Time)&#xa;调用 update_wall_time" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="19.5" y="470" width="243" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-6" value="同步标记&#xa;wall_jiffies += ticks" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="41" y="570" width="200" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-7" value="解锁 xtime_lock" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="690" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-8" value="计算系统负载 (Load Avg)&#xa;调用 calc_load" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="102.5" y="760" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-9" value="结束" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="191.5" y="850" width="57" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-1" target="Wov-cqPblFkmZtFOoUEp-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-2" target="Wov-cqPblFkmZtFOoUEp-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-3" target="Wov-cqPblFkmZtFOoUEp-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-13" value="是" style="curved=1;startArrow=none;endArrow=block;exitX=0.15;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-4" target="Wov-cqPblFkmZtFOoUEp-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-5" target="Wov-cqPblFkmZtFOoUEp-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.595;exitY=0.984;entryX=0.27;entryY=-0.01;rounded=0;fontSize=19;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-6" target="Wov-cqPblFkmZtFOoUEp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-16" value="否" style="curved=1;startArrow=none;endArrow=block;exitX=0.85;exitY=1;entryX=0.73;entryY=-0.01;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-4" target="Wov-cqPblFkmZtFOoUEp-7">
+          <mxGeometry x="0.0413" y="-28" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="580" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-7" target="Wov-cqPblFkmZtFOoUEp-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wov-cqPblFkmZtFOoUEp-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;fontSize=19;" edge="1" parent="1" source="Wov-cqPblFkmZtFOoUEp-8" target="Wov-cqPblFkmZtFOoUEp-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

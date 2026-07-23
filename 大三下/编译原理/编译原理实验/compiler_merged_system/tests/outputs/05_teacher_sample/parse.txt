@@ -1,0 +1,50 @@
+Start: P                   | 从程序入口开始分析
+P -> S ; P' | ε            | P => 共识别 2 条语句；后续 P' => ε
+S -> while C do S          | S => while C do S; 每轮从 L0 判断，真进 L1，假跳 L2
+C -> E relop E             | C => (a3 + 15) > 10; 真->L1, 假->L2
+E -> T E'                  | E => (a3 + 15); place = t1
+T -> F T'                  | T => (a3 + 15); place = t1
+F -> ( E )                 | F => (a3 + 15); place = t1
+E -> T E'                  | E => a3 + 15; place = t1
+T -> F T'                  | T => a3; place = a3
+F -> id                    | F => a3
+E' -> + T E'               | E => a3 + 15; place = t1
+T -> F T'                  | T => 15; place = 15
+F -> int10                 | F => 15
+E -> T E'                  | E => 10; place = 10
+T -> F T'                  | T => 10; place = 10
+F -> int16                 | F => 10，源程序写作 0xa
+S -> if C then S [else S]  | S => if C then S; 条件真->L3, 条件假->L4
+C -> E relop E             | C => x2 = 7; 真->L3, 假->L4
+E -> T E'                  | E => x2; place = x2
+T -> F T'                  | T => x2; place = x2
+F -> id                    | F => x2
+E -> T E'                  | E => 7; place = 7
+T -> F T'                  | T => 7; place = 7
+F -> int8                  | F => 7，源程序写作 07
+S -> while C do S          | S => while C do S; 每轮从 L5 判断，真进 L6，假跳 L7
+C -> E relop E             | C => y < z; 真->L6, 假->L7
+E -> T E'                  | E => y; place = y
+T -> F T'                  | T => y; place = y
+F -> id                    | F => y
+E -> T E'                  | E => z; place = z
+T -> F T'                  | T => z; place = z
+F -> id                    | F => z
+S -> id = E                | S => y = x * y / z
+E -> T E'                  | E => x * y / z; place = t3
+T -> F T'                  | T => x * y / z; place = t3
+F -> id                    | F => x
+T' -> * F T'               | T => x * y; place = t2
+F -> id                    | F => y
+T' -> / F T'               | T => x * y / z; place = t3
+F -> id                    | F => z
+S -> id = E                | S => c = b * c + d
+E -> T E'                  | E => b * c + d; place = t5
+T -> F T'                  | T => b * c; place = t4
+F -> id                    | F => b
+T' -> * F T'               | T => b * c; place = t4
+F -> id                    | F => c
+E' -> + T E'               | E => b * c + d; place = t5
+T -> F T'                  | T => d; place = d
+F -> id                    | F => d
+Result: ACCEPT

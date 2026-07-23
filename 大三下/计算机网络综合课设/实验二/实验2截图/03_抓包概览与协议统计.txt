@@ -1,0 +1,66 @@
+=== capinfos ===
+
+File name:           C:\Users\LC\Desktop\计网课设\实验2截图\exp2_mix.pcapng
+File type:           Wireshark/... - pcapng
+File encapsulation:  Ethernet
+File timestamp precision:  nanoseconds (9)
+Packet size limit:   file hdr: (not set)
+Number of packets:   122
+File size:           51 kB
+Data size:           47 kB
+Capture duration:    23.455320800 seconds
+Earliest packet time: 2026-07-07 15:20:20.828325600
+Latest packet time:   2026-07-07 15:20:44.283646400
+Data byte rate:      2018 bytes/s
+Data bit rate:       16 kbps
+Average packet size: 388.11 bytes
+Average packet rate: 5 packets/s
+SHA256:              927d1fd6b8a61d4a73e99bd06f22b70576d42c77911c86fba86db754f7be3a76
+SHA1:                863f55cf0685ac4de7985f6dd0f342b7ef25c007
+Strict time order:   True
+Capture hardware:    Intel(R) Core(TM) Ultra 7 258V (with SSE4.2)
+Capture oper-sys:    64-bit Windows 11 (24H2), build 26100
+Capture application: Dumpcap (Wireshark) 4.6.6 (v4.6.6-0-g3a22c3ef473d)
+Number of interfaces in file: 1
+Interface #0 info:
+                     Name = \Device\NPF_{7D9B8463-1F18-4080-AABE-8EC8A2F6296F}
+                     Description = WLAN
+                     Encapsulation = Ethernet (1 - ether)
+                     Hardware = Intel(R) Wi-Fi 7 BE201 320MHz
+                     Capture length = 262144
+                     Time precision = nanoseconds (9)
+                     Time ticks per second = 1000000000
+                     Time resolution = 0x09
+                     Operating system = 64-bit Windows 11 (24H2), build 26100
+                     Number of stat entries = 1
+                     Number of packets = 122
+
+=== Protocol Hierarchy Statistics ===
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+frame                                    frames:122 bytes:47350
+  eth                                    frames:122 bytes:47350
+    ip                                   frames:61 bytes:25299
+      tcp                                frames:16 bytes:7134
+        tls                              frames:7 bytes:5240
+      icmp                               frames:6 bytes:444
+      udp                                frames:39 bytes:17721
+        dns                              frames:6 bytes:1034
+        data                             frames:33 bytes:16687
+    arp                                  frames:9 bytes:378
+    ipv6                                 frames:35 bytes:18013
+      tcp                                frames:29 bytes:17505
+        tls                              frames:13 bytes:15552
+        http                             frames:1 bytes:819
+          data                           frames:1 bytes:819
+      icmpv6                             frames:6 bytes:508
+    vlan                                 frames:17 bytes:3660
+      ipv6                               frames:17 bytes:3660
+        tcp                              frames:17 bytes:3660
+          tls                            frames:5 bytes:2365
+          http                           frames:1 bytes:425
+            data                         frames:1 bytes:425
+===================================================================

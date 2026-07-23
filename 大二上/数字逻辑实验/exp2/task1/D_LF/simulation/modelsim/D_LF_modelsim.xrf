@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/lcs_o/OneDrive/Documents/LC-DigitLogics/exp2/exp2-task1/D_LF/D_latch.v
+source_file = 1, C:/Users/lcs_o/OneDrive/Documents/LC-DigitLogics/exp2/exp2-task1/D_LF/D_FF.v
+source_file = 1, C:/Users/lcs_o/OneDrive/Documents/LC-DigitLogics/exp2/exp2-task1/D_LF/D_LF.bdf
+source_file = 1, C:/Users/lcs_o/OneDrive/Documents/LC-DigitLogics/exp2/exp2-task1/D_LF/Waveform_DLF.vwf
+source_file = 1, C:/Users/lcs_o/OneDrive/Documents/LC-DigitLogics/exp2/exp2-task1/D_LF/db/D_LF.cbx.xml
+design_name = D_LF
+instance = comp, \Q2~output , Q2~output, D_LF, 1
+instance = comp, \Q1~output , Q1~output, D_LF, 1
+instance = comp, \clk~input , clk~input, D_LF, 1
+instance = comp, \D~input , D~input, D_LF, 1
+instance = comp, \inst2|Q~feeder , inst2|Q~feeder, D_LF, 1
+instance = comp, \inst2|Q , inst2|Q, D_LF, 1
+instance = comp, \EN~input , EN~input, D_LF, 1
+instance = comp, \inst3|Q , inst3|Q, D_LF, 1

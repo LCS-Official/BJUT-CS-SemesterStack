@@ -1,0 +1,71 @@
+{
+  "note": "Robust binary 30D dataset from constant open/closed recordings.",
+  "frame_csvs": [
+    "C:\\Users\\LC\\Desktop\\eyeblink8\\work_eyefeature_robust\\frame_robust_board_dec1_raw.csv"
+  ],
+  "feature_names": [
+    "robust_f0",
+    "robust_f1"
+  ],
+  "feature_cols": [
+    "robust_f0_0",
+    "robust_f0_1",
+    "robust_f0_2",
+    "robust_f0_3",
+    "robust_f0_4",
+    "robust_f0_5",
+    "robust_f0_6",
+    "robust_f0_7",
+    "robust_f0_8",
+    "robust_f0_9",
+    "robust_f0_10",
+    "robust_f0_11",
+    "robust_f0_12",
+    "robust_f0_13",
+    "robust_f0_14",
+    "robust_f1_0",
+    "robust_f1_1",
+    "robust_f1_2",
+    "robust_f1_3",
+    "robust_f1_4",
+    "robust_f1_5",
+    "robust_f1_6",
+    "robust_f1_7",
+    "robust_f1_8",
+    "robust_f1_9",
+    "robust_f1_10",
+    "robust_f1_11",
+    "robust_f1_12",
+    "robust_f1_13",
+    "robust_f1_14"
+  ],
+  "input_dim": 30,
+  "window_size": 15,
+  "central_size": 7,
+  "min_same_label_in_central": 7,
+  "valid_columns": [
+    "det_ok",
+    "eye_valid"
+  ],
+  "split_note": "explicit_video_lists",
+  "all_samples": 1959,
+  "train_samples": 1959,
+  "val_samples": 1959,
+  "test_samples": 1959,
+  "all_label_counts": {
+    "non_closed": 983,
+    "closed": 976
+  },
+  "train_label_counts": {
+    "non_closed": 983,
+    "closed": 976
+  },
+  "val_label_counts": {
+    "non_closed": 983,
+    "closed": 976
+  },
+  "test_label_counts": {
+    "non_closed": 983,
+    "closed": 976
+  }
+}

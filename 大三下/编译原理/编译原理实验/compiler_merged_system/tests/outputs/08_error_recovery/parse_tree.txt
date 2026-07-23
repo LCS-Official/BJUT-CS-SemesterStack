@@ -1,0 +1,11 @@
+P
+├── S: id = E
+│   ├── id: a
+│   └── E: b + <error>
+└── S: while C do S
+    ├── C: E < E
+    │   ├── E: a
+    │   └── E: b
+    └── S: id = E
+        ├── id: y
+        └── E: y + 1

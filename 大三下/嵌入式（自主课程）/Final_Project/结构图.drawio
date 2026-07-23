@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="MP3_Player_System_Wiring" id="RA4yTG8Wjp9LWg-4oY38">
+    <mxGraphModel dx="2768" dy="996" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="ESP32-C3 开发板&#xa;&#xa;主控 MCU&#xa;负责：触摸处理 / UI显示 / MP3控制 / RTC读取" vertex="1">
+          <mxGeometry height="170" width="240" x="410" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="TFT 触摸屏模块&#xa;&#xa;ILI9341 显示芯片&#xa;XPT2046 触摸芯片&#xa;背光 BL" vertex="1">
+          <mxGeometry height="150" width="250" x="-150" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="MP3 播放模块&#xa;&#xa;WT2003H / 串口控制&#xa;microSD 读取&#xa;音频解码输出" vertex="1">
+          <mxGeometry height="140" width="240" x="770" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="RTC &amp; EEPROM 模块&#xa;&#xa;DS1307 实时时钟&#xa;AT24C32 EEPROM&#xa;CR1220 断电走时" vertex="1">
+          <mxGeometry height="130" width="240" x="-130" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="喇叭&#xa;&#xa;2pin 音频输出" vertex="1">
+          <mxGeometry height="80" width="160" x="820" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="microSD 卡&lt;br&gt;&lt;br&gt;存放 MP3 文件" vertex="1">
+          <mxGeometry height="90" width="180" x="1130" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-8" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6C8EBF;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;" target="EQBiAIgUhjdTI74rX3hK-2" value="SPI 显示接口&#xa;TFT J2 → 开发板 J3 + J5&#xa;10pin：6pin + 4pin&#xa;TFT_CS=IO7，TFT_DC=IO10">
+          <mxGeometry relative="1" x="0.1429" y="-45" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="370" y="425" />
+              <mxPoint x="370" y="315" />
+            </Array>
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="330" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-9" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1B5E20;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;" target="EQBiAIgUhjdTI74rX3hK-2" value="触摸 + 背光接口&#xa;TFT J3 → 开发板 J8&#xa;4pin&#xa;TOUCH_CS=IO0，TOUCH_IRQ=IO1&#xa;BL=IO19">
+          <mxGeometry relative="1" x="-0.2453" y="-40" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-25" y="490" />
+            </Array>
+            <mxPoint x="410" y="460" as="sourcePoint" />
+            <mxPoint x="330" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-10" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#D79B00;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EQBiAIgUhjdTI74rX3hK-3" value="UART 串口控制&#xa;开发板 J7 ↔ MP3 J1&#xa;4pin：VCC / GND / RX / TX&#xa;ESP32 RX=GPIO3，TX=GPIO2">
+          <mxGeometry relative="1" x="0.1665" y="90" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="720" y="440" />
+              <mxPoint x="720" y="200" />
+            </Array>
+            <mxPoint x="650" y="440" as="sourcePoint" />
+            <mxPoint x="780" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-11" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673A6;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="EQBiAIgUhjdTI74rX3hK-4" value="I2C 总线&#xa;RTC J1 → 开发板 J4&#xa;4pin：VCC / GND / SDA / SCL&#xa;DS1307 + AT24C32 共用 I2C">
+          <mxGeometry relative="1" x="0.3599" y="-35" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="370" y="560" />
+              <mxPoint x="370" y="685" />
+            </Array>
+            <mxPoint x="410" y="560" as="sourcePoint" />
+            <mxPoint x="330" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-12" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#B85450;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;" target="EQBiAIgUhjdTI74rX3hK-5" value="音频输出&#xa;MP3 J4 → 喇叭&#xa;2pin">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="395" as="sourcePoint" />
+            <mxPoint x="900" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EQBiAIgUhjdTI74rX3hK-13" edge="1" parent="1" source="EQBiAIgUhjdTI74rX3hK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#D6B656;fontSize=12;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EQBiAIgUhjdTI74rX3hK-6" value="TF 卡槽&#xa;microSD 插入 MP3 模块&#xa;存放音频文件">
+          <mxGeometry relative="1" x="0.1426" y="30" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1220" y="200" />
+            </Array>
+            <mxPoint x="930" y="395" as="sourcePoint" />
+            <mxPoint x="900" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

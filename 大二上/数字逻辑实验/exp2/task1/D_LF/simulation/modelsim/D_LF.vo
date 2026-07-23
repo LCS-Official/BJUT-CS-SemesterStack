@@ -1,0 +1,185 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "11/08/2024 10:39:31"
+
+// 
+// Device: Altera EP3C55F484C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module D_LF (
+	Q2,
+	clk,
+	D,
+	Q1,
+	EN);
+output 	Q2;
+input 	clk;
+input 	D;
+output 	Q1;
+input 	EN;
+
+// Design Ports Information
+// Q2	=>  Location: PIN_V12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q1	=>  Location: PIN_U12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AB15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// EN	=>  Location: PIN_AB18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Q2~output_o ;
+wire \Q1~output_o ;
+wire \clk~input_o ;
+wire \D~input_o ;
+wire \inst2|Q~feeder_combout ;
+wire \inst2|Q~q ;
+wire \EN~input_o ;
+wire \inst3|Q~combout ;
+
+
+// Location: IOOBUF_X48_Y0_N16
+cycloneiii_io_obuf \Q2~output (
+	.i(\inst2|Q~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q2~output .bus_hold = "false";
+defparam \Q2~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y0_N23
+cycloneiii_io_obuf \Q1~output (
+	.i(\inst3|Q~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q1~output .bus_hold = "false";
+defparam \Q1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X50_Y0_N1
+cycloneiii_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N8
+cycloneiii_io_ibuf \D~input (
+	.i(D),
+	.ibar(gnd),
+	.o(\D~input_o ));
+// synopsys translate_off
+defparam \D~input .bus_hold = "false";
+defparam \D~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y1_N24
+cycloneiii_lcell_comb \inst2|Q~feeder (
+// Equation(s):
+// \inst2|Q~feeder_combout  = \D~input_o 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\D~input_o ),
+	.cin(gnd),
+	.combout(\inst2|Q~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|Q~feeder .lut_mask = 16'hFF00;
+defparam \inst2|Q~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X51_Y1_N25
+dffeas \inst2|Q (
+	.clk(\clk~input_o ),
+	.d(\inst2|Q~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst2|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst2|Q .is_wysiwyg = "true";
+defparam \inst2|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N22
+cycloneiii_io_ibuf \EN~input (
+	.i(EN),
+	.ibar(gnd),
+	.o(\EN~input_o ));
+// synopsys translate_off
+defparam \EN~input .bus_hold = "false";
+defparam \EN~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y1_N10
+cycloneiii_lcell_comb \inst3|Q (
+// Equation(s):
+// \inst3|Q~combout  = (\EN~input_o  & (\D~input_o )) # (!\EN~input_o  & ((\inst3|Q~combout )))
+
+	.dataa(gnd),
+	.datab(\D~input_o ),
+	.datac(\EN~input_o ),
+	.datad(\inst3|Q~combout ),
+	.cin(gnd),
+	.combout(\inst3|Q~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst3|Q .lut_mask = 16'hCFC0;
+defparam \inst3|Q .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Q2 = \Q2~output_o ;
+
+assign Q1 = \Q1~output_o ;
+
+endmodule

@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="23PXiMQlB4-1EZ912plW">
+    <mxGraphModel dx="1351" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xiPAOOYKg007o1t7Grht-37" value="开始" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="272" y="1090" width="57" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-38" value="启动 PIT (慢时钟)&#xa;设定倒计时 (如 50ms)" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="193" y="1179" width="214" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-39" value="记录 TSC 起始值 (Start)&#xa;(快时钟起跑)" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="187" y="1307" width="228" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-40" value="轮询检查:&#xa;PIT 倒计时&#xa;是否结束?" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="189" y="1435" width="223" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-41" value="记录 TSC 结束值 (End)&#xa;(快时钟冲线)" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="31" y="1610" width="219" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-42" value="计算步数差:&#xa;Delta = End - Start" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="44.5" y="1709" width="193" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-43" value="计算频率:&#xa;Result = Delta / 设定时间" style="whiteSpace=wrap;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1799" width="242" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-44" value="返回 CPU 频率" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="74.5" y="1899" width="133" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-47" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-37" target="xiPAOOYKg007o1t7Grht-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-48" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-38" target="xiPAOOYKg007o1t7Grht-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-49" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-39" target="xiPAOOYKg007o1t7Grht-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-53" value="结束了 (1)" style="startArrow=none;endArrow=block;exitX=0;exitY=0.96;entryX=0.5;entryY=-0.01;rounded=0;fontSize=19;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-40" target="xiPAOOYKg007o1t7Grht-41">
+          <mxGeometry x="-0.2369" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="242" y="1570" />
+              <mxPoint x="141" y="1570" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-54" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-41" target="xiPAOOYKg007o1t7Grht-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-55" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-42" target="xiPAOOYKg007o1t7Grht-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-56" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-43" target="xiPAOOYKg007o1t7Grht-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-57" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.933;entryY=0.563;entryDx=0;entryDy=0;exitX=0.592;exitY=0.924;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;fontSize=19;" edge="1" parent="1" source="xiPAOOYKg007o1t7Grht-40" target="xiPAOOYKg007o1t7Grht-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="1670" as="sourcePoint" />
+            <mxPoint x="380" y="1620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="1620" />
+              <mxPoint x="440" y="1560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xiPAOOYKg007o1t7Grht-58" value="还没（0）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;" vertex="1" connectable="0" parent="xiPAOOYKg007o1t7Grht-57">
+          <mxGeometry x="0.0642" y="7" relative="1" as="geometry">
+            <mxPoint x="1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S2\register\mux8_1\simulation\qsim
+vmux8_1
+Z1 !s100 DFcP^PLg]BI[WEQ?O11WZ2
+Z2 I91OCD2z2nWQH7BRdih[G^3
+Z3 V:CYaXMo3DPF25:YgK[QB]2
+Z4 dD:\SLSY Project\S2\register\mux8_1\simulation\qsim
+Z5 w1730780822
+Z6 8mux8_1.vo
+Z7 Fmux8_1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mux8_1.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1730780823.411000
+Z12 !s107 mux8_1.vo|
+!s101 -O0
+vmux8_1_vlg_check_tst
+!i10b 1
+Z13 !s100 <7m_YcaIKlA5Oz:mLMUm30
+Z14 I9f4Bco8F@>Uj3j5z<85KF0
+Z15 VbLANY;2deY9[_c?5YbOP;3
+R4
+R5
+Z16 8mux8_1.vt
+Z17 Fmux8_1.vt
+L0 73
+R8
+r1
+!s85 0
+31
+Z18 !s108 1730780823.493000
+Z19 !s107 mux8_1.vt|
+Z20 !s90 -work|work|mux8_1.vt|
+!s101 -O0
+R10
+vmux8_1_vlg_sample_tst
+!i10b 1
+Z21 !s100 6L:L7@cOOAkZ0iP5D7]bH3
+Z22 IHU@bj7]FMJ7Ea8_AimL1B1
+Z23 V5c0QdEAnP;nbg8Fh]zL]F2
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vmux8_1_vlg_vec_tst
+!i10b 1
+!s100 Mlbe=l6U54j[C4FSGPJW:3
+I8[dX^7c`g<QH`cZP`6JNG0
+Z24 V]];f2[dEmAT_3aLK>?>IH0
+R4
+R5
+R16
+R17
+Z25 L0 757
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

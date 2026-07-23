@@ -1,0 +1,2 @@
+type	lexeme	value	first_line	first_column	count
+INT8	00	0	1	9	1

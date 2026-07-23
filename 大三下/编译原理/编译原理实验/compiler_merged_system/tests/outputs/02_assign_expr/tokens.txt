@@ -1,0 +1,8 @@
+IDN a
+= _
+IDN b
+* _
+IDN c
++ _
+IDN d
+; _

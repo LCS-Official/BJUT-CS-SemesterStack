@@ -1,0 +1,2883 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 2000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swc[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "keyboard_recognition_vlg_vec_tst|swc";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swc[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "keyboard_recognition_vlg_vec_tst|swc";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swc[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "keyboard_recognition_vlg_vec_tst|swc";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swc[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "keyboard_recognition_vlg_vec_tst|swc";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|flag")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|keyout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|keyout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|keyout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|keyout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swr[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swr[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swr[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|swr[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|sampler")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[0]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[1]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[2]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[3]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|flag~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|keyout[0]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|keyout[1]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|keyout[2]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|keyout[3]~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|clk~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|clk~inputclkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|reset~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[1]~reg0_q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[3]~reg0_q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[2]~reg0_q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr0~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swr[0]~reg0_q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swc[0]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swc[1]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swc[2]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|swc[3]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0~portadataout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a4")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1850.0;
+		LEVEL 1 FOR 150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swc[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1450.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 350.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swc[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1050.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 750.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swc[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 650.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 1150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swc[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 1550.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|flag")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 275.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|keyout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 375.001;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|keyout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 325.001;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|keyout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1075.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|keyout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 675.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swr[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 175.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swr[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 225.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swr[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 275.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|swr[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 125.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[0]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 125.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[1]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 275.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[2]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 225.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[3]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 175.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|flag~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 275.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|keyout[0]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 675.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|keyout[1]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1075.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|keyout[2]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 325.001;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|keyout[3]~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 375.001;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|clk~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|clk~inputclkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 25.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|reset~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1850.0;
+		LEVEL 1 FOR 150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[1]~reg0_q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 275.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 125.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 225.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[3]~reg0_q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 175.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 75.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 275.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[2]~reg0_q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 225.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 125.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr0~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 175.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swr[0]~reg0_q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 125.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swc[0]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 1550.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swc[1]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 650.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 1150.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swc[2]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1050.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 750.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|swc[3]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1450.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 350.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0~portadataout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 275.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a4")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 675.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1075.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 325.001;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 375.001;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 675.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1075.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 325.001;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 375.001;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+TRANSITION_LIST("keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 275.001;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 324.999;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5, 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swc[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swc[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swc[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swc[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|flag";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|keyout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|keyout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|keyout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|keyout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swr[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swr[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swr[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|swr[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|sampler";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[0]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[1]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[2]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[3]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|flag~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|keyout[0]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|keyout[1]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|keyout[2]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|keyout[3]~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|clk~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|clk~inputclkctrl_outclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|reset~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[1]~reg0_q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr~3_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[3]~reg0_q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr~2_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[2]~reg0_q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr0~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swr[0]~reg0_q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swc[0]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swc[1]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swc[2]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|swc[3]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0~portadataout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 53;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 55;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 56;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 57;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 58;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 60;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 61;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 62;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "keyboard_recognition_vlg_vec_tst|i1|WideOr1_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 0;
+}
+;

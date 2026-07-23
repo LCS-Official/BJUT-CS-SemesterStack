@@ -1,0 +1,77 @@
+{
+  "config": {
+    "config_id": 261,
+    "feature_pair_name": "col_run_topk_fixed+vertical_contrast",
+    "feature_names": [
+      "col_run_topk_fixed",
+      "vertical_contrast"
+    ],
+    "dataset_rule_name": "std_7_6_openstep5_blinkasnonclosed",
+    "central_size": 7,
+    "min_closed_in_central": 6,
+    "open_step": 5,
+    "eyeblink8_policy": "open_blink_as_nonclosed",
+    "C": 0.03,
+    "class_weight": "balanced"
+  },
+  "input_dim": 30,
+  "feature_cols": [
+    "col_run_topk_fixed_0",
+    "col_run_topk_fixed_1",
+    "col_run_topk_fixed_2",
+    "col_run_topk_fixed_3",
+    "col_run_topk_fixed_4",
+    "col_run_topk_fixed_5",
+    "col_run_topk_fixed_6",
+    "col_run_topk_fixed_7",
+    "col_run_topk_fixed_8",
+    "col_run_topk_fixed_9",
+    "col_run_topk_fixed_10",
+    "col_run_topk_fixed_11",
+    "col_run_topk_fixed_12",
+    "col_run_topk_fixed_13",
+    "col_run_topk_fixed_14",
+    "vertical_contrast_0",
+    "vertical_contrast_1",
+    "vertical_contrast_2",
+    "vertical_contrast_3",
+    "vertical_contrast_4",
+    "vertical_contrast_5",
+    "vertical_contrast_6",
+    "vertical_contrast_7",
+    "vertical_contrast_8",
+    "vertical_contrast_9",
+    "vertical_contrast_10",
+    "vertical_contrast_11",
+    "vertical_contrast_12",
+    "vertical_contrast_13",
+    "vertical_contrast_14"
+  ],
+  "train_label_counts": {
+    "non_closed": 14882,
+    "closed": 2292
+  },
+  "val_label_counts": {
+    "non_closed": 2580,
+    "closed": 370
+  },
+  "test_label_counts": {
+    "non_closed": 1445,
+    "closed": 367
+  },
+  "train_orig_label_counts": {
+    "open": 10492,
+    "blink": 4390,
+    "closed": 2292
+  },
+  "val_orig_label_counts": {
+    "open": 1594,
+    "blink": 986,
+    "closed": 370
+  },
+  "test_orig_label_counts": {
+    "open": 844,
+    "blink": 601,
+    "closed": 367
+  }
+}

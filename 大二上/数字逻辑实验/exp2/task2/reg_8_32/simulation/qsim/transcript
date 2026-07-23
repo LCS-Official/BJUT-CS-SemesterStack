@@ -1,0 +1,127 @@
+# do reg_8_32.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_8_32
+# 
+# Top level modules:
+# 	reg_8_32
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_8_32_vlg_sample_tst
+# -- Compiling module reg_8_32_vlg_check_tst
+# -- Compiling module reg_8_32_vlg_vec_tst
+# 
+# Top level modules:
+# 	reg_8_32_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.reg_8_32_vlg_vec_tst 
+# Loading work.reg_8_32_vlg_vec_tst
+# Loading work.reg_8_32
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading work.reg_8_32_vlg_sample_tst
+# Loading work.reg_8_32_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port r_data[0] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[1] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[2] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[3] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[4] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[5] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[6] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[7] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[8] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[9] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[10] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[11] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[12] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[13] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[14] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[15] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[16] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[17] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[18] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[19] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[20] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[21] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[22] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[23] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[24] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[25] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[26] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[27] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[28] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[29] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[30] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# ERROR! Vector Mismatch for output port r_data[31] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+#          32 mismatched vectors : Simulation failed !
+# ** Note: $finish    : reg_8_32.vt(745)
+#    Time: 2 us  Iteration: 0  Instance: /reg_8_32_vlg_vec_tst/tb_out

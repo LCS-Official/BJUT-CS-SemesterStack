@@ -1,0 +1,155 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do temp_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/defines.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/dm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dm
+# 
+# Top level modules:
+# 	dm
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/ext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ext
+# 
+# Top level modules:
+# 	ext
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/im.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module im
+# 
+# Top level modules:
+# 	im
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/gpr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gpr
+# 
+# Top level modules:
+# 	gpr
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/LC/Desktop/LCState_pjks/Task2 {C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_tb
+# 
+# Top level modules:
+# 	mips_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  mips_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mips_tb 
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.im
+# Loading work.gpr
+# Loading work.ext
+# Loading work.alu
+# Loading work.dm
+# Loading work.controller
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# ------ Memory and Branch Instruction Test Start ------
+# 
+# -----------------------------------------------------
+# ------ Final Register State Check at 1020000 ns ------
+# -----------------------------------------------------
+# Comparing RUNTIME value with EXPECTED value...
+# $t0 (R8) : 0x00000000 (Expected: 0x0000abcd)
+# $t1 (R9) : 0x00000000 (Expected: 0x0000bbfd)
+# $t2 (R10): 0x00000000 (Expected: 0x0000abcd)
+# $s1 (R17): 0x00000000 (Expected: 0x00000001)
+# $s2 (R18): 0x00000000 (Expected: 0x00000003)
+# -----------------------------------------------------
+# 
+# ------ Memory and Branch Instruction Test End ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v(51)
+#    Time: 1020 ns  Iteration: 0  Instance: /mips_tb
+# 1
+# Break in Module mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v line 51
+# Simulation Breakpoint: 1
+# Break in Module mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v line 51
+# MACRO ./temp_run_msim_rtl_verilog.do PAUSED at line 26
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_datapath/pc_reg/current_pc
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_datapath/ir
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_datapath/instruction
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_controller/current_state
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_controller/next_state
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_controller/reg_write
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_datapath/gpr_write_reg
+add wave -position insertpoint  \
+sim:/mips_tb/uut/u_datapath/gpr_write_data
+restart -f
+run -all
+# 
+# ------ Memory and Branch Instruction Test Start ------
+# 
+# -----------------------------------------------------
+# ------ Final Register State Check at 1020000 ns ------
+# -----------------------------------------------------
+# Comparing RUNTIME value with EXPECTED value...
+# $t0 (R8) : 0x00000000 (Expected: 0x0000abcd)
+# $t1 (R9) : 0x00000000 (Expected: 0x0000bbfd)
+# $t2 (R10): 0x00000000 (Expected: 0x0000abcd)
+# $s1 (R17): 0x00000000 (Expected: 0x00000001)
+# $s2 (R18): 0x00000000 (Expected: 0x00000003)
+# -----------------------------------------------------
+# 
+# ------ Memory and Branch Instruction Test End ------
+# ** Note: $finish    : C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v(51)
+#    Time: 1020 ns  Iteration: 0  Instance: /mips_tb
+# 1
+# Break in Module mips_tb at C:/Users/LC/Desktop/LCState_pjks/Task2/mips_tb.v line 51

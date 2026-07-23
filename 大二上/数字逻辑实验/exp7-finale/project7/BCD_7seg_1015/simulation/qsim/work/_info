@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\BCD_7seg\simulation\qsim
+vBCD_7seg
+Z1 !s100 z4_ka9oBE925mUaPnVT7U1
+Z2 IE>lC^e:=RUh6k7B0FlATI1
+Z3 VOGQU:HX4nELR1Un99WLad2
+Z4 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\exp3\74LS163\BCD_7seg\simulation\qsim
+Z5 w1731308471
+Z6 8BCD_7seg.vo
+Z7 FBCD_7seg.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|BCD_7seg.vo|
+Z10 o-work work -O0
+Z11 n@b@c@d_7seg
+!i10b 1
+!s85 0
+Z12 !s108 1731308471.839000
+Z13 !s107 BCD_7seg.vo|
+!s101 -O0
+vBCD_7seg_vlg_check_tst
+!i10b 1
+!s100 ACk5P<@[Ekb0zM3CQm3000
+IfNO1>BRDW`mn9aZmF9R^b0
+Z14 Vf;PngU`1?T?XDV@@M:a>n3
+R4
+Z15 w1731308470
+Z16 8BCD_7seg.vt
+Z17 FBCD_7seg.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z18 !s108 1731308471.935000
+Z19 !s107 BCD_7seg.vt|
+Z20 !s90 -work|work|BCD_7seg.vt|
+!s101 -O0
+R10
+Z21 n@b@c@d_7seg_vlg_check_tst
+vBCD_7seg_vlg_sample_tst
+!i10b 1
+Z22 !s100 YMNioRN?dZ3<=S6@_Oc6=0
+Z23 Ihijk:284:KPzQL7D5ee3`2
+Z24 V;3gXTS1^aiCAccIR@a4D>2
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z25 n@b@c@d_7seg_vlg_sample_tst
+vBCD_7seg_vlg_vec_tst
+!i10b 1
+!s100 3hE2ToAD@@Q:AHol2M87d3
+IG83O9b9e[5`1I;`Tk5cmk0
+Z26 VVoH0SjlKfWVR9c_SHl_A@2
+R4
+R15
+R16
+R17
+Z27 L0 296
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z28 n@b@c@d_7seg_vlg_vec_tst

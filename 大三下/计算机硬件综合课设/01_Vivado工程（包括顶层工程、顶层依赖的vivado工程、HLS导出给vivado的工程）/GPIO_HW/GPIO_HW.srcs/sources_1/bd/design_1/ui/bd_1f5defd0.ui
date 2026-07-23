@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.85252",
+   "Default View_TopLeft":"-82,-161",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1000 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1000 -y 80 -defaultsOSRD
+preplace port port-id_led_r_0 -pg 1 -lvl 4 -x 1000 -y 200 -defaultsOSRD
+preplace port port-id_led_g_0 -pg 1 -lvl 4 -x 1000 -y 230 -defaultsOSRD
+preplace inst myip1_0 -pg 1 -lvl 3 -x 870 -y 220 -defaultsOSRD -orient R90
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 100 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 600 -y 200 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 230 -y 310 -defaultsOSRD
+preplace netloc myip1_0_led_g 1 3 1 960J 120n
+preplace netloc myip1_0_led_r 1 3 1 970J 110n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 200 450 320 750
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 40 210 420
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 330 740J
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 60 NJ 60 970J
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 460 100n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 760 200n
+levelinfo -pg 1 0 230 600 870 1000
+pagesize -pg 1 -db -bbox -sgen 0 0 1120 410
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_ps7_cnt":"5"
+}

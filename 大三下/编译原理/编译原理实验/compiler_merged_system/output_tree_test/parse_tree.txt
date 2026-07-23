@@ -1,0 +1,19 @@
+P
+    ├── S: while C do S
+    │   ├── C: E > E
+    │   │   ├── E: (a3 + 15)
+    │   │   └── E: 10
+    │   └── S: if C then S
+    │       ├── C: E = E
+    │       │   ├── E: x2
+    │       │   └── E: 7
+    │       └── S: while C do S
+    │           ├── C: E < E
+    │           │   ├── E: y
+    │           │   └── E: z
+    │           └── S: id = E
+    │               ├── id: y
+    │               └── E: x * y / z
+    └── S: id = E
+        ├── id: c
+        └── E: b * c + d

@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.47399",
+   "Default View_TopLeft":"-94,-93",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1010 -y 270 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1010 -y 300 -defaultsOSRD
+preplace port port-id_trig_0 -pg 1 -lvl 4 -x 1010 -y 380 -defaultsOSRD
+preplace port port-id_echo_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace inst myUltrasonic_0 -pg 1 -lvl 3 -x 870 -y 390 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 320 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 590 -y 150 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y 120 -defaultsOSRD
+preplace netloc myUltrasonic_0_trig 1 3 1 NJ 380
+preplace netloc echo_0_1 1 0 3 NJ 220 410J 30 740J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 20 430 400 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 420 410
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 450 420 NJ
+preplace netloc myUltrasonic_0_dist_valid 1 0 4 30 480 NJ 480 NJ 480 990
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 280 NJ 280 990J
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 300 NJ 300 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440 90n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 730 150n
+levelinfo -pg 1 0 220 590 870 1010
+pagesize -pg 1 -db -bbox -sgen -100 0 1120 490
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}

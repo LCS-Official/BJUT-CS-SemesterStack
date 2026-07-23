@@ -1,0 +1,1 @@
+SemanticError: division by zero in expression 'c / 0'

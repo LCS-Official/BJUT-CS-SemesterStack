@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\Desktop\LC-241220-finale\exp7-1220-1012-finale\distance_1015\simulation\qsim
+vdistance_1015
+Z1 !s100 3=OA_mb>MQ5Q<H`keQ^dV3
+Z2 IY?z43d>MFLg4NIl]`>BN;1
+Z3 V;Xb:8dHAeRf@A<oaPKoB[2
+Z4 dC:\Users\lcs_o\Desktop\LC-241220-finale\exp7-1220-1012-finale\distance_1015\simulation\qsim
+Z5 w1734877269
+Z6 8distance_1015.vo
+Z7 Fdistance_1015.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|distance_1015.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1734877270.520000
+Z12 !s107 distance_1015.vo|
+!s101 -O0
+vdistance_1015_vlg_check_tst
+!i10b 1
+Z13 !s100 NI52TF8Hc6HB=;2A:QCoS3
+Z14 IU;F83XPE?b6IR?eB]f6cG1
+Z15 V90eMLG9U`5=Q9WEoNK5dl0
+R4
+R5
+Z16 8distance_1015.vt
+Z17 Fdistance_1015.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z18 !s108 1734877270.615000
+Z19 !s107 distance_1015.vt|
+Z20 !s90 -work|work|distance_1015.vt|
+!s101 -O0
+R10
+vdistance_1015_vlg_sample_tst
+!i10b 1
+Z21 !s100 9]0V_TVUl5>D[bfE>H^P80
+Z22 IJlFi=BoY`7ZnmU0[bDYA31
+Z23 VAB3idh74O]K1]0FU[iLj>0
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vdistance_1015_vlg_vec_tst
+!i10b 1
+!s100 >K6FEo=GHCVzg4QF68N601
+IE7FZ8GIlBODgLhG@UBWW21
+Z24 V0;8A<91Pe`M?PoK?g4Bj?2
+R4
+R5
+R16
+R17
+Z25 L0 435
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10

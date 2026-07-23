@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'classify_Pipeline_READ_WINDOW'
+================================================================
+* Date:           Wed Jun 10 19:31:42 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        classify_hls_120d
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  6.780 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      122|      122|  2.440 us|  2.440 us|  122|  122|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- READ_WINDOW  |      120|      120|         1|          1|          1|   120|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     30|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       9|     66|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln79_fu_218_p2                |         +|   0|  0|  14|           7|           1|
+    |icmp_ln79_fu_212_p2               |      icmp|   0|  0|  14|           7|           5|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  30|          15|           7|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_done_int            |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1   |   9|          2|    7|         14|
+    |i_fu_84                |   9|          2|    7|         14|
+    |in_stream_TDATA_blk_n  |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  36|          8|   16|         32|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_84      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+-------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |         Source Object         |    C Type    |
++------------------+-----+-----+------------+-------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  classify_Pipeline_READ_WINDOW|  return value|
+|in_stream_TVALID  |   in|    1|        axis|             in_stream_V_data_V|       pointer|
+|in_stream_TDATA   |   in|   32|        axis|             in_stream_V_data_V|       pointer|
+|x_7_address0      |  out|    4|   ap_memory|                            x_7|         array|
+|x_7_ce0           |  out|    1|   ap_memory|                            x_7|         array|
+|x_7_we0           |  out|    1|   ap_memory|                            x_7|         array|
+|x_7_d0            |  out|   32|   ap_memory|                            x_7|         array|
+|x_6_address0      |  out|    4|   ap_memory|                            x_6|         array|
+|x_6_ce0           |  out|    1|   ap_memory|                            x_6|         array|
+|x_6_we0           |  out|    1|   ap_memory|                            x_6|         array|
+|x_6_d0            |  out|   32|   ap_memory|                            x_6|         array|
+|x_5_address0      |  out|    4|   ap_memory|                            x_5|         array|
+|x_5_ce0           |  out|    1|   ap_memory|                            x_5|         array|
+|x_5_we0           |  out|    1|   ap_memory|                            x_5|         array|
+|x_5_d0            |  out|   32|   ap_memory|                            x_5|         array|
+|x_4_address0      |  out|    4|   ap_memory|                            x_4|         array|
+|x_4_ce0           |  out|    1|   ap_memory|                            x_4|         array|
+|x_4_we0           |  out|    1|   ap_memory|                            x_4|         array|
+|x_4_d0            |  out|   32|   ap_memory|                            x_4|         array|
+|x_3_address0      |  out|    4|   ap_memory|                            x_3|         array|
+|x_3_ce0           |  out|    1|   ap_memory|                            x_3|         array|
+|x_3_we0           |  out|    1|   ap_memory|                            x_3|         array|
+|x_3_d0            |  out|   32|   ap_memory|                            x_3|         array|
+|x_2_address0      |  out|    4|   ap_memory|                            x_2|         array|
+|x_2_ce0           |  out|    1|   ap_memory|                            x_2|         array|
+|x_2_we0           |  out|    1|   ap_memory|                            x_2|         array|
+|x_2_d0            |  out|   32|   ap_memory|                            x_2|         array|
+|x_1_address0      |  out|    4|   ap_memory|                            x_1|         array|
+|x_1_ce0           |  out|    1|   ap_memory|                            x_1|         array|
+|x_1_we0           |  out|    1|   ap_memory|                            x_1|         array|
+|x_1_d0            |  out|   32|   ap_memory|                            x_1|         array|
+|x_address0        |  out|    4|   ap_memory|                              x|         array|
+|x_ce0             |  out|    1|   ap_memory|                              x|         array|
+|x_we0             |  out|    1|   ap_memory|                              x|         array|
+|x_d0              |  out|   32|   ap_memory|                              x|         array|
+|in_stream_TREADY  |  out|    1|        axis|             in_stream_V_last_V|       pointer|
+|in_stream_TLAST   |   in|    1|        axis|             in_stream_V_last_V|       pointer|
+|in_stream_TKEEP   |   in|    4|        axis|             in_stream_V_keep_V|       pointer|
+|in_stream_TSTRB   |   in|    4|        axis|             in_stream_V_strb_V|       pointer|
++------------------+-----+-----+------------+-------------------------------+--------------+
+

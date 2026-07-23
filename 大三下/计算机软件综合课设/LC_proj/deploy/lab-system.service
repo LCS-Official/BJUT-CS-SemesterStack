@@ -1,0 +1,21 @@
+[Unit]
+Description=Laboratory reservation system
+After=network.target
+
+[Service]
+User=labapp
+Group=labapp
+WorkingDirectory=/srv/lab-system
+Environment=DATABASE_PATH=/var/lib/lab-system/reservations.db
+ExecStart=/srv/lab-system/.venv/bin/gunicorn --workers 1 --threads 4 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - b_reservation:create_app()
+Restart=on-failure
+RestartSec=3
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+ReadWritePaths=/var/lib/lab-system
+
+[Install]
+WantedBy=multi-user.target

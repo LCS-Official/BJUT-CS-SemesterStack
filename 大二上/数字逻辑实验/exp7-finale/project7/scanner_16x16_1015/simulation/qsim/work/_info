@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lcs_o\OneDrive\Documents\LC-DigitLogics\experiment\exp7-1210-1643\scanner_16x16_1015\simulation\qsim
+vscanner_16x16_1015
+Z1 !s100 P9hQZAIL`VB<Fm8l<HBMK3
+Z2 I`VbYccOH6Ho?KlGoOAC6F2
+Z3 V`I[Z9WX;MN9Q8z]SK2G^11
+Z4 dC:\Users\lcs_o\Desktop\LC-241220-finale\exp7-1220-1012-finale\scanner_16x16_1015\simulation\qsim
+Z5 w1735026763
+Z6 8scanner_16x16_1015.vo
+Z7 Fscanner_16x16_1015.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|scanner_16x16_1015.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1735026764.150000
+Z12 !s107 scanner_16x16_1015.vo|
+!s101 -O0
+vscanner_16x16_1015_vlg_check_tst
+!i10b 1
+Z13 !s100 L>ZbY[z?JYILPAY`iC75k0
+Z14 INo18k4WkS]Nam<@8WDFA_2
+Z15 Vo5G39Cb@4nVicc0AW:75F0
+R4
+Z16 w1735026762
+Z17 8scanner_16x16_1015.vt
+Z18 Fscanner_16x16_1015.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z19 !s108 1735026764.260000
+Z20 !s107 scanner_16x16_1015.vt|
+Z21 !s90 -work|work|scanner_16x16_1015.vt|
+!s101 -O0
+R10
+vscanner_16x16_1015_vlg_sample_tst
+!i10b 1
+Z22 !s100 hdm>jBA06[j2VFmCS4XH71
+Z23 IUn8FAY]LE_nDUQ]CdDmMI3
+Z24 Vc1hiUHoA3l_:6SmVel:m70
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vscanner_16x16_1015_vlg_vec_tst
+!i10b 1
+!s100 mWIh3fQmRaa0GG2]dg`6L3
+ICRZE[HLUoj5K^fmd4=0Fd0
+Z25 V1b_[OUAnaiU33eh`fbSBE0
+R4
+R16
+R17
+R18
+Z26 L0 565
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'eye_feature_Pipeline_INIT_HIST'
+================================================================
+* Date:           Wed Jun 10 14:09:01 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        eyefeature_robust8
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  5.780 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  1.320 us|  1.320 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- INIT_HIST  |       64|       64|         1|          1|          1|    64|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     29|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     27|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       9|     56|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln513_fu_184_p2   |         +|   0|  0|  14|           7|           1|
+    |icmp_ln513_fu_178_p2  |      icmp|   0|  0|  15|           7|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  29|          14|           9|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_3  |   9|          2|    7|         14|
+    |i_fu_54               |   9|          2|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   15|         30|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_54      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+--------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++------------------+-----+-----+------------+--------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  eye_feature_Pipeline_INIT_HIST|  return value|
+|hist1_3_address0  |  out|    4|   ap_memory|                         hist1_3|         array|
+|hist1_3_ce0       |  out|    1|   ap_memory|                         hist1_3|         array|
+|hist1_3_we0       |  out|    1|   ap_memory|                         hist1_3|         array|
+|hist1_3_d0        |  out|   16|   ap_memory|                         hist1_3|         array|
+|hist1_2_address0  |  out|    4|   ap_memory|                         hist1_2|         array|
+|hist1_2_ce0       |  out|    1|   ap_memory|                         hist1_2|         array|
+|hist1_2_we0       |  out|    1|   ap_memory|                         hist1_2|         array|
+|hist1_2_d0        |  out|   16|   ap_memory|                         hist1_2|         array|
+|hist1_1_address0  |  out|    4|   ap_memory|                         hist1_1|         array|
+|hist1_1_ce0       |  out|    1|   ap_memory|                         hist1_1|         array|
+|hist1_1_we0       |  out|    1|   ap_memory|                         hist1_1|         array|
+|hist1_1_d0        |  out|   16|   ap_memory|                         hist1_1|         array|
+|hist1_address0    |  out|    4|   ap_memory|                           hist1|         array|
+|hist1_ce0         |  out|    1|   ap_memory|                           hist1|         array|
+|hist1_we0         |  out|    1|   ap_memory|                           hist1|         array|
+|hist1_d0          |  out|   16|   ap_memory|                           hist1|         array|
+|hist0_3_address0  |  out|    4|   ap_memory|                         hist0_3|         array|
+|hist0_3_ce0       |  out|    1|   ap_memory|                         hist0_3|         array|
+|hist0_3_we0       |  out|    1|   ap_memory|                         hist0_3|         array|
+|hist0_3_d0        |  out|   16|   ap_memory|                         hist0_3|         array|
+|hist0_2_address0  |  out|    4|   ap_memory|                         hist0_2|         array|
+|hist0_2_ce0       |  out|    1|   ap_memory|                         hist0_2|         array|
+|hist0_2_we0       |  out|    1|   ap_memory|                         hist0_2|         array|
+|hist0_2_d0        |  out|   16|   ap_memory|                         hist0_2|         array|
+|hist0_1_address0  |  out|    4|   ap_memory|                         hist0_1|         array|
+|hist0_1_ce0       |  out|    1|   ap_memory|                         hist0_1|         array|
+|hist0_1_we0       |  out|    1|   ap_memory|                         hist0_1|         array|
+|hist0_1_d0        |  out|   16|   ap_memory|                         hist0_1|         array|
+|hist0_address0    |  out|    4|   ap_memory|                           hist0|         array|
+|hist0_ce0         |  out|    1|   ap_memory|                           hist0|         array|
+|hist0_we0         |  out|    1|   ap_memory|                           hist0|         array|
+|hist0_d0          |  out|   16|   ap_memory|                           hist0|         array|
++------------------+-----+-----+------------+--------------------------------+--------------+
+

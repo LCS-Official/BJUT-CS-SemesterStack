@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/LCsexp2/exp2-task1/D_FF/simulation/modelsim/D_FF.vt
+source_file = 1, D:/LCsexp2/exp2-task1/D_FF/D_FF.v
+source_file = 1, D:/LCsexp2/exp2-task1/D_FF/D_FF_tb.v
+source_file = 1, D:/LCsexp2/exp2-task1/D_FF/db/D_FF.cbx.xml
+design_name = D_FF
+instance = comp, \Q~output , Q~output, D_FF, 1
+instance = comp, \clk~input , clk~input, D_FF, 1
+instance = comp, \D~input , D~input, D_FF, 1
+instance = comp, \Q~reg0feeder , Q~reg0feeder, D_FF, 1
+instance = comp, \Q~reg0 , Q~reg0, D_FF, 1

@@ -1,0 +1,90 @@
+{
+  "note": "Binary dataset: Eyeblink8 open/blink => non_closed; selfrec manual closed intervals => closed. Selfrec outside closed intervals is not used.",
+  "eyeblink8_policy": "open_blink_as_nonclosed",
+  "feature_names": [
+    "col_run_topk_fixed",
+    "col_run_topk_adapt"
+  ],
+  "feature_cols": [
+    "col_run_topk_adapt_0",
+    "col_run_topk_adapt_1",
+    "col_run_topk_adapt_2",
+    "col_run_topk_adapt_3",
+    "col_run_topk_adapt_4",
+    "col_run_topk_adapt_5",
+    "col_run_topk_adapt_6",
+    "col_run_topk_adapt_7",
+    "col_run_topk_adapt_8",
+    "col_run_topk_adapt_9",
+    "col_run_topk_adapt_10",
+    "col_run_topk_adapt_11",
+    "col_run_topk_adapt_12",
+    "col_run_topk_adapt_13",
+    "col_run_topk_adapt_14",
+    "col_run_topk_fixed_0",
+    "col_run_topk_fixed_1",
+    "col_run_topk_fixed_2",
+    "col_run_topk_fixed_3",
+    "col_run_topk_fixed_4",
+    "col_run_topk_fixed_5",
+    "col_run_topk_fixed_6",
+    "col_run_topk_fixed_7",
+    "col_run_topk_fixed_8",
+    "col_run_topk_fixed_9",
+    "col_run_topk_fixed_10",
+    "col_run_topk_fixed_11",
+    "col_run_topk_fixed_12",
+    "col_run_topk_fixed_13",
+    "col_run_topk_fixed_14"
+  ],
+  "input_dim": 30,
+  "window_size": 15,
+  "central_size": 7,
+  "train_samples": 24168,
+  "val_samples": 4012,
+  "test_samples": 2376,
+  "train_label_counts": {
+    "non_closed": 21876,
+    "closed": 2292
+  },
+  "val_label_counts": {
+    "non_closed": 3642,
+    "closed": 370
+  },
+  "test_label_counts": {
+    "non_closed": 2009,
+    "closed": 367
+  },
+  "train_orig_label_counts": {
+    "open": 17486,
+    "blink": 4390,
+    "closed": 2292
+  },
+  "val_orig_label_counts": {
+    "open": 2656,
+    "blink": 986,
+    "closed": 370
+  },
+  "test_orig_label_counts": {
+    "open": 1408,
+    "blink": 601,
+    "closed": 367
+  },
+  "selfrec_train_videos_used": [
+    "11",
+    "22",
+    "33",
+    "WIN_20260414_20_31_10_Pro",
+    "WIN_20260414_20_41_42_Pro",
+    "test1",
+    "test2"
+  ],
+  "selfrec_val_videos_used": [
+    "WIN_20260414_20_42_23_Pro",
+    "test3"
+  ],
+  "selfrec_test_videos_used": [
+    "WIN_20260414_21_29_13_Pro",
+    "test4"
+  ]
+}

@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_robust_stats_Pipeline_MAX_LOW'
+================================================================
+* Date:           Wed Jun 10 14:09:02 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        eyefeature_robust8
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  9.022 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      130|      130|  2.600 us|  2.600 us|  130|  130|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- MAX_LOW  |      128|      128|         2|          1|          1|   128|       yes|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    148|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|     20|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     45|    -|
+|Register         |        -|    -|      46|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      46|    213|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_16_1_1_U116  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln368_fu_150_p2     |         +|   0|  0|  15|           8|           1|
+    |icmp_ln368_fu_144_p2    |      icmp|   0|  0|  14|           8|           9|
+    |icmp_ln370_1_fu_227_p2  |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln370_fu_178_p2    |      icmp|   0|  0|  15|           8|           8|
+    |max_low_1_fu_245_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln370_fu_233_p3  |    select|   0|  0|  31|           1|          31|
+    |ap_enable_pp0           |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 148|          59|         115|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_x       |   9|          2|    8|         16|
+    |max_low_fu_58            |   9|          2|   32|         64|
+    |x_2_fu_62                |   9|          2|    8|         16|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   50|        100|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |icmp_ln370_reg_284       |   1|   0|    1|          0|
+    |max_low_fu_58            |  32|   0|   32|          0|
+    |trunc_ln368_1_reg_279    |   2|   0|    2|          0|
+    |x_2_fu_62                |   8|   0|    8|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  46|   0|   46|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+---------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++--------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  compute_robust_stats_Pipeline_MAX_LOW|  return value|
+|cw                  |   in|    8|     ap_none|                                     cw|        scalar|
+|run_low_address0    |  out|    5|   ap_memory|                                run_low|         array|
+|run_low_ce0         |  out|    1|   ap_memory|                                run_low|         array|
+|run_low_q0          |   in|   16|   ap_memory|                                run_low|         array|
+|run_low_1_address0  |  out|    5|   ap_memory|                              run_low_1|         array|
+|run_low_1_ce0       |  out|    1|   ap_memory|                              run_low_1|         array|
+|run_low_1_q0        |   in|   16|   ap_memory|                              run_low_1|         array|
+|run_low_2_address0  |  out|    5|   ap_memory|                              run_low_2|         array|
+|run_low_2_ce0       |  out|    1|   ap_memory|                              run_low_2|         array|
+|run_low_2_q0        |   in|   16|   ap_memory|                              run_low_2|         array|
+|run_low_3_address0  |  out|    5|   ap_memory|                              run_low_3|         array|
+|run_low_3_ce0       |  out|    1|   ap_memory|                              run_low_3|         array|
+|run_low_3_q0        |   in|   16|   ap_memory|                              run_low_3|         array|
+|max_low_out         |  out|   32|      ap_vld|                            max_low_out|       pointer|
+|max_low_out_ap_vld  |  out|    1|      ap_vld|                            max_low_out|       pointer|
++--------------------+-----+-----+------------+---------------------------------------+--------------+
+

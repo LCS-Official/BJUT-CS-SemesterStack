@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SLSY Project\S3\counter_74163_new\simulation\qsim
+vcounter_74163_new
+Z1 !s100 4bh98[`id5JTi5]k1:cP;1
+Z2 IZB3>[93lfd`>bdbZn3dF81
+Z3 VNb06UkeVA0iNccCnFej9d0
+Z4 dD:\SLSY Project\S3\counter_74163_new\simulation\qsim
+Z5 w1730959844
+Z6 8counter_74163_new.vo
+Z7 Fcounter_74163_new.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|counter_74163_new.vo|
+Z10 o-work work -O0
+Z11 !s108 1730959845.401000
+Z12 !s107 counter_74163_new.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter_74163_new_vlg_check_tst
+Z13 !s100 AX;m0]0AcKQ3b_I8cmFzz0
+Z14 Ii8SOCH9nOm^gl;GCXoQMf3
+Z15 V23QKM2[WBIz[n^3VA=6]O3
+R4
+Z16 w1730959843
+Z17 8counter_74163_new.vt
+Z18 Fcounter_74163_new.vt
+L0 69
+R8
+r1
+31
+Z19 !s108 1730959845.566000
+Z20 !s107 counter_74163_new.vt|
+Z21 !s90 -work|work|counter_74163_new.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter_74163_new_vlg_sample_tst
+Z22 !s100 J6U<4lJY2R<Z8I1QMa3T63
+Z23 Ii3]NVTC9c]jITM[I_a1Ph2
+Z24 VhianPGbE6PHh^OcWiJ;a<1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter_74163_new_vlg_vec_tst
+Z25 IWKaP:TG7>e=jQEKeVWA5g2
+Z26 V8hj?hlYgIn6NeO_FV6JJT3
+R4
+R16
+R17
+R18
+Z27 L0 334
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z28 !s100 EH>_<YBR19=RS?g]U8ZC<1
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter_74LS163_FINALE
+Z29 !s100 X`32iM89>_cG]Xbb0iOi@3
+Z30 IT>lUG4B[AAI;=nTWbigC=2
+Z31 V6Zbm>3G@SP?2CTdG0b6iL2
+Z32 dD:\LC\exp3\74LS163\counter_74LS163_FINALE\simulation\qsim
+Z33 w1731389912
+Z34 8counter_74LS163_FINALE.vo
+Z35 Fcounter_74LS163_FINALE.vo
+L0 31
+R8
+r1
+31
+Z36 !s90 -work|work|counter_74LS163_FINALE.vo|
+R10
+Z37 ncounter_74@l@s163_@f@i@n@a@l@e
+!i10b 1
+!s85 0
+Z38 !s108 1731389913.372000
+Z39 !s107 counter_74LS163_FINALE.vo|
+!s101 -O0
+vcounter_74LS163_FINALE_vlg_check_tst
+!i10b 1
+Z40 !s100 M[k0liTD[K4R=N^ZG=KK41
+Z41 II5ZJOF2T`X68NCfDTghN]3
+Z42 VoSYgJ]3NhC7h;nfa3iQIR1
+R32
+Z43 w1731389911
+Z44 8counter_74LS163_FINALE.vt
+Z45 Fcounter_74LS163_FINALE.vt
+L0 69
+R8
+r1
+!s85 0
+31
+Z46 !s108 1731389913.466000
+Z47 !s107 counter_74LS163_FINALE.vt|
+Z48 !s90 -work|work|counter_74LS163_FINALE.vt|
+!s101 -O0
+R10
+Z49 ncounter_74@l@s163_@f@i@n@a@l@e_vlg_check_tst
+vcounter_74LS163_FINALE_vlg_sample_tst
+!i10b 1
+Z50 !s100 S0aEafkaP2fCz]jJ?0j_e3
+Z51 IJl=3n^C]VQXKk<ICHO<H_2
+Z52 V6=EER^mgV:VJmdl7Az8cP3
+R32
+R43
+R44
+R45
+L0 29
+R8
+r1
+!s85 0
+31
+R46
+R47
+R48
+!s101 -O0
+R10
+Z53 ncounter_74@l@s163_@f@i@n@a@l@e_vlg_sample_tst
+vcounter_74LS163_FINALE_vlg_vec_tst
+!i10b 1
+Z54 !s100 cPSAkB8Xk4[eVR14:iL353
+Z55 I1BBkC>k]6NTQOnJ3<J1L22
+Z56 Ve<7HTbH`nz_A=M[m`2C8g1
+R32
+R43
+R44
+R45
+R27
+R8
+r1
+!s85 0
+31
+R46
+R47
+R48
+!s101 -O0
+R10
+Z57 ncounter_74@l@s163_@f@i@n@a@l@e_vlg_vec_tst

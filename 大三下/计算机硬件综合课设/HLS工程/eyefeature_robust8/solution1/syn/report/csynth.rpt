@@ -1,0 +1,529 @@
+
+
+================================================================
+== Synthesis Summary Report of 'eye_feature'
+================================================================
++ General Information: 
+    * Date:           Wed Jun 10 14:09:03 2026
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        eyefeature_robust8
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----------+-------------+-------------+-----+
+    |                     Modules                    | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |        |          |             |             |     |
+    |                     & Loops                    | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |    DSP   |      FF     |     LUT     | URAM|
+    +------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----------+-------------+-------------+-----+
+    |+ eye_feature                                   |     -|   0.14|   834004|  1.668e+07|         -|   834005|     -|        no|  8 (2%)|  57 (25%)|  11386 (10%)|  25057 (47%)|    -|
+    | + eye_feature_Pipeline_INIT_HIST               |     -|   8.82|       66|  1.320e+03|         -|       66|     -|        no|       -|         -|      9 (~0%)|     56 (~0%)|    -|
+    |  o INIT_HIST                                   |     -|  14.60|       64|  1.280e+03|         1|        1|    64|       yes|       -|         -|            -|            -|    -|
+    | + compute_robust_stats                         |     -|   1.25|     9313|  1.863e+05|         -|     9313|     -|        no|       -|    5 (2%)|    1816 (1%)|    4536 (8%)|    -|
+    |  + percentile_threshold                        |     -|   2.08|       72|  1.440e+03|         -|       72|     -|        no|       -|    3 (1%)|    155 (~0%)|    487 (~0%)|    -|
+    |   + percentile_threshold_Pipeline_FIND_BIN     |     -|   2.08|       67|  1.340e+03|         -|       67|     -|        no|       -|         -|     97 (~0%)|    294 (~0%)|    -|
+    |    o FIND_BIN                                  |     -|  14.60|       65|  1.300e+03|         2|        1|    64|       yes|       -|         -|            -|            -|    -|
+    |  + compute_robust_stats_Pipeline_INIT_RUNS     |     -|   8.78|      130|  2.600e+03|         -|      130|     -|        no|       -|         -|     10 (~0%)|     56 (~0%)|    -|
+    |   o INIT_RUNS                                  |     -|  14.60|      128|  2.560e+03|         1|        1|   128|       yes|       -|         -|            -|            -|    -|
+    |  + compute_robust_stats_Pipeline_MAX_LOW       |     -|   5.58|      130|  2.600e+03|         -|      130|     -|        no|       -|         -|     46 (~0%)|    213 (~0%)|    -|
+    |   o MAX_LOW                                    |     -|  14.60|      128|  2.560e+03|         2|        1|   128|       yes|       -|         -|            -|            -|    -|
+    |  + topk_sum_hist                               |     -|   1.25|      399|  7.980e+03|         -|      399|     -|        no|       -|   2 (~0%)|    256 (~0%)|    1034 (1%)|    -|
+    |   + topk_sum_hist_Pipeline_INIT_HIST           |     -|   8.82|       67|  1.340e+03|         -|       67|     -|        no|       -|         -|      9 (~0%)|     55 (~0%)|    -|
+    |    o INIT_HIST                                 |     -|  14.60|       65|  1.300e+03|         1|        1|    65|       yes|       -|         -|            -|            -|    -|
+    |   + topk_sum_hist_Pipeline_BUILD_HIST          |     -|   5.06|      258|  5.160e+03|         -|      258|     -|        no|       -|         -|     46 (~0%)|    263 (~0%)|    -|
+    |    o BUILD_HIST                                |    II|  14.60|      256|  5.120e+03|         3|        2|   128|       yes|       -|         -|            -|            -|    -|
+    |   + topk_sum_hist_Pipeline_ACCUM_TOPK          |     -|   1.25|       68|  1.360e+03|         -|       68|     -|        no|       -|   2 (~0%)|    127 (~0%)|    382 (~0%)|    -|
+    |    o ACCUM_TOPK                                |     -|  14.60|       66|  1.320e+03|         3|        1|    65|       yes|       -|         -|            -|            -|    -|
+    |  o ROBUST_ROWS                                 |     -|  14.60|     8704|  1.741e+05|       136|        -|    64|        no|       -|         -|            -|            -|    -|
+    |   + compute_robust_stats_Pipeline_ROBUST_COLS  |     -|   3.97|      132|  2.640e+03|         -|      132|     -|        no|       -|         -|    173 (~0%)|    423 (~0%)|    -|
+    |    o ROBUST_COLS                               |     -|  14.60|      129|  2.580e+03|         3|        1|   128|       yes|       -|         -|            -|            -|    -|
+    | + compute_robust_stats                         |     -|   1.25|     9313|  1.863e+05|         -|     9313|     -|        no|       -|    5 (2%)|    1816 (1%)|    4536 (8%)|    -|
+    |  + percentile_threshold                        |     -|   2.08|       72|  1.440e+03|         -|       72|     -|        no|       -|    3 (1%)|    155 (~0%)|    487 (~0%)|    -|
+    |   + percentile_threshold_Pipeline_FIND_BIN     |     -|   2.08|       67|  1.340e+03|         -|       67|     -|        no|       -|         -|     97 (~0%)|    294 (~0%)|    -|
+    |    o FIND_BIN                                  |     -|  14.60|       65|  1.300e+03|         2|        1|    64|       yes|       -|         -|            -|            -|    -|
+    |  + compute_robust_stats_Pipeline_INIT_RUNS     |     -|   8.78|      130|  2.600e+03|         -|      130|     -|        no|       -|         -|     10 (~0%)|     56 (~0%)|    -|
+    |   o INIT_RUNS                                  |     -|  14.60|      128|  2.560e+03|         1|        1|   128|       yes|       -|         -|            -|            -|    -|
+    |  + compute_robust_stats_Pipeline_MAX_LOW       |     -|   5.58|      130|  2.600e+03|         -|      130|     -|        no|       -|         -|     46 (~0%)|    213 (~0%)|    -|
+    |   o MAX_LOW                                    |     -|  14.60|      128|  2.560e+03|         2|        1|   128|       yes|       -|         -|            -|            -|    -|
+    |  + topk_sum_hist                               |     -|   1.25|      399|  7.980e+03|         -|      399|     -|        no|       -|   2 (~0%)|    256 (~0%)|    1034 (1%)|    -|
+    |   + topk_sum_hist_Pipeline_INIT_HIST           |     -|   8.82|       67|  1.340e+03|         -|       67|     -|        no|       -|         -|      9 (~0%)|     55 (~0%)|    -|
+    |    o INIT_HIST                                 |     -|  14.60|       65|  1.300e+03|         1|        1|    65|       yes|       -|         -|            -|            -|    -|
+    |   + topk_sum_hist_Pipeline_BUILD_HIST          |     -|   5.06|      258|  5.160e+03|         -|      258|     -|        no|       -|         -|     46 (~0%)|    263 (~0%)|    -|
+    |    o BUILD_HIST                                |    II|  14.60|      256|  5.120e+03|         3|        2|   128|       yes|       -|         -|            -|            -|    -|
+    |   + topk_sum_hist_Pipeline_ACCUM_TOPK          |     -|   1.25|       68|  1.360e+03|         -|       68|     -|        no|       -|   2 (~0%)|    127 (~0%)|    382 (~0%)|    -|
+    |    o ACCUM_TOPK                                |     -|  14.60|       66|  1.320e+03|         3|        1|    65|       yes|       -|         -|            -|            -|    -|
+    |  o ROBUST_ROWS                                 |     -|  14.60|     8704|  1.741e+05|       136|        -|    64|        no|       -|         -|            -|            -|    -|
+    |   + compute_robust_stats_Pipeline_ROBUST_COLS  |     -|   3.97|      132|  2.640e+03|         -|      132|     -|        no|       -|         -|    173 (~0%)|    423 (~0%)|    -|
+    |    o ROBUST_COLS                               |     -|  14.60|      129|  2.580e+03|         3|        1|   128|       yes|       -|         -|            -|            -|    -|
+    | o FRAME_Y                                      |     -|  14.60|   824320|  1.649e+07|      1288|        -|   640|        no|       -|         -|            -|            -|    -|
+    |  + eye_feature_Pipeline_FRAME_X                |     -|   4.67|     1286|  2.572e+04|         -|     1286|     -|        no|       -|    5 (2%)|    526 (~0%)|    1134 (2%)|    -|
+    |   o FRAME_X                                    |    II|  14.60|     1284|  2.568e+04|         7|        2|   640|       yes|       -|         -|            -|            -|    -|
+    +------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+--------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 8             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | frame_width  | 0x10   | 32    | W      | Data signal of frame_width       |                                                                      |
+| s_axi_CTRL | frame_height | 0x18   | 32    | W      | Data signal of frame_height      |                                                                      |
+| s_axi_CTRL | left_x       | 0x20   | 32    | W      | Data signal of left_x            |                                                                      |
+| s_axi_CTRL | left_y       | 0x28   | 32    | W      | Data signal of left_y            |                                                                      |
+| s_axi_CTRL | left_w       | 0x30   | 32    | W      | Data signal of left_w            |                                                                      |
+| s_axi_CTRL | left_h       | 0x38   | 32    | W      | Data signal of left_h            |                                                                      |
+| s_axi_CTRL | right_x      | 0x40   | 32    | W      | Data signal of right_x           |                                                                      |
+| s_axi_CTRL | right_y      | 0x48   | 32    | W      | Data signal of right_y           |                                                                      |
+| s_axi_CTRL | right_w      | 0x50   | 32    | W      | Data signal of right_w           |                                                                      |
+| s_axi_CTRL | right_h      | 0x58   | 32    | W      | Data signal of right_h           |                                                                      |
+| s_axi_CTRL | roi_valid    | 0x60   | 32    | W      | Data signal of roi_valid         |                                                                      |
+| s_axi_CTRL | fixed_thresh | 0x68   | 32    | W      | Data signal of fixed_thresh      |                                                                      |
+| s_axi_CTRL | adapt_offset | 0x70   | 32    | W      | Data signal of adapt_offset      |                                                                      |
+| s_axi_CTRL | fixed_scale  | 0x78   | 32    | W      | Data signal of fixed_scale       |                                                                      |
+| s_axi_CTRL | pixel_format | 0x80   | 32    | W      | Data signal of pixel_format      |                                                                      |
+| s_axi_CTRL | roi_version  | 0x88   | 32    | W      | Data signal of roi_version       |                                                                      |
++------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| in_stream  | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_stream | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+---------------------------------------------------------+
+| Argument     | Direction | Datatype                                                |
++--------------+-----------+---------------------------------------------------------+
+| in_stream    | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| out_stream   | out       | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| frame_width  | in        | int                                                     |
+| frame_height | in        | int                                                     |
+| left_x       | in        | int                                                     |
+| left_y       | in        | int                                                     |
+| left_w       | in        | int                                                     |
+| left_h       | in        | int                                                     |
+| right_x      | in        | int                                                     |
+| right_y      | in        | int                                                     |
+| right_w      | in        | int                                                     |
+| right_h      | in        | int                                                     |
+| roi_valid    | in        | int                                                     |
+| fixed_thresh | in        | int                                                     |
+| adapt_offset | in        | int                                                     |
+| fixed_scale  | in        | int                                                     |
+| pixel_format | in        | int                                                     |
+| roi_version  | in        | int                                                     |
++--------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++--------------+--------------+-----------+----------------------------------------+
+| Argument     | HW Interface | HW Type   | HW Info                                |
++--------------+--------------+-----------+----------------------------------------+
+| in_stream    | in_stream    | interface |                                        |
+| out_stream   | out_stream   | interface |                                        |
+| frame_width  | s_axi_CTRL   | register  | name=frame_width offset=0x10 range=32  |
+| frame_height | s_axi_CTRL   | register  | name=frame_height offset=0x18 range=32 |
+| left_x       | s_axi_CTRL   | register  | name=left_x offset=0x20 range=32       |
+| left_y       | s_axi_CTRL   | register  | name=left_y offset=0x28 range=32       |
+| left_w       | s_axi_CTRL   | register  | name=left_w offset=0x30 range=32       |
+| left_h       | s_axi_CTRL   | register  | name=left_h offset=0x38 range=32       |
+| right_x      | s_axi_CTRL   | register  | name=right_x offset=0x40 range=32      |
+| right_y      | s_axi_CTRL   | register  | name=right_y offset=0x48 range=32      |
+| right_w      | s_axi_CTRL   | register  | name=right_w offset=0x50 range=32      |
+| right_h      | s_axi_CTRL   | register  | name=right_h offset=0x58 range=32      |
+| roi_valid    | s_axi_CTRL   | register  | name=roi_valid offset=0x60 range=32    |
+| fixed_thresh | s_axi_CTRL   | register  | name=fixed_thresh offset=0x68 range=32 |
+| adapt_offset | s_axi_CTRL   | register  | name=adapt_offset offset=0x70 range=32 |
+| fixed_scale  | s_axi_CTRL   | register  | name=fixed_scale offset=0x78 range=32  |
+| pixel_format | s_axi_CTRL   | register  | name=pixel_format offset=0x80 range=32 |
+| roi_version  | s_axi_CTRL   | register  | name=roi_version offset=0x88 range=32  |
++--------------+--------------+-----------+----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------------------------------------------------------------+-----+--------+--------------------+-----+-----------+---------+
+| Name                                                                                                 | DSP | Pragma | Variable           | Op  | Impl      | Latency |
++------------------------------------------------------------------------------------------------------+-----+--------+--------------------+-----+-----------+---------+
+| + eye_feature                                                                                        | 57  |        |                    |     |           |         |
+|   fallback_fu_760_p2                                                                                 |     |        | fallback           | add | fabric    | 0       |
+|   add_ln179_fu_884_p2                                                                                |     |        | add_ln179          | add | fabric    | 0       |
+|   add_ln180_fu_920_p2                                                                                |     |        | add_ln180          | add | fabric    | 0       |
+|   add_ln181_fu_956_p2                                                                                |     |        | add_ln181          | add | fabric    | 0       |
+|   add_ln181_1_fu_962_p2                                                                              |     |        | add_ln181_1        | add | fabric    | 0       |
+|   add_ln182_fu_996_p2                                                                                |     |        | add_ln182          | add | fabric    | 0       |
+|   add_ln182_1_fu_1002_p2                                                                             |     |        | add_ln182_1        | add | fabric    | 0       |
+|   rw_fu_1036_p2                                                                                      |     |        | rw                 | sub | fabric    | 0       |
+|   rh_fu_1042_p2                                                                                      |     |        | rh                 | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U178                                                                           | 4   |        | mul_ln95_2         | mul | auto      | 0       |
+|   sub_ln95_fu_1477_p2                                                                                |     |        | sub_ln95           | sub | fabric    | 0       |
+|   sub_ln95_1_fu_1514_p2                                                                              |     |        | sub_ln95_1         | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U179                                                                           | 4   |        | mul_ln95_3         | mul | auto      | 0       |
+|   sub_ln95_2_fu_1524_p2                                                                              |     |        | sub_ln95_2         | sub | fabric    | 0       |
+|   sub_ln95_3_fu_1561_p2                                                                              |     |        | sub_ln95_3         | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U180                                                                           | 4   |        | mul_ln95_4         | mul | auto      | 0       |
+|   sub_ln95_4_fu_1571_p2                                                                              |     |        | sub_ln95_4         | sub | fabric    | 0       |
+|   sub_ln95_5_fu_1608_p2                                                                              |     |        | sub_ln95_5         | sub | fabric    | 0       |
+|   mul_32s_8ns_32_1_1_U176                                                                            | 2   |        | mul_ln95           | mul | auto      | 0       |
+|   add_ln95_3_fu_1331_p2                                                                              |     |        | add_ln95_3         | add | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U181                                                                           | 4   |        | mul_ln95_5         | mul | auto      | 0       |
+|   sub_ln95_6_fu_1618_p2                                                                              |     |        | sub_ln95_6         | sub | fabric    | 0       |
+|   sub_ln95_7_fu_1655_p2                                                                              |     |        | sub_ln95_7         | sub | fabric    | 0       |
+|   add_ln191_fu_1885_p2                                                                               |     |        | add_ln191          | add | fabric    | 0       |
+|   add_ln192_fu_1911_p2                                                                               |     |        | add_ln192          | add | fabric    | 0       |
+|   add_ln193_fu_1943_p2                                                                               |     |        | add_ln193          | add | fabric    | 0       |
+|   add_ln194_fu_1969_p2                                                                               |     |        | add_ln194          | add | fabric    | 0       |
+|   cw_fu_2001_p2                                                                                      |     |        | cw                 | sub | fabric    | 0       |
+|   ch_fu_2011_p2                                                                                      |     |        | ch                 | sub | fabric    | 0       |
+|   eye0_cx0_fu_2021_p2                                                                                |     |        | eye0_cx0           | add | fabric    | 0       |
+|   eye0_cy0_1_fu_2026_p2                                                                              |     |        | eye0_cy0_1         | add | fabric    | 0       |
+|   add_ln181_2_fu_1132_p2                                                                             |     |        | add_ln181_2        | add | fabric    | 0       |
+|   add_ln181_3_fu_1138_p2                                                                             |     |        | add_ln181_3        | add | fabric    | 0       |
+|   add_ln182_2_fu_1172_p2                                                                             |     |        | add_ln182_2        | add | fabric    | 0       |
+|   add_ln182_3_fu_1178_p2                                                                             |     |        | add_ln182_3        | add | fabric    | 0       |
+|   rw_1_fu_1212_p2                                                                                    |     |        | rw_1               | sub | fabric    | 0       |
+|   rh_1_fu_1218_p2                                                                                    |     |        | rh_1               | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U182                                                                           | 4   |        | mul_ln95_6         | mul | auto      | 0       |
+|   sub_ln95_8_fu_1665_p2                                                                              |     |        | sub_ln95_8         | sub | fabric    | 0       |
+|   sub_ln95_9_fu_1702_p2                                                                              |     |        | sub_ln95_9         | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U183                                                                           | 4   |        | mul_ln95_7         | mul | auto      | 0       |
+|   sub_ln95_10_fu_1712_p2                                                                             |     |        | sub_ln95_10        | sub | fabric    | 0       |
+|   sub_ln95_11_fu_1749_p2                                                                             |     |        | sub_ln95_11        | sub | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U184                                                                           | 4   |        | mul_ln95_8         | mul | auto      | 0       |
+|   sub_ln95_12_fu_1759_p2                                                                             |     |        | sub_ln95_12        | sub | fabric    | 0       |
+|   sub_ln95_13_fu_1796_p2                                                                             |     |        | sub_ln95_13        | sub | fabric    | 0       |
+|   mul_32s_8ns_32_1_1_U177                                                                            | 2   |        | mul_ln95_1         | mul | auto      | 0       |
+|   add_ln95_7_fu_1447_p2                                                                              |     |        | add_ln95_7         | add | fabric    | 0       |
+|   mul_32s_34ns_65_1_1_U185                                                                           | 4   |        | mul_ln95_9         | mul | auto      | 0       |
+|   sub_ln95_14_fu_1806_p2                                                                             |     |        | sub_ln95_14        | sub | fabric    | 0       |
+|   sub_ln95_15_fu_1843_p2                                                                             |     |        | sub_ln95_15        | sub | fabric    | 0       |
+|   add_ln191_1_fu_2067_p2                                                                             |     |        | add_ln191_1        | add | fabric    | 0       |
+|   add_ln192_1_fu_2093_p2                                                                             |     |        | add_ln192_1        | add | fabric    | 0       |
+|   add_ln193_1_fu_2125_p2                                                                             |     |        | add_ln193_1        | add | fabric    | 0       |
+|   add_ln194_1_fu_2151_p2                                                                             |     |        | add_ln194_1        | add | fabric    | 0       |
+|   cw_1_fu_2183_p2                                                                                    |     |        | cw_1               | sub | fabric    | 0       |
+|   ch_1_fu_2193_p2                                                                                    |     |        | ch_1               | sub | fabric    | 0       |
+|   eye1_cx0_fu_2203_p2                                                                                |     |        | eye1_cx0           | add | fabric    | 0       |
+|   eye1_cy0_1_fu_2208_p2                                                                              |     |        | eye1_cy0_1         | add | fabric    | 0       |
+|   add_fu_2441_p2                                                                                     |     |        | add                | add | fabric    | 0       |
+|   ex0_1_fu_2447_p2                                                                                   |     |        | ex0_1              | add | fabric    | 0       |
+|   ex1_1_fu_2453_p2                                                                                   |     |        | ex1_1              | add | fabric    | 0       |
+|   add36_fu_2459_p2                                                                                   |     |        | add36              | add | fabric    | 0       |
+|   add_ln520_fu_2495_p2                                                                               |     |        | add_ln520          | add | fabric    | 0       |
+|   sub_ln524_fu_2550_p2                                                                               |     |        | sub_ln524          | sub | fabric    | 0       |
+|   sub_ln525_fu_2564_p2                                                                               |     |        | sub_ln525          | sub | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln393          | mul | auto      | 0       |
+|   grp_fu_2702_p0                                                                                     |     |        | add_ln101          | add | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln393_1        | mul | auto      | 0       |
+|   grp_fu_2734_p0                                                                                     |     |        | add_ln101_1        | add | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U175                                                                            | 3   |        | den                | mul | auto      | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln400          | mul | auto      | 0       |
+|   grp_fu_2760_p0                                                                                     |     |        | add_ln101_2        | add | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U175                                                                            | 3   |        | den_1              | mul | auto      | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln400_1        | mul | auto      | 0       |
+|   grp_fu_2787_p0                                                                                     |     |        | add_ln101_3        | add | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln406          | mul | auto      | 0       |
+|   mul_32s_32s_32_1_1_U175                                                                            | 3   |        | mul_ln406_1        | mul | auto      | 0       |
+|   grp_fu_2814_p0                                                                                     |     |        | add_ln101_4        | add | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln406_2        | mul | auto      | 0       |
+|   mul_32s_32s_32_1_1_U175                                                                            | 3   |        | mul_ln406_3        | mul | auto      | 0       |
+|   grp_fu_2841_p0                                                                                     |     |        | add_ln101_5        | add | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln412          | mul | auto      | 0       |
+|   grp_fu_2858_p0                                                                                     |     |        | add_ln101_6        | add | fabric    | 0       |
+|   mul_32s_31ns_32_1_1_U174                                                                           | 3   |        | mul_ln412_1        | mul | auto      | 0       |
+|   add_ln101_7_fu_2868_p2                                                                             |     |        | add_ln101_7        | add | fabric    | 0       |
+|   sub_ln425_fu_2930_p2                                                                               |     |        | sub_ln425          | sub | fabric    | 0       |
+|   sub_ln90_fu_2944_p2                                                                                |     |        | sub_ln90           | sub | fabric    | 0       |
+|   sub_ln425_1_fu_3131_p2                                                                             |     |        | sub_ln425_1        | sub | fabric    | 0       |
+|   sub_ln90_1_fu_3145_p2                                                                              |     |        | sub_ln90_1         | sub | fabric    | 0       |
+|   sub_ln425_2_fu_3159_p2                                                                             |     |        | sub_ln425_2        | sub | fabric    | 0       |
+|   sub_ln90_2_fu_3173_p2                                                                              |     |        | sub_ln90_2         | sub | fabric    | 0       |
+|   sub_ln425_3_fu_3187_p2                                                                             |     |        | sub_ln425_3        | sub | fabric    | 0       |
+|   sub_ln90_3_fu_3201_p2                                                                              |     |        | sub_ln90_3         | sub | fabric    | 0       |
+|  + eye_feature_Pipeline_INIT_HIST                                                                    | 0   |        |                    |     |           |         |
+|    add_ln513_fu_184_p2                                                                               |     |        | add_ln513          | add | fabric    | 0       |
+|  + eye_feature_Pipeline_FRAME_X                                                                      | 5   |        |                    |     |           |         |
+|    add_ln532_fu_458_p2                                                                               |     |        | add_ln532          | add | fabric    | 0       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U17                                                                 | 1   |        | mul_ln118          | mul | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U14                                                                | 1   |        | mul_ln118_1        | mul | dsp_slice | 3       |
+|    mul_8ns_9ns_16_1_1_U9                                                                             |     |        | mul_ln118_2        | mul | auto      | 0       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U15                                                                 | 1   |        | mul_ln118_3        | mul | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U14                                                                | 1   |        | add_ln118          | add | dsp_slice | 3       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U15                                                                 | 1   |        | add_ln118_1        | add | dsp_slice | 3       |
+|    y_fu_731_p2                                                                                       |     |        | y                  | add | fabric    | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U16                                                                | 1   |        | mul_ln118_4        | mul | dsp_slice | 3       |
+|    mul_8ns_9ns_16_1_1_U10                                                                            |     |        | mul_ln118_5        | mul | auto      | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U16                                                                | 1   |        | add_ln118_3        | add | dsp_slice | 3       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U17                                                                 | 1   |        | add_ln118_4        | add | dsp_slice | 3       |
+|    y_1_fu_749_p2                                                                                     |     |        | y_1                | add | fabric    | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U18                                                                | 1   |        | mul_ln118_6        | mul | dsp_slice | 3       |
+|    mul_8ns_9ns_16_1_1_U11                                                                            |     |        | mul_ln118_7        | mul | auto      | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U18                                                                | 1   |        | add_ln118_6        | add | dsp_slice | 3       |
+|    y_2_fu_764_p2                                                                                     |     |        | y_2                | add | fabric    | 0       |
+|    add_ln542_fu_919_p2                                                                               |     |        | add_ln542          | add | fabric    | 0       |
+|    add_ln548_fu_952_p2                                                                               |     |        | add_ln548          | add | fabric    | 0       |
+|  + compute_robust_stats (grp_compute_robust_stats_fu_540)                                            | 5   |        |                    |     |           |         |
+|    mul_7ns_8ns_14_1_1_U158                                                                           |     |        | mul_ln293          | mul | auto      | 0       |
+|    contrast_fu_571_p2                                                                                |     |        | contrast           | sub | fabric    | 0       |
+|    add_ln101_fu_587_p2                                                                               |     |        | add_ln101          | add | fabric    | 0       |
+|    sub_ln101_fu_601_p2                                                                               |     |        | sub_ln101          | sub | fabric    | 0       |
+|    sub_ln101_1_fu_621_p2                                                                             |     |        | sub_ln101_1        | sub | fabric    | 0       |
+|    t_low_fu_649_p2                                                                                   |     |        | t_low              | add | fabric    | 0       |
+|    add_ln101_8_fu_655_p2                                                                             |     |        | add_ln101_8        | add | fabric    | 0       |
+|    add_ln101_10_fu_683_p2                                                                            |     |        | add_ln101_10       | add | fabric    | 0       |
+|    t_high_1_fu_707_p2                                                                                |     |        | t_high_1           | add | fabric    | 0       |
+|    add_ln101_9_fu_543_p2                                                                             |     |        | add_ln101_9        | add | fabric    | 0       |
+|    mul_8ns_10ns_17_1_1_U159                                                                          |     |        | mul_ln101          | mul | auto      | 0       |
+|    add_ln331_fu_778_p2                                                                               |     |        | add_ln331          | add | fabric    | 0       |
+|    row_run_cur_high_1_fu_843_p2                                                                      |     |        | row_run_cur_high_1 | add | fabric    | 0       |
+|    add_ln373_fu_802_p2                                                                               |     |        | add_ln373          | add | fabric    | 0       |
+|   + percentile_threshold (grp_percentile_threshold_fu_340)                                           | 3   |        |                    |     |           |         |
+|     mac_muladd_7ns_14ns_6ns_20_4_1_U62                                                               | 1   |        | mul_ln98           | mul | dsp_slice | 3       |
+|     mac_muladd_7ns_14ns_6ns_20_4_1_U62                                                               | 1   |        | add_ln101          | add | dsp_slice | 3       |
+|     mul_20ns_22ns_41_1_1_U61                                                                         | 2   |        | mul_ln101          | mul | auto      | 0       |
+|    + percentile_threshold_Pipeline_FIND_BIN (grp_percentile_threshold_Pipeline_FIND_BIN_fu_88)       | 0   |        |                    |     |           |         |
+|      add_ln219_fu_180_p2                                                                             |     |        | add_ln219          | add | fabric    | 0       |
+|      cumulative_2_fu_254_p2                                                                          |     |        | cumulative_2       | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_INIT_RUNS (grp_compute_robust_stats_Pipeline_INIT_RUNS_fu_354)     | 0   |        |                    |     |           |         |
+|     add_ln316_fu_312_p2                                                                              |     |        | add_ln316          | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_MAX_LOW (grp_compute_robust_stats_Pipeline_MAX_LOW_fu_390)         | 0   |        |                    |     |           |         |
+|     add_ln368_fu_150_p2                                                                              |     |        | add_ln368          | add | fabric    | 0       |
+|   + topk_sum_hist (grp_topk_sum_hist_fu_400)                                                         | 2   |        |                    |     |           |         |
+|    + topk_sum_hist_Pipeline_INIT_HIST (grp_topk_sum_hist_Pipeline_INIT_HIST_fu_66)                   | 0   |        |                    |     |           |         |
+|      add_ln239_fu_120_p2                                                                             |     |        | add_ln239          | add | fabric    | 0       |
+|    + topk_sum_hist_Pipeline_BUILD_HIST (grp_topk_sum_hist_Pipeline_BUILD_HIST_fu_78)                 | 0   |        |                    |     |           |         |
+|      add_ln245_fu_216_p2                                                                             |     |        | add_ln245          | add | fabric    | 0       |
+|      add_ln251_fu_339_p2                                                                             |     |        | add_ln251          | add | fabric    | 0       |
+|    + topk_sum_hist_Pipeline_ACCUM_TOPK (grp_topk_sum_hist_Pipeline_ACCUM_TOPK_fu_100)                | 2   |        |                    |     |           |         |
+|      mul_32s_7ns_32_1_1_U140                                                                         | 2   |        | mul_ln263          | mul | auto      | 0       |
+|      sum_1_fu_316_p2                                                                                 |     |        | sum_1              | add | fabric    | 0       |
+|      remain_1_fu_290_p2                                                                              |     |        | remain_1           | sub | fabric    | 0       |
+|      add_ln258_fu_211_p2                                                                             |     |        | add_ln258          | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_ROBUST_COLS (grp_compute_robust_stats_Pipeline_ROBUST_COLS_fu_411) | 0   |        |                    |     |           |         |
+|     add_ln335_fu_499_p2                                                                              |     |        | add_ln335          | add | fabric    | 0       |
+|     add_ln338_fu_509_p2                                                                              |     |        | add_ln338          | add | fabric    | 0       |
+|     add_ln342_fu_649_p2                                                                              |     |        | add_ln342          | add | fabric    | 0       |
+|     add_ln350_fu_715_p2                                                                              |     |        | add_ln350          | add | fabric    | 0       |
+|     dark_count_high_2_fu_604_p2                                                                      |     |        | dark_count_high_2  | add | fabric    | 0       |
+|     row_count_high_1_fu_610_p2                                                                       |     |        | row_count_high_1   | add | fabric    | 0       |
+|  + compute_robust_stats (grp_compute_robust_stats_fu_555)                                            | 5   |        |                    |     |           |         |
+|    mul_7ns_8ns_14_1_1_U158                                                                           |     |        | mul_ln293          | mul | auto      | 0       |
+|    contrast_fu_571_p2                                                                                |     |        | contrast           | sub | fabric    | 0       |
+|    add_ln101_fu_587_p2                                                                               |     |        | add_ln101          | add | fabric    | 0       |
+|    sub_ln101_fu_601_p2                                                                               |     |        | sub_ln101          | sub | fabric    | 0       |
+|    sub_ln101_1_fu_621_p2                                                                             |     |        | sub_ln101_1        | sub | fabric    | 0       |
+|    t_low_fu_649_p2                                                                                   |     |        | t_low              | add | fabric    | 0       |
+|    add_ln101_8_fu_655_p2                                                                             |     |        | add_ln101_8        | add | fabric    | 0       |
+|    add_ln101_10_fu_683_p2                                                                            |     |        | add_ln101_10       | add | fabric    | 0       |
+|    t_high_1_fu_707_p2                                                                                |     |        | t_high_1           | add | fabric    | 0       |
+|    add_ln101_9_fu_543_p2                                                                             |     |        | add_ln101_9        | add | fabric    | 0       |
+|    mul_8ns_10ns_17_1_1_U159                                                                          |     |        | mul_ln101          | mul | auto      | 0       |
+|    add_ln331_fu_778_p2                                                                               |     |        | add_ln331          | add | fabric    | 0       |
+|    row_run_cur_high_1_fu_843_p2                                                                      |     |        | row_run_cur_high_1 | add | fabric    | 0       |
+|    add_ln373_fu_802_p2                                                                               |     |        | add_ln373          | add | fabric    | 0       |
+|   + percentile_threshold (grp_percentile_threshold_fu_340)                                           | 3   |        |                    |     |           |         |
+|     mac_muladd_7ns_14ns_6ns_20_4_1_U62                                                               | 1   |        | mul_ln98           | mul | dsp_slice | 3       |
+|     mac_muladd_7ns_14ns_6ns_20_4_1_U62                                                               | 1   |        | add_ln101          | add | dsp_slice | 3       |
+|     mul_20ns_22ns_41_1_1_U61                                                                         | 2   |        | mul_ln101          | mul | auto      | 0       |
+|    + percentile_threshold_Pipeline_FIND_BIN (grp_percentile_threshold_Pipeline_FIND_BIN_fu_88)       | 0   |        |                    |     |           |         |
+|      add_ln219_fu_180_p2                                                                             |     |        | add_ln219          | add | fabric    | 0       |
+|      cumulative_2_fu_254_p2                                                                          |     |        | cumulative_2       | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_INIT_RUNS (grp_compute_robust_stats_Pipeline_INIT_RUNS_fu_354)     | 0   |        |                    |     |           |         |
+|     add_ln316_fu_312_p2                                                                              |     |        | add_ln316          | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_MAX_LOW (grp_compute_robust_stats_Pipeline_MAX_LOW_fu_390)         | 0   |        |                    |     |           |         |
+|     add_ln368_fu_150_p2                                                                              |     |        | add_ln368          | add | fabric    | 0       |
+|   + topk_sum_hist (grp_topk_sum_hist_fu_400)                                                         | 2   |        |                    |     |           |         |
+|    + topk_sum_hist_Pipeline_INIT_HIST (grp_topk_sum_hist_Pipeline_INIT_HIST_fu_66)                   | 0   |        |                    |     |           |         |
+|      add_ln239_fu_120_p2                                                                             |     |        | add_ln239          | add | fabric    | 0       |
+|    + topk_sum_hist_Pipeline_BUILD_HIST (grp_topk_sum_hist_Pipeline_BUILD_HIST_fu_78)                 | 0   |        |                    |     |           |         |
+|      add_ln245_fu_216_p2                                                                             |     |        | add_ln245          | add | fabric    | 0       |
+|      add_ln251_fu_339_p2                                                                             |     |        | add_ln251          | add | fabric    | 0       |
+|    + topk_sum_hist_Pipeline_ACCUM_TOPK (grp_topk_sum_hist_Pipeline_ACCUM_TOPK_fu_100)                | 2   |        |                    |     |           |         |
+|      mul_32s_7ns_32_1_1_U140                                                                         | 2   |        | mul_ln263          | mul | auto      | 0       |
+|      sum_1_fu_316_p2                                                                                 |     |        | sum_1              | add | fabric    | 0       |
+|      remain_1_fu_290_p2                                                                              |     |        | remain_1           | sub | fabric    | 0       |
+|      add_ln258_fu_211_p2                                                                             |     |        | add_ln258          | add | fabric    | 0       |
+|   + compute_robust_stats_Pipeline_ROBUST_COLS (grp_compute_robust_stats_Pipeline_ROBUST_COLS_fu_411) | 0   |        |                    |     |           |         |
+|     add_ln335_fu_499_p2                                                                              |     |        | add_ln335          | add | fabric    | 0       |
+|     add_ln338_fu_509_p2                                                                              |     |        | add_ln338          | add | fabric    | 0       |
+|     add_ln342_fu_649_p2                                                                              |     |        | add_ln342          | add | fabric    | 0       |
+|     add_ln350_fu_715_p2                                                                              |     |        | add_ln350          | add | fabric    | 0       |
+|     dark_count_high_2_fu_604_p2                                                                      |     |        | dark_count_high_2  | add | fabric    | 0       |
+|     row_count_high_1_fu_610_p2                                                                       |     |        | row_count_high_1   | add | fabric    | 0       |
++------------------------------------------------------------------------------------------------------+-----+--------+--------------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------------------------------+---------------+-----------+------+------+--------+------------+------+---------+------------------+
+| Name                                                      | Usage         | Type      | BRAM | URAM | Pragma | Variable   | Impl | Latency | Bitwidth, Depth, |
+|                                                           |               |           |      |      |        |            |      |         | Banks            |
++-----------------------------------------------------------+---------------+-----------+------+------+--------+------------+------+---------+------------------+
+| + eye_feature                                             |               |           | 8    | 0    |        |            |      |         |                  |
+|   CTRL_s_axi_U                                            | interface     | s_axilite |      |      |        |            |      |         |                  |
+|   hist0_U                                                 | ram_1p array  |           |      |      |        | hist0      | auto | 1       | 16, 16, 1        |
+|   hist0_1_U                                               | ram_1p array  |           |      |      |        | hist0_1    | auto | 1       | 16, 16, 1        |
+|   hist0_2_U                                               | ram_1p array  |           |      |      |        | hist0_2    | auto | 1       | 16, 16, 1        |
+|   hist0_3_U                                               | ram_1p array  |           |      |      |        | hist0_3    | auto | 1       | 16, 16, 1        |
+|   hist1_U                                                 | ram_1p array  |           |      |      |        | hist1      | auto | 1       | 16, 16, 1        |
+|   hist1_1_U                                               | ram_1p array  |           |      |      |        | hist1_1    | auto | 1       | 16, 16, 1        |
+|   hist1_2_U                                               | ram_1p array  |           |      |      |        | hist1_2    | auto | 1       | 16, 16, 1        |
+|   hist1_3_U                                               | ram_1p array  |           |      |      |        | hist1_3    | auto | 1       | 16, 16, 1        |
+|   pix0_U                                                  | ram_2p        |           | 4    |      | pragma | pix0       | bram | 1       | 8, 8192, 1       |
+|   pix1_U                                                  | ram_2p        |           | 4    |      | pragma | pix1       | bram | 1       | 8, 8192, 1       |
+|  + compute_robust_stats (grp_compute_robust_stats_fu_540) |               |           | 0    | 0    |        |            |      |         |                  |
+|    cur_low_U                                              | ram_t2p array |           |      |      |        | cur_low    | auto | 1       | 16, 32, 1        |
+|    cur_low_1_U                                            | ram_t2p array |           |      |      |        | cur_low_1  | auto | 1       | 16, 32, 1        |
+|    cur_low_2_U                                            | ram_t2p array |           |      |      |        | cur_low_2  | auto | 1       | 16, 32, 1        |
+|    cur_low_3_U                                            | ram_t2p array |           |      |      |        | cur_low_3  | auto | 1       | 16, 32, 1        |
+|    run_low_U                                              | ram_s2p array |           |      |      |        | run_low    | auto | 1       | 16, 32, 1        |
+|    run_low_1_U                                            | ram_s2p array |           |      |      |        | run_low_1  | auto | 1       | 16, 32, 1        |
+|    run_low_2_U                                            | ram_s2p array |           |      |      |        | run_low_2  | auto | 1       | 16, 32, 1        |
+|    run_low_3_U                                            | ram_s2p array |           |      |      |        | run_low_3  | auto | 1       | 16, 32, 1        |
+|    cur_high_U                                             | ram_t2p array |           |      |      |        | cur_high   | auto | 1       | 16, 32, 1        |
+|    cur_high_1_U                                           | ram_t2p array |           |      |      |        | cur_high_1 | auto | 1       | 16, 32, 1        |
+|    cur_high_2_U                                           | ram_t2p array |           |      |      |        | cur_high_2 | auto | 1       | 16, 32, 1        |
+|    cur_high_3_U                                           | ram_t2p array |           |      |      |        | cur_high_3 | auto | 1       | 16, 32, 1        |
+|    run_high_U                                             | ram_s2p array |           |      |      |        | run_high   | auto | 1       | 16, 32, 1        |
+|    run_high_1_U                                           | ram_s2p array |           |      |      |        | run_high_1 | auto | 1       | 16, 32, 1        |
+|    run_high_2_U                                           | ram_s2p array |           |      |      |        | run_high_2 | auto | 1       | 16, 32, 1        |
+|    run_high_3_U                                           | ram_s2p array |           |      |      |        | run_high_3 | auto | 1       | 16, 32, 1        |
+|   + topk_sum_hist (grp_topk_sum_hist_fu_400)              |               |           | 0    | 0    |        |            |      |         |                  |
+|     hist_U                                                | ram_1p array  |           |      |      |        | hist       | auto | 1       | 16, 17, 1        |
+|     hist_1_U                                              | ram_1p array  |           |      |      |        | hist_1     | auto | 1       | 16, 17, 1        |
+|     hist_2_U                                              | ram_1p array  |           |      |      |        | hist_2     | auto | 1       | 16, 17, 1        |
+|     hist_3_U                                              | ram_1p array  |           |      |      |        | hist_3     | auto | 1       | 16, 17, 1        |
+|  + compute_robust_stats (grp_compute_robust_stats_fu_555) |               |           | 0    | 0    |        |            |      |         |                  |
+|    cur_low_U                                              | ram_t2p array |           |      |      |        | cur_low    | auto | 1       | 16, 32, 1        |
+|    cur_low_1_U                                            | ram_t2p array |           |      |      |        | cur_low_1  | auto | 1       | 16, 32, 1        |
+|    cur_low_2_U                                            | ram_t2p array |           |      |      |        | cur_low_2  | auto | 1       | 16, 32, 1        |
+|    cur_low_3_U                                            | ram_t2p array |           |      |      |        | cur_low_3  | auto | 1       | 16, 32, 1        |
+|    run_low_U                                              | ram_s2p array |           |      |      |        | run_low    | auto | 1       | 16, 32, 1        |
+|    run_low_1_U                                            | ram_s2p array |           |      |      |        | run_low_1  | auto | 1       | 16, 32, 1        |
+|    run_low_2_U                                            | ram_s2p array |           |      |      |        | run_low_2  | auto | 1       | 16, 32, 1        |
+|    run_low_3_U                                            | ram_s2p array |           |      |      |        | run_low_3  | auto | 1       | 16, 32, 1        |
+|    cur_high_U                                             | ram_t2p array |           |      |      |        | cur_high   | auto | 1       | 16, 32, 1        |
+|    cur_high_1_U                                           | ram_t2p array |           |      |      |        | cur_high_1 | auto | 1       | 16, 32, 1        |
+|    cur_high_2_U                                           | ram_t2p array |           |      |      |        | cur_high_2 | auto | 1       | 16, 32, 1        |
+|    cur_high_3_U                                           | ram_t2p array |           |      |      |        | cur_high_3 | auto | 1       | 16, 32, 1        |
+|    run_high_U                                             | ram_s2p array |           |      |      |        | run_high   | auto | 1       | 16, 32, 1        |
+|    run_high_1_U                                           | ram_s2p array |           |      |      |        | run_high_1 | auto | 1       | 16, 32, 1        |
+|    run_high_2_U                                           | ram_s2p array |           |      |      |        | run_high_2 | auto | 1       | 16, 32, 1        |
+|    run_high_3_U                                           | ram_s2p array |           |      |      |        | run_high_3 | auto | 1       | 16, 32, 1        |
+|   + topk_sum_hist (grp_topk_sum_hist_fu_400)              |               |           | 0    | 0    |        |            |      |         |                  |
+|     hist_U                                                | ram_1p array  |           |      |      |        | hist       | auto | 1       | 16, 17, 1        |
+|     hist_1_U                                              | ram_1p array  |           |      |      |        | hist_1     | auto | 1       | 16, 17, 1        |
+|     hist_2_U                                              | ram_1p array  |           |      |      |        | hist_2     | auto | 1       | 16, 17, 1        |
+|     hist_3_U                                              | ram_1p array  |           |      |      |        | hist_3     | auto | 1       | 16, 17, 1        |
++-----------------------------------------------------------+---------------+-----------+------+------+--------+------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------+-------------------------------------------------------------------------------+
+| Type            | Options                                 | Location                                                                      |
++-----------------+-----------------------------------------+-------------------------------------------------------------------------------+
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:82 in clamp_int                       |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:89 in abs_int                         |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:94 in round_ratio                     |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:99 in div_round_pos                   |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:105 in expand5                        |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:111 in expand6                        |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:117 in weighted_gray                  |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:123 in pixel_to_gray                  |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:143 in sanitize_low_percent           |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:149 in sanitize_high_percent          |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:158 in robust_percent_params          |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:169 in make_eye_cfg                   |
+| inline          | off                                     | eyefeature_robust8/code/eye_feature.cpp:209 in percentile_threshold           |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:220 in percentile_threshold           |
+| inline          | off                                     | eyefeature_robust8/code/eye_feature.cpp:234 in topk_sum_hist                  |
+| array_partition | variable=hist cyclic factor=4 dim=1     | eyefeature_robust8/code/eye_feature.cpp:236 in topk_sum_hist, hist            |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:240 in topk_sum_hist                  |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:246 in topk_sum_hist                  |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:259 in topk_sum_hist                  |
+| inline          | off                                     | eyefeature_robust8/code/eye_feature.cpp:279 in compute_robust_stats           |
+| array_partition | variable=cur_low cyclic factor=4 dim=1  | eyefeature_robust8/code/eye_feature.cpp:310 in compute_robust_stats, cur_low  |
+| array_partition | variable=run_low cyclic factor=4 dim=1  | eyefeature_robust8/code/eye_feature.cpp:311 in compute_robust_stats, run_low  |
+| array_partition | variable=cur_high cyclic factor=4 dim=1 | eyefeature_robust8/code/eye_feature.cpp:312 in compute_robust_stats, cur_high |
+| array_partition | variable=run_high cyclic factor=4 dim=1 | eyefeature_robust8/code/eye_feature.cpp:313 in compute_robust_stats, run_high |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:317 in compute_robust_stats           |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:336 in compute_robust_stats           |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:369 in compute_robust_stats           |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:391 in eye_max_run_q                  |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:397 in eye_topk_run_q                 |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:404 in eye_dark_high_q                |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:410 in eye_row_run_high_q             |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:416 in combine_two_eyes               |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:424 in diff_two_eyes                  |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:430 in pack_debug                     |
+| inline          |                                         | eyefeature_robust8/code/eye_feature.cpp:437 in write_out_word                 |
+| interface       | axis port=in_stream register_mode=both  | eyefeature_robust8/code/eye_feature.cpp:466 in eye_feature, in_stream         |
+| interface       | axis port=out_stream register_mode=both | eyefeature_robust8/code/eye_feature.cpp:467 in eye_feature, out_stream        |
+| interface       | s_axilite port=frame_width bundle=CTRL  | eyefeature_robust8/code/eye_feature.cpp:468 in eye_feature, frame_width       |
+| interface       | s_axilite port=frame_height bundle=CTRL | eyefeature_robust8/code/eye_feature.cpp:469 in eye_feature, frame_height      |
+| interface       | s_axilite port=left_x bundle=CTRL       | eyefeature_robust8/code/eye_feature.cpp:470 in eye_feature, left_x            |
+| interface       | s_axilite port=left_y bundle=CTRL       | eyefeature_robust8/code/eye_feature.cpp:471 in eye_feature, left_y            |
+| interface       | s_axilite port=left_w bundle=CTRL       | eyefeature_robust8/code/eye_feature.cpp:472 in eye_feature, left_w            |
+| interface       | s_axilite port=left_h bundle=CTRL       | eyefeature_robust8/code/eye_feature.cpp:473 in eye_feature, left_h            |
+| interface       | s_axilite port=right_x bundle=CTRL      | eyefeature_robust8/code/eye_feature.cpp:474 in eye_feature, right_x           |
+| interface       | s_axilite port=right_y bundle=CTRL      | eyefeature_robust8/code/eye_feature.cpp:475 in eye_feature, right_y           |
+| interface       | s_axilite port=right_w bundle=CTRL      | eyefeature_robust8/code/eye_feature.cpp:476 in eye_feature, right_w           |
+| interface       | s_axilite port=right_h bundle=CTRL      | eyefeature_robust8/code/eye_feature.cpp:477 in eye_feature, right_h           |
+| interface       | s_axilite port=roi_valid bundle=CTRL    | eyefeature_robust8/code/eye_feature.cpp:478 in eye_feature, roi_valid         |
+| interface       | s_axilite port=fixed_thresh bundle=CTRL | eyefeature_robust8/code/eye_feature.cpp:479 in eye_feature, fixed_thresh      |
+| interface       | s_axilite port=adapt_offset bundle=CTRL | eyefeature_robust8/code/eye_feature.cpp:480 in eye_feature, adapt_offset      |
+| interface       | s_axilite port=fixed_scale bundle=CTRL  | eyefeature_robust8/code/eye_feature.cpp:481 in eye_feature, fixed_scale       |
+| interface       | s_axilite port=pixel_format bundle=CTRL | eyefeature_robust8/code/eye_feature.cpp:482 in eye_feature, pixel_format      |
+| interface       | s_axilite port=roi_version bundle=CTRL  | eyefeature_robust8/code/eye_feature.cpp:483 in eye_feature, roi_version       |
+| interface       | s_axilite port=return bundle=CTRL       | eyefeature_robust8/code/eye_feature.cpp:484 in eye_feature, return            |
+| bind_storage    | variable=pix0 type=ram_2p impl=bram     | eyefeature_robust8/code/eye_feature.cpp:504 in eye_feature, pix0              |
+| bind_storage    | variable=pix1 type=ram_2p impl=bram     | eyefeature_robust8/code/eye_feature.cpp:505 in eye_feature, pix1              |
+| array_partition | variable=hist0 cyclic factor=4 dim=1    | eyefeature_robust8/code/eye_feature.cpp:509 in eye_feature, hist0             |
+| array_partition | variable=hist1 cyclic factor=4 dim=1    | eyefeature_robust8/code/eye_feature.cpp:510 in eye_feature, hist1             |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:514 in eye_feature                    |
+| pipeline        | II=1                                    | eyefeature_robust8/code/eye_feature.cpp:533 in eye_feature                    |
++-----------------+-----------------------------------------+-------------------------------------------------------------------------------+
+
+
