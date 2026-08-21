@@ -1,4 +1,4 @@
-# BJUT-CS-SemesterStack：计科实本科资料归档
+# BJUT-CS-SemesterStack：“学期栈”——计科实本科资料归档
 
 
 > 按“学期 → 课程”两级结构整理的个人学习资料归档。
